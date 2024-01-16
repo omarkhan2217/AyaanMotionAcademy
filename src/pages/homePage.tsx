@@ -1,13 +1,12 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { HomePageContainer } from "../containers"
+import { Layout } from "../layout"
 
 export const HomePage: React.FC = () => {
 
     return (
-        <div>
-            hoem
-            <Link to="/about">ABOUT or</Link>
-        </div>
-
+        <Layout>
+            <HomePageContainer />
+        </Layout>
     )
 }

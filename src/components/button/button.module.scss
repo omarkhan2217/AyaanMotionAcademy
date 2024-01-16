@@ -1,0 +1,253 @@
+@use '../../styles/global.scss' as *;
+
+@mixin button-variant-colors($bg, $text: #fff, $border, $hover) {
+  background-color: $bg;
+  color: $text;
+  border: 1px solid $border;
+
+  &:hover {
+    background-color: darken($hover, 5%);
+    border-color: lighten($border, 5%);
+  }
+}
+
+.buttonWrapper {
+  @include flex-container(column, flex-start, flex-start, 100px);
+  width: 100%;
+}
+
+.button {
+  @include flex-container(row, center, center, 8px);
+  width: 100%;
+  height: inherit;
+  box-shadow: $shadow--flat;
+  font-family: 'Inter', sans-serif;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $shadow--subtle;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.67;
+  }
+}
+
+.xxs {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 26px;
+}
+
+.xs {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 15px 8px 10px;
+  border-radius: 26px;
+}
+
+.icon_md {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 4px 10px 4px 5px;
+  border-radius: 26px;
+}
+
+.sm {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 13px;
+  border-radius: 46px;
+}
+
+.md {
+  font-size: 16px;
+  font-weight: 900;
+  padding: 17px 15px;
+  border-radius: 32px;
+}
+
+.lg {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 26px 56px;
+  border-radius: 78px;
+}
+
+.button_primary {
+  @extend .button;
+  @include button-variant-colors($color--btn-primary,
+    $color--text-lighter,
+    $color--btn-primary,
+    $color--btn-primary );
+}
+
+.button_secondary {
+  @extend .button;
+  @include button-variant-colors($color--btn-secondary,
+    $color--text-lighter,
+    $color--btn-secondary,
+    $color--btn-secondary );
+}
+
+.button_tertiary {
+  @extend .button;
+  @include button-variant-colors($color--text-lighter,
+    $color--text-darker,
+    $color--text-lighter,
+    $color--text-lighter );
+}
+
+.button_dark {
+  @extend .button;
+  @include button-variant-colors($color--btn-dark,
+    $color--text-lighter,
+    $color--btn-dark,
+    $color--btn-dark );
+}
+
+.button_outline {
+  @extend .button;
+  @include button-variant-colors($color--text-lighter,
+    $color--text-primary,
+    $color--btn-dark,
+    $color--text-lighter );
+}
+
+.button_accent-primary {
+  @extend .button;
+  @include button-variant-colors($color--btn-accent-primary,
+    $color--text-lighter,
+    $color--btn-accent-primary,
+    $color--btn-accent-primary );
+}
+
+.button_accent-secondary {
+  @extend .button;
+  @include button-variant-colors($color--btn-accent-secondary,
+    $color--text-lighter,
+    $color--btn-accent-secondary,
+    $color--btn-accent-secondary );
+}
+
+.button_accent-tertiary {
+  @extend .button;
+  @include button-variant-colors($color--btn-accent-tertiary,
+    $color--text-lighter,
+    $color--btn-accent-tertiary,
+    $color--btn-accent-tertiary );
+}
+
+.button_gold {
+  @extend .button;
+  @include button-variant-colors($color--btn-gold,
+    $color--text-gold-dark,
+    $color--btn-gold,
+    $color--btn-gold );
+}
+
+.button_error {
+  @extend .button;
+  @include button-variant-colors($color--btn-error,
+    $color--text-lighter,
+    $color--btn-error,
+    $color--btn-error );
+}
+
+.button_success-light {
+  @extend .button;
+  @include button-variant-colors($color--btn-success-light,
+    $color--text-dark,
+    $color--btn-success-light,
+    $color--btn-success-light);
+}
+
+.button_light {
+  @extend .button;
+  @include button-variant-colors($color--text-lighter,
+    $color--text-darker,
+    $color--text-lighter,
+    $color--text-lighter );
+}
+
+.button_gold-dark {
+  @extend .button;
+  @include button-variant-colors($color--btn-gold-dark,
+    $color--text-lighter,
+    $color--btn-gold-dark,
+    $color--btn-gold-dark );
+}
+
+.button_gold-light {
+  @extend .button;
+  @include button-variant-colors($color--btn-gold-light,
+    $color--text-gold-dark,
+    $color--border-gold-dark,
+    $color--btn-gold-light );
+}
+
+.button_gold-white {
+  @extend .button;
+  @include button-variant-colors($color--btn-gold,
+    $color--text-lighter,
+    $color--btn-gold,
+    $color--btn-gold );
+}
+
+.button_ghost {
+  @extend .button;
+  @include button-variant-colors($color--text-lighter,
+    $color--text-primary,
+    white,
+    $color--text-lighter );
+}
+
+.button_xxs {
+  @extend .xxs;
+}
+
+.button_xs {
+  @extend .xs;
+}
+
+.button_sm {
+  @extend .sm;
+}
+
+.button_md {
+  @extend .md;
+}
+
+.button_lg {
+  @extend .lg;
+}
+
+.button_icon_md {
+  @extend .icon_md;
+}
+
+.button_xxs {
+  @extend .xxs;
+}
+
+.button_xs {
+  @extend .xs;
+}
+
+.button_sm {
+  @extend .sm;
+}
+
+.button_md {
+  @extend .md;
+}
+
+.button_lg {
+  @extend .lg;
+}
+
+.button_icon_md {
+  @extend .icon_md;
+}
