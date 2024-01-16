@@ -2,14 +2,14 @@
 
 // Colors
 $color--bg-primary: hsl(248, 100%, 58%);
-$color--bg-primary-light: rgba(255, 81, 81, 0.1);
 $color--bg-secondary: hsl(252, 100%, 85%);
 $color--bg-secondary-dark: hsl(162, 30%, 41%);
-$color--bg-lighter: hsl(225, 40%, 98%);
-$color--bg-light: hsla(0, 0%, 96%, 1);
-$color--bg-dark: hsla(0, 0%, 51%, 1);
-$color--bg-darker: hsla(219, 30%, 11%, 1);
-$color--bg-accent-primary: hsla(43, 72%, 24%, 1);
+// $color--bg-primary-light: rgba(255, 81, 81, 0.1);
+// $color--bg-lighter: hsl(225, 40%, 98%);
+// $color--bg-light: hsla(0, 0%, 96%, 1);
+// $color--bg-dark: hsla(0, 0%, 51%, 1);
+// $color--bg-darker: hsla(219, 30%, 11%, 1);
+// $color--bg-accent-primary: hsla(43, 72%, 24%, 1);
 
 $color--btn-primary: hsl(248, 100%, 58%);
 $color--btn-secondary: hsl(0, 0%, 23%);
@@ -23,37 +23,37 @@ $color--btn-gold-light: hsla(43, 100%, 97%, 1);
 $color--btn-error: hsla(358, 72%, 49%, 1);
 $color--btn-success-light: hsla(101, 61%, 90%, 1);
 
-$color--border-primary: hsla(0, 0%, 92%, 1);
-$color--border-primary-dark: hsla(0, 0%, 51%, 1);
-$color--border-accent-light: rgba(255, 90, 96, 0.11);
-$color--border-warning: hsla(43, 52%, 55%, 0.53);
 $color--border-gold-dark: hsla(43, 72%, 24%, 0.31);
-$color--border-error-light: hsla(358, 100%, 68%, 0.11);
+// $color--border-primary: hsla(0, 0%, 92%, 1);
+// $color--border-primary-dark: hsla(0, 0%, 51%, 1);
+// $color--border-accent-light: rgba(255, 90, 96, 0.11);
+// $color--border-warning: hsla(43, 52%, 55%, 0.53);
+// $color--border-error-light: hsla(358, 100%, 68%, 0.11);
 
 $color--text-primary: hsla(236, 42%, 16%, 1);
-$color--text-primary-light: hsla(236, 42%, 16%, 0.6);
-$color--text-secondary: hsl(214, 89%, 52%);
-$color--text-accent-primary: hsla(23, 48%, 30%, 1);
-$color--text-accent-secondary: hsla(203, 44%, 21%, 1);
 $color--text-darker: hsl(0, 0%, 0%);
 $color--text-dark: hsla(0, 0%, 15%, 1);
 $color--text-lighter: hsl(0, 0%, 100%);
-$color--text-success: hsla(101, 50%, 32%, 1);
-$color--text-warning: hsla(49, 100%, 50%, 1);
-$color--text-error-dark: hsla(0, 53%, 29%, 1);
 $color--text-gold-dark: hsla(43, 72%, 24%, 1);
+// $color--text-primary-light: hsla(236, 42%, 16%, 0.6);
+// $color--text-secondary: hsl(214, 89%, 52%);
+// $color--text-accent-primary: hsla(23, 48%, 30%, 1);
+// $color--text-accent-secondary: hsla(203, 44%, 21%, 1);
+// $color--text-success: hsla(101, 50%, 32%, 1);
+// $color--text-warning: hsla(49, 100%, 50%, 1);
+// $color--text-error-dark: hsla(0, 53%, 29%, 1);
 
-$color--success: hsla(101, 75%, 41%, 1);
-$color--success-light: hsla(101, 61%, 90%, 1);
-$color--success-dark: hsla(100, 35%, 34%, 1);
-$color--warning: hsla(43, 79%, 61%, 1);
-$color--warning-light: hsla(50, 100%, 86%, 1);
-$color--warning-lighter: hsl(40, 100%, 96%);
-$color--error: hsla(358, 72%, 49%, 1);
-$color--error-light: hsl(0, 100%, 85%);
-$color--error-dark: hsla(0, 41%, 37%, 1);
-$color--error-lighter: hsla(0, 100%, 66%, 0.1);
-$color--invalid-light: rgba(130, 130, 130, 0.1);
+// $color--success: hsla(101, 75%, 41%, 1);
+// $color--success-light: hsla(101, 61%, 90%, 1);
+// $color--success-dark: hsla(100, 35%, 34%, 1);
+// $color--warning: hsla(43, 79%, 61%, 1);
+// $color--warning-light: hsla(50, 100%, 86%, 1);
+// $color--warning-lighter: hsl(40, 100%, 96%);
+// $color--error: hsla(358, 72%, 49%, 1);
+// $color--error-light: hsl(0, 100%, 85%);
+// $color--error-dark: hsla(0, 41%, 37%, 1);
+// $color--error-lighter: hsla(0, 100%, 66%, 0.1);
+// $color--invalid-light: rgba(130, 130, 130, 0.1);
 
 // Elevation
 
@@ -85,7 +85,7 @@ $breakpoints: (
   'tablet': 768px,
   'tablet-wide': 1024px,
   'desktop-small': 1280px,
-  'desktop-medium': 1440px,
+  'desktop-medium': 1400px,
   'desktop': 1600px,
   'desktop-wide': 1900px,
 );
