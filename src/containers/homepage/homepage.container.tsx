@@ -1,6 +1,5 @@
 import React from "react"
-import { OurAchieversContainer } from "./ourAchievers/ourAchievers.container"
-import { HeroTextContainer } from "."
+import { HeroTextContainer, OurAchieversContainer } from "."
 import classes from './homepage.module.scss';
 
 export const HomePageContainer: React.FC = () => {
