@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+// Colors
+$color--bg-primary: hsl(214, 89%, 52%);
+$color--bg-primary-light: rgba(255, 81, 81, 0.1);
+$color--bg-secondary: hsla(203, 100%, 95%, 1);
+$color--bg-secondary-dark: hsla(213, 88%, 87%, 1);
+$color--bg-lighter: hsl(225, 40%, 98%);
+$color--bg-light: hsla(0, 0%, 96%, 1);
+$color--bg-dark: hsla(0, 0%, 51%, 1);
+$color--bg-darker: hsla(219, 30%, 11%, 1);
+$color--bg-accent-primary: hsla(43, 72%, 24%, 1);
+
+$color--btn-primary: hsl(214, 89%, 52%);
+$color--btn-secondary: hsl(0, 0%, 23%);
+$color--btn-dark: hsla(236, 42%, 16%, 1);
+$color--btn-accent-primary: hsla(24, 33%, 39%, 1);
+$color--btn-accent-secondary: hsla(203, 18%, 46%, 1);
+$color--btn-accent-tertiary: hsla(90, 54%, 27%, 1);
+$color--btn-gold: hsl(43, 79%, 61%);
+$color--btn-gold-dark: hsl(43, 72%, 24%);
+$color--btn-gold-light: hsla(43, 100%, 97%, 1);
+$color--btn-error: hsla(358, 72%, 49%, 1);
+$color--btn-success-light: hsla(101, 61%, 90%, 1);
+
+$color--border-primary: hsla(0, 0%, 92%, 1);
+$color--border-primary-dark: hsla(0, 0%, 51%, 1);
+$color--border-accent-light: rgba(255, 90, 96, 0.11);
+$color--border-warning: hsla(43, 52%, 55%, 0.53);
+$color--border-gold-dark: hsla(43, 72%, 24%, 0.31);
+$color--border-error-light: hsla(358, 100%, 68%, 0.11);
+
+$color--text-primary: hsla(236, 42%, 16%, 1);
+$color--text-primary-light: hsla(236, 42%, 16%, 0.6);
+$color--text-secondary: hsl(214, 89%, 52%);
+$color--text-accent-primary: hsla(23, 48%, 30%, 1);
+$color--text-accent-secondary: hsla(203, 44%, 21%, 1);
+$color--text-darker: hsl(0, 0%, 0%);
+$color--text-dark: hsla(0, 0%, 15%, 1);
+$color--text-lighter: hsl(0, 0%, 100%);
+$color--text-success: hsla(101, 50%, 32%, 1);
+$color--text-warning: hsla(49, 100%, 50%, 1);
+$color--text-error-dark: hsla(0, 53%, 29%, 1);
+$color--text-gold-dark: hsla(43, 72%, 24%, 1);
+
+$color--success: hsla(101, 75%, 41%, 1);
+$color--success-light: hsla(101, 61%, 90%, 1);
+$color--success-dark: hsla(100, 35%, 34%, 1);
+$color--warning: hsla(43, 79%, 61%, 1);
+$color--warning-light: hsla(50, 100%, 86%, 1);
+$color--warning-lighter: hsl(40, 100%, 96%);
+$color--error: hsla(358, 72%, 49%, 1);
+$color--error-light: hsl(0, 100%, 85%);
+$color--error-dark: hsla(0, 41%, 37%, 1);
+$color--error-lighter: hsla(0, 100%, 66%, 0.1);
+$color--invalid-light: rgba(130, 130, 130, 0.1);
+
+// Elevation
+
+// NOTE: These are box-shadows
+
+$shadow--flat: 0px 0px 0px 0px transparent;
+$shadow--subtle: 0px 12px 18px rgba(64, 72, 82, 0.1);
+$shadow--hard: 0px 6px 14px rgba(64, 72, 82, 0.1);
+
+// Border Radii
+
+$border--sharp: 6px;
+$border--elegant: 10px;
+$border--playful: 15px;
+$border--round: 1000px;
+
+// Transitions
+
+$linear--transition: all 0.1s linear;
+
+// Helper Mixins
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+$breakpoints: (
+  'phone-small': 360px,
+  'phone': 420px,
+  'phone-custom':490px,
+  'phone-wide': 576px,
+  'tablet': 768px,
+  'tablet-wide': 1024px,
+  'desktop-small': 1280px,
+  'desktop-medium': 1440px,
+  'desktop': 1600px,
+  'desktop-wide': 1900px,
+);
+
+@mixin mq($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin text-shorten($numLines: 1) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @supports (-webkit-line-clamp: $numLines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: $numLines;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin gradient($start-color, $end-color, $orientation) {
+  background: $start-color;
+
+  @if $orientation =='vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  }
+
+  @else if $orientation =='horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  }
+
+  @else {
+    background: -webkit-radial-gradient(center,
+        ellipse cover,
+        $start-color,
+        $end-color );
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin css3-prefix($prop, $value) {
+  -webkit-#{$prop}: #{$value};
+  -moz-#{$prop}: #{$value};
+  -ms-#{$prop}: #{$value};
+  -o-#{$prop}: #{$value};
+  #{$prop}: #{$value};
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+@mixin flex-container($direction: row,
+  $justify: center,
+  $align: center,
+  $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@mixin colorMode($colorMode) {
+  // create a map for value white, black, green, gold, or red
+  $colorMap: ('White': $color--White,
+    'Black': $color--FobiInk,
+    'Green': $color--Green,
+    'Gold': $color--Gold,
+    'Red': $color--Red,
+  );
+  // use color from map
+  $colorValue: map-get($colorMap, $colorMode);
+  color: $colorValue;
+
+  svg {
+    font-size: 16px;
+    fill: $colorValue;
+    background-color: transparent;
+  }
+}
+
+@mixin flex-container($direction: row,
+  $justify: center,
+  $align: center,
+  $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin _scrollerThumb($color) {
+  &::-webkit-scrollbar-thumb {
+    background-color: $color;
+    border-radius: 4px;
+  }
+}
+
+@mixin scroller($width: 4px, $height: 6px, $color: var(--ui-border-color)) {
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $height;
+  }
+
+  @include _scrollerThumb($color);
+}
+
+@mixin css3-prefix($prop, $value) {
+  -webkit-#{$prop}: #{$value};
+  -moz-#{$prop}: #{$value};
+  -ms-#{$prop}: #{$value};
+  -o-#{$prop}: #{$value};
+  #{$prop}: #{$value};
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+@mixin flex-container($direction: row,
+  $justify: center,
+  $align: center,
+  $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@mixin colorMode($colorMode) {
+  // create a map for value white, black, green, gold, or red
+  $colorMap: ('White': $color--White,
+    'Black': $color--FobiInk,
+    'Green': $color--Green,
+    'Gold': $color--Gold,
+    'Red': $color--Red,
+  );
+  // use color from map
+  $colorValue: map-get($colorMap, $colorMode);
+  color: $colorValue;
+
+  svg {
+    font-size: 16px;
+    fill: $colorValue;
+    background-color: transparent;
+  }
+}
+
+@mixin flex-container($direction: row,
+  $justify: center,
+  $align: center,
+  $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin _scrollerThumb($color) {
+  &::-webkit-scrollbar-thumb {
+    background-color: $color;
+    border-radius: 4px;
+  }
+}
+
+@mixin scroller($width: 4px, $height: 6px, $color: var(--ui-border-color)) {
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $height;
+  }
+
+  @include _scrollerThumb($color);
+}
