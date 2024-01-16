@@ -1,44 +1,44 @@
 @use '../../styles/global.scss' as *;
 
-
 .mainContainer {
-    @include flex-container(row, center, center, 132px);
-    width: 100%;
-    padding: 32px 10%
+  @include flex-container(row, center, center, 132px);
+  width: 100%;
+  padding: 32px 10%;
 }
 
 .linkContainer {
-    @include flex-container(row, center, center, 12px);
-    width: 100%;
-    height: inherit;
-    box-shadow: $shadow--flat;
+  @include flex-container(row, center, center, 12px);
+  width: 100%;
+  height: inherit;
+  box-shadow: $shadow--flat;
 }
 
 .link {
-    min-width: fit-content;
-    text-align: center;
-    color: lighten($color--text-dark, 15%);
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    padding: 0px 20px;
+  min-width: fit-content;
+  text-align: center;
+  color: lighten($color--text-dark, 15%);
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0px 20px;
+  transition: $linear--transition;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-color: transparent;
+  &:hover {
     transition: $linear--transition;
+    color: $color--text-darker;
+    text-underline-offset: 3px;
+    cursor: pointer;
     text-decoration: underline;
-    text-underline-offset: 1px;
-    text-decoration-color: transparent;
-    &:hover {
-        transition: $linear--transition;
-        color: $color--text-darker;
-        text-underline-offset: 3px;
-        cursor: pointer;
-        text-decoration: underline;
-    }
+    text-decoration-color: $color--btn-primary;
+  }
 }
 
 .logo {
-    &:hover{
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
