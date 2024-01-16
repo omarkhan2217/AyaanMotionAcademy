@@ -1,1 +1,1 @@
-export * from './heroText'
+export * from './heroText.container'

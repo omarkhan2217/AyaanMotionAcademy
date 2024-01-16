@@ -2,7 +2,7 @@ import React from "react"
 import classes from "./heroText.module.scss";
 import { Button } from "../../../components";
 
-export const HeroText: React.FC = () => {
+export const HeroTextContainer: React.FC = () => {
 
     return (
         <div className={classes.container}>
@@ -15,7 +15,6 @@ export const HeroText: React.FC = () => {
             <div className={classes.buttonContainer}>
                 <Button label="View all Achivers" size="md" />
             </div>
-
         </div>
 
 
