@@ -12,6 +12,7 @@ export const Layout: React.FC<MyComponentProps> = ({ children }) => {
             <Navbar />
             {children}
             <Footer />
+            
         </>
 
     )
