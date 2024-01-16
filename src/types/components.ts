@@ -29,3 +29,17 @@ export interface IButtonProps
   // type?: string;
   icon?: React.ReactNode | JSX.Element;
 }
+
+export interface IStudentCardProps
+extends React.HTMLAttributes<HTMLDivElement> {
+  rank: number;
+  name: string;
+  college: string;
+  image?: string;
+  color?: string;
+}
+
+export interface IPillProps
+extends React.HTMLAttributes<HTMLDivElement> {
+  label: string;
+}
