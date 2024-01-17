@@ -1,6 +1,7 @@
 import IMG from '../../../assets/images/homepage/image15.png'
+import { IStudentCardProps } from '../../../types';
 
-export const ourAchieversData = [
+export const ourAchieversData: IStudentCardProps[] = [
     {
         rank: 3,
         name: 'Ankit Kumar',

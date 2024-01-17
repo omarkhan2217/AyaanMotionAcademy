@@ -1,24 +1,25 @@
 import React from "react"
 import { MainLogo } from "../../assets/icons"
-import { Link } from "react-router-dom"
-import { Button } from "../../components"
 import classes from './navbar.module.scss';
-
+import { useWindowSize } from "usehooks-ts";
+import { DesktopNav, MenuNav } from ".";
 
 export const Navbar: React.FC = () => {
+    const { width } = useWindowSize();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [windowWidth, setWindowWidth] = React.useState<any>();
+
+    React.useEffect(() => {
+        setWindowWidth(width)
+    }, [width])
     return (
         <div className={classes.mainContainer}>
             <MainLogo className={classes.logo} />
-            <div className={classes.linkContainer}>
-                <Link className={classes.link} to='/'>Achievers</Link>
-                <Link className={classes.link} to='/'>Our Faculty</Link>
-                <Link className={classes.link} to='/'>About Us</Link>
-                <Link className={classes.link} to='/'>Contact Us</Link>
-                <Link className={classes.link} to='/'>Fee Structure</Link>
-                <div className={classes.buttonContainer}>
-                    <Button label="Book a Demo" size="md" />
-                </div>
-            </div>
+            {windowWidth < 1024 ?
+                <MenuNav />
+                :
+                <DesktopNav />
+            }
         </div>
 
     )

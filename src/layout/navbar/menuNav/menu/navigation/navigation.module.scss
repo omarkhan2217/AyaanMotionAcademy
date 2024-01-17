@@ -1,0 +1,11 @@
+@use '../../../../../styles/global.scss' as *;
+
+.ul {
+  margin: 0;
+  padding: 0;
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 230px;
+}

@@ -1,0 +1,15 @@
+@use '../../../../styles/global.scss' as *;
+
+.background {
+  position: absolute;
+  top: 0px;
+  width: 300px;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  box-shadow: $shadow--subtle;
+}
+
+.nav {
+    width: fit-content;
+  }
+  

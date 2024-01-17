@@ -1,17 +1,6 @@
-@use '../../styles/global.scss' as *;
+@use '../../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(
-    row,
-    space-between,
-    center,
-    132px
-  );
-  width: 100%;
-  padding: 32px 8%;
-}
-
-.linkContainer {
   @include flex-container(row, center, center, 12px);
   width: 100%;
   height: inherit;
@@ -54,14 +43,6 @@
 }
 
 @include mq('desktop-medium') {
-  .mainContainer {
-    @include flex-container(
-      row,
-      space-between,
-      center,
-      0px
-    );
-  }
   .link {
     font-size: 14px;
   }
@@ -76,10 +57,5 @@
   }
   .logo {
     width: 310px;
-  }
-}
-@include mq('tablet-wide') {
-  .mainContainer {
-    width: 90%;
   }
 }

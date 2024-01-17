@@ -37,6 +37,8 @@ extends React.HTMLAttributes<HTMLDivElement> {
   college: string;
   image?: string;
   color?: string;
+  y?: number;
+  stifness?: number;
 }
 
 export interface IPillProps

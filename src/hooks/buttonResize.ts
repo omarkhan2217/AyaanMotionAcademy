@@ -27,8 +27,8 @@ export const useButtonResizeAlt = () => {
   if (width < 420) {
     return 'xs';
   }
-  if (width < 768) {
-    return 'sm';
+  if (width < 1024) {
+    return 'xs';
   }
   if (width < 1400) {
     return 'sm';
