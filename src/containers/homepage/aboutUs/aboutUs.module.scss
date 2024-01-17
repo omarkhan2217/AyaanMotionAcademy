@@ -1,0 +1,84 @@
+@use '../../../styles/global.scss' as *;
+
+.container {
+  @include flex-container(column, center, center, 20px);
+  margin-top: 4%;
+}
+
+.innerdis {
+  width: 56%;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #6d82ff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.boldDis {
+  font-size: 40px;
+  font-style: normal;
+  color: #0e2ce2;
+  font-weight: 800;
+}
+@include mq('desktop-medium') {
+  .innerdis {
+    width: 60%;
+    font-size: 38px;
+  }
+  .boldDis {
+    font-size: 36px;
+  }
+}
+@include mq('desktop-small') {
+  .innerdis {
+    width: 66%;
+    font-size: 36px;
+  }
+  .boldDis {
+    font-size: 34px;
+  }
+}
+@include mq('tablet-wide') {
+  .innerdis {
+    width: 70%;
+    font-size: 32px;
+  }
+  .boldDis {
+    font-size: 34px;
+  }
+}
+@include mq('tablet') {
+  .innerdis {
+    width: 74%;
+    font-size: 30px;
+  }
+  .boldDis {
+    font-size: 28px;
+  }
+}
+@include mq('phone-wide') {
+  .innerdis {
+    width: 78%;
+    font-size: 28px;
+  }
+  .boldDis {
+    font-size: 26px;
+  }
+}
+@include mq('phone-custom') {
+  .innerdis {
+    width: 82%;
+    font-size: 26px;
+  }
+  
+}
+@include mq('phone') {
+  .innerdis {
+    width: 88%;
+    font-size: 22px;
+  }
+  .boldDis {
+    font-size: 24px;
+  }
+}

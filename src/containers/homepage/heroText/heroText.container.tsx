@@ -10,7 +10,7 @@ export const HeroTextContainer: React.FC = () => {
                 Empowering Dreams, Achieving Excellence.
             </div>
             <div className={classes.subHeader}>
-                Join Ayaan's Motion Academy for top-tier coaching. Unleash your potential, conquer exams, and embark on a journey of academic excellence.
+            Meet Our JEE/IIT Achievers – Click to Discover Their Journeys, Percentiles, and Inspiring Quotes.
             </div>
             <div className={classes.buttonContainer}>
                 <Button label="View all Achivers" size={useButtonResizeAlt()} />
