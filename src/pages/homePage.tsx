@@ -7,6 +7,6 @@ export const HomePage: React.FC = () => {
     return (
         <Layout>
             <HomePageContainer />
-        </Layout>
+         </Layout>
     )
 }

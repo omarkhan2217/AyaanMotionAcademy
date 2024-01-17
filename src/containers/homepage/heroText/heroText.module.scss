@@ -30,31 +30,71 @@
   width: 14%;
 }
 
-@include mq('desktop-medium'){
-    .mainHeader{
-        font-size: 44px;
-    }
-
+@include mq('desktop-medium') {
+  .mainHeader {
+    width: 44%;
+    font-size: 44px;
+  }
 }
-@include mq('desktop-small'){
-    .mainHeader{
-        width: 50%;
-    }
+@include mq('desktop-small') {
+  .mainHeader {
+    width: 48%;
+  }
+  .subHeader {
+    width: 35%;
 }
-@include mq('tablet-wide'){
-    .mainHeader{
-        width: 50%;
-        font-size:40px;
-
-    }
-    .subHeader{
-        font-size: 11px;
-    }
+.buttonContainer{
+  width:20%;
+}
+}
+@include mq('tablet-wide') {
+  .mainHeader {
+    width: 58%;
+    font-size: 40px;
+  }
+  .subHeader {
+    width: 40%;
+  }
+  .buttonContainer{
+    width:24%;
+  }
 }
 
-@include mq ('tablet'){
-    .mainHeader{
-        width: 40%;
-        font-size: 36px;
+@include mq('tablet') {
+  .mainHeader {
+      width: 64%;
+      font-size: 36px;
     }
+    .subHeader {
+        width: 44%;
+        font-size: 13px;
+  }
+  .buttonContainer{
+    width:32%;
+  }
+}
+@include mq('phone-wide') {
+  .mainHeader {
+    width: 72%;
+    font-size: 34px;
+  }
+  .subHeader{
+    width: 48%;
+  }
+  .buttonContainer{
+    width:38%;
+  }
+}
+@include mq('phone') {
+  .mainHeader {
+    width: 78%;
+    font-size: 30px;
+  }
+  .subHeader{
+    width: 52%;
+    font-size:12px;
+  }
+  .buttonContainer{
+    width: 42%;
+  }
 }
