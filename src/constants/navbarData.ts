@@ -3,22 +3,27 @@ import { INavbarItemProps } from "../types";
 export const NavbarData: INavbarItemProps[] = [
     {
         label: 'Achievers',
-        linkTo: '/'
+        linkTo: '/',
+        key: 1
     },
     {
         label: 'Our Faculty',
-        linkTo: '/'
+        linkTo: '/',
+        key: 2
     },
     {
         label: 'About Us',
-        linkTo: '/'
+        linkTo: '/',
+        key: 3
     },
     {
         label: 'Contact Us',
-        linkTo: '/'
+        linkTo: '/',
+        key: 4
     },
     {
         label: 'Fee Structure',
-        linkTo: '/'
+        linkTo: '/',
+        key: 5
     }
 ]

@@ -1,12 +1,10 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(
-    row,
+  @include flex-container(row,
     space-between,
     center,
-    132px
-  );
+    132px);
   width: 100%;
   padding: 32px 8%;
 }
@@ -32,6 +30,7 @@
   text-underline-offset: 1px;
   text-decoration-color: transparent;
   text-decoration-thickness: 1px;
+
   &:hover {
     transition: $linear--transition;
     color: $color--text-darker;
@@ -55,31 +54,56 @@
 
 @include mq('desktop-medium') {
   .mainContainer {
-    @include flex-container(
-      row,
+    @include flex-container(row,
       space-between,
       center,
-      0px
-    );
+      0px);
   }
+
   .link {
     font-size: 14px;
   }
+
   .logo {
     width: 310px;
   }
 }
+
 @include mq('desktop-small') {
   .link {
     font-size: 12px;
     padding: 0px 12px;
   }
+
   .logo {
     width: 310px;
   }
 }
+
 @include mq('tablet-wide') {
   .mainContainer {
     width: 90%;
+  }
+}
+
+@include mq('tablet') {
+  .mainContainer {
+    width: 100%;
+  }
+}
+
+@include mq('phone-wide') {
+  .mainContainer {
+    display: block;
+  }
+}
+
+@include mq('phone') {
+  .mainContainer {
+    display: block;
+    padding: 32px 0;
+  }
+  .logo {
+    transform: scale(0.8);
   }
 }

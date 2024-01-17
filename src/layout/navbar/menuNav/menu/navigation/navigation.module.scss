@@ -3,9 +3,46 @@
 .ul {
   margin: 0;
   padding: 0;
-  padding: 25px;
   position: absolute;
+  list-style: none;
   top: 100px;
   right: 0;
-  width: 230px;
+  width: 28%;
+}
+
+.buttonContainer {
+  width: max-content;
+  box-shadow: $shadow--flat;
+}
+
+@include mq('tablet') {
+  .ul {
+    width: 34%;
+  }
+}
+
+@include mq('phone-wide') {
+  .ul {
+    width: 90%;
+    height: 100%;
+    @include flex-container(column, flex-start, space-between, 30%);
+  }
+  .buttonContainer {
+    @include flex-container(row, center, center, 0px);
+    align-self: flex-end;
+    width: 55%;
+    margin-right: 10%;
+  }
+}
+
+@include mq('phone-custom') {
+  .ul {
+    width: 85%;
+  }
+}
+
+@include mq('phone') {
+  .ul {
+    width: 92%;
+  }
 }

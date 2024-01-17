@@ -9,7 +9,7 @@
 
 .mainHeader {
   width: 40%;
-  color: #000;
+  color: $color--text-primary;
   text-align: center;
   font-size: 50px;
   font-weight: 700;
@@ -17,7 +17,7 @@
 }
 
 .subHeader {
-  color: #404040;
+  color: $color--text-primary-light;
   text-align: center;
   font-weight: 500;
   font-size: 13px;

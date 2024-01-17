@@ -2,12 +2,13 @@
 
 
 .buttonContainer {
-    width: max-content;
-    box-shadow: $shadow--flat;
-    margin-right: 10%;
-  }
-  
-  .menuContainer {
+  width: max-content;
+  box-shadow: $shadow--flat;
+  margin-right: 10%;
+}
 
+@include mq('phone-wide') {
+  .buttonContainer{
+    margin-right: 0%;
   }
-  
+}

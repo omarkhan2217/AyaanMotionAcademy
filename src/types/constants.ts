@@ -1,4 +1,5 @@
 export interface INavbarItemProps {
     label: string,
-    linkTo: string
+    linkTo: string,
+    key: number
 }

@@ -1,14 +1,45 @@
 @use '../../../../../styles/global.scss' as *;
 
+
+.mainContainer {
+  @include flex-container(column, center, flex-start, 0px);
+}
+
 .li {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
 }
+
+.link {
+  padding: 20px 10px;
+  width: fit-content;
+  color: lighten($color--text-dark, 15%);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  transition: $linear--transition;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  text-align: center;
+  margin-right: 0px;
+
+  &:hover {
+    transition: $linear--transition;
+    color: $color--text-darker;
+    text-underline-offset: 4px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: $color--btn-primary;
+  }
+}
+
 
 .iconPlaceholder {
   width: 40px;

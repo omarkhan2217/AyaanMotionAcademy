@@ -10,6 +10,22 @@
 }
 
 .nav {
-    width: fit-content;
+  width: fit-content;
+}
+
+@include mq('tablet') {
+  .background {
+    width: 400px;
   }
-  
+  .nav {
+    width: 210px;
+  }
+}
+@include mq('phone-wide') {
+  .background {
+    width: 520px;
+  }
+  .nav {
+    width: 50px;
+  }
+}
