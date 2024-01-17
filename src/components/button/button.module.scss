@@ -22,16 +22,20 @@
   height: inherit;
   box-shadow: $shadow--flat;
   font-family: 'Inter', sans-serif;
+  transition: $linear--transition-XXL;
 
   &:hover {
     cursor: pointer;
     box-shadow: $shadow--subtle;
+    box-shadow: 0 0 10px  $color--bg-primary;
+    transition: $linear--transition-XXL;
   }
 
   &:disabled {
     cursor: not-allowed;
     opacity: 0.67;
   }
+  
 }
 
 .xxs {
