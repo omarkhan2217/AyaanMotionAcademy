@@ -1,5 +1,5 @@
 import React from "react"
-import { AboutUscontainer, HeroTextContainer, OurAchieversContainer } from "."
+import { AboutUscontainer, HeroTextContainer, OurAchieversContainer,OurFacultycontainer } from "."
 import classes from './homepage.module.scss';
 
 export const HomePageContainer: React.FC = () => {
@@ -9,6 +9,7 @@ export const HomePageContainer: React.FC = () => {
             <HeroTextContainer />
             <OurAchieversContainer />
             <AboutUscontainer/>
+            <OurFacultycontainer/>
         </div>
 
     )

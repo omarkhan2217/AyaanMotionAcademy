@@ -1,0 +1,30 @@
+@use '../../../styles/global.scss' as *;
+
+.container {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.innerContainer {
+  margin-left: 10%;
+  width: 100%;
+}
+
+.mainHeading {
+  width: 28%;
+  color: #0024ff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.quote {
+  width: 23%;
+  color: #96a5ff;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 700;
+}
