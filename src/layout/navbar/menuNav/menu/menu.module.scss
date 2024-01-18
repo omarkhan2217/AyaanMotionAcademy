@@ -3,28 +3,52 @@
 .background {
   position: absolute;
   top: 0px;
-  width: 300px;
+  width: max-content;
+  min-width: 300px;
+  right: 0;
   height: 100vh;
   background: rgb(255, 255, 255);
   box-shadow: $shadow--subtle;
+  z-index: 5;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 4;
+}
+
+.overlayOpen {
+  display: block;
 }
 
 .nav {
   width: fit-content;
+  z-index: 5;
 }
 
 @include mq('tablet') {
   .background {
     width: 400px;
   }
+
   .nav {
     width: 210px;
   }
 }
+
 @include mq('phone-wide') {
   .background {
     width: 520px;
   }
+
   .nav {
     width: 50px;
   }

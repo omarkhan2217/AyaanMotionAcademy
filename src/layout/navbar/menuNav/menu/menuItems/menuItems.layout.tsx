@@ -9,10 +9,12 @@ interface IMenuItemProps {
     isOpen?: boolean
 }
 
-const variants = {
+// eslint-disable-next-line react-refresh/only-export-components
+export const AnimationVariants = {
     open1: {
         x: 0,
         opacity: 1,
+        display: "block",
         initial: { x: 200, opacity: 0 },
         animate: { opacity: 1 },
         transition: {
@@ -24,6 +26,7 @@ const variants = {
     open2: {
         x: 0,
         opacity: 1,
+        display: "block",
         initial: { x: 300, opacity: 0 },
         animate: { opacity: 1 },
         transition: {
@@ -36,6 +39,7 @@ const variants = {
     open3: {
         x: 0,
         opacity: 1,
+        display: "block",
         initial: { x: 400, opacity: 0 },
         animate: { opacity: 1 },
         transition: {
@@ -48,6 +52,7 @@ const variants = {
     open4: {
         x: 0,
         opacity: 1,
+        display: "block",
         initial: { x: 500, opacity: 0 },
         animate: { opacity: 1 },
         transition: {
@@ -60,11 +65,25 @@ const variants = {
     open5: {
         x: 0,
         opacity: 1,
+        display: "block",
         initial: { x: 600, opacity: 0 },
         animate: { opacity: 1 },
         transition: {
             delay: 0.09,
             stifness: 50,
+            opacity: { duration: 0.5 },
+            type: "spring",
+        }
+    },
+    open6: {
+        x: 0,
+        opacity: 1,
+        display: "block",
+        initial: { x: 200, opacity: 0 },
+        animate: { opacity: 1 },
+        transition: {
+            delay: 0.09,
+            stifness: 100,
             opacity: { duration: 0.5 },
             type: "spring",
         }
@@ -77,7 +96,7 @@ const variants = {
             stifness: 50,
             opacity: { duration: 0.5 },
             type: "spring",
-        }
+        },
     },
     closed2: {
         x: 200,
@@ -119,6 +138,28 @@ const variants = {
             type: "spring",
         }
     },
+    closed6: {
+        x: 200,
+        opacity: 0,
+        display: "none",
+        transition: {
+            delay: 0.09,
+            stifness: 50,
+            opacity: { duration: 0.5 },
+            type: "spring",
+        },
+    },
+    closedNew: {
+        x: 200,
+        opacity: 0,
+        display: "none",
+        transition: {
+            delay: 0.09,
+            stifness: 50,
+            opacity: { duration: 0.5 },
+            type: "spring",
+        },
+    }
 };
 
 export const MenuItem: React.FC<IMenuItemProps> = ({ isOpen }) => {
@@ -127,10 +168,10 @@ export const MenuItem: React.FC<IMenuItemProps> = ({ isOpen }) => {
             {NavbarData.map((item, index) => {
                 return (
                     <motion.li
-                        variants={variants}
+                        variants={AnimationVariants}
                         className={classes.link}
-                        initial="closed"
-                        animate={isOpen ? `open${item.key}` : `closed${item.key}`}
+                        initial={`closed${item.key}`}
+                        animate={isOpen ? `open${item.key}` : `closedNew`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         key={item.key || index}

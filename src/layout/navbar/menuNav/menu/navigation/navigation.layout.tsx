@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { MenuItem } from "../menuItems";
+import { AnimationVariants, MenuItem } from "../menuItems";
 import classes from './navigation.module.scss';
 import { Button } from "../../../../../components";
 import { useWindowSize } from "usehooks-ts";
@@ -14,28 +14,6 @@ const variants = {
     }
 };
 
-const divVariants = {
-    open: {
-        y: 0, // Final position (Y-axis)
-        opacity: 1, // Fully visible
-        transition: {
-            type: "spring",
-            stiffness: 100,
-            damping: 20
-        }
-    },
-    closed: {
-        y: 50, // Start position (Y-axis, 50 pixels down)
-        opacity: 0, // Fully transparent
-        transition: {
-            type: "spring",
-            stiffness: 100,
-            damping: 20
-        }
-    }
-};
-
-
 interface INavigationProps {
     isOpen?: boolean
 }
@@ -45,11 +23,14 @@ export const Navigation: React.FC<INavigationProps> = ({ isOpen }) => {
     return (
         <motion.ul className={classes.ul} variants={variants} animate={isOpen ? 'open' : 'closed'}>
             <MenuItem isOpen={isOpen} />
-            {width > 576 ? null : <motion.div
+            {isOpen ? null :
+                <div style={{marginBottom: '304px'}} />
+            }
+            {width >= 576 ? null : <motion.div
                 className={classes.buttonContainer}
-                variants={divVariants}
+                variants={AnimationVariants}
                 initial="closed"
-                animate={isOpen ? 'open' : 'closed'}
+                animate={isOpen ? 'open6' : 'closed6'}
             >
                 <Button label="Book a Demo" size="md" />
             </motion.div>}
