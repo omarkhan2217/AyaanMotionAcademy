@@ -60,7 +60,7 @@
 @include mq('phone-wide') {
   .innerdis {
     width: 78%;
-    font-size: 28px;
+    font-size: 26px;
   }
   .boldDis {
     font-size: 26px;
@@ -69,14 +69,14 @@
 @include mq('phone-custom') {
   .innerdis {
     width: 82%;
-    font-size: 26px;
+    font-size: 22px;
   }
   
 }
 @include mq('phone') {
   .innerdis {
     width: 88%;
-    font-size: 22px;
+    font-size: 18px;
   }
   .boldDis {
     font-size: 24px;
