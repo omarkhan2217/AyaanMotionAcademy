@@ -1,7 +1,6 @@
 import React from 'react'
 import classses from './ourFaculty.module.scss'
 
-
 export const OurFacultycontainer: React.FC = () => {
   return (
     <div className={classses.container}>
@@ -9,8 +8,9 @@ export const OurFacultycontainer: React.FC = () => {
         <div className={classses.mainHeading}>
           Meet Our Expert Faculty.
         </div>
-        <div className={classses.quote}>Meet Our JEE/IIT Achievers – Click to Discover Their Journeys, Percentiles, and Inspiring Quotes.</div>
+        <div className={classses.quote}>Passionate and Highly Qualified Teachers Dedicated to Your Success in Achieving Academic Excellence.</div>
       </div>
+      <OurFacultycontainer />
     </div>
   );
 }

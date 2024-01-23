@@ -15,7 +15,7 @@ export const Navbar: React.FC = () => {
     return (
         <div className={classes.mainContainer}>
             <MainLogo className={classes.logo} />
-            {windowWidth < 1024 ?
+            {windowWidth <= 1024 ?
                 <MenuNav />
                 :
                 <DesktopNav />

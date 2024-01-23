@@ -45,3 +45,9 @@ export interface IPillProps
 extends React.HTMLAttributes<HTMLDivElement> {
   label: string;
 }
+
+export interface IourFacultyData
+extends React.HTMLAttributes<HTMLDivElement>{
+  image2?:string;
+
+}

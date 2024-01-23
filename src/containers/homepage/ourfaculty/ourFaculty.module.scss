@@ -1,11 +1,9 @@
 @use '../../../styles/global.scss' as *;
 
 .container {
+  @include flex-container(column,flex-start, flex-start);
   margin-top: 3%;
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 }
 .innerContainer {
   margin-left: 10%;
@@ -14,7 +12,7 @@
 
 .mainHeading {
   width: 28%;
-  color: #0024ff;
+  color:$color--text-primary;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 35px;
   font-style: normal;
@@ -23,7 +21,7 @@
 
 .quote {
   width: 23%;
-  color: #96a5ff;
+  color: $color--text-primary-light;
   font-family: 'Inter';
   font-size: 16px;
   font-weight: 700;
