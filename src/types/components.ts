@@ -49,5 +49,6 @@ extends React.HTMLAttributes<HTMLDivElement> {
 export interface IourFacultyData
 extends React.HTMLAttributes<HTMLDivElement>{
   image2?:string;
+  image?:string;
 
 }

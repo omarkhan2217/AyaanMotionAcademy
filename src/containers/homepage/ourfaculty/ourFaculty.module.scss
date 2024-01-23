@@ -1,18 +1,26 @@
 @use '../../../styles/global.scss' as *;
 
 .container {
-  @include flex-container(column,flex-start, flex-start);
-  margin-top: 3%;
+  @include flex-container(row,flex-start, flex-start);
   width: 100%;
+  background-color: aquamarine;
 }
+
 .innerContainer {
-  margin-left: 10%;
+  margin-left: 7%;
+  width: 25%;
+  background-color: blue;
+}
+
+.imagecontainer {
   width: 100%;
+
+  background-color: burlywood;
 }
 
 .mainHeading {
-  width: 28%;
-  color:$color--text-primary;
+  width: 100%;
+  color: $color--text-primary;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 35px;
   font-style: normal;
@@ -20,7 +28,7 @@
 }
 
 .quote {
-  width: 23%;
+  width: 100%;
   color: $color--text-primary-light;
   font-family: 'Inter';
   font-size: 16px;
