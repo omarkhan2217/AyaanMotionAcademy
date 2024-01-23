@@ -1,36 +1,166 @@
 @use '../../../styles/global.scss' as *;
 
 .container {
-  @include flex-container(row,flex-start, flex-start);
+  @include flex-container(row, flex-start, flex-start);
   width: 100%;
-  background-color: aquamarine;
+  height: 74vh;
 }
 
 .innerContainer {
-  margin-left: 7%;
-  width: 25%;
-  background-color: blue;
+  @include flex-container(
+    column,
+    flex-start,
+    flex-start,
+    12px
+  );
+  margin-left: 8.5%;
+  margin-top: 2%;
+  width: 30%;
+  // background-color: blue;
 }
 
 .imagecontainer {
   width: 100%;
-
-  background-color: burlywood;
 }
 
 .mainHeading {
-  width: 100%;
   color: $color--text-primary;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 35px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
 }
 
 .quote {
-  width: 100%;
   color: $color--text-primary-light;
   font-family: 'Inter';
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
+
+@include mq('desktop-medium') {
+  .innerContainer {
+    width: 32%;
+  }
+  .mainHeading {
+    font-size: 38px;
+  }
+  .quote {
+    font-size: 14px;
+  }
+}
+@include mq('desktop-small') {
+  .innerContainer {
+    width: 44%;
+  }
+  .mainHeading {
+    font-size: 38px;
+  }
+  .quote {
+    font-size: 14px;
+  }
+}
+@include mq('tablet-wide') {
+  .innerContainer {
+    width: 52%;
+  }
+
+  .mainHeading {
+    font-size: 30px;
+  }
+  .quote {
+    font-size: 14px;
+  }
+}
+@include mq('tablet') {
+  .innerContainer {
+    width: 70%;
+  }
+  .mainHeading {
+    font-size: 32px;
+  }
+  .quote {
+    font-size: 12px;
+  }
+}
+@include mq('tablet-small') {
+  .innerContainer {
+    width: 74%;
+  }
+  .mainHeading {
+    font-size: 30px;
+  }
+  .quote {
+    font-size: 10px;
+  }
+}
+@include mq('phone-wide') {
+  .container {
+    @include flex-container(column, 20px);
+  }
+
+  .innerContainer {
+    width: 54%;
+    margin: 0;
+  }
+
+  .mainHeading {
+    text-align: center;
+  }
+  .quote {
+    text-align: center;
+    // width: 100%;
+    margin-left: 5%
+  }
+}
+@include mq('phone-custom') {
+  .container {
+    @include flex-container(column, 20px);
+  }
+  
+  .innerContainer {
+    width: 60%;
+    margin: 0;
+  }
+  .mainHeading {
+    text-align: center;
+  }
+  .quote {
+    text-align: center;
+ 
+  }
+}
+@include mq('phone') {
+  .innerContainer {
+    width: 66%;
+    margin: 0;
+  }
+
+  .container {
+    @include flex-container(column, 20px);
+  }
+  .mainHeading {
+    text-align: center;
+  }
+  .quote {
+    text-align: center;
+  }
+}
+
+@include mq('phone-small') {
+  .container {
+    @include flex-container(column,20px);
+  }
+  .innerContainer {
+    width: 80%;
+    margin: 0;
+  }
+  
+  .mainHeading {
+    text-align: center;
+  }
+  .quote {
+    text-align: center;
+  }
+  }
+
