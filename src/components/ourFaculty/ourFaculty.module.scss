@@ -1,8 +1,8 @@
 @use '../../styles/global.scss' as *;
 
 .imgcontainer {
-    width: 50%;
-  background-color: aquamarine;
+  width: 50%;
+  filter:drop-shadow(2px 2px 2px 4px rgba(0, 0, 0, 0.863));
 }
 
 .teachers_image {
@@ -16,9 +16,29 @@
   right: 12%;
 }
 
-@include mq('desktop-medium') {
-    .imgcontainer{
-        width: 50%;
-    }
-  
+@include mq('desktop-small') {
+  .imgcontainer {
+    width: 40%;
+  }
+  .teachers_image {
+    width: 40%;
+  }
+  .bg_img {
+    width: 80%;
+  }
+}
+
+@include mq('phone-wide') {
+  .imgcontainer {
+    margin-top: 4%;
+  }
+  .teachers_image {
+    margin-right: 10%;
+    width: 44%;
+  }
+  .bg_img {
+    margin-right: 8%;
+    margin-top: 2%;
+    width: 90%;
+  }
 }
