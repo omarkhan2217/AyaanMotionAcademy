@@ -36,3 +36,5 @@ export const ourAchieversData: IStudentCardProps[] = [
         stifness: 50
     },
 ];
+
+

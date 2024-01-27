@@ -3,3 +3,7 @@
 .mainContainer {
     @include flex-container(row, center, center, 22px);
 }
+
+.carousel {
+  width: 100%;
+}

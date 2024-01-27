@@ -13,12 +13,11 @@ export const OurFacultycontainer: React.FC = () => {
         <div className={classses.quote}>Passionate and Highly Qualified Teachers Dedicated to Your Success in Achieving Academic Excellence.</div>
       </div>
       <div className={classses.imagecontainer}>
-      {OurFacultyData.map((item) => {
-        return (
-
-          <OurFaculty  image2={item.image2} image={item.image}/>
-        )
-      })}
+        {OurFacultyData.map((item, index) => {
+          return (
+            <OurFaculty key={index} image2={item.image2} image={item.image} />
+          )
+        })}
       </div>
     </div>
   );
