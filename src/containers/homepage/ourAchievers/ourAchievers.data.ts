@@ -16,6 +16,7 @@ export const ourAchieversData: IStudentCardProps[] = [
         name: 'Ankit Kumar',
         college: 'IIT Delhi',
         image: IMG,
+        
         y: 250,
         stifness: 70
     },

@@ -1,4 +1,4 @@
-import React from 'react';
+import React/* { HtmlHTMLAttributes }*/ from 'react';
 
 export type ButtonVariants =
   | 'primary'
@@ -28,6 +28,7 @@ export interface IButtonProps
   // onClick?: () => void;
   // type?: string;
   icon?: React.ReactNode | JSX.Element;
+  isLink?:string;
 }
 
 export interface IStudentCardProps
@@ -51,4 +52,12 @@ extends React.HTMLAttributes<HTMLDivElement>{
   image2?:string;
   image?:string;
 
+}
+
+
+export interface ISTestimonialCardProps
+extends React.HTMLAttributes<HTMLDivElement>{
+  name?:string;
+  image?:string;
+  comment?:string;
 }

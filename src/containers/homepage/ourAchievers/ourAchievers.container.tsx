@@ -36,7 +36,8 @@ import { motion } from "framer-motion";
 export const OurAchieversContainer: React.FC = () => {
     return (
         <div className={classes.mainContainer}>
-            <Carousel className={classes.carousel} slidesToShow={2.3} withoutControls>
+            <Carousel className={classes.carousel}  slidesToShow={window.innerWidth < 576 ? 1 : 3}
+              >
                 {ourAchieversData.map((item) => (
                     <div key={Math.random()}>
                         <motion.div

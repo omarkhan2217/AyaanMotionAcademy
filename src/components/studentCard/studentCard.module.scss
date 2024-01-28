@@ -3,6 +3,7 @@
 .mainContainer {
     @include flex-container(column, flex-start, flex-start, 0px);
     width: 272px;
+    margin: 4%;
     padding-left: 0px;
     padding-top: 30px;
     border-radius: 20px;
@@ -12,14 +13,14 @@
 
     &:hover {
         transition: $linear--transition;
-        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
         cursor: pointer;
         // transform: translate(-15px ,-15px);
     }
 
     &:active {
         transition: $linear--transition;
-        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.45);
+        box-shadow:5px 5px 10px 5px rgba(0, 0, 0, 0.45);
     }
 }
 
@@ -49,3 +50,10 @@
     height: 273px;
     user-select: none;
 }
+
+// @include mq('phone'){
+//     .mainContainer{
+//         display: flex;
+//         justify-content: center;
+//     }
+// }

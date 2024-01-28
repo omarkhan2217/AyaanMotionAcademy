@@ -13,7 +13,7 @@ export const HeroTextContainer: React.FC = () => {
             Elevate Your Potential at Ayaan's Motion Academy – Explore Success Stories of JEE/IIT Qualifiers below.
             </div>
             <div className={classes.buttonContainer}>
-                <Button label="View all Achivers" size={useButtonResizeAlt()} />
+                <Button label="View all Achivers->"  isLink="https://www.google.com/" size={useButtonResizeAlt()} />
             </div>
         </div>
     );
