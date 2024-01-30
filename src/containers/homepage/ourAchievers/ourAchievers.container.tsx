@@ -36,8 +36,10 @@ import { motion } from "framer-motion";
 export const OurAchieversContainer: React.FC = () => {
     return (
         <div className={classes.mainContainer}>
-            <Carousel className={classes.carousel}  slidesToShow={window.innerWidth < 576 ? 1 : 3}
-              >
+            <Carousel className={classes.carousel}  slidesToShow={window.innerWidth < 576 ? 1 : 3   }
+              style={{gap:"40px"}}
+              disableEdgeSwiping={true}
+              withoutControls={true} >
                 {ourAchieversData.map((item) => (
                     <div key={Math.random()}>
                         <motion.div

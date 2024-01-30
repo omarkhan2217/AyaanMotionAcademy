@@ -60,7 +60,7 @@ export const Button: React.FC<IButtonProps> = props => {
         <a
           href={href || '#'} // Use '#' if href is not provided
           className={`${variantClassName} ${sizeClassName} ${classes.button}`}
-          {...restLinkProps}
+          {...restLinkProps}  
         >
           {font === 'montserrat' && (
             <>

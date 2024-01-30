@@ -19,8 +19,7 @@ export const TestimonialContainer: React.FC = () => {
                             <TestimonialCard
                                 image={item.image}
                                 name={item.name}
-                                comment={item.comment}
-                            />
+                                comment={item.comment}                            />
                         </motion.div>
                     </div>
                 ))}
