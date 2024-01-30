@@ -1,6 +1,5 @@
 @use '../../../styles/global.scss' as *;
 
-.mainContainer{
-   @include flex-container(row,flex-start,flex-start,0px);
+.mainContainer {
+  @include flex-container(row, flex-start, flex-start, 0px);
 }
-    

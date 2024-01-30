@@ -28,7 +28,8 @@
 }
 
 .buttonContainer {
-  width: 14%;
+  width: 15%;
+  text-decoration: none;
 }
 
 @include mq('desktop-medium') {

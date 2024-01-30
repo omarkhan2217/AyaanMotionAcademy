@@ -1,7 +1,7 @@
 @use '../../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(row, center, center, 12px);
+  @include flex-container(row, flex-end, center, 12px);
   width: 100%;
   height: inherit;
   box-shadow: $shadow--flat;
@@ -14,7 +14,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0px 20px;
   transition: $linear--transition;
   text-decoration: underline;
@@ -27,7 +27,8 @@
     text-underline-offset: 4px;
     cursor: pointer;
     text-decoration: underline;
-    text-decoration-color: $color--btn-primary;
+    text-decoration-color: $color--btn-dark;
+    text-decoration-thickness: 1.5px;
   }
 }
 

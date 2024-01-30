@@ -2,6 +2,7 @@ import React from "react"
 import classes from "./heroText.module.scss";
 import { Button } from "../../../components";
 import { useButtonResizeAlt } from "../../../hooks";
+import { ArrowIcon } from "../../../assets";
 
 export const HeroTextContainer: React.FC = () => {
     return (
@@ -13,7 +14,7 @@ export const HeroTextContainer: React.FC = () => {
             Elevate Your Potential at Ayaan's Motion Academy – Explore Success Stories of JEE/IIT Qualifiers below.
             </div>
             <div className={classes.buttonContainer}>
-                <Button label="View all Achivers->"  isLink="https://www.google.com/" size={useButtonResizeAlt()} />
+                <Button label="View all Achievers" variant="outline" icon={<ArrowIcon />} size={useButtonResizeAlt()} />
             </div>
         </div>
     );

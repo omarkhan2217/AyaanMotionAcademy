@@ -10,16 +10,17 @@ export const TestimonialContainer: React.FC = () => {
         <div className={classes.mainContainer}>
             <Carousel
                 className={classes.carousel}
-                slidesToShow={window.innerWidth < 576 ? 1 :5.8  }
+                slidesToShow={window.innerWidth < 576 ? 3.5 : 6.8}
                 disableEdgeSwiping={true}
-                withoutControls={true}  >
+                withoutControls={true}
+            >
                 {TestimonialData.map((item) => (
                     <div key={Math.random()}>
                         <motion.div>
                             <TestimonialCard
                                 image={item.image}
                                 name={item.name}
-                                comment={item.comment}                            />
+                                comment={item.comment} />
                         </motion.div>
                     </div>
                 ))}
