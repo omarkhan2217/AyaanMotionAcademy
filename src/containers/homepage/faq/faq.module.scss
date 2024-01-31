@@ -1,0 +1,7 @@
+@use '../../../styles/global.scss' as *;
+
+.mainContainer {
+    @include flex-container(column, center, center, 0px);
+    width: 50%;
+}
+

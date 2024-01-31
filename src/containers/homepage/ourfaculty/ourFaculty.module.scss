@@ -1,68 +1,79 @@
 @use '../../../styles/global.scss' as *;
 
+
+.imagesWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .container {
-  @include flex-container(row, flex-start, flex-start);
+  @include flex-container(row, space-between, flex-start, 0px);
   width: 100%;
   height: 80vh;
+  padding: 0 8%;
+  position: relative; 
 }
 
-.innerContainer {
-  @include flex-container(
-    column,
-    flex-start,
-    flex-start,
-    12px
-  );
-  margin-left: 8.5%;
-  margin-top: 2%;
-  width: 30%;
-  .button {
-    @include flex-container( row,flex-start,flex-start, 0px) ;
-  }
+.backgroundSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 1; 
 }
 
-.imagecontainer {
+.imageContainer {
+  width: 45%; 
+  height: fit-content;
+  z-index: 2; 
+}
+
+.frontImage {
   width: 100%;
+  height: auto; 
+  position: relative;
 }
 
-.mainHeading {
-  color: $color--text-primary;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.quote {
-  color: $color--text-primary-light;
-  font-family: 'Inter';
-  font-size: 14px;
-  font-weight: 700;
-}
 
 @include mq('desktop-medium') {
   .innerContainer {
     width: 32%;
   }
+
   .mainHeading {
     font-size: 38px;
   }
+
   .quote {
     font-size: 14px;
   }
 }
+
 @include mq('desktop-small') {
   .innerContainer {
     width: 44%;
   }
+
   .mainHeading {
     font-size: 38px;
   }
+
   .quote {
     font-size: 14px;
   }
 }
+
 @include mq('tablet-wide') {
+  .imageContainer {
+    width: 40%; 
+  }
+
+  .backgroundSvg {
+    height: 75%;
+  }
+
   .innerContainer {
     width: 52%;
   }
@@ -70,81 +81,121 @@
   .mainHeading {
     font-size: 30px;
   }
+
   .quote {
     font-size: 14px;
   }
 }
+
+@include mq('tablet-custom') {
+  .container {
+    @include flex-container(column, center, center, 0px);
+  }
+
+  .backgroundSvg {
+    top: 25%;
+    left: -10%;
+    width: 90%;
+    height: 70%;
+  }
+
+  .imageContainer {
+    width: 55%;
+  }
+}
+
+@include mq('tablet-custom-2') {
+  .backgroundSvg {
+    top: 30%;
+    height: 60%;
+  }
+}
+
 @include mq('tablet') {
   .innerContainer {
     width: 70%;
   }
+
+  .backgroundSvg {
+    top: 35%;
+    height: 55%;
+  }
+
   .mainHeading {
     font-size: 32px;
   }
+
   .quote {
     font-size: 12px;
   }
 }
+
 @include mq('tablet-small') {
   .innerContainer {
     width: 74%;
   }
+  .imageContainer {
+    width: 50%; 
+  }
+  .backgroundSvg {
+    top: 40%;
+    height: 45%;
+  }
+
   .mainHeading {
     font-size: 30px;
   }
+
   .quote {
     font-size: 10px;
   }
 }
+
 @include mq('phone-wide') {
   .container {
-    @include flex-container(column, 20px);
+    @include flex-container(column, center, center, 0px);
   }
-
-  .innerContainer {
-    width: 54%;
-    margin: 0;
+  .imageContainer {
+    width: 45%; 
   }
-
-  .mainHeading {
-    text-align: center;
-  }
-  .quote {
-    text-align: center;
-    // width: 100%;
-    margin-left: 5%;
+  .backgroundSvg {
+    top: 43%;
+    height: 40%;
+    width: 85%;
   }
 }
-@include mq('phone-custom') {
-  .container {
-    @include flex-container(column, 20px);
-  }
 
+@include mq('phone-custom') {
   .innerContainer {
     width: 60%;
     margin: 0;
   }
-  .mainHeading {
-    text-align: center;
+
+  .imageContainer {
+    width: 45%; 
   }
-  .quote {
-    text-align: center;
+
+  .backgroundSvg {
+    top: 46%;
+    height: 35%;
+    width: 85%;
   }
 }
+
 @include mq('phone') {
   .innerContainer {
     width: 66%;
     margin: 0;
   }
 
-  .container {
-    @include flex-container(column, 20px);
+  .imageContainer {
+    width: 45%; 
   }
-  .mainHeading {
-    text-align: center;
-  }
-  .quote {
-    text-align: center;
+
+  .backgroundSvg {
+    top: 46%;
+    height: 28%;
+    width: 85%;
   }
 }
 
@@ -152,15 +203,14 @@
   .container {
     @include flex-container(column, 20px);
   }
-  .innerContainer {
-    width: 80%;
-    margin: 0;
+
+  .imageContainer {
+    width: 45%; 
   }
 
-  .mainHeading {
-    text-align: center;
-  }
-  .quote {
-    text-align: center;
+  .backgroundSvg {
+    top: 50%;
+    height: 26%;
+    width: 85%;
   }
 }

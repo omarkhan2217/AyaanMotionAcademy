@@ -1,16 +1,22 @@
 import React from "react"
-import { AboutUscontainer, HeroTextContainer, OurAchieversContainer,OurFacultycontainer,TestimonialContainer } from "."
+import { AboutUscontainer, FaqContainer, OurAchieversContainer, OurFacultyContainer, TestimonialContainer } from "."
 import classes from './homepage.module.scss';
+import { PageText } from "../../components";
+
 
 export const HomePageContainer: React.FC = () => {
-
     return (
         <div className={classes.mainContainer}>
-            <HeroTextContainer />
+            <PageText
+                mainHeader="Empowering Dreams, Achieving Excellence."
+                subHeader="Elevate Your Potential at Ayaan's Motion Academy – Explore Success Stories of JEE/IIT Qualifiers below."
+                hasButton buttonText="View all Achievers"
+            />
             <OurAchieversContainer />
-            <AboutUscontainer/>
-            <OurFacultycontainer/>
-            <TestimonialContainer/>
+            <AboutUscontainer />
+            <OurFacultyContainer />
+            <TestimonialContainer />
+            <FaqContainer />
         </div>
 
     )

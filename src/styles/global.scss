@@ -4,6 +4,7 @@
 $color--bg-primary: hsl(248, 100%, 58%);
 $color--bg-secondary: hsl(252, 100%, 85%);
 $color--bg-secondary-dark: hsl(162, 30%, 41%);
+$color--bg-main: hsl(225, 100%, 98%);
 // $color--bg-primary-light: rgba(255, 81, 81, 0.1);
 // $color--bg-lighter: hsl(225, 40%, 98%);
 // $color--bg-light: hsla(0, 0%, 96%, 1);
@@ -31,9 +32,9 @@ $color--border-gold-dark: hsla(43, 72%, 24%, 0.31);
 // $color--border-error-light: hsla(358, 100%, 68%, 0.11);
 
 $color--text-primary: #201F23;
-$color--text-2-primary:#0e2ce2;
-$color--text-2-primary-light:#6d82ff;
-$color--text-primary-light:#747474;
+$color--text-2-primary: #0e2ce2;
+$color--text-2-primary-light: #6d82ff;
+$color--text-primary-light: #747474;
 $color--text-primary-lighter: #A1A1A1;
 
 $color--text-darker: hsl(0, 0%, 0%);
@@ -93,8 +94,9 @@ $breakpoints: (
   'phone-wide': 576px,
   'tablet-small': 600px,
   'tablet': 768px,
+  'tablet-custom-2': 800px,
   'tablet-custom':930px,
-  'tablet-wide': 1024px,  
+  'tablet-wide': 1024px,
   'desktop-small': 1280px,
   'desktop-medium': 1400px,
   'desktop': 1600px,
@@ -192,21 +194,22 @@ $breakpoints: (
 
 @mixin colorMode($colorMode) {
   // create a map for value white, black, green, gold, or red
-  $colorMap: ('White': $color--White,
+  $colorMap: (
+    'White': $color--White,
     'Black': $color--FobiInk,
     'Green': $color--Green,
     'Gold': $color--Gold,
     'Red': $color--Red,
   );
-  // use color from map
-  $colorValue: map-get($colorMap, $colorMode);
-  color: $colorValue;
+// use color from map
+$colorValue: map-get($colorMap, $colorMode);
+color: $colorValue;
 
-  svg {
-    font-size: 16px;
-    fill: $colorValue;
-    background-color: transparent;
-  }
+svg {
+  font-size: 16px;
+  fill: $colorValue;
+  background-color: transparent;
+}
 }
 
 @mixin flex-container($direction: row,
@@ -268,21 +271,22 @@ $breakpoints: (
 
 @mixin colorMode($colorMode) {
   // create a map for value white, black, green, gold, or red
-  $colorMap: ('White': $color--White,
+  $colorMap: (
+    'White': $color--White,
     'Black': $color--FobiInk,
     'Green': $color--Green,
     'Gold': $color--Gold,
     'Red': $color--Red,
   );
-  // use color from map
-  $colorValue: map-get($colorMap, $colorMode);
-  color: $colorValue;
+// use color from map
+$colorValue: map-get($colorMap, $colorMode);
+color: $colorValue;
 
-  svg {
-    font-size: 16px;
-    fill: $colorValue;
-    background-color: transparent;
-  }
+svg {
+  font-size: 16px;
+  fill: $colorValue;
+  background-color: transparent;
+}
 }
 
 @mixin flex-container($direction: row,

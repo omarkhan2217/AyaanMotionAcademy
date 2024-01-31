@@ -2,6 +2,8 @@
 
 .mainContainer {
     @include flex-container(row, center, center, 22px);
+    max-height: fit-content;
+    max-width: 90vw;
 }
 
 .carousel {

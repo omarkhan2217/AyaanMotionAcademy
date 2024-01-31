@@ -1,0 +1,53 @@
+@use '../../styles/global.scss' as *;
+
+/* FAQComponent.css */
+.container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: transparent;
+  /* Example color */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: $linear--transition-M;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #444;
+  /* Example color */
+}
+
+.question {
+  color: white;
+  font-weight: bold;
+}
+
+.icon {
+  color: white;
+}
+
+.content {
+  padding: 10px;
+  background-color: #555;
+  /* Example color */
+}
+
+.contentWrapper {
+  overflow: hidden;
+  transform-origin: top;
+}
+
+.answer {
+  color: white;
+}
+
+.videoLink {
+  color: #06f;
+  text-decoration: none;
+  padding-top: 10px;
+  display: block;
+}

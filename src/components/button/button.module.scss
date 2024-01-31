@@ -181,20 +181,20 @@
 .button_outline {
   @extend .button;
   @include button-variant-colors(
-    $color--text-lighter,
+    $color--bg-main,
     $color--btn-primary,
-    $color--text-lighter,
-    $color--text-lighter
+    $color--bg-main,
+    $color--bg-main
   );
   border: none;
   text-decoration: underline;
-  text-decoration-color: #fff;
+  text-decoration-color: $color--bg-main;
   transition: $linear--transition-M;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
   &:hover {
     transition: $linear--transition-M;
-    background-color: white;
+    background-color: $color--bg-main;
     border: none;
     border-color: none;
     box-shadow: none;
