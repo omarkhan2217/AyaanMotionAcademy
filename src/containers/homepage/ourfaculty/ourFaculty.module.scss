@@ -112,6 +112,7 @@
 }
 
 @include mq('tablet') {
+
   .innerContainer {
     width: 70%;
   }
@@ -131,6 +132,9 @@
 }
 
 @include mq('tablet-small') {
+  .container{
+    height: 68vh;
+  }
   .innerContainer {
     width: 74%;
   }
@@ -154,6 +158,7 @@
 @include mq('phone-wide') {
   .container {
     @include flex-container(column, center, center, 0px);
+    height: 60vh;
   }
   .imageContainer {
     width: 45%; 
@@ -166,6 +171,10 @@
 }
 
 @include mq('phone-custom') {
+  .container{
+    height: 58vh;
+
+  }
   .innerContainer {
     width: 60%;
     margin: 0;
@@ -183,6 +192,9 @@
 }
 
 @include mq('phone') {
+  .container{
+    height: 46vh;
+  }
   .innerContainer {
     width: 66%;
     margin: 0;
@@ -202,6 +214,7 @@
 @include mq('phone-small') {
   .container {
     @include flex-container(column, 20px);
+    height: 40vh;
   }
 
   .imageContainer {

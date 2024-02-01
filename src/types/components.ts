@@ -57,6 +57,8 @@ extends React.HTMLAttributes<HTMLDivElement>{
 
 export interface ISTestimonialCardProps
 extends React.HTMLAttributes<HTMLDivElement>{
+  y:number;
+  stifness:  number ;
   name?:string;
   image?:string;
   comment?:string;

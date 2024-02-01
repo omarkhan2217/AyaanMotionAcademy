@@ -2,7 +2,7 @@
 
 .container {
   @include flex-container(column, center, center, 20px);
-  margin-top: 4%;
+  margin: 4% 3%;  
 }
 
 .innerdis {
@@ -70,6 +70,9 @@
   .innerdis {
     width: 82%;
     font-size: 22px;
+  }
+  .container{
+    margin: 0% 3%;
   }
   
 }

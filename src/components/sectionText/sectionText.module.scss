@@ -170,9 +170,7 @@
   }
 
   .quote {
-    text-align: center;
-    // width: 100%;
-    margin-left: 5%;
+      margin-left: 5%;
   }
 }
 
@@ -186,13 +184,7 @@
     margin: 0;
   }
 
-  .mainHeading {
-    text-align: center;
-  }
 
-  .quote {
-    text-align: center;
-  }
 }
 
 @include mq('phone') {
@@ -206,13 +198,9 @@
   }
 
   .mainHeading {
-    text-align: center;
     font-size: 22px;
   }
 
-  .quote {
-    text-align: center;
-  }
 }
 
 @include mq('phone-small') {
@@ -225,11 +213,4 @@
     margin: 0;
   }
 
-  .mainHeading {
-    text-align: center;
-  }
-
-  .quote {
-    text-align: center;
-  }
 }

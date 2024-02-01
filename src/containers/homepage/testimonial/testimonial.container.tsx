@@ -1,30 +1,35 @@
 import React from "react";
 import { TestimonialCard } from "../../../components";
 import classes from './testimonial.module.scss';
-import Carousel from "nuka-carousel"
 import { TestimonialData } from ".";
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css'
 import { motion } from "framer-motion";
+import { useWindowSize } from "usehooks-ts";
+
 
 export const TestimonialContainer: React.FC = () => {
+    const {width} =useWindowSize();
     return (
         <div className={classes.mainContainer}>
-            <Carousel
-                className={classes.carousel}
-                slidesToShow={window.innerWidth < 576 ? 3.5 : 6.8}
-                disableEdgeSwiping={true}
-                withoutControls={true}
-            >
+            <Swiper
+            spaceBetween={200}
+            slidesPerView={width <= 1440? 6 : TestimonialData.length}
+            freeMode={true}
+            className={classes.carousel} >
                 {TestimonialData.map((item) => (
+                    <SwiperSlide>
                     <div key={Math.random()}>
                         <motion.div>
                             <TestimonialCard
                                 image={item.image}
                                 name={item.name}
-                                comment={item.comment} />
+                                comment={item.comment} y={0} stifness={0} />
                         </motion.div>
                     </div>
+                </SwiperSlide>
                 ))}
-            </Carousel>
+            </Swiper>
         </div>
     );
 };

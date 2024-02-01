@@ -72,7 +72,7 @@
         font-size: 13px;
   }
   .buttonContainer{
-    width:28%;
+    width:30%;
   }
 }
 @include mq('phone-wide') {
@@ -84,7 +84,7 @@
     width: 56%;
   }
   .buttonContainer{
-    width:38%;
+    width:40%;
   }
 }
 @include mq('phone') {
@@ -98,7 +98,7 @@
     margin-bottom: 14px;
 }
 .buttonContainer{
-    width: 42%;
+    width: 50%;
 }
 }
 @include mq('phone-small') {
