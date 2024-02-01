@@ -28,5 +28,11 @@ export const NavigationData = [
         { text: "Programs & Courses", link: "/programs-courses" },
       ],
     },
+//     {
+//       className: 'policyCon',
+//       policyCon:[
+//       {Text :"Terms of Service / Privacy Policy" , link:'/terms-and-privacy'},
+    
+// ]}
   ];
   

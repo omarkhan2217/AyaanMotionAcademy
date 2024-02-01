@@ -3,36 +3,36 @@
 /* FAQComponent.css */
 .container {
   width: 90%;
-  margin: 20px auto;
+  margin: 14px auto;
   background-color: transparent;
   /* Example color */
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: hidden;
   transition: $linear--transition-M;
 }
 
 .header {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  background-color: #444;
+  background-color:$color--bg-white;
   /* Example color */
 }
 
 .question {
-  color: white;
+  color: $color--text-dark;
   font-weight: bold;
 }
 
 .icon {
-  color: white;
+  color: $color--text-2-primary;
 }
 
 .content {
   padding: 10px;
-  background-color: #555;
+  background-color:$color--bg-white;
   /* Example color */
 }
 
@@ -42,11 +42,11 @@
 }
 
 .answer {
-  color: white;
+  color: $color--text-3-primary-light;
 }
 
 .videoLink {
-  color: #06f;
+  color:$color--bg-primary;
   text-decoration: none;
   padding-top: 10px;
   display: block;

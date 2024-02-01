@@ -14,7 +14,7 @@ export const TestimonialContainer: React.FC = () => {
         <div className={classes.mainContainer}>
             <Swiper
             spaceBetween={200}
-            slidesPerView={width <= 1440? 6 : TestimonialData.length}
+            slidesPerView={width <= 1920? 5 : TestimonialData.length}
             freeMode={true}
             className={classes.carousel} >
                 {TestimonialData.map((item) => (
