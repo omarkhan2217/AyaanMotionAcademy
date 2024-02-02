@@ -10,3 +10,12 @@ export interface IIconProps {
     fill1?: string,
     fill2?: string,
 }
+
+export interface IHighlightedAchieverProps {
+    rank: number,
+    id: number,
+    name: string,
+    image: string,
+    description: string,
+    isReversed?: boolean
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { StudentCard } from "../../../components";
+import { MainStudentCard } from "../../../components";
 import classes from './ourAchievers.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
@@ -7,7 +7,7 @@ import { ourAchieversData } from ".";
 import { motion } from "framer-motion";
 import { useWindowSize } from "usehooks-ts";
 
-export const OurAchieversContainer: React.FC = () => {
+export const OurAchieversSection: React.FC = () => {
     const { width } = useWindowSize();
 
     return (
@@ -25,7 +25,7 @@ export const OurAchieversContainer: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ type: "spring", stiffness: item.stifness }}
                         >
-                            <StudentCard college={item.college} name={item.name} rank={item.rank} image={item.image} color={item.color ? item.color : ''} />
+                            <MainStudentCard college={item.college} name={item.name} rank={item.rank} image={item.image} color={item.color ? item.color : ''} />
                         </motion.div>
                     </SwiperSlide>
                 ))}
@@ -33,5 +33,3 @@ export const OurAchieversContainer: React.FC = () => {
         </div>
     );
 };
-
-export default OurAchieversContainer;

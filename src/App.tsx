@@ -1,13 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import { AboutUs, HomePage } from './pages';
+import { HomePage, OurAchievers } from './pages';
 
 export const App = () => {
-
   return (
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/our-achievers" element={<OurAchievers />} />
       </Routes>
     </div>
 

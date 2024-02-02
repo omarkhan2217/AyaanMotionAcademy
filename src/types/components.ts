@@ -25,8 +25,6 @@ export interface IButtonProps
   variant?: ButtonVariants;
   size?: Sizes;
   font?: 'nunito' | 'montserrat';
-  // onClick?: () => void;
-  // type?: string;
   icon?: React.ReactNode | JSX.Element;
   isLink?:string;
 }
@@ -40,6 +38,14 @@ extends React.HTMLAttributes<HTMLDivElement> {
   color?: string;
   y?: number;
   stifness?: number;
+}
+export interface IHighlightedStudentCardProps
+extends React.HTMLAttributes<HTMLDivElement> {
+  rank: number;
+  name: string;
+  description: string;
+  image?: string;
+  isReversed?: boolean;
 }
 
 export interface IPillProps

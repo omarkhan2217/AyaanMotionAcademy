@@ -3,7 +3,7 @@ import { INavbarItemProps } from "../types";
 export const NavbarData: INavbarItemProps[] = [
     {
         label: 'Achievers',
-        linkTo: '/',
+        linkTo: '/our-achievers',
         key: 1
     },
     {

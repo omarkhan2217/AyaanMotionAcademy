@@ -3,6 +3,7 @@ import { MainLogo } from "../../assets/icons"
 import classes from './navbar.module.scss';
 import { useWindowSize } from "usehooks-ts";
 import { DesktopNav, MenuNav } from ".";
+import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
     const { width } = useWindowSize();
@@ -14,7 +15,9 @@ export const Navbar: React.FC = () => {
     }, [width])
     return (
         <div className={classes.mainContainer}>
+            <Link to={'/'}>
             <MainLogo className={classes.logo} />
+            </Link>
             {windowWidth <= 1024 ?
                 <MenuNav />
                 :

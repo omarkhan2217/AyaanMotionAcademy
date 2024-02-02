@@ -1,9 +1,9 @@
 import React from "react";
 import { IStudentCardProps } from "../../types";
-import classes from './studentCard.module.scss';
+import classes from './mainStudentCard.module.scss';
 import { CustomPill } from "..";
 
-export const StudentCard: React.FC<IStudentCardProps> = (props: IStudentCardProps) => {
+export const MainStudentCard: React.FC<IStudentCardProps> = (props: IStudentCardProps) => {
     const { rank, name, college, image, color="hsl(162, 30%, 41%)" } = props
     return (
         <div className={classes.mainContainer} style={{backgroundColor: color}}>
