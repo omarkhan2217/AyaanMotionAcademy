@@ -6,7 +6,7 @@ import { FaqData } from "./faq.data";
 export const FaqContainer: React.FC = () => {
     return (
         <div className={classes.mainContainer}>
-            <SectionText header="Frequently Asked Questions" isButtonCentered />
+            <SectionText hasButton={false} header="Frequently Asked Questions" isButtonCentered />
             {FaqData.map((item, index) => (
                 <FAQComponent key={index} question={item.question} answer={item.answer} />
             ))

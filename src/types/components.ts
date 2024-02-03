@@ -69,3 +69,18 @@ extends React.HTMLAttributes<HTMLDivElement>{
   image?:string;
   comment?:string;
 }
+
+export interface ISBatchesCardProps
+extends React.HtmlHTMLAttributes<HTMLDivElement>{
+  BatchName?: string;
+  grade?:number | string; 
+  guide?: string;
+  image?:string;
+  detaile1?:string;
+  detaile2?:string;
+  detaile3?:string;
+  detaile4?:string;
+  detaile5?:string;
+  detaile6?:string;
+  
+}

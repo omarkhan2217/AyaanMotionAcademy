@@ -15,7 +15,7 @@ export interface ISectionTextProps {
 }
 
 export const SectionText: React.FC<ISectionTextProps> = (props) => {
-    const { header, subHeader, buttonText, buttonVariant = 'outline', hasButton, isButtonCentered = false } = props;
+    const { header, subHeader, buttonText, buttonVariant = 'outline', hasButton = true, isButtonCentered = false } = props;
     return (
         <div className={isButtonCentered ? classses.innerContainerAlt : classses.innerContainer}>
             <div className={classses.mainHeading}>

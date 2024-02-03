@@ -15,6 +15,10 @@
   position: relative; 
 }
 
+.sectionTextContainer {
+  z-index: 4;
+}
+
 .backgroundSvg {
   position: absolute;
   top: 0;

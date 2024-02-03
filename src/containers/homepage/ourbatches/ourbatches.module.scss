@@ -1,0 +1,39 @@
+@use '../../../styles/global.scss' as * ;
+
+
+
+.mainContainer{
+    @include  flex-container(column,flex-start,center,0px);  
+    width: 100%;
+    
+}
+
+.container{
+    @include  flex-container(column,flex-start,flex-start,0px);
+    width: 100%;
+    
+    
+}
+.batchesCard_container{
+    @include flex-container(column,center,center,30px);
+    padding: 20px;
+    width: 100%;
+    // background-color: azure;
+    
+}
+
+.carousel{
+    @include flex-container(row,space-evenly,center,30px);
+    width:80%;
+    padding: 1%;
+    // background-color: beige;
+
+  }
+
+  @include mq ('phone'){
+    .carousel{
+        width: 100%;
+
+    }
+  }
+

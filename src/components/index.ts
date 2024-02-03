@@ -5,3 +5,4 @@ export * from './testimonialCard';
 export * from './pageText';
 export * from './sectionText';
 export * from './accordian';
+export * from './ourbatchesCard'

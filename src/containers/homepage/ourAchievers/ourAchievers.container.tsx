@@ -14,7 +14,14 @@ export const OurAchieversSection: React.FC = () => {
         <div className={classes.mainContainer}>
             <Swiper
                 spaceBetween={50}
-                slidesPerView={width <= 1280 ? 3.8 : ourAchieversData.length}
+                slidesPerView={
+                    width <= 420 ? 1 :
+                      width <= 768 ? 2 :
+                        width <= 1024 ? 3 :
+                          width <= 1440 ? 4 :
+                            width > 1440 ? 4 :
+                              ourAchieversData.length
+                  }
                 freeMode={true}
                 className={classes.carousel}
             >

@@ -104,6 +104,27 @@
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 700;
+    .link{
+        text-align: start;
+        color: $color--text-primary-lighter;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        transition: $linear--transition;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+        text-decoration-color: transparent;
+        text-decoration-thickness: 1px;
+        &:hover {
+          transition: $linear--transition;
+          color: $color--text-darker;
+          text-underline-offset: 4px;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
   }
   .Dev_Con {
     color: $color--text-primary-lighter;
@@ -128,7 +149,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-}
+
 
 
 

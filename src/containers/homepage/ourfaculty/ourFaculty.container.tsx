@@ -17,7 +17,7 @@ export const OurFacultyContainer: React.FC = () => {
         hasButton
         buttonText='Know More'
         isButtonCentered={width <= 930 ? true : false}
-      />
+        />
       <div className={classes.imageContainer}>
         <img src={IMG} alt='teachers image' className={classes.frontImage} />
       </div>

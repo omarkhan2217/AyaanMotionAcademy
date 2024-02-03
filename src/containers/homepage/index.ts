@@ -4,3 +4,4 @@ export * from './aboutUs';
 export * from './ourfaculty';
 export * from './testimonial';
 export * from './faq';
+export * from './ourbatches';
