@@ -51,9 +51,18 @@
     user-select: none;
 }
 
-// @include mq('phone'){
-//     .mainContainer{
-//         display: flex;
-//         justify-content: center;
-//     }
-// }
+@include mq('tablet-wide') {
+    .mainContainer {
+        transform: scale(0.9);
+    }
+}
+@include mq('tablet') {
+    .mainContainer {
+        transform: scale(0.85);
+    }
+}
+@include mq('phone') {
+    .mainContainer {
+        transform: scale(0.8);
+    }
+}

@@ -4,16 +4,17 @@
   @include flex-container(
     column,
     flex-start,
-    flex-start,60px
+    flex-start,
+    60px
   );
   padding: 6% 16%;
-//   background: #e8e6e6;
+  //   background: #e8e6e6;
 }
 
 .upper_element_container {
   @include flex-container(row, space-between);
   width: 100%;
-    // background-color: blueviolet;
+  // background-color: blueviolet;
 }
 .footer_heading {
   @include flex-container(
@@ -27,7 +28,7 @@
     // background-color: #aeb1c1;
   }
   .logo_text {
-    width:60%;
+    width: 60%;
     color: $color--text-primary-light;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -42,7 +43,12 @@
 
   & > div {
     &.sub_elements1 {
-      @include flex-container(column, center, flex-start, 0px);
+      @include flex-container(
+        column,
+        center,
+        flex-start,
+        0px
+      );
       color: $color--text-primary-lighter;
       font-family: 'Inter', sans-serif;
       font-size: 12px;
@@ -51,7 +57,12 @@
     }
 
     &.sub_elements2 {
-      @include flex-container(column, center, flex-start, 0px);
+      @include flex-container(
+        column,
+        center,
+        flex-start,
+        0px
+      );
       color: $color--text-primary-lighter;
       font-family: 'Inter', sans-serif;
       font-size: 12px;
@@ -60,7 +71,12 @@
     }
 
     &.sub_elements3 {
-      @include flex-container(column, center, flex-start, 0px);
+      @include flex-container(
+        column,
+        center,
+        flex-start,
+        0px
+      );
       color: $color--text-primary-lighter;
       font-family: 'Inter', sans-serif;
       font-size: 12px;
@@ -97,370 +113,475 @@
 }
 
 .lower_element_container {
-  @include flex-container(row,space-between, flex-start);
+  @include flex-container(row, space-between, flex-start);
   gap: 230px;
   .policyCon {
     color: $color--text-primary-lighter;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 700;
-    .link{
-        text-align: start;
-        color: $color--text-primary-lighter;
-        text-decoration: none;
-        font-family: 'Inter', sans-serif;
-        font-size: 12px;
-        font-weight: 700;
+    .link {
+      text-align: start;
+      color: $color--text-primary-lighter;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      transition: $linear--transition;
+      text-decoration: underline;
+      text-underline-offset: 1px;
+      text-decoration-color: transparent;
+      text-decoration-thickness: 1px;
+      &:hover {
         transition: $linear--transition;
+        color: $color--text-darker;
+        text-underline-offset: 4px;
+        cursor: pointer;
         text-decoration: underline;
-        text-underline-offset: 1px;
-        text-decoration-color: transparent;
-        text-decoration-thickness: 1px;
-        &:hover {
-          transition: $linear--transition;
-          color: $color--text-darker;
-          text-underline-offset: 4px;
-          cursor: pointer;
-          text-decoration: underline;
-        }
       }
     }
   }
-  .Dev_Con {
-    color: $color--text-primary-lighter;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-  }
-  .span {
-    background: linear-gradient(( to right , #0029FF,blue)
+}
+.Dev_Con {
+  color: $color--text-primary-lighter;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.span {
+  background: linear-gradient((to right, #0029ff, blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.social_container {
+  margin-right: 4%;
+  font-size: 12px;
+  color: $color--text-primary-lighter;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+@include mq('desktop') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      50px
     );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
+    width: 100%;
+    padding: 4% 16.89%;
+    gap: 40px;
   }
-  .social_container {
-    margin-right: 4%;
-    font-size: 12px;
-    color: $color--text-primary-lighter;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 20px;
+  }
+  .elements {
+    @include flex-container(
+      row,
+      flex-start,
+      flex-start,
+      0px
+    );
+    gap: 70px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .lower_element_container {
+    @include flex-container(
+      row,
+      flex-start,
+      flex-start,
+      0px
+    );
+    gap: 170px;
+  }
 }
 
-
-
-
-
-@include mq ('desktop'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,50px);
-        width: 100%;
-        padding: 4% 16.89%;
-        gap: 40px;
-
-    }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 20px;
-
-    }
-    .elements{
-        @include flex-container(row,flex-start,flex-start,0px);
-        gap: 70px;  
-        text-wrap: nowrap;
-        text-align: left;
-
-    }
-    .lower_element_container{
-        @include flex-container(row,flex-start,flex-start,0px);
-        gap: 170px;
-
-    }
+@include mq('desktop-medium') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      40px
+    );
+    width: 100%;
+    padding: 4% 15%;
+    gap: 40px;
+  }
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 40px;
+  }
+  .elements {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 70px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .lower_element_container {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    padding-right: 4%;
+  }
 }
 
-@include mq ('desktop-medium'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,40px);
-        width: 100%;
-        padding: 4% 15%;
-        gap: 40px;
-
-    }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 40px;
-
-    }
-    .elements{
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 70px;  
-        text-wrap: nowrap;
-        text-align: left;
-
-    }
-    .lower_element_container{
-        @include flex-container(row,space-between,flex-start,0px);
-        padding-right: 4%;
-
-    }
+@include mq('desktop-small') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      40px
+    );
+    width: 100%;
+    padding: 3.5% 11%;
+    gap: 35px;
+  }
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 40px;
+  }
+  .elements {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 52px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .lower_element_container {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    padding-right: 4%;
+  }
 }
 
-@include mq ('desktop-small'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,40px);
-        width: 100%;
-        padding: 3.5% 11%;
-        gap:35px;
-
-    }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 40px;
-
-    }
-    .elements{
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 52px;  
-        text-wrap: nowrap;
-        text-align: left;
-
-    }
-    .lower_element_container{
-        @include flex-container(row,space-between,flex-start,0px);
-        padding-right: 4%;
-
-    }
+@include mq('tablet-wide') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      40px
+    );
+    width: 100%;
+    padding: 4% 10%;
+    gap: 35px;
+  }
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 40px;
+  }
+  .elements {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 30px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .lower_element_container {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    padding-right: 4%;
+  }
 }
 
-@include mq ('tablet-wide'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,40px);
-        width: 100%;
-        padding: 4% 10%;
-        gap:35px;
-
+@include mq('tablet-custom') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      40px
+    );
+    width: 100%;
+    padding: 3% 8%;
+    gap: 30px;
+  }
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 30px;
+  }
+  .elements {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 25px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .lower_element_container {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    padding-right: 4%;
+  }
+  .footer_heading {
+    .logo {
+      width: 100%;
     }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 40px;
-
-    }
-    .elements{
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 30px;  
-        text-wrap: nowrap;
-        text-align: left;
-
-    }
-    .lower_element_container{
-        @include flex-container(row,space-between,flex-start,0px);
-        padding-right: 4%;
-
-    }
-
+  }
 }
 
-@include mq ('tablet-custom'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,40px);
-        width: 100%;
-        padding: 3% 8%;
-        gap:30px;
-
+@include mq('tablet') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      40px
+    );
+    width: 100%;
+    padding: 4% 8%;
+    gap: 25px;
+  }
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 30px;
+  }
+  .elements {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 20px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .lower_element_container {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    padding-right: 0%;
+    .policyCon {
+      font-size: 9px;
     }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 30px;
-
+    .Dev_Con {
+      font-size: 9px;
     }
-    .elements{
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 25px;  
-        text-wrap: nowrap;
-        text-align: left;
-
+    .social_container {
+      font-size: 9px;
     }
-    .lower_element_container{
-        @include flex-container(row,space-between,flex-start,0px);
-        padding-right: 4%;
-
+  }
+  .footer_heading {
+    .logo {
+      width: 100%;
     }
-    .footer_heading{
-        .logo{
-            width: 100%;
-        }
-        
+    .logo_text {
+      width: 90%;
+      font-size: 9px;
     }
-
+  }
+  .link {
+    font-size: 9px !important;
+  }
 }
 
-@include mq ('tablet'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,40px);
-        width: 100%;
-        padding: 4% 8%;
-        gap:25px;
-
+@include mq('tablet-small') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      40px
+    );
+    width: 100%;
+    padding: 5% 12%;
+    gap: 30px;
+  }
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      column,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 30px;
+  }
+  .elements {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 50px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .lower_element_container {
+    @include flex-container(
+      column,
+      space-between,
+      flex-start,
+      0px
+    );
+    padding-right: 0%;
+    gap: 20px;
+    .policyCon {
+      font-size: 12px;
     }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 30px;
-
+    .Dev_Con {
+      font-size: 12px;
     }
-    .elements{
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 20px;  
-        text-wrap: nowrap;
-        text-align: left;
-
+    .social_container {
+      font-size: 12px;
     }
-    .lower_element_container{
-        @include flex-container(row,space-between,flex-start,0px);
-        padding-right: 0%;
-        .policyCon{
-           font-size: 9px; 
-        }
-        .Dev_Con{
-            font-size: 9px;
-        }
-        .social_container{
-            font-size: 9px;
-        }
-
+  }
+  .footer_heading {
+    .logo {
+      width: 100%;
     }
-    .footer_heading{
-        .logo{
-            width: 100%;
-        }
-        .logo_text{
-            width: 90%;
-            font-size: 9px;
-        }
-        
+    .logo_text {
+      width: 90%;
+      font-size: 1px;
     }
-    .link{
-        font-size: 9px !important;
-    }
-
-
+  }
+  .link {
+    font-size: 12px !important;
+  }
 }
 
-@include mq ('tablet-small'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,40px);
-        width: 100%;
-        padding: 5% 12%;
-        gap:30px;
-
+@include mq('phone-custom') {
+  .maincontiner {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      40px
+    );
+    width: 100%;
+    padding: 5% 12%;
+    gap: 30px;
+  }
+  .upper_element_container {
+    width: 100%;
+    @include flex-container(
+      column,
+      space-between,
+      flex-start,
+      0px
+    );
+    gap: 30px;
+  }
+  .elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-wrap: nowrap;
+    text-align: left;
+    &.sub_elements1 {
+      @include flex-container(c);
     }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(column,space-between,flex-start,0px);
-        gap: 30px;
-
+  }
+  .lower_element_container {
+    @include flex-container(
+      column,
+      space-between,
+      flex-start,
+      0px
+    );
+    padding-right: 0%;
+    gap: 20px;
+    .policyCon {
+      font-size: 12px;
     }
-    .elements{
-        @include flex-container(row,space-between,flex-start,0px);
-        gap: 50px;  
-        text-wrap: nowrap;
-        text-align: left;
-
+    .Dev_Con {
+      font-size: 12px;
     }
-    .lower_element_container{
-        @include flex-container(column,space-between,flex-start,0px);
-        padding-right: 0%;
-        gap: 20px;
-        .policyCon{
-           font-size: 12px; 
-        }
-        .Dev_Con{
-            font-size: 12px;
-        }
-        .social_container{
-            font-size: 12px;
-        }
-
+    .social_container {
+      font-size: 12px;
     }
-    .footer_heading{
-        .logo{
-            width: 100%;
-        }
-        .logo_text{
-            width: 90%;
-            font-size: 1px;
-        }
-        
+  }
+  .footer_heading {
+    .logo {
+      width: 100%;
     }
-    .link{
-        font-size: 12px !important;
+    .logo_text {
+      width: 90%;
+      font-size: 12px;
     }
-
-
+  }
+  .link {
+    font-size: 12px !important;
+  }
 }
-
-@include mq ('phone-custom'){
-    .maincontiner{
-        @include flex-container(column,flex-start,flex-start,40px);
-        width: 100%;
-        padding: 5% 12%;
-        gap:30px;
-
-    }
-    .upper_element_container{
-        width: 100%;
-        @include flex-container(column,space-between,flex-start,0px);
-        gap: 30px;
-
-    }
-    .elements{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;  
-        text-wrap: nowrap;
-        text-align: left;
-        &.sub_elements1{
-            @include flex-container(c)
-        }
-
-    }
-    .lower_element_container{
-        @include flex-container(column,space-between,flex-start,0px);
-        padding-right: 0%;
-        gap: 20px;
-        .policyCon{
-           font-size: 12px; 
-        }
-        .Dev_Con{
-            font-size: 12px;
-        }
-        .social_container{
-            font-size: 12px;
-        }
-
-    }
-    .footer_heading{
-        .logo{
-            width: 100%;
-        }
-        .logo_text{
-            width: 90%;
-            font-size: 12px;
-        }
-        
-    }
-    .link{
-        font-size: 12px !important;
-    }
-
-
-}
-

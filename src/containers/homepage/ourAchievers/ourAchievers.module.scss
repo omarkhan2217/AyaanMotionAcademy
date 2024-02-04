@@ -1,13 +1,23 @@
 @use '../../../styles/global.scss' as *;
 
 .mainContainer {
-    @include flex-container(row, center, center, 22px);
-    max-height: fit-content;
-    max-width: 90vw;
+  @include flex-container(row, center, center, 22px);
+  max-height: fit-content;
+  max-width: 90vw;
 }
 
 .carousel {
   width: 100%;
+}
+
+@include mq('desktop-medium') {
+  .carousel {
+    padding-top: 25px;
+  }
+  .carouselContainer {
+    min-width: 80%;
+    max-width: 80%;
+  }
 }
 
 @include mq('desktop-small') {
@@ -15,7 +25,12 @@
     padding-top: 25px;
   }
   .carouselContainer {
-    min-width: 80%;
-    max-width: 80%;
+    min-width: 70%;
+    max-width: 70%;
+  }
+}
+@include mq('phone-small') {
+  .mainContainer {
+    max-width: 100vw;
   }
 }

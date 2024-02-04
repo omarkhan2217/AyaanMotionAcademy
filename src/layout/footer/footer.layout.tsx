@@ -6,7 +6,6 @@ import { MainLogo } from "../../assets/icons"
 
 export const Footer: React.FC = () => {
   return (
-
     <div className={classes.maincontiner}>
       <div className={classes.upper_element_container}>
         <div className={classes.footer_heading}>
@@ -15,7 +14,7 @@ export const Footer: React.FC = () => {
         </div>
         <div className={classes.elements}>
           {NavigationData.map((group, groupIndex) => (
-            <div key={groupIndex} className={classes[group.className]} style={{textAlign:'start'}}>
+            <div key={groupIndex} className={classes[group.className]} style={{ textAlign: 'start' }}>
               {group.elements.map((item, index) => (
                 <Link key={index} className={classes.link} to={item.link}>
                   {item.text}
@@ -27,16 +26,16 @@ export const Footer: React.FC = () => {
       </div>
       <div className={classes.lower_element_container}>
         <div className={classes.policyCon}>
-        {FooterLinksData.map((group, groupIndex) => (
-          <div key={groupIndex} className={classes[group.className]} style={{textAlign:'start'}}>
-            {group.policyCon.map((item, index) => (
-              <Link key={index} className={classes.link} to={item.link}>
-                {item.text}
-              </Link>
-            ))}
-          </div>
-        ))}
-       
+          {FooterLinksData.map((group, groupIndex) => (
+            <div key={groupIndex} className={classes[group.className]} style={{ textAlign: 'start' }}>
+              {group.policyCon.map((item, index) => (
+                <Link key={index} className={classes.link} to={item.link}>
+                  {item.text}
+                </Link>
+              ))}
+            </div>
+          ))}
+
           <div>© 2024 Ayaan's Motion Academy. All Rights Reserved.</div>
         </div>
         <div className={classes.Dev_Con}>

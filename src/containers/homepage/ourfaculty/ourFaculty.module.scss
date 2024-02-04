@@ -1,18 +1,16 @@
 @use '../../../styles/global.scss' as *;
 
-
-.imagesWrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .container {
-  @include flex-container(row, space-between, flex-start, 0px);
+  @include flex-container(
+    row,
+    space-between,
+    flex-start,
+    0px
+  );
   width: 100%;
-  height: 80vh;
+  height: fit-content;
   padding: 0 8%;
-  position: relative; 
+  position: relative;
 }
 
 .sectionTextContainer {
@@ -24,70 +22,43 @@
   top: 0;
   left: 0;
   width: 90%;
-  height: 100%;
-  z-index: 1; 
+  height: 80%;
+  z-index: 1;
 }
 
 .imageContainer {
-  width: 45%; 
+  width: 45%;
   height: fit-content;
-  z-index: 2; 
+  margin-right: 12%;
+  z-index: 2;
 }
 
 .frontImage {
   width: 100%;
-  height: auto; 
+  height: auto;
   position: relative;
 }
 
+@include mq('desktop') {
+  .imageContainer {
+    width: 40%;
+  }
+
+  .backgroundSvg {
+    height: 100%;
+  }
+}
 
 @include mq('desktop-medium') {
-  .innerContainer {
-    width: 32%;
-  }
-
-  .mainHeading {
-    font-size: 38px;
-  }
-
-  .quote {
-    font-size: 14px;
+  .imageContainer {
+    width: 35%;
   }
 }
 
 @include mq('desktop-small') {
-  .innerContainer {
-    width: 44%;
-  }
-
-  .mainHeading {
-    font-size: 38px;
-  }
-
-  .quote {
-    font-size: 14px;
-  }
-}
-
-@include mq('tablet-wide') {
-  .imageContainer {
-    width: 40%; 
-  }
-
   .backgroundSvg {
-    height: 75%;
-  }
-
-  .innerContainer {
-    width: 52%;
-  }
-
-  .mainHeading {
-    font-size: 30px;
-  }
-
-  .quote {
-    font-size: 14px;
+    width: 80%;
+    left: 8%;
   }
 }
 
@@ -98,8 +69,8 @@
 
   .backgroundSvg {
     top: 25%;
-    left: -10%;
-    width: 90%;
+    left: -25%;
+    width: 100%;
     height: 70%;
   }
 
@@ -108,126 +79,32 @@
   }
 }
 
-@include mq('tablet-custom-2') {
+@include mq('tablet') {
   .backgroundSvg {
-    top: 30%;
+    top: 35%;
     height: 60%;
   }
 }
 
-@include mq('tablet') {
-
-  .innerContainer {
-    width: 70%;
-  }
-
-  .backgroundSvg {
-    top: 35%;
-    height: 55%;
-  }
-
-  .mainHeading {
-    font-size: 32px;
-  }
-
-  .quote {
-    font-size: 12px;
-  }
-}
-
 @include mq('tablet-small') {
-  .container{
-    height: 68vh;
-  }
-  .innerContainer {
-    width: 74%;
-  }
   .imageContainer {
-    width: 50%; 
+    width: 50%;
   }
   .backgroundSvg {
     top: 40%;
-    height: 45%;
-  }
-
-  .mainHeading {
-    font-size: 30px;
-  }
-
-  .quote {
-    font-size: 10px;
-  }
-}
-
-@include mq('phone-wide') {
-  .container {
-    @include flex-container(column, center, center, 0px);
-    height: 60vh;
-  }
-  .imageContainer {
-    width: 45%; 
-  }
-  .backgroundSvg {
-    top: 43%;
-    height: 40%;
-    width: 85%;
-  }
-}
-
-@include mq('phone-custom') {
-  .container{
-    height: 58vh;
-
-  }
-  .innerContainer {
-    width: 60%;
-    margin: 0;
-  }
-
-  .imageContainer {
-    width: 45%; 
-  }
-
-  .backgroundSvg {
-    top: 46%;
-    height: 35%;
-    width: 85%;
-  }
-}
-
-@include mq('phone') {
-  .container{
-    height: 46vh;
-  }
-  .innerContainer {
-    width: 66%;
-    margin: 0;
-  }
-
-  .imageContainer {
-    width: 45%; 
-  }
-
-  .backgroundSvg {
-    top: 46%;
-    height: 28%;
-    width: 85%;
+    height: 60%;
   }
 }
 
 @include mq('phone-small') {
-  .container {
-    @include flex-container(column, 20px);
-    height: 40vh;
-  }
-
   .imageContainer {
-    width: 45%; 
+    width: 60%;
   }
 
   .backgroundSvg {
-    top: 50%;
-    height: 26%;
-    width: 85%;
+    top: 40%;
+    left: -25%;
+    height: 55%;
+    width: 100%;
   }
 }

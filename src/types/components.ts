@@ -26,11 +26,11 @@ export interface IButtonProps
   size?: Sizes;
   font?: 'nunito' | 'montserrat';
   icon?: React.ReactNode | JSX.Element;
-  isLink?:string;
+  isLink?: string;
 }
 
 export interface IStudentCardProps
-extends React.HTMLAttributes<HTMLDivElement> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   rank: number;
   name: string;
   college: string;
@@ -40,7 +40,7 @@ extends React.HTMLAttributes<HTMLDivElement> {
   stifness?: number;
 }
 export interface IHighlightedStudentCardProps
-extends React.HTMLAttributes<HTMLDivElement> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   rank: number;
   name: string;
   description: string;
@@ -49,38 +49,36 @@ extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export interface IPillProps
-extends React.HTMLAttributes<HTMLDivElement> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   label: string;
 }
 
 export interface IourFacultyData
-extends React.HTMLAttributes<HTMLDivElement>{
-  image2?:string;
-  image?:string;
+  extends React.HTMLAttributes<HTMLDivElement> {
+  image2?: string;
+  image?: string;
 
 }
 
 
 export interface ISTestimonialCardProps
-extends React.HTMLAttributes<HTMLDivElement>{
-  y:number;
-  stifness:  number ;
-  name?:string;
-  image?:string;
-  comment?:string;
+  extends React.HTMLAttributes<HTMLDivElement> {
+  name?: string;
+  image?: string;
+  comment?: string;
 }
 
 export interface ISBatchesCardProps
-extends React.HtmlHTMLAttributes<HTMLDivElement>{
+  extends React.HtmlHTMLAttributes<HTMLDivElement> {
   BatchName?: string;
-  grade?:number | string; 
+  grade?: number | string;
   guide?: string;
-  image?:string;
-  detaile1?:string;
-  detaile2?:string;
-  detaile3?:string;
-  detaile4?:string;
-  detaile5?:string;
-  detaile6?:string;
-  
+  image?: string;
+  detaile1?: string;
+  detaile2?: string;
+  detaile3?: string;
+  detaile4?: string;
+  detaile5?: string;
+  detaile6?: string;
+
 }

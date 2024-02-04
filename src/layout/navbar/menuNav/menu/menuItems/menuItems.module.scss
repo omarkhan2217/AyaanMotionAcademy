@@ -1,6 +1,5 @@
 @use '../../../../../styles/global.scss' as *;
 
-
 .mainContainer {
   @include flex-container(column, center, flex-start, 0px);
 }
@@ -39,7 +38,6 @@
     text-decoration-color: $color--btn-primary;
   }
 }
-
 
 .iconPlaceholder {
   width: 40px;

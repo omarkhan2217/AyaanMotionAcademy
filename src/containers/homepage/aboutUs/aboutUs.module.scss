@@ -2,14 +2,14 @@
 
 .container {
   @include flex-container(column, center, center, 20px);
-  margin: 4% 3%;  
+  margin: 4% 3%;
 }
 
 .innerdis {
   width: 56%;
   text-align: center;
   font-family: 'Space Grotesk', sans-serif;
-  color:$color--text-2-primary-light;
+  color: $color--text-2-primary-light;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -18,7 +18,7 @@
 .boldDis {
   font-size: 40px;
   font-style: normal;
-  color:$color--text-2-primary;
+  color: $color--text-2-primary;
   font-weight: 800;
 }
 @include mq('desktop-medium') {
@@ -71,10 +71,9 @@
     width: 82%;
     font-size: 22px;
   }
-  .container{
+  .container {
     margin: 0% 3%;
   }
-  
 }
 @include mq('phone') {
   .innerdis {

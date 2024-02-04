@@ -1,6 +1,5 @@
 @use '../../../styles/global.scss' as *;
 
-
 .buttonContainer {
   width: max-content;
   box-shadow: $shadow--flat;
@@ -8,7 +7,7 @@
 }
 
 @include mq('phone-wide') {
-  .buttonContainer{
+  .buttonContainer {
     margin-right: 0%;
   }
 }

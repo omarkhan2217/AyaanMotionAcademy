@@ -9,32 +9,41 @@ import { useWindowSize } from "usehooks-ts";
 
 
 export const TestimonialContainer: React.FC = () => {
-    const {width} =useWindowSize();
+    const { width } = useWindowSize();
+    const spaceBetween = 0
+    const slidesPerView =
+        width <= 390 ? 1.4 :
+            width <= 490 ? 1.6 :
+                width <= 600 ? 2.1 :
+                    width <= 800 ? 2.4 :
+                        width <= 900 ? 2.8 :
+                            width <= 1000 ? 3.2 :
+                                width <= 1100 ? 3.5 :
+                                    width <= 1400 ? 3.9 :
+                                        width <= 1500 ? 4.2 :
+                                            width <= 1600 ? 4.5 :
+                                                width <= 1700 ? 4.8 :
+                                                    width > 1600 ? 5.2 :
+                                                        TestimonialData.length;
     return (
         <div className={classes.mainContainer}>
             <Swiper
-            spaceBetween={200}
-            slidesPerView={
-                width <= 420 ? 1.8 :
-                  width <= 768 ? 2.5 :
-                    width <= 1024 ? 3 :
-                      width <= 1440 ? 4 :
-                        width >1440? 5.5 :
-                          TestimonialData.length
-              }
-            freeMode={true}
-            className={classes.carousel} >
+                spaceBetween={spaceBetween}
+                slidesPerView={slidesPerView}
+                freeMode={true}
+                className={classes.carousel} >
                 {TestimonialData.map((item) => (
-                    <SwiperSlide>
-                    <div key={Math.random()}>
-                        <motion.div>
-                            <TestimonialCard
-                                image={item.image}
-                                name={item.name}
-                                comment={item.comment} y={0} stifness={0} />
-                        </motion.div>
-                    </div>
-                </SwiperSlide>
+                    <SwiperSlide key={Math.random()} >
+                        <div className={classes.testimonialCardContainer}>
+                            <motion.div>
+                                <TestimonialCard
+                                    image={item.image}
+                                    name={item.name}
+                                    comment={item.comment}
+                                />
+                            </motion.div>
+                        </div>
+                    </SwiperSlide>
                 ))}
             </Swiper>
         </div>

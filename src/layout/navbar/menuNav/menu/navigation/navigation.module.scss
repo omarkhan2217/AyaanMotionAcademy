@@ -32,7 +32,12 @@
   .ul {
     width: 90%;
     height: 100%;
-    @include flex-container(column, flex-start, space-between, 30%);
+    @include flex-container(
+      column,
+      flex-start,
+      space-between,
+      30%
+    );
   }
   .buttonContainer {
     @include flex-container(row, center, center, 0px);

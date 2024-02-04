@@ -20,30 +20,27 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
 }
 
 input::placeholder {
   font-family: 'Nunito', sans-serif;
 }
 
-
 @media only screen and (max-width: 600px) {
-
-  input[type="email"],
-  input[type="number"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="text"],
-  input[type="url"],
+  input[type='email'],
+  input[type='number'],
+  input[type='password'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='text'],
+  input[type='url'],
   select:focus,
   textarea {
     font-size: 16px !important;
   }
 }
-
 
 // react-date-picker styling
 .react-datepicker-wrapper {
@@ -67,7 +64,10 @@ input::placeholder {
   font-weight: 700 !important;
 
   &:hover {
-    background-color: darken($color--bg-primary, 5%) !important;
+    background-color: darken(
+      $color--bg-primary,
+      5%
+    ) !important;
   }
 }
 

@@ -1,39 +1,113 @@
-@use '../../../styles/global.scss' as * ;
+@use '../../../styles/global.scss' as *;
 
-
-
-.mainContainer{
-    @include  flex-container(column,flex-start,center,0px);  
-    width: 100%;
-    
+.mainContainer {
+  @include flex-container(column, center, center, 0px);
+  width: 100%;
 }
 
-.container{
-    @include  flex-container(column,flex-start,flex-start,0px);
-    width: 100%;
-    
-    
-}
-.batchesCard_container{
-    @include flex-container(column,center,center,30px);
-    padding: 20px;
-    width: 100%;
-    // background-color: azure;
-    
+.ourBatchesCardContainer {
+  @include flex-container(row, center, center, 0px);
+  width: 100%;
 }
 
-.carousel{
-    @include flex-container(row,space-evenly,center,30px);
-    width:80%;
-    padding: 1%;
-    // background-color: beige;
+.textContainer {
+  @include flex-container(column, center, center, 0px);
+  width: 80%;
+}
+.batchesCardContainer {
+  @include flex-container(row, center, center, 30px);
+  padding: 20px;
+  width: 60%;
+}
 
+.carousel {
+  @include flex-container(row, center, center, 30px);
+  width: 100%;
+  padding: 1%;
+}
+
+@include mq('desktop') {
+  .textContainer {
+    width: 90%;
   }
+}
 
-  @include mq ('phone'){
-    .carousel{
-        width: 100%;
+@include mq('desktop-medium') {
+  .batchesCardContainer {
+    width: 65%;
+  }
+}
 
+@include mq('desktop-small') {
+  .batchesCardContainer {
+    width: 85%;
+    transform: scale(0.9);
+  }
+}
+
+@include mq('tablet-wide') {
+  .batchesCardContainer {
+    width: 100%;
+  }
+}
+@include mq('tablet-small') {
+  .batchesCardContainer {
+      height: fit-content;
+      transform: scale(1);
+      padding: 0px;
+      & > :first-child {
+        & > :first-child {
+        & > * {
+            height: fit-content;
+          transform: scale(0.9) !important;
+        }
+      }
     }
   }
+  .batchesCardContainer {
+    width: 100%;
+  }
+  .textContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .carousel {
+    padding-top: 1%;
+  }
+}
 
+@include mq('phone-custom') {
+    .batchesCardContainer {
+      & > :first-child {
+          & > :first-child {
+            height: 460px;
+          & > * {
+            transform: scale(0.8) !important;
+          }
+        }
+      }
+    }
+}
+@include mq('phone') {
+    .batchesCardContainer {
+      & > :first-child {
+        & > :first-child {
+            margin-top: -60px;
+          & > * {
+            transform: scale(0.75) !important;
+          }
+        }
+      }
+    }
+}
+@include mq('phone-small') {
+    .batchesCardContainer {
+      & > :first-child {
+        & > :first-child {
+          & > * {
+            transform: scale(0.66) !important;
+          }
+        }
+      }
+    }
+}

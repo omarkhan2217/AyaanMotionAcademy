@@ -6,14 +6,12 @@ type MyComponentProps = React.PropsWithChildren<{
 }>;
 
 export const Layout: React.FC<MyComponentProps> = ({ children }) => {
-
     return (
         <>
             <Navbar />
             {children}
             <Footer />
-            
-        </>
 
+        </>
     )
 }

@@ -13,6 +13,5 @@ export const MenuNav: React.FC = () => {
             </div>}
             <Menu />
         </div>
-
     )
 }

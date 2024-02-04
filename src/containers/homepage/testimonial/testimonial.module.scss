@@ -1,7 +1,45 @@
 @use '../../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(row, flex-start, flex-start, 0px);
+  @include flex-container(row, center, center, 0px);
   max-height: fit-content;
-  max-width: 90vw;
+  max-width: 82vw;
+  margin-left: 17%;
+}
+
+
+@include mq('desktop') {
+  .mainContainer {
+    max-width: 88vw;
+    margin-left: 15%;
+  }
+}
+
+@include mq('desktop-medium') {
+  .mainContainer {
+    max-width: 95vw;
+    margin-left: 15%;
+  }
+}
+
+@include mq('tablet-custom') {
+  .mainContainer {
+    max-width: 95vw;
+    margin-left: 7%;
+  }
+}
+@include mq('tablet') {
+  .testimonialCardContainer{
+    transform: scale(0.88);
+  }
+}
+@include mq('phone-wide') {
+  .testimonialCardContainer{
+    transform: scale(0.8);
+  }
+}
+@include mq('phone-custom') {
+  .testimonialCardContainer{
+    transform: scale(0.75);
+  }
 }

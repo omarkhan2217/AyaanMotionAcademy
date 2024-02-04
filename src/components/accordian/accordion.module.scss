@@ -22,6 +22,7 @@
 }
 
 .question {
+  padding-right: 20px;
   color: $color--text-dark;
   font-weight: bold;
   
@@ -51,4 +52,18 @@
   text-decoration: none;
   padding-top: 10px;
   display: block;
+}
+
+@include mq('tablet') {
+  .question,
+  .answer {
+    font-size: 14px;
+  }
+}
+
+@include mq('tablet-small') {
+  .question,
+  .answer {
+    font-size: 12px;
+  }
 }

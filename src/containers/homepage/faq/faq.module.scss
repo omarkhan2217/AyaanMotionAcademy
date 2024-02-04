@@ -1,41 +1,36 @@
 @use '../../../styles/global.scss' as *;
 
 .mainContainer {
-    @include flex-container(column, center, center, 0px);
+  @include flex-container(column, center, center, 0px);
+  width: 60%;
+}
+
+@include mq('desktop-medium') {
+  .mainContainer {
     width: 60%;
+  }
 }
 
-@include mq ('desktop-medium'){
-    .mainContainer{
-        width: 60%;
-    }
-
+@include mq('tablet-custom') {
+  .mainContainer {
+    width: 70%;
+  }
 }
 
-@include mq ('tablet-custom'){
-    .mainContainer{
-        width: 70%;
-    }
-
+@include mq('tablet') {
+  .mainContainer {
+    width: 75%;
+  }
 }
 
-@include mq ('tablet'){
-    .mainContainer{
-        width: 75%;
-    }
-
+@include mq('phone-wide') {
+  .mainContainer {
+    width: 90%;
+  }
 }
 
-@include mq ('phone-wide'){
-    .mainContainer{
-        width: 90%;
-    }
-
-}
-
-@include mq ('phone'){
-    .mainContainer{
-        width: 90%;
-    }
-
+@include mq('phone') {
+  .mainContainer {
+    width: 90%;
+  }
 }

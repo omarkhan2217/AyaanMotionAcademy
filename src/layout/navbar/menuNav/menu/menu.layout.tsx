@@ -4,6 +4,7 @@ import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "../../../../hooks";
 import { MenuToggleCustom, Navigation } from ".";
 import classes from './menu.module.scss'
+
 const sidebar = {
     open: (width = 1024) => ({
         clipPath: `circle(${width * 2 + 200}px at calc(100% - 37%) 4.3%)`,
