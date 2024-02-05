@@ -2,7 +2,7 @@
 
 export const NavigationData = [
   {
-    className: 'sub_elements1',
+    className: 'subElements',
     elements: [
       { text: "About Us", link: "/about-us" },
       { text: "Contact Us", link: "/contact-us" },
@@ -11,7 +11,7 @@ export const NavigationData = [
     ],
   },
   {
-    className: 'sub_elements2',
+    className: 'subElements',
     elements: [
       { text: "Blog", link: "/blog" },
       { text: "Career Guidance", link: "/career-guidance" },
@@ -20,7 +20,7 @@ export const NavigationData = [
     ],
   },
   {
-    className: 'sub_elements3',
+    className: 'subElements',
     elements: [
       { text: "FAQs", link: "/faqs" },
       { text: "Partner With Us", link: "/partner-with-us" },
@@ -32,8 +32,8 @@ export const NavigationData = [
 
   export const FooterLinksData = [
     {
-      className: 'policycon',
-      policyCon: [
+      className: 'subElements',
+      plicyContainer : [
         { text: "Terms and Policy ", link: "/Terms-and-Policy" },
         { text: " Privacy Policy", link: "/Privacy-policy" },
       ],

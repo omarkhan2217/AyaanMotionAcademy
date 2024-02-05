@@ -1,6 +1,6 @@
 @use '../../styles/global.scss' as *;
 
-.maincontiner {
+.mainContiner {
   @include flex-container(
     column,
     flex-start,
@@ -8,15 +8,12 @@
     60px
   );
   padding: 6% 16%;
-  //   background: #e8e6e6;
 }
-
-.upper_element_container {
+.upperElementContainer {
   @include flex-container(row, space-between);
   width: 100%;
-  // background-color: blueviolet;
 }
-.footer_heading {
+.footerHeading {
   @include flex-container(
     column,
     flex-start,
@@ -25,9 +22,8 @@
   );
   .logo {
     width: 60%;
-    // background-color: #aeb1c1;
   }
-  .logo_text {
+  .logoText {
     width: 60%;
     color: $color--text-primary-light;
     font-family: 'Inter', sans-serif;
@@ -36,41 +32,11 @@
     line-height: 165%;
   }
 }
-
 .elements {
   @include flex-container(row);
   gap: 111px;
-
   & > div {
-    &.sub_elements1 {
-      @include flex-container(
-        column,
-        center,
-        flex-start,
-        0px
-      );
-      color: $color--text-primary-lighter;
-      font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      gap: 12px;
-    }
-
-    &.sub_elements2 {
-      @include flex-container(
-        column,
-        center,
-        flex-start,
-        0px
-      );
-      color: $color--text-primary-lighter;
-      font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      gap: 12px;
-    }
-
-    &.sub_elements3 {
+    &.subElements {
       @include flex-container(
         column,
         center,
@@ -84,7 +50,6 @@
       gap: 12px;
     }
   }
-
   .link {
     text-align: start;
     color: $color--text-primary-lighter;
@@ -107,15 +72,11 @@
   }
 }
 
-.lower_element_container {
-  @include flex-container(row, space-evenly, center, 0px);
+.lowerElementContainer {
+  @include flex-container(row, space-between, center, 0px);
   width: 100%;
-}
-
-.lower_element_container {
-  @include flex-container(row, space-between, flex-start);
   gap: 230px;
-  .policyCon {
+  .plicyContainer {
     color: $color--text-primary-lighter;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -142,13 +103,8 @@
     }
   }
 }
-.Dev_Con {
-  color: $color--text-primary-lighter;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-}
-.span {
+
+span {
   background: linear-gradient((to right, #0029ff, blue));
   background-clip: text;
   -webkit-background-clip: text;
@@ -157,16 +113,15 @@
   font-size: 12px;
   font-weight: 700;
 }
-.social_container {
+.socialContainer {
   margin-right: 4%;
   font-size: 12px;
   color: $color--text-primary-lighter;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
-
 @include mq('desktop') {
-  .maincontiner {
+  .mainContiner {
     @include flex-container(
       column,
       flex-start,
@@ -177,7 +132,7 @@
     padding: 4% 16.89%;
     gap: 40px;
   }
-  .upper_element_container {
+  .upperElementContainer {
     width: 100%;
     @include flex-container(
       row,
@@ -198,7 +153,7 @@
     text-wrap: nowrap;
     text-align: left;
   }
-  .lower_element_container {
+  .lowerElementContainer {
     @include flex-container(
       row,
       flex-start,
@@ -210,7 +165,7 @@
 }
 
 @include mq('desktop-medium') {
-  .maincontiner {
+  .mainContiner {
     @include flex-container(
       column,
       flex-start,
@@ -221,7 +176,7 @@
     padding: 4% 15%;
     gap: 40px;
   }
-  .upper_element_container {
+  .upperElementContainer {
     width: 100%;
     @include flex-container(
       row,
@@ -242,7 +197,7 @@
     text-wrap: nowrap;
     text-align: left;
   }
-  .lower_element_container {
+  .lowerElementContainer {
     @include flex-container(
       row,
       space-between,
@@ -254,221 +209,89 @@
 }
 
 @include mq('desktop-small') {
-  .maincontiner {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      40px
-    );
+  .mainContiner {
     width: 100%;
     padding: 3.5% 11%;
     gap: 35px;
   }
-  .upper_element_container {
-    width: 100%;
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    gap: 40px;
-  }
-  .elements {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    gap: 52px;
-    text-wrap: nowrap;
-    text-align: left;
-  }
-  .lower_element_container {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
+  .lowerElementContainer {
     padding-right: 4%;
   }
 }
 
 @include mq('tablet-wide') {
-  .maincontiner {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      40px
-    );
-    width: 100%;
-    padding: 4% 10%;
-    gap: 35px;
+
+  .footerHeading {
+    .logoText,
+    .logo {
+      width: 90%;
+      font-size: 12px;
+    }
   }
-  .upper_element_container {
-    width: 100%;
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    gap: 40px;
-  }
-  .elements {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    gap: 30px;
-    text-wrap: nowrap;
-    text-align: left;
-  }
-  .lower_element_container {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    padding-right: 4%;
-  }
+  
 }
 
 @include mq('tablet-custom') {
-  .maincontiner {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      40px
-    );
+  .mainContiner {
     width: 100%;
     padding: 3% 8%;
     gap: 30px;
   }
-  .upper_element_container {
-    width: 100%;
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
+  .upperElementContainer {
     gap: 30px;
+    .footerHeading {
+      width: 150%;
+    }
   }
   .elements {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
     gap: 25px;
-    text-wrap: nowrap;
-    text-align: left;
   }
-  .lower_element_container {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    padding-right: 4%;
-  }
-  .footer_heading {
+  .footerHeading {
+    .logoText,
     .logo {
-      width: 100%;
+      width: 70%;
+      font-size: 12px;
     }
   }
 }
 
 @include mq('tablet') {
-  .maincontiner {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      40px
-    );
-    width: 100%;
+  .mainContiner {
     padding: 4% 8%;
     gap: 25px;
   }
-  .upper_element_container {
-    width: 100%;
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    gap: 30px;
-  }
+
   .elements {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
     gap: 20px;
     text-wrap: nowrap;
-    text-align: left;
   }
-  .lower_element_container {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
-    padding-right: 0%;
-    .policyCon {
-      font-size: 9px;
-    }
-    .Dev_Con {
-      font-size: 9px;
-    }
-    .social_container {
-      font-size: 9px;
-    }
+  .plicyContainer,
+  .socialContainer {
+    font-size: 12px;
   }
-  .footer_heading {
+  .socialContainer {
+    text-wrap: nowrap;
+  }
+  .footerHeading {
+    .logoText {
+      width: 80%;
+      font-size: 10px;
+    }
     .logo {
       width: 100%;
     }
-    .logo_text {
-      width: 90%;
-      font-size: 9px;
-    }
   }
   .link {
-    font-size: 9px !important;
+    font-size: 9.5px !important;
   }
 }
 
 @include mq('tablet-small') {
-  .maincontiner {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      40px
-    );
-    width: 100%;
+  .mainContiner {
     padding: 5% 12%;
     gap: 30px;
   }
-  .upper_element_container {
-    width: 100%;
+  .upperElementContainer {
     @include flex-container(
       column,
       space-between,
@@ -478,42 +301,25 @@
     gap: 30px;
   }
   .elements {
-    @include flex-container(
-      row,
-      space-between,
-      flex-start,
-      0px
-    );
     gap: 50px;
     text-wrap: nowrap;
     text-align: left;
   }
-  .lower_element_container {
+  .lowerElementContainer {
     @include flex-container(
       column,
       space-between,
-      flex-start,
-      0px
+      flex-start
     );
-    padding-right: 0%;
     gap: 20px;
-    .policyCon {
-      font-size: 12px;
-    }
-    .Dev_Con {
-      font-size: 12px;
-    }
-    .social_container {
+    .plicyContainer,
+    .socialContainer {
       font-size: 12px;
     }
   }
-  .footer_heading {
-    .logo {
-      width: 100%;
-    }
-    .logo_text {
-      width: 90%;
-      font-size: 1px;
+  .footerHeading {
+    .logoText {
+      font-size: 12px;
     }
   }
   .link {
@@ -522,62 +328,21 @@
 }
 
 @include mq('phone-custom') {
-  .maincontiner {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      40px
-    );
-    width: 100%;
-    padding: 5% 12%;
-    gap: 30px;
-  }
-  .upper_element_container {
-    width: 100%;
-    @include flex-container(
-      column,
-      space-between,
-      flex-start,
-      0px
-    );
-    gap: 30px;
-  }
   .elements {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     text-wrap: nowrap;
-    text-align: left;
-    &.sub_elements1 {
-      @include flex-container(c);
-    }
   }
-  .lower_element_container {
-    @include flex-container(
-      column,
-      space-between,
-      flex-start,
-      0px
-    );
-    padding-right: 0%;
-    gap: 20px;
-    .policyCon {
-      font-size: 12px;
-    }
-    .Dev_Con {
-      font-size: 12px;
-    }
-    .social_container {
+  .lowerElementContainer {
+    .plicyContainer,
+    .socialContainer {
       font-size: 12px;
     }
   }
-  .footer_heading {
-    .logo {
-      width: 100%;
-    }
-    .logo_text {
-      width: 90%;
+  .footerHeading {
+    .logoText {
+      width: 60%;
       font-size: 12px;
     }
   }

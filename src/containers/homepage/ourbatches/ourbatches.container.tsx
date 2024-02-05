@@ -33,7 +33,7 @@ export const Ourbatchescontainer: React.FC = () => {
             spaceBetween={0}
             slidesPerView={SlidePreView}
             freeMode={true}
-            className={classes.carousel} >
+            className={classes.carousel}>
             {OurBatchesData.map((item) => (
               <SwiperSlide key={Math.random()}>
                 <div className={classes.ourBatchesCardContainer}>

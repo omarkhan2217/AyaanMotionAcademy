@@ -3,6 +3,7 @@
 .mainContainer {
   @include flex-container(column, center, center, 0px);
   width: 60%;
+  margin-bottom: 6%;
 }
 
 @include mq('desktop-medium') {
