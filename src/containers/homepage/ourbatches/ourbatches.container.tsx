@@ -38,8 +38,7 @@ export const Ourbatchescontainer: React.FC = () => {
               <SwiperSlide key={Math.random()}>
                 <div className={classes.ourBatchesCardContainer}>
                   <motion.div>
-                    <OurBatcehscomponent BatchName={item.BatchName} grade={item.grade} detaile1={item.detaile1} detaile2={item.detaile2} detaile3={item.detaile3} detaile4={item.detaile4} detaile5={item.detaile5} detaile6={item.detaile6} guide={item.guide} image={item.image} />
-
+                    <OurBatcehscomponent BatchName={item.BatchName} grade={item.grade} detaile1={item.detaile1} detaile2={item.detaile2} detaile3={item.detaile3} detaile4={item.detaile4} detaile5={item.detaile5} detaile6={item.detaile6} guide={item.guide} image={item.image}  isLable={Math.random() % 2 === 0}  />
                   </motion.div>
                 </div>
 

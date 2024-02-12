@@ -5,4 +5,7 @@ export * from './testimonialCard';
 export * from './pageText';
 export * from './sectionText';
 export * from './accordian';
-export * from './ourbatchesCard'
+export * from './ourbatchesCard';
+export * from './otherStudentCard'
+export * from './PageEndingText';
+export * from './policyText';

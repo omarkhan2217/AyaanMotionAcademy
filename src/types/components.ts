@@ -47,6 +47,15 @@ export interface IHighlightedStudentCardProps
   image?: string;
   isReversed?: boolean;
 }
+export interface IOtherStudentCardProps
+  extends React.HTMLAttributes<HTMLDivElement> {
+    rank?: number|string;
+    name: string;
+    image:string;
+    college?: string;
+    stream?: 'JEE' | 'NEET';
+    isFacultyCard?: boolean;
+}
 
 export interface IPillProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -63,15 +72,15 @@ export interface IourFacultyData
 
 export interface ISTestimonialCardProps
   extends React.HTMLAttributes<HTMLDivElement> {
-  name?: string;
-  image?: string;
-  comment?: string;
+  name: string;
+  image: string;
+  comment: string;
 }
 
 export interface ISBatchesCardProps
   extends React.HtmlHTMLAttributes<HTMLDivElement> {
-  BatchName?: string;
-  grade?: number | string;
+  BatchName: string;
+  grade: number | string;
   guide?: string;
   image?: string;
   detaile1?: string;
@@ -80,5 +89,6 @@ export interface ISBatchesCardProps
   detaile4?: string;
   detaile5?: string;
   detaile6?: string;
+  isLable?:boolean;
 
 }

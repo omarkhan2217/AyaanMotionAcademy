@@ -1,0 +1,105 @@
+@use '../../styles/global.scss' as *;
+
+.container {
+  @include flex-container(column, center, center, 15px);
+  width: 100%;
+  height: 100%;
+
+}
+
+.mainHeader {
+  width: 40%;
+  color: $color--text-primary;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.details {
+
+  color: $color--text-primary-light;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  width: 50%;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+@include mq('desktop-medium') {
+  .mainHeader {
+    width: 44%;
+    font-size: 44px;
+  }
+}
+@include mq('desktop-small') {
+  .mainHeader {
+    width: 48%;
+  }
+  .details
+ {
+    width: 65%;
+}
+
+}
+@include mq('tablet-wide') {
+  .mainHeader {
+    width: 58%;
+    font-size: 40px;
+  }
+  .details
+ {
+    width: 60%;
+
+}
+
+@include mq('tablet') {
+  .mainHeader {
+      width: 64%;
+      font-size: 36px;
+    }
+    .details
+ {
+        width: 64%;
+        font-size: 13px;
+  }
+ 
+}
+@include mq('phone-wide') {
+  .mainHeader {
+    width: 74%;
+    font-size: 30px;
+  }
+  .details
+{
+    width: 70%;
+  }
+  }
+}
+@include mq('phone') {
+  .mainHeader {
+    width: 85%;
+    font-size: 26px;
+  }
+  .details
+{
+    width: 76%;
+    font-size:12px;
+    margin-bottom: 12px;
+}
+
+}
+@include mq('phone-small') {
+    .mainHeader {
+        width: 85%;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .details
+{
+        width: 85%;
+        margin-bottom: 8px;
+  }
+}

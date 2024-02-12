@@ -2,14 +2,14 @@ import React from "react"
 import classes from "./footer.module.scss"
 import { Link } from 'react-router-dom';
 import { FooterLinksData, NavigationData } from '../../constants/footerData'
-import { MainLogo } from "../../assets/icons"
+import  mainLogo  from "../../assets/images/mainLogo/logo.png"
 
 export const Footer: React.FC = () => {
   return (
     <div className={classes.mainContiner}>
       <div className={classes.upperElementContainer}>
         <div className={classes.footerHeading}>
-          <MainLogo className={classes.logo} />
+          <img src={mainLogo} alt="mainLogo" className={classes.mainLogo} />
           <div className={classes.logoText}>Join Ayaan's Motion Academy – where dreams transform into reality! </div>
         </div>
         <div className={classes.elements}>
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
       <div className={classes.lowerElementContainer}>
-        <div className={classes.plicyContainer}>
+        <div className={classes.policyContainer}>
           {FooterLinksData.map((group, groupIndex) => (
             <div key={groupIndex} className={classes[group.className]} style={{ textAlign: 'start' }}>
               {group.plicyContainer.map((item, index) => (
@@ -37,8 +37,8 @@ export const Footer: React.FC = () => {
           ))}
           <div>© 2024 Ayaan's Motion Academy. All Rights Reserved.</div>
         </div>
-        <div className={classes.plicyContainer}>
-          Design & Devloped by <span>HUMO</span>
+        <div className={classes.policyContainer}>
+          Design & Devloped by <span className={classes.companyName}>HUMO</span>
         </div>
         <div className={classes.socialContainer}>
           <div>Follow Us</div>

@@ -1,11 +1,20 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-    @include flex-container(column, flex-start, center, 0px);
+    @include flex-container(column, flex-start, center, 80px);
     background-color: $color--bg-main;
+    padding: 4%
 }
 
 .highlightedStudentCardContainer {
-    @include flex-container(column, center, center, 50px);
+    @include flex-container(column, center, center, 80px);
     margin-bottom: 80px;
+}
+
+
+.otherStudentCard{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-gap: 40px;
+
 }

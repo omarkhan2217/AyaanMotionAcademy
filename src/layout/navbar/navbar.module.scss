@@ -43,7 +43,9 @@
   }
 }
 
-.logo {
+.mainLogo{
+  width: 60%;
+  height: auto;
   &:hover {
     cursor: pointer;
   }

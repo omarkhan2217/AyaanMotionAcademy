@@ -19,3 +19,9 @@ export interface IHighlightedAchieverProps {
     description: string,
     isReversed?: boolean
 }
+
+export interface IourFacultyDataProps{
+    name: string;
+    details: string;
+    image:string;
+}

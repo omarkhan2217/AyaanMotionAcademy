@@ -19,6 +19,14 @@
         box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.45);
     }
 }
+.mainContainer:where(:nth-child(1)){
+    background-color: #F2FFF3;
+    
+}
+.mainContainer:where(:nth-child(2)){
+    background-color: #FFEDE4;
+
+}
 
 .mainContainerAlt {
     @extend .mainContainer;
@@ -71,17 +79,23 @@
 }
 
 .img {
-    width: 180px;
-    height: 100%;
+    width: 200px;
+    height:100%;
     user-select: none;
     border-radius: 32px 0px 0px 32px;
+    transform:scale(1.2);
+    translate: 20px -31px;
+    
 }
 
 .imgAlt {
     width: 180px;
-    height: 100%;
+    height: 150%;
     user-select: none;
     border-radius: 0px 32px 32px 0px;
+    transform:scale(1.2);
+    translate: -18px -28px;
+    
 }
 
 

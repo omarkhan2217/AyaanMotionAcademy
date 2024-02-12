@@ -6,7 +6,7 @@ import IMG2 from '../../../assets/images/homepage/Vector 1.png'
 import { useWindowSize } from 'usehooks-ts';
 
 
-export const OurFacultyContainer: React.FC = () => {
+export const OurFacultySection: React.FC = () => {
   const width = useWindowSize().width;
   return (
     <div className={classes.container}>

@@ -20,7 +20,7 @@
     flex-start,
     15px
   );
-  .logo {
+  .mainLogo {
     width: 60%;
   }
   .logoText {
@@ -76,7 +76,7 @@
   @include flex-container(row, space-between, center, 0px);
   width: 100%;
   gap: 230px;
-  .plicyContainer {
+  .policyContainer {
     color: $color--text-primary-lighter;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -104,7 +104,7 @@
   }
 }
 
-span {
+.companyName {
   background: linear-gradient((to right, #0029ff, blue));
   background-clip: text;
   -webkit-background-clip: text;
@@ -265,7 +265,7 @@ span {
     gap: 20px;
     text-wrap: nowrap;
   }
-  .plicyContainer,
+  .policyContainer,
   .socialContainer {
     font-size: 12px;
   }
@@ -312,7 +312,7 @@ span {
       flex-start
     );
     gap: 20px;
-    .plicyContainer,
+    .policyContainer,
     .socialContainer {
       font-size: 12px;
     }
@@ -335,7 +335,7 @@ span {
     text-wrap: nowrap;
   }
   .lowerElementContainer {
-    .plicyContainer,
+    .policyContainer,
     .socialContainer {
       font-size: 12px;
     }

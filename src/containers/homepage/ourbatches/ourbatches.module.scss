@@ -3,7 +3,18 @@
 .mainContainer {
   @include flex-container(column, center, center, 0px);
   width: 100%;
+  & > :last-child {
+    & > :nth-child(2) {
+      & > :first-child {
+        height: 530px;
+        border:2px solid $color--bg-primary;
+        
+
+      } 
+    }
+  }
 }
+
 
 .ourBatchesCardContainer {
   @include flex-container(row, center, center, 0px);

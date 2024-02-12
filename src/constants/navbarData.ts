@@ -7,8 +7,8 @@ export const NavbarData: INavbarItemProps[] = [
         key: 1
     },
     {
-        label: 'Our Faculty',
-        linkTo: '/',
+        label: 'OurFaculty',
+        linkTo: '/our-Faculty',
         key: 2
     },
     {
@@ -18,7 +18,7 @@ export const NavbarData: INavbarItemProps[] = [
     },
     {
         label: 'Contact Us',
-        linkTo: '/',
+        linkTo: '/Contact-Us',
         key: 4
     },
     {

@@ -1,5 +1,5 @@
 import React from "react"
-import { MainLogo } from "../../assets/icons"
+import  mainLogo  from "../../assets/images/mainLogo/logo.png"
 import classes from './navbar.module.scss';
 import { useWindowSize } from "usehooks-ts";
 import { DesktopNav, MenuNav } from ".";
@@ -15,7 +15,7 @@ export const Navbar: React.FC = () => {
     return (
         <div className={classes.mainContainer}>
             <Link to={'/'}>
-                <MainLogo className={classes.logo} />
+                <img src={mainLogo} alt="mainLogo" className={classes.mainLogo}/>
             </Link>
             {windowWidth <= 1024 ?
                 <MenuNav />

@@ -1,0 +1,8 @@
+@use '../../styles/global.scss' as *;
+
+
+.mainContainer{
+    background-color: $color--bg-main;
+    width: 100%;
+    padding:3% 0%;
+}

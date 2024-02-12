@@ -3,7 +3,7 @@ import { ISTestimonialCardProps } from '../../../types';
 
 export const TestimonialData: ISTestimonialCardProps[] = [
     {
-        name: 'Maharana Pratap Singh',
+        name: 'Mohsin Raja',
         image: IMG,
         color: '#hsl(162, 30%, 41%)',
         comment: "Aayan's Motion Academy in Ranchi is a gem! Mr. Aayan Khan and his team have a unique way of teaching that really helped me improve. It's in Lalpur's Hari Om Tower and is perfect for anyone needing study help."

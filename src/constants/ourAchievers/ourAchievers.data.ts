@@ -1,6 +1,7 @@
-import IMG from '../../assets/images/ourAchievers/Rectangle 56.png'
-import IMG2 from '../../assets/images/ourAchievers/Rectangle 57.png'
+import IMG from '../../assets/images/ourAchievers/boyImage.png'
+import IMG2 from '../../assets/images/ourAchievers/girlImage.png'
 import { IHighlightedAchieverProps } from '../../types';
+import { IOtherStudentCardProps } from '../../types';
 
 export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
     {
@@ -24,3 +25,66 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         isReversed: true,
     },
 ];
+
+export const OtherAchieversData: IOtherStudentCardProps[]=[
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+    {
+        rank: "AIR100",
+        name:'riya singh',
+        image:IMG2,
+        college:'RamLakhan Yadav college',
+        stream: 'JEE',
+    },
+];
+    
+
+
+   

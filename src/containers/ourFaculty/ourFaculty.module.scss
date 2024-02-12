@@ -1,0 +1,27 @@
+@use '../../styles/global.scss' as*;
+
+
+.mainContainer {
+    @include flex-container(column, flex-start, center, 50px);
+    background-color: $color--bg-main;
+}
+
+.TeachersImage{
+    margin-top: -50px;
+    width: 700px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.facultyContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:40px;
+}
+.customCardStyle {
+        .rankContainer,
+        .stream {
+          display: none; 
+        }
+}
