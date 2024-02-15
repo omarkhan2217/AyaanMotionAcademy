@@ -1,60 +1,65 @@
 @use '../../../../../styles/global.scss' as *;
 
-.ul {
+.menuContainer {
   margin: 0;
   padding: 0;
   position: absolute;
   list-style: none;
   top: 100px;
+  height: 80%;
   right: 0;
   width: 28%;
   z-index: 5;
+  @include flex-container(column,
+    flex-start,
+    space-between,
+    30%);
 }
 
 .buttonContainer {
-  width: max-content;
+  @include flex-container(row, flex-end, flex-end, 0px);
+  width: 100%;
+  padding-right: 10%;
   box-shadow: $shadow--flat;
   z-index: 5;
 }
 
 @include mq('tablet') {
-  .ul {
+  .menuContainer {
     width: 50%;
   }
 }
+
 @include mq('tablet-small') {
-  .ul {
+  .menuContainer {
     width: 65%;
   }
 }
 
 @include mq('phone-wide') {
-  .ul {
+  .menuContainer {
     width: 90%;
     height: 100%;
-    @include flex-container(
-      column,
+    @include flex-container(column,
       flex-start,
       space-between,
-      30%
-    );
+      30%);
   }
+
   .buttonContainer {
-    @include flex-container(row, center, center, 0px);
-    align-self: flex-end;
-    width: 55%;
-    margin-right: 10%;
+    width: 100%;
+    padding-right: 5%;
   }
 }
 
 @include mq('phone-custom') {
-  .ul {
+  .menuContainer {
     width: 94%;
   }
 }
 
 @include mq('phone') {
-  .ul {
+  .menuContainer {
     width: 92%;
   }
 }

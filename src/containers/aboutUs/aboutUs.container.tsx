@@ -58,7 +58,7 @@ export const AboutUsContainer: React.FC = () => {
             </div>
             <PolicyText
                 mainHeader={"Join Us: Embark on Your Journey to Success"} details={Subheader} />
-            <a href="/contact-Us" style={{ marginTop: '-5%' }}>
+            <a href="/contact-us" style={{ marginTop: '-5%' }}>
                 <Button variant='outline' label='View Our Batches ' icon={<ArrowIcon />} />
             </a>
         </div>

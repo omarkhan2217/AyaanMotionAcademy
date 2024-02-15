@@ -14,7 +14,7 @@ export const Navbar: React.FC = () => {
     }, [width])
     return (
         <div className={classes.mainContainer}>
-            <Link to={'/'}>
+            <Link to={'/'} className={classes.mainLogoContainer}>
                 <img src={mainLogo} alt="mainLogo" className={classes.mainLogo}/>
             </Link>
             {windowWidth <= 1024 ?

@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
         <div className={classes.policyContainer}>
           {FooterLinksData.map((group, groupIndex) => (
             <div key={groupIndex} className={classes[group.className]} style={{ textAlign: 'start' }}>
-              {group.plicyContainer.map((item, index) => (
+              {group.policyContainer.map((item, index) => (
                 <Link key={index} className={classes.link} to={item.link}>
                   {item.text}
                 </Link>

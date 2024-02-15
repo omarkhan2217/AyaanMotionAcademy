@@ -7,18 +7,18 @@ export const NavbarData: INavbarItemProps[] = [
         key: 1
     },
     {
-        label: 'OurFaculty',
-        linkTo: '/our-Faculty',
+        label: 'Our Faculty',
+        linkTo: '/our-faculty',
         key: 2
     },
     {
         label: 'About Us',
-        linkTo: '/About-Us',
+        linkTo: '/about-us',
         key: 3
     },
     {
         label: 'Contact Us',
-        linkTo: '/Contact-Us',
+        linkTo: '/contact-us',
         key: 4
     },
     {

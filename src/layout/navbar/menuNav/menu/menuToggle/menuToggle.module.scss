@@ -7,10 +7,27 @@
   cursor: pointer;
   position: absolute;
   right: 5.1%;
-  top: 33px;
+  top: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: transparent;
   z-index: 100;
+}
+
+@include mq('tablet-custom') {
+  .menuButton {
+    top: 15px;
+  }
+}
+
+@include mq('phone') {
+  .menuButton {
+    transform: scale(0.9);
+  }
+}
+@include mq('phone-small') {
+  .menuButton {
+    top: 10px;
+  }
 }

@@ -7,12 +7,12 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/our-achievers" element={<OurAchievers />} />
-        <Route path="/our-Faculty" element={<OurFaculty/>}/>
+        <Route path="/our-faculty" element={<OurFaculty/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
-        <Route path="/terms-and-Policy" element={<TermsAndPolicy/>}/>
-        <Route path="/contact-Us" element={<ContactUs/>}/>
-        <Route path="/about-Us" element={<AboutUS/>}/>
-        <Route path="/career-Guidance" element={<CareerGuidance/>}/>
+        <Route path="/terms-and-policy" element={<TermsAndPolicy/>}/>
+        <Route path="/contact-us" element={<ContactUs/>}/>
+        <Route path="/about-us" element={<AboutUS/>}/>
+        <Route path="/career-guidance" element={<CareerGuidance/>}/>
       </Routes>
     </div>
   )

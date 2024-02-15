@@ -6,7 +6,7 @@ export const NavigationData = [
     elements: [
       { text: "About Us", link: "/about-us" },
       { text: "Contact Us", link: "/contact-us" },
-      { text: "Faculty", link: "/faculty" },
+      { text: "Faculty", link: "/our-faculty" },
       { text: "Programs & Courses", link: "/programs-courses" },
     ],
   },
@@ -25,8 +25,8 @@ export const NavigationData = [
   export const FooterLinksData = [
     {
       className: 'subElements',
-      plicyContainer : [
-        { text: "Terms and Policy ", link: "/terms-and-Policy" },
+      policyContainer : [
+        { text: "Terms and Policy ", link: "/terms-and-policy" },
         { text: " Privacy Policy", link: "/privacy-policy" },
       ],
     },

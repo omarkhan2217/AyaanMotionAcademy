@@ -1,12 +1,10 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(
-    row,
+  @include flex-container(row,
     space-between,
     center,
-    132px
-  );
+    0px);
   width: 100%;
   padding: 16px 8%;
 }
@@ -43,12 +41,17 @@
   }
 }
 
-.mainLogo{
-  width: 60%;
-  height: auto;
+.mainLogo {
+  width: 50%;
+  height: 100%;
+
   &:hover {
     cursor: pointer;
   }
+}
+
+.mainLogoContainer {
+  width: 50%;
 }
 
 .buttonContainer {
@@ -56,14 +59,20 @@
   box-shadow: $shadow--flat;
 }
 
+@include mq('desktop') {
+  .mainLogo {
+    width: 45%;
+  }
+  .mainLogoContainer {
+    width: 43%;
+  }
+}
 @include mq('desktop-medium') {
   .mainContainer {
-    @include flex-container(
-      row,
+    @include flex-container(row,
       space-between,
       center,
-      0px
-    );
+      0px);
   }
 
   .link {
@@ -84,11 +93,18 @@
   .logo {
     width: 310px;
   }
+
+  .mainLogoContainer {
+    width: 38%;
+  }
 }
 
 @include mq('tablet-wide') {
   .mainContainer {
     width: 90%;
+  }
+  .mainLogoContainer {
+    width: 60%;
   }
 }
 
@@ -106,10 +122,8 @@
 
 @include mq('phone') {
   .mainContainer {
-    display: block;
-    padding: 32px 0;
   }
+
   .logo {
-    transform: scale(0.8);
   }
 }

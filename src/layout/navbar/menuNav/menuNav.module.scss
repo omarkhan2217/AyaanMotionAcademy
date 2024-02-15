@@ -6,6 +6,12 @@
   margin-right: 10%;
 }
 
+
+@include mq('tablet') {
+  .buttonContainer {
+    margin-left: 20%;
+  }
+}
 @include mq('phone-wide') {
   .buttonContainer {
     margin-right: 0%;

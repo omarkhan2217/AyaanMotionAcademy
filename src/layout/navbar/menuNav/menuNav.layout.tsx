@@ -8,9 +8,13 @@ export const MenuNav: React.FC = () => {
     const { width } = useWindowSize();
     return (
         <div className={classes.menuContainer}>
-            {width <= 576 ? null : <div className={classes.buttonContainer}>
-                <Button label="Book a Demo" size="md" />
-            </div>}
+            {width > 768 ?
+                <div className={classes.buttonContainer}>
+                    <Button label="Book a Demo" size="md" />
+                </div>
+                :
+                null
+            }
             <Menu />
         </div>
     )
