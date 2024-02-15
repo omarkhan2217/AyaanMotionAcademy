@@ -56,11 +56,18 @@ export const AboutUsContainer: React.FC = () => {
                     <div className={classes.inspireDetails}>At Ayaan's Motion Academy, we believe in holistic development. Our curriculum extends beyond textbooks, incorporating life skills, stress management workshops, and career guidance sessions. We prepare our students for the challenges of tomorrow, equipping them with the knowledge, skills, and confidence to excel in all walks of life.</div>
                 </div>
             </div>
+            <div>
+
             <PolicyText
                 mainHeader={"Join Us: Embark on Your Journey to Success"} details={Subheader} />
+<<<<<<< Updated upstream
             <a href="/contact-us" style={{ marginTop: '-5%' }}>
+=======
+            <a href="/contact-Us" className={classes.button}>
+>>>>>>> Stashed changes
                 <Button variant='outline' label='View Our Batches ' icon={<ArrowIcon />} />
             </a>
+                </div>
         </div>
     )
 }

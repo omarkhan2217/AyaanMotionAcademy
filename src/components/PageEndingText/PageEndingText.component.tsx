@@ -3,6 +3,7 @@ import classes from './PageEndingText.module.scss'
 
 export interface IPageEndingTextProps {
     mainHeader: string;
+
 }
 
 export const PageEndingText: React.FC<IPageEndingTextProps> = (props) => {

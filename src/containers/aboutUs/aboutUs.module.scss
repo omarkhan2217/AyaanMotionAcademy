@@ -1,7 +1,7 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(column, center, center, 100px);
+  @include flex-container(column, center, center, 70px);
   background-color: $color--bg-main;
   padding: 6% 0% 6%;
 }
@@ -11,35 +11,30 @@
   width: 70%;
   border-radius: 18px;
   background-color: #ede9ff;
-  .mainHeading {
-    font-size: 56px;
-    font-family: 'space Grotesk';
-    font-weight: 800;
-  }
+}
+.mainHeading {
+  font-size: 56px;
+  font-family: 'space Grotesk';
+  font-weight: 800;
+}
 
-  .Introductionimage {
-    width: 380px;
-    height: auto;
-    transform: scale(1.2);
-    transform-origin: bottom right;
-  }
-  .subHeading {
-    font-size: 18px;
-    font-family: 'inter', sans-serif;
-    font-weight: 500;
-    width: 80%;
-  }
-  .headingContainer {
-    @include flex-container(
-      column,
-      center,
-      flex-start,
-      18px
-    );
-    margin-left: 5%;
-    width: 50%;
-    // background-color: aqua;
-  }
+.Introductionimage {
+  width: 380px;
+  height: auto;
+  transform: scale(1.2);
+  transform-origin: bottom right;
+}
+.subHeading {
+  font-size: 18px;
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
+  width: 80%;
+}
+.headingContainer {
+  @include flex-container(column, center, flex-start, 18px);
+  margin-left: 5%;
+  width: 50%;
+  // background-color: aqua;
 }
 
 .facultyContainer {
@@ -52,34 +47,33 @@
   width: 70%;
   padding-right: 5%;
   // background-color: aquamarine;
+}
+.facultyHeadingContainer {
+  @include flex-container(
+    column,
+    flex-start,
+    flex-start,
+    10px
+  );
+  width: 50%;
+  // background-color: #ede9ff;
+}
 
-  .facultyHeadingContainer {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      10px
-    );
-    width: 50%;
-    // background-color: #ede9ff;
-  }
+.facultyHeading {
+  font-size: 32px;
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+  width: 70%;
+}
+.facultySubHeading {
+  font-size: 18px;
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
+  width: 80%;
+}
 
-  .facultyHeading {
-    font-size: 32px;
-    font-family: 'inter', sans-serif;
-    font-weight: 600;
-    width: 70%;
-  }
-  .facultySubHeading {
-    font-size: 18px;
-    font-family: 'inter', sans-serif;
-    font-weight: 500;
-    width: 80%;
-  }
-
-  .facultyImage {
-    width: 500px;
-  }
+.facultyImage {
+  width: 500px;
 }
 
 .inspireContainer {
@@ -88,166 +82,259 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   width: 65%;
+}
+.inspireInnerContainer {
+  @include flex-container(
+    column,
+    flex-start,
+    flex-start,
+    16px
+  );
+  background-color: #ffebe8;
+  padding: 3%;
+  border-radius: 24px;
+  height: fit-content;
+  &:nth-child(2) {
+    background-color: #e8edff;
+  }
+  &:nth-child(3) {
+    background-color: #e8f3ff;
+    margin-top: -5%;
+  }
+  &:nth-child(4) {
+    background-color: #f1e8ff;
+    margin-top: 1%;
+  }
+}
+.inspireHeading {
+  font-size: 32px;
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+  width: 90%;
+}
 
-  .inspireInnerContainer {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      16px
-    );
-    background-color: #ffebe8;
-    padding: 3%;
-    border-radius: 24px;
-    height: fit-content;
-    &:nth-child(2) {
-      background-color: #e8edff;
-    }
-    &:nth-child(3) {
-      background-color: #e8f3ff;
-      margin-top: -5%;
-    }
-    &:nth-child(4) {
-      background-color: #f1e8ff;
-      margin-top: 1%;
-    }
-  }
-  .inspireHeading {
-    font-size: 32px;
-    font-family: 'inter', sans-serif;
-    font-weight: 600;
-    width: 90%;
-  }
+.inspireDetails {
+  font-size: 18px;
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
+}
 
-  .inspireDetails {
-    font-size: 18px;
-    font-family: 'inter', sans-serif;
-    font-weight: 500;
-  }
+.button{
+  margin: -5%;
 }
 
 @include mq('desktop') {
-  .introductionContainer {
-    .Introductionimage {
-      width: 320px;
-    }
-    .headingContainer {
-      width: 50%;
-    }
-    .mainHeading {
-      font-size: 48px;
-    }
+  .Introductionimage {
+    width: 310px;
   }
-  .facultyContainer {
-    .facultyImage {
-      width: 420px;
-    }
-    .facultyHeadingContainer {
-      width: 70%;
-    }
-    .facultySubHeading {
-      width: 90%;
-    }
+  .headingContainer {
+    width: 50%;
+  }
+  .mainHeading {
+    font-size: 48px;
+  }
+  .facultyImage {
+    width: 420px;
+  }
+  .facultyHeadingContainer {
+    width: 70%;
+  }
+  .facultySubHeading {
+    width: 90%;
   }
   .inspireContainer {
     width: 74%;
-    .inspireHeading {
-      width: 100%;
-    }
+  }
+  .inspireHeading {
+    width: 100%;
   }
 }
 
 @include mq('desktop-medium') {
-  .introductionContainer {
-    .Introductionimage {
-      width: 280px;
-    }
-    .headingContainer {
-      width: 60%;
-    }
-    .subHeading {
-      font-size: 16px;
-    }
+  .Introductionimage {
+    width: 270px;
   }
-  .facultyContainer {
-    .facultyImage {
-      width: 350px;
-    }
-    .facultyHeading {
-      width: 80%;
-    }
-    .facultySubHeading {
-      font-size: 16px;
-    }
+  .headingContainer {
+    width: 60%;
+  }
+  .subHeading {
+    font-size: 16px;
+  }
+  .facultyImage {
+    width: 350px;
+  }
+  .facultyHeading {
+    width: 80%;
+  }
+  .facultySubHeading {
+    font-size: 16px;
   }
 }
 
 @include mq('desktop-small') {
   .introductionContainer {
     width: 74%;
-    .Introductionimage {
-      width: 260px;
-    }
-    .mainHeading {
-      font-size: 42px;
-    }
-    .subHeading {
-      font-size: 14px;
-    }
+  }
+  .Introductionimage {
+    width: 240px;
+  }
+  .mainHeading {
+    font-size: 42px;
+  }
+  .subHeading {
+    font-size: 14px;
   }
   .facultyContainer {
     width: 74%;
-    .facultyHeading {
-      width: 80%;
-    }
-    .facultySubHeading {
-      font-size: 14px;
-    }
   }
-  .inspireContainer {
-    .inspireInnerContainer {
-      .inspireDetails {
-        font-size: 16px;
-      }
-      .inspireHeading {
-        font-size: 26px;
-      }
-      .inspireDetails {
-        font-size: 14px;
-      }
-    }
+  .facultyHeading {
+    width: 80%;
+  }
+  .facultySubHeading {
+    font-size: 14px;
+  }
+  .inspireDetails {
+    font-size: 16px;
+  }
+  .inspireHeading {
+    font-size: 26px;
+  }
+  .inspireDetails {
+    font-size: 14px;
   }
 }
 
 @include mq('tablet-wide') {
-  .introductionContainer {
-    .Introductionimage {
-      width: 240px;
-    }
-    .mainHeading {
-      font-size: 34px;
-    }
-    .subHeading {
-      font-size: 12px;
-    }
+  .Introductionimage {
+    width: 200px;
   }
-  .facultyContainer {
-    .facultyImage {
-      width: 320px;
-    }
+  .mainHeading {
+    font-size: 34px;
+  }
+  .subHeading {
+    font-size: 12px;
+  }
+  .facultyImage {
+    width: 280px;
+  }
 
-    .facultyHeading {
-      font-size: 20px;
-    }
-    .facultySubHeading {
-      font-size: 12px;
-    }
+  .facultyHeading {
+    font-size: 20px;
+  }
+  .facultySubHeading {
+    font-size: 12px;
   }
 }
 
 @include mq('tablet-custom') {
-  .facultyHeading{
+  .Introductionimage{
+    width: 180px;
+  }
+  .mainHeading{
+    font-size: 30px;
+  }
+  .subHeading{
     font-size: 10px;
   }
+  .facultyImage{
+    width: 250px;
+  }
+  .inspireHeading{
+    font-size:20px ;
+  }
+  .inspireDetails{
+    font-size: 11px;
+  }
+ 
+}
+@include mq('tablet'){
+  .introductionContainer{
+    width: 85%;
+  }
+  .facultyContainer{
+    @include flex-container( column ,center,center,20px);
+    width: 100%;
+    padding: 0%;
+  }
+  .facultyHeadingContainer{
+    @include flex-container( column ,center,center,20px);
+    width: 80%;
+    text-align: center;
+  }
+  .facultyHeading{
+    font-size: 30px;
+  }
+  .facultyImage{
+    width: 300px;
+  }
+  .facultySubHeading{
+    font-size: 14px;
+  }
+  .inspireContainer{
+    width: 80%;
+  }
 
+
+}
+@include mq ('tablet-small'){
+  .introductionContainer{
+    width: 86%;
+  }
+  .inspireContainer{
+    width: 90%;
+  }
+}
+@include mq('phone-wide'){
+  .headingContainer{
+    @include flex-container(column, center,flex-start,10px)
+  }
+  .mainHeading{
+    font-size: 22px;
+  }
+  .subHeading{
+    font-size: 8px;
+  }
+  .facultyImage{
+    width: 240px;
+  }
+  .inspireContainer{
+  @include flex-container(column,center,center,40px);
+  width: 60%;
+  }
+  .inspireInnerContainer{
+    padding: 8%;
+  }
+}
+
+@include mq ('phone-custom'){
+  .facultyHeading{
+    width: 24px;
+    width: 100%;
+  }
+  .introductionContainer{
+    width: 90%;
+  }
+  .Introductionimage{
+    width: 140px;
+  }
+  .mainHeading{
+    font-size: 20px;
+  }
+  .subHeading{
+    font-size: 7px;
+  }
+}
+@include mq ('phone'){
+  .introductionContainer{
+    width: 88%;
+  }
+  .Introductionimage{
+    width: 120px;
+  }
+  .mainHeading{
+    font-size: 16px;
+  }
+  .subHeading{
+    font-size: 6px;
+  }
 }

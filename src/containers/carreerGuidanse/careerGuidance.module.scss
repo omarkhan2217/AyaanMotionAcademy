@@ -1,35 +1,28 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(
-    column,
-    center,
-    center,
-    50px
-  );
+  @include flex-container(column, center, center, 50px);
   background-color: $color--bg-main;
+  padding: 7% 0% 5%;
 }
 
 .introductionContainer {
-  @include flex-container(
-    row,
-    space-between,
-    flex-start,
-    0px
-  );
+  @include flex-container(row, space-between, center, 0px);
+  position: relative;
   width: 70%;
   border-radius: 18px;
-  background-color: #e9eeff;
+}
+  // background-color: #e9eeff;
   .introductionHeadingContainer {
     @include flex-container(
       column,
-      center,
+      space-between,
       flex-start,
-      18px
+      16px
     );
     margin-left: 5%;
     width: 50%;
-    // background-color: aqua;
+    z-index: 2;
   }
   .introductionHeading {
     font-size: 56px;
@@ -48,5 +41,189 @@
     height: auto;
     transform: scale(1.2);
     transform-origin: bottom right;
+    z-index: 2;
+  }
+  .introductionBgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .guidingContainer {
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      40px
+      );
+      width: 65%;
+    }
+
+  .scholarshipContainer {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      10px
+    );
+    background-color: #e8f3ff;
+    padding: 2.2%;
+    border-radius: 20px;
+  }
+  .counselingContainer {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      10px
+    );
+    padding: 2.2%;
+    border-radius: 20px;
+    background-color: #e8edff;
+  }
+
+  .guidingHeader {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'space Grotesk', sans-serif;
+    width: 90%;
+  }
+  .guidingSubHeader {
+    font-size: 20px;
+    font-family: 'space Grotesk', sans-serif;
+    font-weight: 550;
+  }
+.button {
+  @include flex-container(column, center, center, 0px);
+  width: 20%;
+}
+
+@include mq('desktop') {
+    .introductionImage{
+      width: 300px;
+    }
+    .introductionHeading{
+      font-size: 54px;
+    }
+  }
+  .guidingContainer{
+    width: 70%;
+  }
+@include mq('desktop-medium'){
+  .introductionImage{
+    width: 260px ;
+  }
+  .introductionHeading{
+    font-size: 52px;
+  }
+  .guidingHeader{
+    font-size: 28px;
+  }
+  .guidingSubHeader{
+    font-size: 16px;
+  }
+
+}
+@include mq('desktop-small'){
+  .introductionImage{
+    width: 220px;
+  }
+  .introductionHeading{
+    font-size: 44px;
+  }
+  .guidingHeader{
+    font-size:24px ;
   }
 }
+@include mq('tablet-custom-2'){
+  .introductionContainer{
+    width: 75%;
+  }
+  .introductionImage{
+    width: 160px;
+  }
+  .introductionHeading{
+    font-size:38px;
+  }
+  .introductionSubHeading{
+    font-size: 12px;
+  }
+  .guidingHeader{
+    font-size:22px ;
+  }
+  .guidingSubHeader{
+    font-size: 14px;
+  }
+}
+@include mq('tablet'){
+  .introductionContainer{
+    width: 80%;
+  }
+ 
+  .introductionHeading{
+    font-size:30px;
+  }
+  .introductionSubHeading{
+    font-size: 10px;
+  }
+  .guidingHeader{
+    font-size:18px ;
+    width: 100%;
+  }
+  .guidingContainer{
+    width: 80%;
+  }
+  .guidingSubHeader{
+    font-size: 11px;
+  }
+}
+@include mq('tablet-small'){
+  .introductionContainer{
+    width: 84%;
+  }
+  .introductionHeading{
+    font-size:26px;
+  }
+  .button{
+    width: 30%;
+  }
+}
+@include mq('phone-custom'){
+  .introductionImage{
+    width: 140px;
+  }
+  .introductionContainer{
+    width: 90%;
+  }
+  .introductionHeading{
+    font-size:20px;
+  }
+  .introductionSubHeading{
+    font-size: 8px;
+  }
+  .guidingHeader{
+    font-size:14px ;
+  }
+  .guidingSubHeader{
+    font-size: 9px;
+  }
+  .button{
+    width: 50%;
+  }
+}
+@include mq('phone'){
+  .introductionContainer{
+    width: 90%;
+  }
+  .introductionImage{
+    width: 120px;
+  }
+
+}
+
+

@@ -9,3 +9,4 @@ export * from './ourbatchesCard';
 export * from './otherStudentCard'
 export * from './PageEndingText';
 export * from './policyText';
+export * from './careerGuidanceText';
