@@ -4,7 +4,7 @@ export const NavigationData = [
   {
     className: 'subElements',
     elements: [
-      { text: "About Us", link: "/about-us" },
+      { text: "About Us", link: "/About-us" },
       { text: "Contact Us", link: "/contact-us" },
       { text: "Faculty", link: "/faculty" },
       { text: "Admissions", link: "/admissions" },

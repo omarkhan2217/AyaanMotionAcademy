@@ -84,7 +84,7 @@
     user-select: none;
     border-radius: 32px 0px 0px 32px;
     transform:scale(1.2);
-    translate: 20px -31px;
+    transform-origin: bottom left;
     
 }
 
@@ -94,7 +94,8 @@
     user-select: none;
     border-radius: 0px 32px 32px 0px;
     transform:scale(1.2);
-    translate: -18px -28px;
+    transform-origin: bottom right;
+
     
 }
 

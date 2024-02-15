@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { ContactUs, HomePage, OurAchievers,OurFaculty , PrivacyPolicy,TermsAndPolicy} from './pages';
+import { AboutUS, ContactUs, HomePage, OurAchievers,OurFaculty , PrivacyPolicy,TermsAndPolicy} from './pages';
 
 export const App = () => {
   return (
@@ -11,6 +11,7 @@ export const App = () => {
         <Route path="/Privacy-policy" element={<PrivacyPolicy/>}/>
         <Route path="/Terms-and-Policy" element={<TermsAndPolicy/>}/>
         <Route path="/contact-Us" element={<ContactUs/>}/>
+        <Route path="/About-Us" element={<AboutUS/>}/>
       </Routes>
     </div>
   )

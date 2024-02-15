@@ -6,8 +6,7 @@ import { Button } from '../../components';
 import { ArrowIcon } from '../../assets';
 import { useWindowSize } from 'usehooks-ts';
 
-
-export interface ITermsAndPolicyProps {
+interface ITermsAndPolicyProps {
     text: string;
 }
 

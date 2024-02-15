@@ -1,0 +1,214 @@
+@use '../../styles/global.scss' as *;
+
+.mainContainer {
+  @include flex-container(column, center, center, 100px);
+  background-color: $color--bg-main;
+  padding: 6% 0% 6%;
+}
+
+.introductionContainer {
+  @include flex-container(row, space-between, center, 0px);
+  width: 70%;
+  border-radius: 18px;
+  background-color: #ede9ff;
+  .mainHeading {
+    font-size: 56px;
+    font-family: 'space Grotesk';
+    font-weight: 800;
+  }
+
+  .Introductionimage {
+    width: 380px;
+    height: auto;
+    transform: scale(1.2);
+    transform-origin: bottom right;
+  }
+  .subHeading {
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+    width: 80%;
+  }
+  .headingContainer {
+    @include flex-container(
+      column,
+      center,
+      flex-start,
+      18px
+    );
+    margin-left: 5%;
+    width: 50%;
+    // background-color: aqua;
+  }
+}
+
+.facultyContainer {
+  @include flex-container(
+    row,
+    space-between,
+    flex-start,
+    0px
+  );
+  width: 70%;
+  padding-right: 5%;
+  // background-color: aquamarine;
+
+  .facultyHeadingContainer {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      10px
+    );
+    width: 50%;
+    // background-color: #ede9ff;
+  }
+
+  .facultyHeading {
+    font-size: 32px;
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    width: 70%;
+  }
+  .facultySubHeading {
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+    width: 80%;
+  }
+
+  .facultyImage {
+    width: 500px;
+  }
+}
+
+.inspireContainer {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 65%;
+
+  .inspireInnerContainer {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      16px
+    );
+    background-color: #ffebe8;
+    padding: 3%;
+    border-radius: 24px;
+    height: fit-content;
+    &:nth-child(2) {
+      background-color: #e8edff;
+    }
+    &:nth-child(3) {
+      background-color: #e8f3ff;
+      margin-top: -5%;
+    }
+    &:nth-child(4) {
+      background-color: #f1e8ff;
+      margin-top: 1%;
+    }
+  }
+  .inspireHeading {
+    font-size: 32px;
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    width: 90%;
+  }
+
+  .inspireDetails {
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+  }
+}
+
+@include mq('desktop') {
+  .introductionContainer {
+    .Introductionimage {
+      width: 320px;
+    }
+    .headingContainer {
+      width: 50%;
+    }
+    .mainHeading {
+      font-size: 48px;
+    }
+  }
+  .facultyContainer {
+    .facultyImage {
+      width: 420px;
+    }
+    .facultyHeadingContainer {
+      width: 70%;
+    }
+    .facultySubHeading {
+      width: 90%;
+    }
+  }
+  .inspireContainer {
+    width: 74%;
+    .inspireHeading {
+      width: 100%;
+    }
+  }
+}
+
+@include mq('desktop-medium') {
+  .introductionContainer {
+    .Introductionimage {
+      width: 280px;
+    }
+    .headingContainer {
+      width: 60%;
+    }
+    .subHeading {
+      font-size: 16px;
+    }
+  }
+  .facultyContainer {
+    .facultyImage {
+      width: 390px;
+    }
+    .facultyHeading {
+      width: 80%;
+    }
+    .facultySubHeading {
+      font-size: 16px;
+    }
+  }
+}
+
+@include mq('desktop-small') {
+  .introductionContainer {
+    width: 74%;
+    .Introductionimage {
+      width: 260px;
+    }
+    .mainHeading {
+      font-size: 44px;
+    }
+  }
+  .facultyContainer {
+    width: 74%;
+    .facultyHeading {
+      width: 80%;
+    }
+    .facultySubHeading {
+      font-size: 14px;
+    }
+  }
+  .inspireContainer {
+    .inspireInnerContainer {  
+      .inspireDetails {
+        font-size: 16px;
+      }
+      .inspireHeading {
+        font-size: 30px;
+      }
+    }
+  }
+}

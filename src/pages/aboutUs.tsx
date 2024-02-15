@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { AboutUsContainer} from "../containers"
+import { Layout } from "../layout"
 
-export const AboutUs: React.FC = () => {
+export const AboutUS: React.FC = () => {
     return (
-        <div>
-            <Link to="/">HOMEPAGe</Link>
-        </div>
-
+        <Layout>
+            <AboutUsContainer />
+        </Layout>
     )
 }

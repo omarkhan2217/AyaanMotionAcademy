@@ -13,7 +13,7 @@ export const NavbarData: INavbarItemProps[] = [
     },
     {
         label: 'About Us',
-        linkTo: '/',
+        linkTo: '/About-Us',
         key: 3
     },
     {
