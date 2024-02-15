@@ -16,6 +16,7 @@ export interface IHighlightedAchieverProps {
     id: number,
     name: string,
     image: string,
+    altImage: string,
     description: string,
     isReversed?: boolean
 }

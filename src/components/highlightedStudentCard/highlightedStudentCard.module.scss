@@ -1,113 +1,164 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-    @include flex-container(row, flex-start, flex-start, 0px);
-    border-radius: 32px;
-    background-color: $color--bg-white;
-    box-shadow: 2px 2px 20px 2px rgba(0, 28, 59, 0.377);
+  @include flex-container(row, flex-start, flex-start, 0px);
+  border-radius: 32px;
+  background-color: $color--bg-white;
+  box-shadow: 2px 2px 20px 2px rgba(0, 28, 59, 0.377);
+  transition: $linear--transition;
+  width: 50%;
+
+  &:hover {
     transition: $linear--transition;
-    width: 50%;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
 
-    &:hover {
-        transition: $linear--transition;
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
-        cursor: pointer;
-    }
-
-    &:active {
-        transition: $linear--transition;
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.45);
-    }
+  &:active {
+    transition: $linear--transition;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.45);
+  }
 }
-.mainContainer:where(:nth-child(1)){
-    background-color: #F2FFF3;
-    
+.mainContainer:where(:nth-child(1)) {
+  background-color: #f2fff3;
 }
-.mainContainer:where(:nth-child(2)){
-    background-color: #FFEDE4;
-
+.mainContainer:where(:nth-child(2)) {
+  background-color: #ffede4;
 }
 
 .mainContainerAlt {
-    @extend .mainContainer;
-    flex-direction: row-reverse;
+  @extend .mainContainer;
+  flex-direction: row-reverse;
 }
 
 .textMainContainer {
-    @include flex-container(column, center, flex-start, 6px);
-    height: 100%;
-    padding-left: 45px;
-    padding-top: 2%;
-    padding-right: 40px;
-    padding-bottom: 2%;
+  @include flex-container(column, center, flex-start, 6px);
+  height: 100%;
+  padding-left: 45px;
+  padding-top: 2%;
+  padding-right: 40px;
+  padding-bottom: 2%;
 }
 
 .textMainContaienrAlt {
-    @extend .textMainContainer;
-    @include flex-container(column, flex-end, flex-end, 6px);
+  @extend .textMainContainer;
+  @include flex-container(column, flex-end, flex-end, 6px);
 }
 
 .textContainer {
-    @include flex-container(column, flex-start, flex-start, 6px);
+  @include flex-container(
+    column,
+    flex-start,
+    flex-start,
+    6px
+  );
 }
 
 .textContainerAlt {
-    @include flex-container(column, flex-end, flex-end, 6px);
-
+  @include flex-container(column, flex-end, flex-end, 6px);
 }
 
 .studentName,
 .collegeName {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    color: $color--text-primary;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: $color--text-primary;
 }
 .studentNameAlt,
 .collegeNameAlt {
-    @extend .studentName;
-    text-align: right;
+  @extend .studentName;
+  text-align: right;
 }
 
 .collegeName {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-.collegeNameAlt{
-    font-size: 14px;
+.collegeNameAlt {
+  font-size: 14px;
 }
 
 .img {
-    width: 200px;
-    height:100%;
-    user-select: none;
-    border-radius: 32px 0px 0px 32px;
-    transform:scale(1.2);
-    transform-origin: bottom left;
-    
+  width: 200px;
+  height: 100%;
+  user-select: none;
+  border-radius: 32px 0px 0px 32px;
+  transform: scale(1.2);
+  transform-origin: bottom left;
 }
 
 .imgAlt {
-    width: 180px;
-    height: 150%;
-    user-select: none;
-    border-radius: 0px 32px 32px 0px;
-    transform:scale(1.2);
-    transform-origin: bottom right;
-
-    
+  width: 180px;
+  height: 150%;
+  user-select: none;
+  border-radius: 0px 32px 32px 0px;
+  transform: scale(1.2);
+  transform-origin: bottom right;
 }
 
-
 @include mq('desktop') {
-    .mainContainer {
-        width: 60%;
-    }
+  .mainContainer {
+    width: 60%;
+  }
 }
 
 @include mq('desktop-medium') {
-    .mainContainer {
-        width: 65%;
-    }
+  .mainContainer {
+    width: 65%;
+  }
+}
+
+@include mq('desktop-small') {
+  .mainContainer {
+    width: 85%;
+  }
+}
+
+@include mq('tablet-custom') {
+  .collegeName,
+  .collegeNameAlt {
+    font-size: 12px !important;
+    font-weight: 500;
+  }
+}
+
+@include mq('tablet') {
+  .mainContainer {
+    @include flex-container(column, center, center, 0px);
+    width: 80%;
+    background-color: $color--bg-white;
+  }
+
+  .img,
+  .imgAlt {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    border-radius: 10px;
+    transform: scale(1);
+    transform-origin: bottom left;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+  }
+  .textMainContainer {
+    padding: 5%;
+  }
+}
+
+@include mq('phone-custom') {
+  .studentName,
+  .studentNameAlt {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+  }
+
+  .mainContainer {
+    @include flex-container(column, center, center, 0px);
+    width: 95%;
+    background-color: $color--bg-white;
+  }
 }

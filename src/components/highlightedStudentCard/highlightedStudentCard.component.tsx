@@ -3,12 +3,15 @@ import classes from './highlightedStudentCard.module.scss';
 import { CustomPill } from "..";
 import { IHighlightedStudentCardProps } from "../../types";
 import { TeacherLogo } from "../../assets";
+import { useWindowSize } from "usehooks-ts";
 
 export const HighlightedStudentCard: React.FC<IHighlightedStudentCardProps> = (props) => {
     const { rank, name, description, image, isReversed = false } = props
+    const { width } = useWindowSize();
+    const isTablet = width <= 768;
     return (
         <div className={classes.mainContainer}>
-            {isReversed ? null : <img className={isReversed ? classes.imgAlt : classes.img} src={image} />}
+            {!isReversed ? <img className={isReversed ? classes.imgAlt : classes.img} src={image} /> : isReversed && isTablet ? <img className={isReversed ? classes.imgAlt : classes.img} src={image} /> : null}
             <div className={isReversed ? classes.textMainContaienrAlt : classes.textMainContainer}>
                 <CustomPill label={`AIR ${rank}`} />
                 <div className={isReversed ? classes.textContainerAlt : classes.textContainer}>
@@ -18,7 +21,7 @@ export const HighlightedStudentCard: React.FC<IHighlightedStudentCardProps> = (p
                     <TeacherLogo />
                 </div>
             </div>
-            {isReversed ? <img className={isReversed ? classes.imgAlt : classes.img} src={image} /> : null}
+            {isReversed && !isTablet ? <img className={isReversed ? classes.imgAlt : classes.img} src={image} /> : null}
         </div>
     )
 }

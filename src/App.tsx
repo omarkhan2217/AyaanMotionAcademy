@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { AboutUS, ContactUs, HomePage, OurAchievers,OurFaculty , PrivacyPolicy,TermsAndPolicy} from './pages';
+import { AboutUS, ContactUs, HomePage, OurAchievers,OurFaculty , PrivacyPolicy,TermsAndPolicy,CareerGuidance} from './pages';
 
 export const App = () => {
   return (
@@ -8,10 +8,11 @@ export const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/our-achievers" element={<OurAchievers />} />
         <Route path="/our-Faculty" element={<OurFaculty/>}/>
-        <Route path="/Privacy-policy" element={<PrivacyPolicy/>}/>
-        <Route path="/Terms-and-Policy" element={<TermsAndPolicy/>}/>
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+        <Route path="/terms-and-Policy" element={<TermsAndPolicy/>}/>
         <Route path="/contact-Us" element={<ContactUs/>}/>
-        <Route path="/About-Us" element={<AboutUS/>}/>
+        <Route path="/about-Us" element={<AboutUS/>}/>
+        <Route path="/career-Guidance" element={<CareerGuidance/>}/>
       </Routes>
     </div>
   )

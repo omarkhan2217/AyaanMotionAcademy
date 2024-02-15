@@ -3,7 +3,7 @@ import classes from './contactUs.module.scss'
 import { PolicyText } from '../../components';
 import img from '../../assets/images/contactUs/Rectangle 63.png'
 import { Button } from '../../components';
-import { ArrowIcon } from '../../assets';
+import { ArrowIcon, FacebokIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YoutubeIcon } from '../../assets';
 import { useWindowSize } from 'usehooks-ts';
 
 interface ITermsAndPolicyProps {
@@ -42,6 +42,13 @@ export const ContactUscontainer: React.FC = () => {
                     {isSmallScreen && <img className={classes.imageContainer} src={img} alt="Hari-Om Tower" />}
                     <div className={classes.details}>
                         <div className={classes.heading}>Follow Us:</div>
+                        <div className={classes.socialMedia}>
+                            <a href="/"><YoutubeIcon/></a>
+                            <a href="/"><InstagramIcon/></a>
+                            <a href="/"><TwitterIcon/></a>
+                            <a href="/"><FacebokIcon/></a>
+                            <a href="/"><LinkedInIcon/></a>
+                        </div>
                     </div>
                 </div>
                 {!isSmallScreen && <img className={classes.imageContainer} src={img} alt="Hari-Om Tower" />}

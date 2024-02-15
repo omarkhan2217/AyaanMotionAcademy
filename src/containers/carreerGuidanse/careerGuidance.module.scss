@@ -1,0 +1,52 @@
+@use '../../styles/global.scss' as *;
+
+.mainContainer {
+  @include flex-container(
+    column,
+    center,
+    center,
+    50px
+  );
+  background-color: $color--bg-main;
+}
+
+.introductionContainer {
+  @include flex-container(
+    row,
+    space-between,
+    flex-start,
+    0px
+  );
+  width: 70%;
+  border-radius: 18px;
+  background-color: #e9eeff;
+  .introductionHeadingContainer {
+    @include flex-container(
+      column,
+      center,
+      flex-start,
+      18px
+    );
+    margin-left: 5%;
+    width: 50%;
+    // background-color: aqua;
+  }
+  .introductionHeading {
+    font-size: 56px;
+    font-family: 'space Grotesk';
+    font-weight: 800;
+  }
+
+  .introductionSubHeading {
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+    width: 80%;
+  }
+  .introductionImage {
+    width: 380px;
+    height: auto;
+    transform: scale(1.2);
+    transform-origin: bottom right;
+  }
+}

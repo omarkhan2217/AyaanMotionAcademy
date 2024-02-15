@@ -171,7 +171,7 @@
   }
   .facultyContainer {
     .facultyImage {
-      width: 390px;
+      width: 350px;
     }
     .facultyHeading {
       width: 80%;
@@ -189,7 +189,10 @@
       width: 260px;
     }
     .mainHeading {
-      font-size: 44px;
+      font-size: 42px;
+    }
+    .subHeading {
+      font-size: 14px;
     }
   }
   .facultyContainer {
@@ -202,13 +205,49 @@
     }
   }
   .inspireContainer {
-    .inspireInnerContainer {  
+    .inspireInnerContainer {
       .inspireDetails {
         font-size: 16px;
       }
       .inspireHeading {
-        font-size: 30px;
+        font-size: 26px;
+      }
+      .inspireDetails {
+        font-size: 14px;
       }
     }
   }
+}
+
+@include mq('tablet-wide') {
+  .introductionContainer {
+    .Introductionimage {
+      width: 240px;
+    }
+    .mainHeading {
+      font-size: 34px;
+    }
+    .subHeading {
+      font-size: 12px;
+    }
+  }
+  .facultyContainer {
+    .facultyImage {
+      width: 320px;
+    }
+
+    .facultyHeading {
+      font-size: 20px;
+    }
+    .facultySubHeading {
+      font-size: 12px;
+    }
+  }
+}
+
+@include mq('tablet-custom') {
+  .facultyHeading{
+    font-size: 10px;
+  }
+
 }

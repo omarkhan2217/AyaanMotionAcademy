@@ -5,3 +5,4 @@ export * from './ourFaculty';
 export * from './privacyPolicy';
 export * from './termsAndPolicy';
 export * from './contactUs';
+export * from './careerGuidance';
