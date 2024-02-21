@@ -2,9 +2,9 @@
 
 .mainContainer {
   @include flex-container(row, center, center, 0px);
-  max-height: fit-content;
-  max-width: 82vw;
-  margin-left: 17%;
+  // max-height: fit-content;
+  max-width: 80vw;
+  margin-left: 16% !important;
 }
 
 
@@ -31,6 +31,7 @@
 @include mq('tablet') {
   .testimonialCardContainer{
     transform: scale(0.88);
+    margin-top: -12% 0% -12%;
   }
 }
 @include mq('phone-wide') {

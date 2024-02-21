@@ -4,8 +4,18 @@
 $color--bg-primary: hsl(248, 100%, 58%);
 $color--bg-secondary: hsl(252, 100%, 85%);
 $color--bg-secondary-dark: hsl(162, 30%, 41%);
-$color--bg-main: hsl(225, 100%, 98%);
-$color--bg-white: hsl(0, 0%, 100%);
+$color--bg-main: hsl(228, 100%, 98%);
+$color--bg-white: rgb(255, 255, 255);
+$color--bg-1-active: rgb(242, 255, 243);
+$color--bg-2-active: rgb(255, 237, 228);
+$color--bg-3-active: rgb(255, 228, 196);
+$color--bg-1-box: hwb(8 91% 0%);
+$color--bg-2-box: rgb(232, 237, 255);
+$color--bg-3-box: rgb(232, 243, 255);
+$color--bg-4-box: rgb(241, 232, 255);
+$color--bg-5-box: rgb(232, 243, 255);
+$color--bg-6-box: rgb(232, 237, 255);
+$color--bg-1-main-box: rgb(237, 233, 255);
 
 // $color--bg-primary-light: rgba(255, 81, 81, 0.1);
 // $color--bg-lighter: hsl(225, 40%, 98%);
@@ -73,13 +83,17 @@ $color--text-black-light: #333333;
 $shadow--flat: 0px 0px 0px 0px transparent;
 $shadow--subtle: 0px 12px 18px rgba(64, 72, 82, 0.1);
 $shadow--hard: 0px 6px 14px rgba(64, 72, 82, 0.1);
-
+$shadow--soft: 0px 0px 26px 0px
+  var(--card-shadow, #8282ff61);
+$shadow--soft-M: 0px 0px 26px 0px
+  var(--card-shadow, #8282ff);
 // Border Radii
 
 $border--sharp: 6px;
 $border--elegant: 10px;
 $border--playful: 15px;
 $border--round: 1000px;
+$border--bottom-soft: 0.5px solid rgba(0, 0, 0, 0.282);
 
 // Transitions
 
@@ -133,6 +147,14 @@ $breakpoints: (
     -webkit-box-orient: vertical;
   }
 }
+//Box-gradient
+
+$box--gradient-B-W: linear-gradient(
+  to bottom,
+  #c8cdff,
+  #dfe3ff,
+  #f1f3ff6f
+);
 
 @mixin gradient($start-color, $end-color, $orientation) {
   background: $start-color;

@@ -12,18 +12,18 @@ export const NavbarData: INavbarItemProps[] = [
         key: 2
     },
     {
+        label:  'Batches',
+        linkTo: '/our-batches',
+        key: 3
+    },
+    {
         label: 'About Us',
         linkTo: '/about-us',
-        key: 3
+        key: 4
     },
     {
         label: 'Contact Us',
         linkTo: '/contact-us',
-        key: 4
-    },
-    {
-        label: 'Fee Structure',
-        linkTo: '/',
         key: 5
-    }
+    },
 ]

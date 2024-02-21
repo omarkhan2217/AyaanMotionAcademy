@@ -4,26 +4,27 @@
   @include flex-container(row, flex-start, flex-start, 0px);
   border-radius: 32px;
   background-color: $color--bg-white;
-  box-shadow: 2px 2px 20px 2px rgba(0, 28, 59, 0.377);
   transition: $linear--transition;
   width: 50%;
 
   &:hover {
     transition: $linear--transition;
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+    box-shadow:$shadow--soft-M;
   }
 
   &:active {
     transition: $linear--transition;
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.45);
+    box-shadow: $shadow--soft-M;
   }
+
 }
 .mainContainer:where(:nth-child(1)) {
-  background-color: #f2fff3;
+  background-color: $color--bg-1-active;
+  box-shadow:$shadow--soft;
 }
 .mainContainer:where(:nth-child(2)) {
-  background-color: #ffede4;
+  box-shadow:$shadow--soft;
+  background-color:$color--bg-2-active;
 }
 
 .mainContainerAlt {
@@ -158,7 +159,7 @@
 
   .mainContainer {
     @include flex-container(column, center, center, 0px);
-    width: 95%;
+    width: 86%;
     background-color: $color--bg-white;
   }
 }

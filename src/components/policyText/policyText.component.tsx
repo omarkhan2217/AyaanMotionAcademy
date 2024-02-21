@@ -9,7 +9,7 @@ export interface IPolicyTextProps {
 export const PolicyText: React.FC<IPolicyTextProps> = (props) => {
     const { mainHeader, details } = props;
     return (
-        <div className={classes.container}>
+        <div className={classes.mainContainer}>
             <div className={classes.mainHeader}>
                 {mainHeader}
             </div>

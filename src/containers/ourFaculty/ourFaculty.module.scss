@@ -1,27 +1,70 @@
-@use '../../styles/global.scss' as*;
-
+@use '../../styles/global.scss' as *;
 
 .mainContainer {
-    @include flex-container(column, flex-start, center, 50px);
-    background-color: $color--bg-main;
+  @include flex-container(column, flex-start, center, 50px);
+  background-color: $color--bg-main;
+  padding: 8% 0%;
 }
 
-.TeachersImage{
-    margin-top: -50px;
-    width: 700px;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
+.TeachersImage {
+  margin-top: -50px;
+  width: 55%;
+  background-position: center;
+  background-size: cover;
 }
 
-.facultyContainer{
+.facultyContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.rankContainer,
+.stream {
+  display: none;
+}
+
+@include mq('desktop-small') {
+  .facultyContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap:40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
+@include mq('tablet-wide'){
+  .facultyContainer{
+    gap: 20px;
+  }
+}
+@include mq ('tablet-custom'){
+  .facultyContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@include mq('tablet-small') {
+  .facultyContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@include mq('phone-wide') {
+  .facultyContainer {
+    grid-template-columns:  1fr 1fr ;
+    grid-gap:20px ;
+  }
+  .TeachersImage {
+    width: 80%;
+  }
 }
 .customCardStyle {
-        .rankContainer,
-        .stream {
-          display: none; 
-        }
+  @include mq('tablet') {
+    .rankContainer,
+    .stream {
+      display: block;
+    }
+  }
 }

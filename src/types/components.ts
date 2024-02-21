@@ -49,12 +49,12 @@ export interface IHighlightedStudentCardProps
 }
 export interface IOtherStudentCardProps
   extends React.HTMLAttributes<HTMLDivElement> {
-    rank?: number|string;
-    name: string;
-    image:string;
-    college?: string;
-    stream?: 'JEE' | 'NEET';
-    isFacultyCard?: boolean;
+  rank?: number | string;
+  name: string;
+  image: string;
+  college?: string;
+  stream?: 'JEE' | 'NEET';
+  isFacultyCard?: boolean;
 }
 
 export interface IPillProps
@@ -79,16 +79,11 @@ export interface ISTestimonialCardProps
 
 export interface ISBatchesCardProps
   extends React.HtmlHTMLAttributes<HTMLDivElement> {
+  path: string;
   BatchName: string;
   grade: number | string;
-  guide?: string;
+  guide: string;
   image?: string;
-  detaile1?: string;
-  detaile2?: string;
-  detaile3?: string;
-  detaile4?: string;
-  detaile5?: string;
-  detaile6?: string;
-  isLable?:boolean;
+  isScholar?: boolean;
 
 }

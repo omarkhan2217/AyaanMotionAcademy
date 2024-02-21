@@ -1,9 +1,9 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-    @include flex-container(column, flex-start, center, 80px);
+    @include flex-container(column, flex-start, center, 50px);
     background-color: $color--bg-main;
-    padding: 4%
+    padding: 5% 0% 10%;
 }
 
 .highlightedStudentCardContainer {
@@ -16,4 +16,54 @@
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr ;
     grid-gap: 40px;
+}
+
+
+@include mq('desktop-small'){
+    .otherStudentCard{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 40px;
+    }
+
+}
+@include mq('tablet-custom'){
+    .highlightedStudentCardContainer{
+        margin-bottom: 10px;
+    }
+    .otherStudentCard{
+        display: grid;
+        grid-template-columns: 1fr  1fr ;
+        gap: 40px;
+    }
+
+}
+@include mq("phone-custom"){
+    .mainContainer{
+        @include flex-container(column, flex-start, center, 40px);
+    }
+    .otherStudentCard{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 20px;
+    }
+  
+    .highlightedStudentCardContainer{
+        @include flex-container(column, center, center, 50px);
+        margin-bottom: 20px;
+    }
+}
+@include mq("phone"){
+    .mainContainer{
+        @include flex-container(column, flex-start, center, 40px);
+    }
+    .otherStudentCard{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 14px;
+    }
+    .highlightedStudentCardContainer{
+        @include flex-container(column, center, center, 50px);
+        margin-bottom: 20px;
+    }
 }

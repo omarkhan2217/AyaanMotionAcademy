@@ -21,7 +21,7 @@
     15px
   );
   .mainLogo {
-    width: 60%;
+    width: 50%;
   }
   .logoText {
     width: 60%;
@@ -114,14 +114,24 @@
   font-weight: 700;
 }
 .socialContainer {
-  @include flex-container(column,flex-start,flex-start,8px);
+  @include flex-container(
+    column,
+    flex-start,
+    flex-start,
+    8px
+  );
   margin-right: 4%;
   color: $color--text-primary-lighter;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 
-  .socialMedia{
-    @include flex-container(row,flex-start,flex-start,20px);
+  .socialMedia {
+    @include flex-container(
+      row,
+      flex-start,
+      flex-start,
+      20px
+    );
     width: fit-content;
   }
 }
@@ -225,15 +235,11 @@
 }
 
 @include mq('tablet-wide') {
-
-  .footerHeading {
-    .logoText,
-    .logo {
-      width: 90%;
-      font-size: 12px;
-    }
+  .logoText,
+  .logo {
+    width: 90%;
+    font-size: 12px;
   }
-  
 }
 
 @include mq('tablet-custom') {
@@ -244,19 +250,17 @@
   }
   .upperElementContainer {
     gap: 30px;
-    .footerHeading {
-      width: 150%;
-    }
+  }
+  .footerHeading {
+    width: 150%;
   }
   .elements {
     gap: 25px;
   }
-  .footerHeading {
-    .logoText,
-    .logo {
-      width: 70%;
-      font-size: 12px;
-    }
+  .logoText,
+  .logo {
+    width: 70%;
+    font-size: 12px;
   }
 }
 
@@ -277,14 +281,12 @@
   .socialContainer {
     text-wrap: nowrap;
   }
-  .footerHeading {
-    .logoText {
-      width: 80%;
-      font-size: 10px;
-    }
-    .logo {
-      width: 100%;
-    }
+  .logoText {
+    width: 80%;
+    font-size: 10px;
+  }
+  .logo {
+    width: 100%;
   }
   .link {
     font-size: 9.5px !important;
@@ -317,19 +319,18 @@
       flex-start
     );
     gap: 20px;
-    .policyContainer,
-    .socialContainer {
-      font-size: 12px;
-    }
   }
-  .footerHeading {
-    .logoText {
-      font-size: 12px;
-    }
+  .policyContainer,
+  .socialContainer {
+    font-size: 12px;
+  }
+  .logoText {
+    font-size: 12px;
   }
   .link {
     font-size: 12px !important;
   }
+
 }
 
 @include mq('phone-custom') {
@@ -339,19 +340,16 @@
     gap: 20px;
     text-wrap: nowrap;
   }
-  .lowerElementContainer {
-    .policyContainer,
-    .socialContainer {
-      font-size: 12px;
-    }
+  .policyContainer,
+  .socialContainer {
+    font-size: 12px;
   }
-  .footerHeading {
-    .logoText {
-      width: 60%;
-      font-size: 12px;
-    }
+  .logoText {
+    width: 60%;
+    font-size: 12px;
   }
   .link {
     font-size: 12px !important;
   }
+ 
 }

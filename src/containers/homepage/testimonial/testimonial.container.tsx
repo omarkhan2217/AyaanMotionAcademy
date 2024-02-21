@@ -13,7 +13,7 @@ export const TestimonialContainer: React.FC = () => {
     const spaceBetween = 0
     const slidesPerView =
         width <= 390 ? 1.4 :
-            width <= 490 ? 1.6 :
+            width <= 490 ? 1.99:
                 width <= 600 ? 2.1 :
                     width <= 800 ? 2.4 :
                         width <= 900 ? 2.8 :

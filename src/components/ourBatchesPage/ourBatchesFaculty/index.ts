@@ -1,0 +1,1 @@
+export * from './ourBatchesFaculty.component';

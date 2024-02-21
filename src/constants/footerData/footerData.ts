@@ -7,7 +7,7 @@ export const NavigationData = [
       { text: "About Us", link: "/about-us" },
       { text: "Contact Us", link: "/contact-us" },
       { text: "Faculty", link: "/our-faculty" },
-      { text: "Programs & Courses", link: "/programs-courses" },
+      { text: "Programs & Courses", link: "/our-batches" },
     ],
   },
   {

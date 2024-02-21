@@ -1,6 +1,15 @@
 @use '../../styles/global.scss' as *;
 
 .mainContainer {
-  @include flex-container(column, flex-start, center, 63px);
+  @include flex-container(column, flex-start, center, 60px);
   background-color: $color--bg-main;
+  padding: 5% 0% 5%;
+}
+
+@include mq('phone-custom'){
+  .mainContainer{
+    @include flex-container(column, flex-start, center, 40px);
+    padding: 6%;
+  }
+  
 }

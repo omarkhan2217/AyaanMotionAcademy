@@ -1,1 +1,1 @@
-export * from './OurBatcehs.component';
+export * from './OurBatches.component';

@@ -1,5 +1,5 @@
 import React from "react";
-import { PageText, SectionText, OtherStudentCard, PageEndingText } from "../../components";
+import { PageText, OtherStudentCard, PageEndingText } from "../../components";
 import classes from './ourAchievers.module.scss';
 import { HighlightedStudentCard } from "../../components/highlightedStudentCard";
 import { HighlightedAchieversData, OtherAchieversData } from "../../constants";
@@ -30,7 +30,7 @@ export const OurAchieversContainer: React.FC = () => {
                     )
                 })}
             </div>
-            <SectionText header="Our Achievers: Paving Paths, Setting Records" />
+            <PageText mainHeader={"Our Achievers: Paving Paths, Setting Records" }  />
             <div className={classes.otherStudentCard}>
                 {OtherAchieversData.map((item) => {
                     return (

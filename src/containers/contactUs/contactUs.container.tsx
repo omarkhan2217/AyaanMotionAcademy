@@ -43,10 +43,10 @@ export const ContactUscontainer: React.FC = () => {
                     <div className={classes.details}>
                         <div className={classes.heading}>Follow Us:</div>
                         <div className={classes.socialMedia}>
-                            <a href="/"><YoutubeIcon/></a>
-                            <a href="/"><InstagramIcon/></a>
-                            <a href="/"><TwitterIcon/></a>
-                            <a href="/"><FacebokIcon/></a>
+                            <a href="https://www.youtube.com/channel/UCml6M5g7DRPd6W1bcX7313g"><YoutubeIcon/></a>
+                            <a href="https://www.instagram.com/ayaansmotionacademy/"><InstagramIcon/></a>
+                            <a href="https://twitter.com/ayaansmotion"><TwitterIcon/></a>
+                            <a href="https://www.facebook.com/ayaansmotionacademy"><FacebokIcon/></a>
                             <a href="/"><LinkedInIcon/></a>
                         </div>
                     </div>

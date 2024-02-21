@@ -12,7 +12,6 @@
   width: 70%;
   border-radius: 18px;
 }
-  // background-color: #e9eeff;
   .introductionHeadingContainer {
     @include flex-container(
       column,
@@ -71,7 +70,7 @@
       flex-start,
       10px
     );
-    background-color: #e8f3ff;
+    background-color: $color--bg-5-box;
     padding: 2.2%;
     border-radius: 20px;
   }
@@ -84,7 +83,7 @@
     );
     padding: 2.2%;
     border-radius: 20px;
-    background-color: #e8edff;
+    background-color: $color--bg-6-box;
   }
 
   .guidingHeader {
@@ -105,7 +104,7 @@
 
 @include mq('desktop') {
     .introductionImage{
-      width: 300px;
+      width: 250px;
     }
     .introductionHeading{
       font-size: 54px;
@@ -116,7 +115,7 @@
   }
 @include mq('desktop-medium'){
   .introductionImage{
-    width: 260px ;
+    width: 240px ;
   }
   .introductionHeading{
     font-size: 52px;
@@ -131,7 +130,7 @@
 }
 @include mq('desktop-small'){
   .introductionImage{
-    width: 220px;
+    width: 230px;
   }
   .introductionHeading{
     font-size: 44px;
@@ -145,7 +144,7 @@
     width: 75%;
   }
   .introductionImage{
-    width: 160px;
+    width: 180px;
   }
   .introductionHeading{
     font-size:38px;
@@ -162,7 +161,7 @@
 }
 @include mq('tablet'){
   .introductionContainer{
-    width: 80%;
+    width: 70%;
   }
  
   .introductionHeading{
@@ -195,10 +194,10 @@
 }
 @include mq('phone-custom'){
   .introductionImage{
-    width: 140px;
+    width: 160px;
   }
   .introductionContainer{
-    width: 90%;
+    width: 80%;
   }
   .introductionHeading{
     font-size:20px;
@@ -215,13 +214,23 @@
   .button{
     width: 50%;
   }
+  .guidingContainer{
+    width: 80%;
+    @include flex-container(
+      row,
+      space-between,
+      flex-start,
+      10px
+      );
+  }
 }
+
 @include mq('phone'){
   .introductionContainer{
-    width: 90%;
+    width: 84%;
   }
   .introductionImage{
-    width: 120px;
+    width: 140px;
   }
 
 }

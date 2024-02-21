@@ -29,7 +29,7 @@
   // }
 
   &:hover::after {
-    transform: scaleX(1); 
+    transform: scaleX(1);
   }
 
   // Additional styling for icon
@@ -40,7 +40,7 @@
 
 @mixin button-variant-colors(
   $bg,
-  $text: #fff,
+  $text:$color--text-lighter,
   $border,
   $hover
 ) {
@@ -126,7 +126,7 @@
 
 .md {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   padding: 10px 12px;
   border-radius: 100px;
 }
@@ -180,6 +180,7 @@
 
 .button_outline {
   @extend .button;
+  @include flex-container(row,flex-start,center,10px);
   @include button-variant-colors(
     $color--bg-main,
     $color--btn-primary,
@@ -208,7 +209,7 @@
     background-color: none;
     border: none;
     box-shadow: none !important;
-    color: blue;
+    color: $color--btn-primary;
     user-select: none;
   }
 }
@@ -318,7 +319,7 @@
   @include button-variant-colors(
     $color--text-lighter,
     $color--text-primary,
-    white,
+    $color--text-lighter,
     $color--text-lighter
   );
 }

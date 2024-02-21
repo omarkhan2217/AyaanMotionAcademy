@@ -10,3 +10,4 @@ export * from './otherStudentCard'
 export * from './PageEndingText';
 export * from './policyText';
 export * from './careerGuidanceText';
+export * from './ourBatchesPage';

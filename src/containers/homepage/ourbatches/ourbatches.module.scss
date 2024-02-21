@@ -34,7 +34,7 @@
 .carousel {
   @include flex-container(row, center, center, 30px);
   width: 100%;
-  padding: 1%;
+  padding: 5%;
 }
 
 @include mq('desktop') {
@@ -60,6 +60,10 @@
   .batchesCardContainer {
     width: 100%;
   }
+  // .carousel{
+  //   // padding:  10%;
+
+  // }
 }
 @include mq('tablet-small') {
   .batchesCardContainer {

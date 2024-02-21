@@ -5,19 +5,22 @@ import image2 from '../../assets/images/aboutUs/Group 50.png';
 import { Button, PageEndingText, PolicyText } from '../../components'
 import { useWindowSize } from 'usehooks-ts';
 import { ArrowIcon } from '../../assets';
+import { useNavigate } from 'react-router-dom'
+
 
 
 interface ITermsAndPolicyProps {
     text: string;
 }
 
-const Subheader: ITermsAndPolicyProps[] = [
+const Details: ITermsAndPolicyProps[] = [
     {
         text: "As you stand at the crossroads of your academic journey, Ayaan's Motion Academy invites you to take the path leading to success, fulfillment, and self-discovery. With our proven track record, innovative learning solutions, and a supportive community, we are more than just an academy - we are a family. Together, let's unlock your potential, achieve your dreams, and set new benchmarks of success. Explore our programs, meet our faculty, and hear from our achievers. Discover how Ayaan's Motion Academy can be the catalyst for your academic and personal achievements. Your future begins here, and we are excited to be a part of your journey."
     }
 ];
 
 export const AboutUsContainer: React.FC = () => {
+    const navigation=useNavigate();
     const { width } = useWindowSize();
     const isSmallScreen = width <= 768;
     return (
@@ -58,16 +61,10 @@ export const AboutUsContainer: React.FC = () => {
             </div>
             <div>
 
-            <PolicyText
-                mainHeader={"Join Us: Embark on Your Journey to Success"} details={Subheader} />
-<<<<<<< Updated upstream
-            <a href="/contact-us" style={{ marginTop: '-5%' }}>
-=======
-            <a href="/contact-Us" className={classes.button}>
->>>>>>> Stashed changes
-                <Button variant='outline' label='View Our Batches ' icon={<ArrowIcon />} />
-            </a>
-                </div>
+                <PolicyText
+                    mainHeader={"Join Us: Embark on Your Journey to Success"} details={Details} />
+                    <Button variant='outline' label='View Our Batches ' icon={<ArrowIcon />} onClick={() => navigation('/our-batches')}/>
+            </div>
         </div>
     )
 }

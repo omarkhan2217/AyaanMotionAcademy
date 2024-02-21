@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   color: $color--text-dark;
-  font-family: 'Nunito', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,7 +25,7 @@ code {
 }
 
 input::placeholder {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {

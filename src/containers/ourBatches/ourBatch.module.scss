@@ -1,0 +1,183 @@
+@use '../../styles/global.scss' as *;
+
+.mainContainer {
+  @include flex-container(column, flex-start, center, 50px);
+  background-color: $color--bg-main;
+  padding: 5% 0% 5%;
+}
+.pageText {
+  width: 120%;
+}
+
+.batchesCardContainer {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4%;
+  margin-top: -1%;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.otherDetailContainer {
+  @include flex-container(
+    row,
+    space-between,
+    flex-start,
+    70px
+  );
+  width: 70%;
+  padding: 1%;
+}
+
+.otherMainheading {
+  width: 100%;
+  font-size: 56px;
+  font-weight: 700;
+  font-family: 'space Grotesk', sans-serif;
+}
+.otherDetails {
+  @include flex-container(
+    column,
+    space-between,
+    center,
+    10px
+  );
+  width: 60%;
+  padding: 1%;
+  height: fit-content;
+}
+.otherHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+
+}
+.subDetails {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+@include mq('desktop') {
+  .otherMainheading {
+    font-size: 52px;
+  }
+  .otherHeading {
+    font-size: 20px;
+  }
+  .subDetails {
+    font-size: 14px;
+  }
+}
+
+@include mq('desktop-medium') {
+  .otherMainheading {
+    font-size: 46px;
+  }
+  .otherDetails {
+    width: 70%;
+  }
+  .otherDetails {
+    @include flex-container(
+      column,
+      space-between,
+      center,
+      20px
+    );
+  }
+}
+@include mq('desktop-small') {
+  .otherDetailContainer{
+    width: 80%;
+    @include flex-container(row,flex-start,flex-start,10px)
+  }
+
+  .otherMainheading {
+    font-size: 42px;
+  }
+  .otherHeading {
+    font-size: 18px;
+  }
+  .subDetails {
+    font-size: 13px;
+  }
+  .batchesCardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+  }
+}
+@include mq('tablet-wide') {
+  .otherDetailContainer {
+    width: 80%;
+  }
+  .otherMainheading {
+    font-size: 40px;
+  }
+  .otherHeading {
+    font-size: 16px;
+  }
+  .subDetails {
+    font-size: 12px;
+  }
+  .batchesCardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 40px;
+  }
+}
+@include mq ('tablet'){
+  .batchesCardContainer{
+    @include flex-container(column ,center,center,40px);
+    width: 90%;
+  
+  }
+  .otherDetailContainer{
+    @include flex-container(column,space-between,flex-start,20px);
+  }
+  .otherDetails{
+    width: 100%;
+  }
+
+  
+}
+@include mq('phone-wide'){
+  .pageText{
+    width: 106%;
+  }
+   .otherMainheading {
+    font-size: 34px;
+  }
+  .otherHeading {
+    font-size: 16px;
+  }
+  .subDetails {
+    font-size: 13px;
+  }
+}
+@include mq ('phone-custom'){
+  .otherMainheading{
+    font-size: 34px;
+  }
+  .otherHeading{
+    font-size: 16px;
+  }
+  .mainContainer{
+    padding:8% 0% 10%;
+  }
+
+
+}
+@include mq('phone') {
+  .pageText
+ {
+    width: 90%;
+  }
+  .batchesCardContainer {
+    @include flex-container(column, center, center, 60px);
+  }
+ 
+}
+
+

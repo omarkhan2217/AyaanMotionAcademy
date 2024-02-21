@@ -7,70 +7,93 @@
     center,
     10px
   );
+  padding: 7%;
   width: 312px;
   height: 510px;
   border-radius: 16px;
   background-color: $color--bg-white;
   transition: $linear--transition-L;
-  box-shadow: 0px 0px 26px 0px var(--card-shadow, #8282ff61);
+  position: relative;
+  box-shadow:$shadow--soft;
   &:hover {
-    box-shadow: 0px 0px 26px 0px var(--card-shadow, #8282ff);
+    box-shadow: $shadow--soft-M;
     transition: $linear--transition-L;
   }
 }
-
-.InfoContainer {
-  @include flex-container(column, center, center, 10px);
-  .BatchName {
-    padding-top: 4%;
-    font-size: 18px;
-    font-weight: 550;
-    color: $color--text-black-light;
-    padding-top: 34px;
-  }
-  .grade {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Inter-Bold', sans-serif;
-    color: $color--bg-primary;
-    padding-bottom: 10px;
-  }
-
-  .imageContaienr {
-    @include flex-container(column, center, center, 4px);
-    z-index: 2;
-    .guide {
-      font-size: 8px;
-    }
-  }
+.mainBorderContainer {
+  @extend .mainContainer;
+  border: 2px solid $color--bg-primary;
 }
+
 .innerContainer {
-  @include flex-container(column, center, center, 33px);
-  padding-bottom: 10px;
+  @include flex-container(column, center, center, 10px);
+  padding-top: 12px;
+}
+.BatchName {
+  font-size: 18px;
+  font-weight: 550;
+  color: $color--text-black-light;
+}
+.grade {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  color: $color--bg-primary;
+}
+
+.imageContairner {
+  @include flex-container(column, center, center, 4px);
+}
+.guide {
+  font-size: 8px;
 }
 
 .buttonContainer {
+  font-family: 'Inter', sans-serif;
   width: 100%;
 }
 
-.detailsContainers {
+.detailsContainer {
   @include flex-container(
     column,
+  flex-start,
     flex-start,
-    flex-start,
-    14px
+    13px
   );
-  font-family: 'Inter-medium', sans-serif;
-  border-bottom: 0.07px solid rgba(0, 0, 0, 0.282);
-  padding-bottom: 20px;
+  width: 100%;
+  height: 42%;
+  padding-top: 2%;
+  border-bottom: $border--bottom-soft;
+}
+
+.innerDetails {
+  @include flex-container(row, center, center, 10px);
+  font-family: 'Inter', sans-serif;
+  color: $color--text-black-light;
   font-size: 14px;
   font-weight: 500;
-  line-height: 122%;
-  color: $color--text-black-light;
-  .icon {
-    margin-right: 8px;
-  }
 }
-.button2 {
-  padding-bottom: 20px;
+
+.topCard {
+  @include flex-container(row, center, center, 0px);
+  font-size: 20px;
+  width: 220px;
+  height: 50px;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0 auto;
+  position: absolute;
+  top: -51.7px;
+  font-size: 94%;
+  font-family: "inter",sans-serif;
+  font-weight: 600;
+  color: $color--text-2-primary;
+  background: $box--gradient-B-W;
+}
+
+@include mq('phone-wide'){
+  .mainContainer{
+    &:hover{
+      box-shadow: $shadow--soft;
+    }
+  }
 }

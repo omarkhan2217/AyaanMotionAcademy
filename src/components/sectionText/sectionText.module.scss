@@ -1,37 +1,36 @@
 @use '../../styles/global.scss' as *;
 
 .innerContainerAlt {
-  @include flex-container(column,
-    center,
-    center,
-    12px);
+  @include flex-container(column, center, center, 12px);
   width: 70%;
   text-align: center;
-  .button {
-    @include flex-container(row, flex-start, flex-start, 0px);
-    width: 100%;
-  }
   z-index: 2;
-  .buttonAlt {
-    @include flex-container(row, center, center, 0px);
-  }
+}
+.button {
+  @include flex-container(row, flex-start, flex-start, 0px);
+  width: 100%;
+}
+.buttonAlt {
+  @include flex-container(row, center, center, 0px);
 }
 
 .innerContainer {
-  @include flex-container(column,
+  @include flex-container(
+    column,
     flex-start,
     flex-start,
-    12px);
-    width: 30%;
-    z-index: 2;
+    12px
+  );
+  width: 30%;
+  z-index: 2;
+}
 
-  .button {
-    @include flex-container(row, flex-start, flex-start, 0px);
-  }
+.button {
+  @include flex-container(row,flex-start,flex-start, 0px);
+}
 
-  .buttonAlt {
-    @include flex-container(row, center, center, 0px);
-  }
+.buttonAlt {
+  @include flex-container(row, center, center, 0px);
 }
 
 .imagecontainer {
@@ -46,7 +45,7 @@
   font-weight: 700;
 }
 
-.quote {
+.subHeader {
   color: $color--text-primary-light;
   font-family: 'Inter';
   font-size: 14px;
@@ -62,7 +61,7 @@
     font-size: 38px;
   }
 
-  .quote {
+  .subHeader {
     font-size: 14px;
   }
 }
@@ -76,7 +75,7 @@
     font-size: 38px;
   }
 
-  .quote {
+  .subHeader {
     font-size: 14px;
   }
 }
@@ -90,14 +89,14 @@
     font-size: 30px;
   }
 
-  .quote {
+  .subHeader {
     font-size: 14px;
   }
 }
 
 @include mq('tablet-custom') {
-  .quote,
-  .mainHeading{
+  .subHeader,
+  .mainHeading {
     text-align: center;
   }
 }
@@ -111,21 +110,23 @@
     font-size: 32px;
   }
 
-  .quote {
+  .subHeader {
     font-size: 12px;
   }
 
   .innerContainerAlt {
-    @include flex-container(column,
-      center,
-      center,
-      12px);
+    @include flex-container(column, center, center, 12px);
     width: 80%;
-  
+
     .button {
-      @include flex-container(row, flex-start, flex-start, 0px);
+      @include flex-container(
+        row,
+        flex-start,
+        flex-start,
+        0px
+      );
     }
-  
+
     .buttonAlt {
       @include flex-container(row, center, center, 0px);
     }
@@ -141,7 +142,7 @@
     font-size: 30px;
   }
 
-  .quote {
+  .subHeader {
     font-size: 10px;
   }
 }
@@ -165,8 +166,8 @@
     font-size: 26px;
   }
 
-  .quote {
-      margin-left: 5%;
+  .subHeader {
+    margin-left: 5%;
   }
 }
 
@@ -179,8 +180,6 @@
     width: 60%;
     margin: 0;
   }
-
-
 }
 
 @include mq('phone') {
@@ -196,7 +195,6 @@
   .mainHeading {
     font-size: 22px;
   }
-
 }
 
 @include mq('phone-small') {
@@ -208,5 +206,4 @@
     width: 80%;
     margin: 0;
   }
-
 }

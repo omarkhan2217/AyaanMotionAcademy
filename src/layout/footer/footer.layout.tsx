@@ -3,7 +3,7 @@ import classes from "./footer.module.scss"
 import { Link } from 'react-router-dom';
 import { FooterLinksData, NavigationData } from '../../constants/footerData'
 import mainLogo from "../../assets/images/mainLogo/logo.png"
-import { YoutubeIcon, TwitterIcon, LinkedInIcon, FacebokIcon,InstagramIcon } from "../../assets";
+import { YoutubeIcon, TwitterIcon, LinkedInIcon, FacebokIcon, InstagramIcon } from "../../assets";
 
 export const Footer: React.FC = () => {
   return (
@@ -44,10 +44,10 @@ export const Footer: React.FC = () => {
         <div className={classes.socialContainer}>
           <div>Follow Us</div>
           <div className={classes.socialMedia}>
-            <a href="/"><YoutubeIcon /></a>
-            <a href="/"><InstagramIcon/></a>
-            <a href="/"><TwitterIcon /></a>
-            <a href="/"><FacebokIcon /></a>
+            <a href="https://www.youtube.com/channel/UCml6M5g7DRPd6W1bcX7313g"><YoutubeIcon /></a>
+            <a href="https://www.instagram.com/ayaansmotionacademy/"><InstagramIcon /></a>
+            <a href="https://twitter.com/ayaansmotion"><TwitterIcon /></a>
+            <a href="https://www.facebook.com/ayaansmotionacademy"><FacebokIcon /></a>
             <a href="/"><LinkedInIcon /></a>
           </div>
         </div>

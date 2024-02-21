@@ -10,7 +10,12 @@
   height: 310px;
   border-radius: 20px;
   box-shadow: inset;
-  background-color: rgb(255, 255, 255);
+  background-color:$color--bg-white;
+  box-shadow:$shadow--soft;
+  &:hover{
+    box-shadow:$shadow--soft-M;
+    
+  }
 }
 .mainContainerFaculty {
   @extend .mainContainer;
@@ -19,7 +24,7 @@
 .rankContainer {
   width: 100%;
   height: 18%;
-  background-color: blue;
+  background-color: $color--bg-primary;
   border-radius: 20px 20px 0px 0px;
   @include flex-container(row, center, center, 0px);
   font-size: 30px;
@@ -30,7 +35,7 @@
 }
 .stream{
     height: 14%;
-    font-size: 35px;
+    font-size: 36px;
     color: $color--text-3-primary-light;
     font-weight: 530;
     font-family: "Inter", sans-serif;
@@ -40,7 +45,7 @@
     margin: 4%;
     width: 121px;
     height: 121px;
-    background-color: bisque;
+    background-color:$color--bg-3-active;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
@@ -59,4 +64,74 @@
     font-family: 'inter', sans-serif;
     font-weight: 550;
     color: $color--text-3-primary-light;
+}
+
+@include mq('tablet'){
+  .mainContainer{
+    width: 220px;
+    height: 270px;
+  }
+  .mainContainerFaculty{
+    height: 250px;
+  }
+  .stream{
+    font-size: 32px;
+  }
+  .studentName{
+    font-size: 22px;
+  }
+  .college{
+    font-size: 14px;
+    padding: 4% ;
+  }
+}
+
+@include mq ('phone-custom'){
+  .mainContainer{
+    width: 200px;
+    height: 250px;
+  }
+  .mainContainerFaculty{
+    height: 220px;
+  }
+  .stream{
+    font-size: 28px;
+  }
+  .studentName{
+    font-size: 20px;
+  }
+  .college{
+    font-size: 12px;
+    padding-bottom: 6%;
+  }
+  .imageContainer{
+    width: 100px;
+    height: 100px;
+  }
+}
+@include mq ('phone'){
+  .mainContainer{
+    width: 170px;
+    height: 200px;
+  }
+  .rankContainer{
+    height: 16%;
+    font-size: 24px;
+  }
+  .imageContainer{
+    width: 90px;
+    height: 90px;
+  }
+  .mainContainerFaculty{
+    height: 190px;
+  }
+  .stream{
+    font-size: 24px;
+  }
+  .studentName{
+    font-size: 16px;
+  }
+  .college{
+    font-size: 10px;
+  }
 }

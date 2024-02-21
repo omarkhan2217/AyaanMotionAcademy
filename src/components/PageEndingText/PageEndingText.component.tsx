@@ -9,7 +9,7 @@ export interface IPageEndingTextProps {
 export const PageEndingText: React.FC<IPageEndingTextProps> = (props) => {
     const { mainHeader } = props;
     return (
-        <div className={classes.container}>
+        <div className={classes.mainContainer}>
             <div className={classes.mainHeader}>
                 {mainHeader}
             </div>

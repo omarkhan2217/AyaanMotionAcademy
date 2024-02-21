@@ -5,4 +5,5 @@ export * from './privacyPolicy';
 export * from './termsAndPolicy';
 export * from './contactUs';
 export * from './aboutUs';
-export * from './carreerGuidanse';
+export * from './carreerGuidance';
+export * from './ourBatches';
