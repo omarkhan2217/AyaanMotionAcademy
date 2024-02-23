@@ -1,4 +1,4 @@
-import IMG from '../../../assets/images/ourBatch/Vector.png'
+import IMG from '../../../assets/images/ourBatch/award_star_FILL0_wght400_GRAD0_opsz24 1.png'
 
 export const starBatchData = {
     starBatch: {

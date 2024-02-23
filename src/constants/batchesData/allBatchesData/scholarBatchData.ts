@@ -1,37 +1,37 @@
-import IMG from '../../../assets/images/ourBatch/Vector.png'
+import IMG from '../../../assets/images/ourBatch/school_FILL0_wght400_GRAD0_opsz24 1.png'
 
 export const scholarBatchData = {
     scholarBatch: {
         introduction: {
-            heading: 'Lakshya Batch',
-            subHeading: '11th Grade',
+            heading: 'Scholar Batch',
+            subHeading: '12th Grade',
             image: IMG,
-            pageText: 'Embark on your academic journey with a solid foundation. Our Foundation Batch is meticulously designed for 11th-grade students aiming to build a robust base in core subjects, ensuring a seamless transition into competitive exam preparation and board exams.'
+            pageText: "The SCHOLAR Batch is our premier program for 12th-grade students dedicated to excelling in competitive exams like JEE/NEET. With specialized modules, expert faculty, and rigorous testing, this batch is your gateway to top ranks.",
         },
         featureCard: [
             {
-                heading: 'Advanced Board Preparation:',
-                details: "Gain an edge in your board exams with our comprehensive syllabus coverage, ensuring you're well-prepared for every topic."
+                heading: 'Expert Faculty',
+                details: "Benefit from the expertise of distinguished subject matter experts who bring specialized knowledge and insights to your preparation."
             },
             {
-                heading: 'Enhanced Test Series:',
-                details: "Challenge yourself with regular chapter-wise and topic-wise tests that simulate board exam conditions, helping you to assess and improve your performance."
+                heading: 'Specialized Competitive Modules:',
+                details: "Tackle competitive exams with confidence through our advanced curriculum designed specifically for JEE/NEET aspirants."
             },
             {
-                heading: 'Career Guidance Workshops:',
-                details: "Explore your future with our insightful career guidance sessions, designed to help you navigate your post-12th-grade opportunities."
+                heading: 'High-Frequency Testing:',
+                details: "Stay on top of your preparation with our rigorous and frequent testing pattern, designed to simulate the intensity of competitive exams."
             },
             {
-                heading: "Customized Study Plans:",
-                details: "Enjoy a study plan that’s customized to your strengths and weaknesses, ensuring efficient and effective learning."
+                heading: "Expert Guest Lectures:",
+                details: "Gain additional insights and motivation from sessions conducted by successful IITians/Doctors, enriching your learning experience."
             },
             {
-                heading: "Interactive Doubt Sessions:",
-                details: "Take advantage of weekly sessions dedicated to solving your queries, fostering a clear understanding of complex topics."
+                heading: "Personalized Academic Planning:",
+                details: "Receive individualized study plans and progress tracking, ensuring a focused approach to your exam preparation."
             },
             {
-                heading: "Expert Faculty:",
-                details:"Learn from the best with our renowned faculty members who bring a wealth of knowledge and experience to your education."
+                heading: "Exclusive Workshops:",
+                details:"Enhance your test-taking strategies and time management skills with our in-depth workshops, giving you a competitive edge."
             },
             
         ],

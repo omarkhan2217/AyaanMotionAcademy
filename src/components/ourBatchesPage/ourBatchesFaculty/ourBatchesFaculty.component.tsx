@@ -11,6 +11,7 @@ export  const BatchesFacultyComponent:React.FC<IBatchesFacultyProps> = (props) =
     const {image,facultyName,facultySubject,}=props
   return (
         <div className={classes.facultyContainer}>
+
             <div className={classes.facultyImage}>{image}</div>
             <div className={classes.facultyName}>{facultyName}</div>
             <div className={classes.facultySubject}>{facultySubject}</div>
