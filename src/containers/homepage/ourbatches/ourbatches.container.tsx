@@ -33,7 +33,7 @@ export const Ourbatchescontainer: React.FC = () => {
         <PageText
           mainHeader="Explore Our Diverse Academic Programs"
           subHeader="Find Your Path: Customized Learning for Every Aspiring Mind"
-          hasButton buttonText="View All"
+          hasButton buttonText="View All" onClick={()=> navigate('/our-batches')}
         />
       </div>
       <div className={classes.batchesCardContainer}>
@@ -53,8 +53,7 @@ export const Ourbatchescontainer: React.FC = () => {
                       guide={batch.guide}
                       image={batch.image}
                       isScholar={batch.isScholar}
-                      onClick={() => navigate('/')} 
-                      path={batch.path}
+                      onClick={() => navigate(`/our-batches${batch.path}`)}
                     />
                   </motion.div>
                 </div>
@@ -70,8 +69,7 @@ export const Ourbatchescontainer: React.FC = () => {
                 guide={batch.guide}
                 isScholar={batch.isScholar}
                 image={batch.image}
-                path={batch.path}
-                onClick={() => navigate('/')} 
+                onClick={() => navigate(`/our-batches${batch.path}`)}
               />
             </div>
           ))

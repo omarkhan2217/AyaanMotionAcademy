@@ -1,0 +1,31 @@
+@use '../../../styles/global.scss' as* ;
+
+.facultyContainer{
+    @include flex-container(column,space-evenly,center,px);
+    padding: 8%;
+    background-color:$color--bg-white;
+    box-shadow: $shadow--soft;
+    width: 280px;
+    border-radius: 20px;
+}
+
+.facultyImage{
+    @include flex-container(column,space-evenly,center,0px);
+    background-color: bisque;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.facultyName{
+    font-size: 26px;
+    font-family: 'Space Grotesk',sans-serif;
+    font-weight: 600;
+}
+.facultySubject{
+    font-size: 16px;
+    font-family: 'Space Grotesk',sans-serif;
+    font-weight: 500;
+}

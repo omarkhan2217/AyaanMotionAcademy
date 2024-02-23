@@ -1,16 +1,27 @@
-import React from 'react'
-import classes from './foundationbatch.module.scss'
-import { BatchesFacultyComponent, BatchesFeatureCardComponent, BatchesIntroductionComponent } from '../../../components'
+import React from 'react';
+import classes from './foundationbatch.module.scss';
+import { BatchesFacultyComponent, BatchesFeatureCardComponent, BatchesIntroductionComponent } from '../../../components';
+import { foundationBatchData } from '../../../constants/batchesData/allBatchesData/foundationBatchData';
 
 
+export const FoundationBatchContainer: React.FC = () => {
+  const data = foundationBatchData.foundationBatch;
 
-
-export const FoundationBatchContainer:React.FC = () => {
   return (
     <div className={classes.mainContainer}>
-      <BatchesIntroductionComponent heading={''} subHeading={''} image={''} pageText={''}/>
-      <BatchesFeatureCardComponent heading={''} details={''}/>
-      <BatchesFacultyComponent image={''} facultyName={''} facultySubject={''} informationText={''}/>
+      <BatchesIntroductionComponent {...data.introduction} />
+      <div className={classes.featureContainer}>
+
+        {data.featureCard.map((featureCard, index) => (
+          <BatchesFeatureCardComponent key={index} {...featureCard} />
+        ))}
+      </div>
+      
+      <div className={classes.facultyContainerr}>
+        {data.faculty.map((faculty, index) => (
+          <BatchesFacultyComponent key={index} {...faculty} />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};

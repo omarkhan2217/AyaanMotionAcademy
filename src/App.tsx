@@ -14,7 +14,7 @@ export const App = () => {
         <Route path="/about-us" element={<AboutUS/>}/>
         <Route path="/career-guidance" element={<CareerGuidance/>}/>
         <Route path="/our-batches" element={<OurBatches/>}/>
-        <Route path="/foundationBtachContainer" element={<Foundationbatch/>}/>
+        <Route path="/our-batches/foundation-batch" element={<Foundationbatch/>}/>
 
       </Routes>
     </div>

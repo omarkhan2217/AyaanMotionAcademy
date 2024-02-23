@@ -5,7 +5,7 @@ export const OurBatchesData: ISBatchesCardProps[] = [
     BatchName: "Foundation Batch",
     grade: "11th Grade",
     guide: "Guided By Our Expert Faculty",
-    path: "/our-faculty" 
+    path: "/foundation-batch" 
   },
   {
     BatchName: "Scholar Batch",

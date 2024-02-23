@@ -47,8 +47,7 @@ export const OurbatchContainer: React.FC = () => {
             guide={batch.guide}
             isScholar={batch.isScholar}
             key={index}
-            onClick={() => navigate('/')}
-            path={batch.path}
+            onClick={() => navigate(`/our-batches${batch.path}`)}
           />
         ))}
       </div>

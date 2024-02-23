@@ -79,11 +79,10 @@ export interface ISTestimonialCardProps
 
 export interface ISBatchesCardProps
   extends React.HtmlHTMLAttributes<HTMLDivElement> {
-  path: string;
   BatchName: string;
   grade: number | string;
   guide: string;
+  path?: string;
   image?: string;
   isScholar?: boolean;
-
 }

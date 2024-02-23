@@ -14,10 +14,10 @@ export  const BatchesIntroductionComponent:React.FC<IBatchesProps> = (props) => 
     <div className={classes.mainContainer}>
         <div className={classes.introductionContainer}>
             <div className={classes.introductionHeadingContainer}>
-                <div className={classes.header}>{heading}</div>
-                <div className={ classes.subheader}>{subHeading}</div>
+                <div className={classes.introductionHeader}>{heading}</div>
+                <div className={ classes.introductionSubHeader}>{subHeading}</div>
             </div>
-            <img src={image}/>
+            <img className={classes.imageContainer} src={image}/>
         </div>
         <div className={classes.pageText}>{pageText}</div>
     </div>

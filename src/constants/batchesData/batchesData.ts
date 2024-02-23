@@ -12,7 +12,7 @@ export const batchesData= [
     grade: "12th Grade",
     guide: "Guided By Our Expert Faculty",
     isScholar: true,
-    path: '/our-faculty'
+    path: '/scholar-batch'
   },
   {
     BatchName: "Star Batch",

@@ -1,0 +1,186 @@
+@use '../../../styles/global.scss' as *;
+
+.mainContainer {
+  @include flex-container(column, center, center, 50px);
+}
+
+.introductionContainer {
+  width: 70%;
+  height: 220px;
+  @include flex-container(row, space-evenly, center, 20px);
+  background-color: $color--bg-4-box;
+  border-radius: 20px;
+}
+.introductionHeadingContainer {
+  width: 70%;
+  @include flex-container(
+    column,
+    flex-start,
+    flex-start,
+    20px
+  );
+}
+.introductionHeader {
+  font-size: 56px;
+  font-family: 'Space Grotesk-bold', sans-serif;
+  font-weight: 700;
+}
+.introductionSubHeader {
+  font-size: 40px;
+  font-family: 'inter-medium', sans-serif;
+  font-weight: 500;
+}
+
+.imageContainer {
+  width: 50%;
+  @include flex-container(row, center, center, 0px);
+  width: 200px;
+}
+.pageText {
+  width: 70%;
+  font-size: 28px;
+  text-align: center;
+  font-family: 'inter-medium', sans-serif;
+  font-weight: 500;
+}
+
+@include mq('desktop') {
+  .introductionContainer {
+    width: 80%;
+  }
+}
+@include mq('desktop-small') {
+  .introductionHeader {
+    font-size: 50px;
+  }
+  .introductionSubHeader {
+    font-size: 34px;
+  }
+  .introductionContainer {
+    padding-left: 5%;
+    padding-right: 4%;
+  }
+  .imageContainer {
+    width: 180px;
+  }
+  .pageText {
+    width: 80%;
+    font-size: 24px;
+  }
+}
+@include mq('tablet-custom') {
+  .introductionHeader {
+    font-size: 40px;
+  }
+  .introductionSubHeader {
+    font-size: 28px;
+  }
+  .imageContainer {
+    width: 160px;
+    padding-right: 4%;
+  }
+  .introductionContainer {
+    height: 200px;
+  }
+  .pageText {
+    font-size: 20px;
+  }
+}
+
+@include mq('tablet-custom-2') {
+  .introductionContainer {
+    height: 180px;
+  }
+  .imageContainer {
+    width: 150px;
+  }
+  .introductionHeader {
+    font-size: 36px;
+  }
+  .introductionSubHeader {
+    font-size: 26px;
+  }
+  .pageText {
+    font-size: 18px;
+  }
+}
+
+@include mq('tablet') {
+  .mainContainer {
+    @include flex-container(column,center,center,30px)
+  }
+  .imageContainer {
+    width: 140px;
+  }
+  .introductionHeader {
+    font-size: 30px;
+  }
+  .introductionSubHeader {
+    font-size: 22px;
+  }
+  .imageContainer {
+    width: 140px;
+  }
+  .pageText {
+    font-size: 16px;
+  }
+}
+
+@include mq('phone-wide') {
+  .introductionContainer {
+    padding: 2%;
+    width: 90%;
+    height: 160px;
+  }
+  .introductionHeader {
+    font-size: 26px;
+  }
+  .introductionSubHeader {
+    font-size: 18px;
+  }
+  .imageContainer {
+    width: 120px;
+  }
+}
+@include mq('phone-custom') {
+  .mainContainer {
+    width: 94%;
+  }
+  .introductionContainer {
+    width: 90%;
+  }
+  .introductionHeadingContainer {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      10px
+    );
+  }
+}
+@include mq('phone') {
+  .mainContainer {
+    width: 94%;
+  }
+  .introductionContainer {
+    width: 90%;
+    height: 130px;
+  }
+  .introductionHeadingContainer {
+    @include flex-container(
+      column,
+      flex-start,
+      flex-start,
+      8px
+    );
+  }
+  .imageContainer {
+    width: 80px;
+  }
+  .introductionHeader {
+    font-size: 20px;
+  }
+  .introductionSubHeader {
+    font-size: 16px;
+  }
+}

@@ -3,20 +3,13 @@ import classes from './ourbatches.module.scss'
 import { ISBatchesCardProps } from '../../types'
 import { Button } from '..'
 import { ArrowIcon, BatchStudentIcon, CheckMark } from '../../assets'
-import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 interface OurBatcehscomponentProps extends ISBatchesCardProps {
   onClick: () => void;
-  path: string;
 }
 
 export const OurBatcehscomponent: React.FC<OurBatcehscomponentProps> = (props: OurBatcehscomponentProps) => {
-  const { BatchName, grade, guide, image, isScholar, path } = props;
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(path);
-  };
+  const { BatchName, grade, guide, image, isScholar, onClick } = props;
 
   return (
     <div className={isScholar ? classes.mainBorderContainer : classes.mainContainer}>
@@ -41,7 +34,7 @@ export const OurBatcehscomponent: React.FC<OurBatcehscomponentProps> = (props: O
         <div className={classes.innerDetails}><CheckMark />Exclusive Workshops</div>
       </div>
       <div className={classes.button2}>
-        <Button label='Know More' variant='outline' icon={<ArrowIcon />} onClick={handleClick} />
+        <Button label='Know More' variant='outline' icon={<ArrowIcon />} onClick={onClick} />
       </div>
     </div>
   );

@@ -1,0 +1,43 @@
+@use '../../../styles/global.scss' as *;
+
+.mainContainer {
+  @include flex-container(column, center, center, 100px);
+  padding: 5% 0% 5%;
+}
+
+.featureContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.facultyContainerr{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+@include mq('tablet-custom') {
+  .featureContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    &:nth-last-child(1) {
+      &:nth-last-child(1) {
+        background-color: bisque;
+      }
+    }
+  }
+}
+@include mq('tablet-wide') {
+  .mainContainer {
+    @include flex-container(column, center, center, 70px);
+  }
+}
+@include mq('tablet') {
+  .featureContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}

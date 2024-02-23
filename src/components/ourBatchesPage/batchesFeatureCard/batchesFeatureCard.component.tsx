@@ -11,10 +11,8 @@ export const BatchesFeatureCardComponent: React.FC<IBatchesFeatureCardProps> = (
     const {heading,details}=props;
     return (
         <div className={classes.batchFeatureContainer}>
-            <div className={classes.featureContainer}>
-                <div className={classes.featureHHeading}>{heading}</div>
+                <div className={classes.featureHeading}>{heading}</div>
                 <div className={classes.featureDetails}>{details}</div>
-            </div>
         </div>
     )
 }
