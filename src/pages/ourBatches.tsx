@@ -1,6 +1,7 @@
 import React from "react"
 import { Layout } from "../layout"
 import { OurbatchContainer } from "../containers"
+
 export const OurBatches: React.FC = () => {
     return (
         <Layout>
@@ -8,3 +9,5 @@ export const OurBatches: React.FC = () => {
         </Layout>
     )
 }
+
+export default OurBatches;

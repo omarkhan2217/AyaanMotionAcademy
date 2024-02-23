@@ -9,3 +9,5 @@ export const ScholarBatch: React.FC = () => {
         </Layout>
     )
 }
+
+export default ScholarBatch;

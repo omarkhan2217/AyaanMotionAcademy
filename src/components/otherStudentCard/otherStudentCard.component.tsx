@@ -8,7 +8,7 @@ export const OtherStudentCard: React.FC<IOtherStudentCardProps> = (props: IOther
     <div className={isFacultyCard ? classes.mainContainerFaculty : classes.mainContainer}>
       {isFacultyCard ? null : <div className={classes.rankContainer}> {rank}</div>}
       <div className={classes.stream}>{stream}</div>
-      <div className={classes.imageContainer}>{image}</div>
+      <img className={classes.imageContainer} src={image} alt={image} />
       <div className={classes.studentName}>{name}</div>
       <div className={classes.college}>{college}</div>
     </div>

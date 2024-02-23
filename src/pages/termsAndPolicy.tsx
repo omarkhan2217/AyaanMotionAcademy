@@ -9,3 +9,5 @@ export const TermsAndPolicy: React.FC = () => {
         </Layout>
     )
 }
+
+export default TermsAndPolicy;

@@ -4,7 +4,10 @@
   @include flex-container(column, center, center, 0px);
   width: 60%;
   & > :first-child {
-    margin-bottom: 60px;
+    & > :first-child {
+
+      margin-bottom: 60px;
+    }
   }
 }
 

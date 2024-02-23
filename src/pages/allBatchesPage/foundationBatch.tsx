@@ -9,3 +9,5 @@ export const Foundationbatch: React.FC = () => {
         </Layout>
     )
 }
+
+export default Foundationbatch;

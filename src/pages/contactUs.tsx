@@ -9,3 +9,5 @@ export const ContactUs: React.FC = () => {
         </Layout>
     )
 }
+
+export default ContactUs;

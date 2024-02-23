@@ -9,3 +9,5 @@ export const OurFaculty: React.FC = () => {
         </Layout>
     )
 }
+
+export default OurFaculty;

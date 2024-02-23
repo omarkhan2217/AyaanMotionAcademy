@@ -9,3 +9,5 @@ export const CareerGuidance: React.FC = () => {
         </Layout>
     )
 }
+
+export default CareerGuidance;

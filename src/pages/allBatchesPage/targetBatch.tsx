@@ -9,3 +9,5 @@ export const TargetBatch: React.FC = () => {
         </Layout>
     )
 }
+
+export default TargetBatch;

@@ -9,3 +9,5 @@ export const OurAchievers: React.FC = () => {
         </Layout>
     )
 }
+
+export default OurAchievers;

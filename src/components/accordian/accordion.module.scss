@@ -9,6 +9,7 @@
   border-radius: 15px;
   overflow: hidden;
   transition: $linear--transition-M;
+  user-select: none;
 }
 
 .header {

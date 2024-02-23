@@ -9,3 +9,5 @@ export const HomePage: React.FC = () => {
         </Layout>
     )
 }
+
+export default HomePage;

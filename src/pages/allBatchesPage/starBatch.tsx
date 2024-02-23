@@ -9,3 +9,5 @@ export const StarBatch: React.FC = () => {
         </Layout>
     )
 }
+
+export default StarBatch;

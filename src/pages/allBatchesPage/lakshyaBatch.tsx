@@ -9,3 +9,5 @@ export const Lakshyabatch: React.FC = () => {
         </Layout>
     )
 }
+
+export default Lakshyabatch;

@@ -1,9 +1,9 @@
-@use '../../styles/global.scss' as *;
+@use "../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, flex-start, center, 50px);
   background-color: $color--bg-main;
-  padding: 8% 0%;
+  padding: 5% 8%;
 }
 
 .TeachersImage {
@@ -24,44 +24,50 @@
   display: none;
 }
 
-@include mq('desktop-small') {
+@include mq("desktop-small") {
   .facultyContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
   }
 }
-@include mq('tablet-wide'){
-  .facultyContainer{
+@include mq("tablet-wide") {
+  .facultyContainer {
     gap: 20px;
   }
 }
-@include mq ('tablet-custom'){
-  .facultyContainer{
+@include mq("tablet-custom") {
+  .facultyContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 }
 
-@include mq('tablet-small') {
+@include mq("tablet-small") {
   .facultyContainer {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }
 
-@include mq('phone-wide') {
+@include mq("phone-wide") {
   .facultyContainer {
-    grid-template-columns:  1fr 1fr ;
-    grid-gap:20px ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
   .TeachersImage {
     width: 80%;
   }
 }
+@include mq("phone-small") {
+  .facultyContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+  }
+}
 .customCardStyle {
-  @include mq('tablet') {
+  @include mq("tablet") {
     .rankContainer,
     .stream {
       display: block;

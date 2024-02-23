@@ -9,3 +9,5 @@ export const RankersBatch: React.FC = () => {
         </Layout>
     )
 }
+
+export default RankersBatch;

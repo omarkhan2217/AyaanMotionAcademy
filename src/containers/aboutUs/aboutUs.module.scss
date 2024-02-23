@@ -1,4 +1,4 @@
-@use '../../styles/global.scss' as *;
+@use "../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, center, center, 70px);
@@ -10,64 +10,55 @@
   @include flex-container(row, space-between, center, 0px);
   width: 70%;
   border-radius: 18px;
-  background-color:$color--bg-1-main-box;
+  background-color: $color--bg-1-main-box;
 }
 .mainHeading {
-  font-size: 56px;
-  font-family: 'space Grotesk';
-  font-weight: 800;
+  font-size: 50px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 1000;
+  color: #300544;
 }
 
-.Introductionimage {
+.introductionImage {
   width: 380px;
   height: auto;
   transform: scale(1.2);
   transform-origin: bottom right;
 }
 .subHeading {
-  font-size: 18px;
-  font-family: 'inter', sans-serif;
+  font-size: 16px;
+  font-family: "inter", sans-serif;
   font-weight: 500;
   width: 80%;
+  color: #300544;
 }
 .headingContainer {
   @include flex-container(column, center, flex-start, 18px);
   margin-left: 5%;
   width: 50%;
-  // background-color: aqua;
 }
 
 .facultyContainer {
-  @include flex-container(
-    row,
-    space-between,
-    flex-start,
-    0px
-  );
+  @include flex-container(row, space-between, flex-start, 0px);
   width: 70%;
   padding-right: 5%;
   // background-color: aquamarine;
 }
 .facultyHeadingContainer {
-  @include flex-container(
-    column,
-    flex-start,
-    flex-start,
-    10px
-  );
+  @include flex-container(column, flex-start, flex-start, 10px);
   width: 50%;
   // background-color: #ede9ff;
 }
 
 .facultyHeading {
   font-size: 32px;
-  font-family: 'inter', sans-serif;
-  font-weight: 600;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
   width: 70%;
 }
 .facultySubHeading {
-  font-size: 18px;
-  font-family: 'inter', sans-serif;
+  font-size: 16px;
+  font-family: "inter", sans-serif;
   font-weight: 500;
   width: 80%;
 }
@@ -84,47 +75,72 @@
   width: 65%;
 }
 .inspireInnerContainer {
-  @include flex-container(
-    column,
-    flex-start,
-    flex-start,
-    16px
-  );
-  background-color: $color--bg-1-box;
-  padding: 3%;
+  @include flex-container(column, flex-start, flex-start, 16px);
+  padding: 5%;
   border-radius: 24px;
   height: fit-content;
+  &:nth-child(1) {
+    background-color: $color--bg-1-box;
+    & > :first-child {
+      color: #441005;
+    }
+    & > :nth-child(2) {
+      color: #441005;
+      font-size: 16px;
+    }
+  }
   &:nth-child(2) {
-    background-color:$color--bg-2-box ;
+    background-color: $color--bg-2-box;
+    & > :first-child {
+      color: #052244;
+    }
+    & > :nth-child(2) {
+      color: #052244;
+      font-size: 16px;
+    }
   }
   &:nth-child(3) {
-    background-color: $color--bg-3-box ;
+    background-color: $color--bg-3-box;
     margin-top: -5%;
+    & > :first-child {
+      color: #052d44;
+    }
+    & > :nth-child(2) {
+      color: #052d44;
+      font-size: 16px;
+    }
   }
   &:nth-child(4) {
     background-color: $color--bg-4-box;
     margin-top: 1%;
+    & > :first-child {
+      color: #240544;
+    }
+    & > :nth-child(2) {
+      color: #240544;
+      font-size: 16px;
+    }
   }
 }
 .inspireHeading {
   font-size: 32px;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 600;
   width: 90%;
 }
 
 .inspireDetails {
   font-size: 18px;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 500;
 }
 
-.button{
+.button {
   margin: -5%;
 }
 
-@include mq('desktop') {
-  .Introductionimage {
+@include mq("desktop") {
+  .introductionImage {
     width: 310px;
   }
   .headingContainer {
@@ -150,8 +166,8 @@
   }
 }
 
-@include mq('desktop-medium') {
-  .Introductionimage {
+@include mq("desktop-medium") {
+  .introductionImage {
     width: 270px;
   }
   .headingContainer {
@@ -171,11 +187,11 @@
   }
 }
 
-@include mq('desktop-small') {
+@include mq("desktop-small") {
   .introductionContainer {
     width: 74%;
   }
-  .Introductionimage {
+  .introductionImage {
     width: 240px;
   }
   .mainHeading {
@@ -204,8 +220,8 @@
   }
 }
 
-@include mq('tablet-wide') {
-  .Introductionimage {
+@include mq("tablet-wide") {
+  .introductionImage {
     width: 200px;
   }
   .mainHeading {
@@ -226,101 +242,98 @@
   }
 }
 
-@include mq('tablet-custom') {
-  .Introductionimage{
+@include mq("tablet-custom") {
+  .introductionImage {
     width: 180px;
   }
-  .mainHeading{
+  .mainHeading {
     font-size: 30px;
   }
-  .subHeading{
+  .subHeading {
     font-size: 10px;
   }
-  .facultyImage{
+  .facultyImage {
     width: 250px;
   }
-  .inspireHeading{
-    font-size:20px ;
+  .inspireHeading {
+    font-size: 20px;
   }
-  .inspireDetails{
+  .inspireDetails {
     font-size: 11px;
   }
- 
 }
-@include mq('tablet'){
-  .introductionContainer{
+@include mq("tablet") {
+  .introductionContainer {
     width: 85%;
   }
-  .facultyContainer{
-    @include flex-container( column ,center,center,20px);
+  .facultyContainer {
+    @include flex-container(column, center, center, 20px);
     width: 100%;
     padding: 0%;
   }
-  .facultyHeadingContainer{
-    @include flex-container( column ,center,center,20px);
+  .facultyHeadingContainer {
+    @include flex-container(column, center, center, 20px);
     width: 80%;
     text-align: center;
   }
-  .facultyHeading{
+  .facultyHeading {
     font-size: 30px;
   }
-  .facultyImage{
+  .facultyImage {
     width: 300px;
   }
-  .facultySubHeading{
+  .facultySubHeading {
     font-size: 14px;
   }
-  .inspireContainer{
+  .inspireContainer {
     width: 80%;
   }
-
-
 }
-@include mq ('tablet-small'){
-  .introductionContainer{
+@include mq("tablet-small") {
+  .introductionContainer {
     width: 86%;
   }
-  .inspireContainer{
+  .inspireContainer {
     width: 90%;
   }
 }
-@include mq('phone-wide'){
-  .headingContainer{
-    @include flex-container(column, center,flex-start,10px)
+@include mq("phone-wide") {
+  .headingContainer {
+    @include flex-container(column, center, flex-start, 10px);
   }
-  .mainHeading{
+  .mainHeading {
     font-size: 26px;
   }
-  .subHeading{
+  .subHeading {
     font-size: 10px;
   }
-  .facultyImage{
+  .facultyImage {
     width: 240px;
   }
-  .inspireContainer{
-  @include flex-container(column,center,center,40px);
-  width: 60%;
+  .inspireContainer {
+    @include flex-container(column, center, center, 40px);
+    width: 60%;
   }
-  .inspireInnerContainer{
+  .inspireInnerContainer {
     padding: 8%;
   }
 }
 
-@include mq ('phone-custom'){
-  .facultyHeading{
+@include mq("phone-custom") {
+  .facultyHeading {
     width: 26px;
     width: 100%;
   }
-  .introductionContainer{
+  .introductionContainer {
     width: 90%;
   }
-  .Introductionimage{
+  .introductionImage {
     width: 140px;
   }
-  .mainHeading{
+  .mainHeading {
     font-size: 20px;
   }
-  .subHeading{
+  .subHeading {
     font-size: 8px;
   }
 }

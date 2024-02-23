@@ -10,3 +10,5 @@ export const PrivacyPolicy: React.FC = () => {
         </Layout>
     )
 }
+
+export default PrivacyPolicy;

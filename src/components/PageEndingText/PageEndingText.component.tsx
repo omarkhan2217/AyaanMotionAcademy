@@ -1,18 +1,18 @@
-import React from 'react'
-import classes from './PageEndingText.module.scss'
+import React from "react";
+import classes from "./PageEndingText.module.scss";
 
 export interface IPageEndingTextProps {
-    mainHeader: string;
-
+  mainHeader: string;
+  color?: string;
 }
 
 export const PageEndingText: React.FC<IPageEndingTextProps> = (props) => {
-    const { mainHeader } = props;
-    return (
-        <div className={classes.mainContainer}>
-            <div className={classes.mainHeader}>
-                {mainHeader}
-            </div>
-        </div>
-    );
-}
+  const { mainHeader, color } = props;
+  return (
+    <div className={classes.mainContainer}>
+      <div style={{ color: color }} className={classes.mainHeader}>
+        {mainHeader}
+      </div>
+    </div>
+  );
+};
