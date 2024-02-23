@@ -1,17 +1,23 @@
-import BOY_IMAGE from '../../assets/images/ourAchievers/boyImage.png'
-import GIRL_IMAGE from '../../assets/images/ourAchievers/girlImage.png'
-import BOY_IMAGE_ALT from '../../assets/images/ourAchievers/boyImageAlt.png'
-import GIRL_IMAGE_ALT from '../../assets/images/ourAchievers/girlImageAlt.png'
+import MAINIMG1 from '../../assets/images/ourAchievers/ratan kumar.jpg.png'
+import MAINIMG2 from '../../assets/images/ourAchievers/Tanishqua Jaiswal.jpg.png'
+import IMG1 from '../../assets/images/ourAchievers/Akash Pramanik.jpg.png'
+import IMG2 from '../../assets/images/ourAchievers/Harshit Norbert Joseph.jpg.png'
+import IMG3 from '../../assets/images/ourAchievers/Nishant kumar.jpg.png'
+import IMG4 from '../../assets/images/ourAchievers/Pranav Singh.jpg.png'
+import IMG5 from '../../assets/images/ourAchievers/lolita kumari.jpg.png'
+import IMG6 from '../../assets/images/ourAchievers/Shubham Kumar.jpg.png'
+import IMG7 from '../../assets/images/ourAchievers/sumit kumar.jpg.png'
+import IMG8 from '../../assets/images/ourAchievers/kunal keshri.jpg.png'
 import { IHighlightedAchieverProps } from '../../types';
 import { IOtherStudentCardProps } from '../../types';
 
 export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
     {
-        rank: 3,
+        rank: 498,
         id: 1,
-        name: 'Aushutosh Singh',
-        image: BOY_IMAGE,
-        altImage: BOY_IMAGE_ALT,
+        name: 'Ratan kumar',
+        image:  MAINIMG1,
+        altImage:  MAINIMG1,
         description: `In the constellation of brilliant minds that Ayaan's 
         Motion Academy takes pride in, Aushutosh Singh shines as one of the brightest stars. 
         With an astounding All India Rank of 03 in the IIT/JEE entrance exam, 
@@ -22,9 +28,9 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
     {
         rank: 5,
         id: 2,
-        name: 'Riya Gupta',
-        image: GIRL_IMAGE,
-        altImage: GIRL_IMAGE_ALT,
+        name: 'Tanishqua Jaiswal',
+        image: MAINIMG2,
+        altImage: MAINIMG2,
         description: `In the constellation of brilliant minds that Ayaan's Motion Academy takes pride in, Riya Gupta emerges as a stellar achiever, securing an impressive All India Rank of 05 in the IIT/JEE entrance exam. Riya's journey symbolizes resilience, brilliance, and the power of unwavering dedication. Her remarkable achievements inspire aspiring minds to reach for the stars.`,
         isReversed: true,
     },
@@ -32,59 +38,59 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
 
 export const OtherAchieversData: IOtherStudentCardProps[] = [
     {
-        rank: "AIR 4571",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
-        stream: 'NEET',
-    },
-    {
-        rank: "AIR 100",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
-        stream: 'NEET',
-    },
-    {
-        rank: "AIR 100",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
+        rank: "2022 BATCH",
+        name: 'Akash Pramanik',
+        image: IMG1,
+        college: 'BIT MESRA RANCHI',
         stream: 'JEE',
     },
     {
-        rank: "AIR 100",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
+        rank: "2022 BATCH",
+        name: 'Nishant kumar',
+        image: IMG3,
+        college: 'BIT MESRA RANCHI',
         stream: 'JEE',
     },
     {
-        rank: "AIR 100",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
+        rank: "2022 BATCH",
+        name: 'Pranav Singh',
+        image: IMG4,
+        college: 'BIT MESRA RANCHI',
         stream: 'JEE',
     },
     {
-        rank: "AIR 100",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
+        rank: "15118",
+        name: 'lolita kumari',
+        image: IMG5,
+        college: 'NIT JAMSHEDPUR',
         stream: 'JEE',
     },
     {
-        rank: "AIR 100",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
+        rank: "2022 BATCH",
+        name: 'Shubham Kumar',
+        image: IMG6,
+        college: 'BIT MESRA RANCHI',
         stream: 'JEE',
     },
     {
-        rank: "AIR 100",
-        name: 'riya singh',
-        image: GIRL_IMAGE,
-        college: 'RamLakhan Yadav college',
+        rank: "2022 BATCH",
+        name: 'sumit kumar',
+        image: IMG7,
+        college: 'BIT SINDRI DHANWAD',
+        stream: 'JEE',
+    },
+    {
+        rank: "2022 BATCH",
+        name: 'kunal keshri',
+        image: IMG8,
+        college: 'NIT JAMSHEDPUR',
+        stream: 'JEE',
+    },
+    {
+        rank: "2022 BATCH",
+        name: 'Harshit Norbert Joseph',
+        image: IMG2,
+        college: 'BIT SINDRI DHANWAD',
         stream: 'JEE',
     },
 ];
