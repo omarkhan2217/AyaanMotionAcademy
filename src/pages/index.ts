@@ -7,4 +7,4 @@ export * from './termsAndPolicy';
 export * from './contactUs';
 export * from './careerGuidance';
 export * from './ourBatches';
-export * from './foundationBatch';
+export * from './allBatchesPage';
