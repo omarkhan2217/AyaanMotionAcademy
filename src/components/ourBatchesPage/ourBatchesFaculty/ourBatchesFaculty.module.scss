@@ -2,7 +2,7 @@
 
 .facultyContainer{
     @include flex-container(column,space-evenly,center,px);
-    padding: 8%;
+    padding: 14%;
     background-color:$color--bg-white;
     box-shadow: $shadow--soft;
     width: 280px;
@@ -12,8 +12,8 @@
 .facultyImage{
     @include flex-container(column,space-evenly,center,0px);
     background-color: bisque;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
@@ -28,4 +28,46 @@
     font-size: 16px;
     font-family: 'Space Grotesk',sans-serif;
     font-weight: 500;
+}
+
+@include mq('desktop'){
+    .facultyContainer{
+        width: 260px;
+    }
+    .facultyName{
+        font-size: 24px;
+    }
+    .facultySubject{
+        font-size: 14px;
+    }
+}
+@include mq('desktop-small'){
+    .facultyContainer{
+        width: 240px;
+    }
+    .facultyImage{
+        width: 120px;
+        height: 120px;
+    }
+    .facultyName{
+        font-size: 22px;
+    }
+    .facultySubject{
+        font-size: 12px;
+    }
+}
+@include mq('tablet-custom'){
+    .facultyContainer{
+        width: 240px;
+    }
+    .facultyImage{
+        width: 120px;
+        height: 120px;
+    }
+    .facultyName{
+        font-size: 22px;
+    }
+    .facultySubject{
+        font-size: 12px;
+    }
 }

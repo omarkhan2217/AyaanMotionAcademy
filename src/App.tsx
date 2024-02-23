@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { AboutUS, ContactUs, HomePage, OurAchievers,OurFaculty , PrivacyPolicy,TermsAndPolicy,CareerGuidance, OurBatches,Foundationbatch } from './pages';
+import { AboutUS, ContactUs, HomePage, OurAchievers,OurFaculty , PrivacyPolicy,TermsAndPolicy,CareerGuidance, OurBatches,Foundationbatch, RankersBatch, TargetBatch, ScholarBatch, Lakshyabatch, StarBatch } from './pages';
 
 export const App = () => {
   return (
@@ -15,7 +15,11 @@ export const App = () => {
         <Route path="/career-guidance" element={<CareerGuidance/>}/>
         <Route path="/our-batches" element={<OurBatches/>}/>
         <Route path="/our-batches/foundation-batch" element={<Foundationbatch/>}/>
-
+        <Route path="/our-batches/star-batch" element={<StarBatch/>}/>
+        <Route path="/our-batches/lakshya-batch" element={<Lakshyabatch/>}/>
+        <Route path="/our-batches/scholar-batch" element={<ScholarBatch/>}/>
+        <Route path="/our-batches/target-batch" element={<TargetBatch/>}/>
+        <Route path="/our-batches/rankers-batch" element={<RankersBatch/>}/>
       </Routes>
     </div>
   )

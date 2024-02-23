@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './foundationbatch.module.scss';
-import { BatchesFacultyComponent, BatchesFeatureCardComponent, BatchesIntroductionComponent } from '../../../components';
+import { BatchesFacultyComponent, BatchesFeatureCardComponent, BatchesIntroductionComponent, Button, PageText } from '../../../components';
 import { foundationBatchData } from '../../../constants/batchesData/allBatchesData/foundationBatchData';
 
 
@@ -16,11 +16,15 @@ export const FoundationBatchContainer: React.FC = () => {
           <BatchesFeatureCardComponent key={index} {...featureCard} />
         ))}
       </div>
-      
-      <div className={classes.facultyContainerr}>
+
+      <div className={classes.facultyContainer}>
         {data.faculty.map((faculty, index) => (
           <BatchesFacultyComponent key={index} {...faculty} />
         ))}
+      </div>
+      <PageText mainHeader={'Lay a Strong Foundation for Your Academic Journey'} />
+      <div className={classes.button}>
+        <Button variant='primary' label='Inqure Now' />
       </div>
     </div>
   );

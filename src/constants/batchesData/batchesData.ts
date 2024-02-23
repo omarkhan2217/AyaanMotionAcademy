@@ -18,25 +18,25 @@ export const batchesData= [
     BatchName: "Star Batch",
     grade: "12th Grade",
     guide: "Guided By Our Expert Faculty",
-    path: '/our-faculty'
+    path: '/star-batch'
   },
   {
     BatchName: "Rankers Batch",
     grade: "11th Grade",
     guide: "Guided By Our Expert Faculty",
-    path: '/our-faculty'
+    path: '/rankers-batch'
   },
   {
     BatchName: "Lakshya Batch",
     grade: "12th Grade",
     guide: "Guided By Our Expert Faculty",
-    path: '/our-faculty'
+    path: '/lakshya-batch'
   },
   {
     BatchName: "target Batch",
     grade: "12th Grade",
     guide: "Guided By Our Expert Faculty",
-    path: '/our-faculty'
+    path: '/target-batch'
   },
   
 ];

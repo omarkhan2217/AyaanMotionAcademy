@@ -180,7 +180,6 @@
 
 .button_outline {
   @extend .button;
-  @include flex-container(row,flex-start,center,10px);
   @include button-variant-colors(
     $color--bg-main,
     $color--btn-primary,
