@@ -1,7 +1,7 @@
 @use '../../../styles/global.scss' as* ;
 
 .facultyContainer{
-    @include flex-container(column,space-evenly,center,px);
+    @include flex-container(column,space-evenly,center,6px);
     padding: 14%;
     background-color:$color--bg-white;
     box-shadow: $shadow--soft;
@@ -38,7 +38,7 @@
         font-size: 24px;
     }
     .facultySubject{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 @include mq('desktop-small'){
@@ -53,7 +53,7 @@
         font-size: 22px;
     }
     .facultySubject{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 @include mq('tablet-custom'){
@@ -67,7 +67,64 @@
     .facultyName{
         font-size: 22px;
     }
+
+}
+@include mq('tablet'){
+    .facultyContainer{
+        width: 220px;
+    }
+    .facultyImage{
+        width:100px;
+        height: 100px;
+    }
+    .facultyName{
+        font-size: 18px;
+    }
     .facultySubject{
         font-size: 12px;
     }
+}
+@include mq('phone-wide'){
+    .facultyContainer{
+        width: 200px;
+    }
+    .facultyImage{
+        width:100px;
+        height: 100px;
+    }
+    .facultyName{
+        font-size: 16px;
+    }
+    .facultySubject{
+        font-size: 10px;
+    }
+}
+@include mq('phone-custom'){
+    .facultyContainer{
+        width: 180px;
+    }
+    .facultyImage{
+        width:80px;
+        height: 80px;
+    }
+    .facultyName{
+        font-size: 14px;
+    }
+  
+}
+@include mq('phone'){
+    .facultyContainer{
+        width: 150px;
+    }
+    .facultyImage{
+        width:80px;
+        height: 80px;
+    }
+    .facultyName{
+        font-size: 12px;
+    }
+    .facultySubject{
+        font-size: 8px;
+    }
+  
 }

@@ -1,0 +1,79 @@
+@use '../../../styles/global.scss' as *;
+
+.mainContainer {
+  @include flex-container(column, center, center, 100px);
+  padding: 5% 0% 5%;
+}
+
+.featureContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.facultyContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.button {
+  margin-top: -3%;
+  width: 12%;
+  @include flex-container(column, center, center, 0px);
+}
+.guideContainer{
+  font-family: 'inter',sans-serif ;
+  margin: -1% 0% -3%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@include mq ('tablet-wide'){
+  .guideContainer{
+    margin: 0% 0% -2%;
+    font-size: 20px;
+  }
+
+}
+
+@include mq('tablet-custom') {
+  .featureContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    &:nth-last-child(1) {
+      &:nth-last-child(1) {
+        background-color: bisque;
+      }
+    }
+  }
+}
+@include mq('tablet-wide') {
+  .mainContainer {
+    @include flex-container(column, center, center, 50px);
+  }
+}
+@include mq('tablet-custom') {
+  .facultyContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .button{
+    width: fit-content;
+  }
+}
+
+@include mq('tablet') {
+  .featureContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .facultyContainer{
+    gap: 20px;
+  }
+  .guideContainer{
+    font-size: 10px;
+  }
+}

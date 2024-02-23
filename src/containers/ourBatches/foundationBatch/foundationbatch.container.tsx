@@ -16,7 +16,9 @@ export const FoundationBatchContainer: React.FC = () => {
           <BatchesFeatureCardComponent key={index} {...featureCard} />
         ))}
       </div>
-
+      <div className={classes.guideContainer}>
+      Guided By Our Expert Faculty
+      </div>
       <div className={classes.facultyContainer}>
         {data.faculty.map((faculty, index) => (
           <BatchesFacultyComponent key={index} {...faculty} />

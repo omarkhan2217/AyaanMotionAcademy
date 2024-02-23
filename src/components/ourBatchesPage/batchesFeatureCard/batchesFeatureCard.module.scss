@@ -6,7 +6,7 @@
     height: fit-content;
     min-height:80px ;
     background-color: rgb(6, 217, 217);
-    padding: 5%;
+    padding: 7%;
     border-radius: 20px;
 }
 
@@ -24,6 +24,12 @@
     .batchFeatureContainer{
         width: 380px;
     }
+    .featureHeading{
+        font-size: 20px;
+    }
+    .featureDetails{
+        font-size: 16px;
+    }
 }
 
 @include mq('desktop-small'){
@@ -31,21 +37,18 @@
         width: 320px; 
     }
     .featureDetails{
-        font-size: 18px;
+        font-size: 15px;
     }
     .featureHeading{
-        font-size: 24px;
+        font-size: 19px;
     }
 }
 @include mq('tablet-wide'){
     .batchFeatureContainer{
         width: 280px; 
     }
-    .featureDetails{
-        font-size: 16px;
-    }
     .featureHeading{
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 @include mq('tablet-custom'){
@@ -53,54 +56,45 @@
         width: 340px; 
     }
     .featureDetails{
-        font-size: 18px;
+        font-size: 14px;
     }
-    .featureHeading{
-        font-size: 24px;
-    }
+
 }
 @include mq('tablet'){
     .batchFeatureContainer{
         width: 260px; 
     }
     .featureDetails{
-        font-size: 16px;
+        font-size: 13px;
     }
     .featureHeading{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 @include mq('phone-wide'){
     .batchFeatureContainer{
         width: 230px; 
-        padding: 10%;
     }
     .featureDetails{
-        font-size: 14px;
+        font-size: 12px;
     }
     .featureHeading{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 @include mq('phone-custom'){
     .batchFeatureContainer{
-        width: 180px; 
+        width: 190px; 
     }
     .featureDetails{
-        font-size: 13px;
+        font-size: 10px;
     }
     .featureHeading{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 @include mq('phone'){
     .batchFeatureContainer{
-        width: 150px; 
-    }
-    .featureDetails{
-        font-size: 11px;
-    }
-    .featureHeading{
-        font-size: 16px;
+        width: 160px; 
     }
 }

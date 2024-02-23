@@ -38,7 +38,7 @@
 }
 .pageText {
   width: 70%;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   font-family: 'inter-medium', sans-serif;
   font-weight: 500;
@@ -48,13 +48,22 @@
   .introductionContainer {
     width: 80%;
   }
+    .introductionHeader{
+      font-size: 50px;
+    }
+    .introductionSubHeader{
+      font-size: 32px;
+    }
+    .pageText{
+     font-size: 16px;
+    }
 }
 @include mq('desktop-small') {
   .introductionHeader {
-    font-size: 50px;
+    font-size: 46px;
   }
   .introductionSubHeader {
-    font-size: 34px;
+    font-size: 30px;
   }
   .introductionContainer {
     padding-left: 5%;
@@ -65,15 +74,15 @@
   }
   .pageText {
     width: 80%;
-    font-size: 24px;
+    font-size: 15px;
   }
 }
 @include mq('tablet-custom') {
   .introductionHeader {
-    font-size: 40px;
+    font-size:38px;
   }
   .introductionSubHeader {
-    font-size: 28px;
+    font-size: 26px;
   }
   .imageContainer {
     width: 160px;
@@ -83,7 +92,7 @@
     height: 200px;
   }
   .pageText {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -95,13 +104,13 @@
     width: 150px;
   }
   .introductionHeader {
-    font-size: 36px;
+    font-size: 34px;
   }
   .introductionSubHeader {
-    font-size: 26px;
+    font-size: 22px;
   }
   .pageText {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
@@ -116,13 +125,13 @@
     font-size: 30px;
   }
   .introductionSubHeader {
-    font-size: 22px;
+    font-size: 20px;
   }
   .imageContainer {
     width: 140px;
   }
   .pageText {
-    font-size: 16px;
+    font-size: 10px;
   }
 }
 
@@ -143,11 +152,10 @@
   }
 }
 @include mq('phone-custom') {
-  .mainContainer {
-    width: 94%;
-  }
+
   .introductionContainer {
     width: 90%;
+    height: 120px;
   }
   .introductionHeadingContainer {
     @include flex-container(
@@ -157,14 +165,15 @@
       10px
     );
   }
+  .pageText{
+    font-size: 10px;
+  }
 }
 @include mq('phone') {
-  .mainContainer {
-    width: 94%;
-  }
+
   .introductionContainer {
     width: 90%;
-    height: 130px;
+    height: 110px;
   }
   .introductionHeadingContainer {
     @include flex-container(

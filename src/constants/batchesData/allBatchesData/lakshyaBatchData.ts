@@ -1,43 +1,44 @@
-import IMG from '../../../assets/images/ourBatch/Vector.png'
+import IMG from '../../../assets/images/ourBatch/whatshot_FILL0_wght400_GRAD0_opsz24 1.png'
+import TEACHERIMG from '../../../assets/images/homepage/image 21.png'
 
 export const lakshyaBatchData = {
     lakshyaBatch: {
         introduction: {
             heading: 'Lakshya Batch',
-            subHeading: '11th Grade',
+            subHeading: '12th Grade',
             image: IMG,
-            pageText: 'Embark on your academic journey with a solid foundation. Our Foundation Batch is meticulously designed for 11th-grade students aiming to build a robust base in core subjects, ensuring a seamless transition into competitive exam preparation and board exams.'
+            pageText: "The LAKSHYA Batch is designed for the elite top 20 students from our SCHOLAR Batch, offering unparalleled personalized coaching, mentoring, and resources to achieve the highest ranks in competitive exams.",
         },
         featureCard: [
             {
-                heading: 'Advanced Board Preparation:',
-                details: "Gain an edge in your board exams with our comprehensive syllabus coverage, ensuring you're well-prepared for every topic."
+                heading: 'Elite Coaching:',
+                details: "Receive personalized coaching from our top faculty, focusing on advanced concepts and strategies for peak performance."
             },
             {
-                heading: 'Enhanced Test Series:',
-                details: "Challenge yourself with regular chapter-wise and topic-wise tests that simulate board exam conditions, helping you to assess and improve your performance."
+                heading: 'Mock Tests with All-India Ranking:',
+                details: "Measure your preparation against peers nationwide with our all-India mock tests, providing valuable insights into your competitive standing."
             },
             {
-                heading: 'Career Guidance Workshops:',
-                details: "Explore your future with our insightful career guidance sessions, designed to help you navigate your post-12th-grade opportunities."
+                heading: 'One-on-One Mentoring:',
+                details: "Benefit from personalized mentoring sessions that focus on your unique strengths and weaknesses, optimizing your study strategy."
             },
             {
-                heading: "Customized Study Plans:",
-                details: "Enjoy a study plan that’s customized to your strengths and weaknesses, ensuring efficient and effective learning."
+                heading: "Strategic Learning Approach:",
+                details: "Adopt a tailored learning approach designed for maximum efficiency and effectiveness, ensuring you cover more ground with greater depth."
             },
             {
-                heading: "Interactive Doubt Sessions:",
-                details: "Take advantage of weekly sessions dedicated to solving your queries, fostering a clear understanding of complex topics."
+                heading: "Focused Doubt Clearing:",
+                details: "Enjoy dedicated doubt-clearing sessions that address your specific concerns, ensuring a thorough understanding of every topic."
             },
             {
-                heading: "Expert Faculty:",
-                details:"Learn from the best with our renowned faculty members who bring a wealth of knowledge and experience to your education."
+                heading: "Advanced Learning Modules:",
+                details:"Dive into in-depth study materials crafted for complex topics, providing a comprehensive understanding essential for top ranks."
             },
             
         ],
         faculty: [
             {
-                image: 'facultyImage1.jpg',
+                image: TEACHERIMG ,
                 facultyName: 'John Doe',
                 facultySubject: 'Faculty for Mathematics',
             },

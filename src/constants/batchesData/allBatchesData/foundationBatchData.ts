@@ -10,28 +10,28 @@ export const foundationBatchData = {
         },
         featureCard: [
             {
-                heading: 'Advanced Board Preparation:',
-                details: "Gain an edge in your board exams with our comprehensive syllabus coverage, ensuring you're well-prepared for every topic."
+                heading: 'Solid Foundation:',
+                details: "Strengthen your understanding of fundamental concepts across subjects, setting a strong academic base for future success."
             },
             {
-                heading: 'Enhanced Test Series:',
-                details: "Challenge yourself with regular chapter-wise and topic-wise tests that simulate board exam conditions, helping you to assess and improve your performance."
+                heading: 'Focused Board Prep:',
+                details: "Dive deep into NCERT and Exemplar problems, ensuring comprehensive coverage and mastery of the board syllabus."
             },
             {
-                heading: 'Career Guidance Workshops:',
-                details: "Explore your future with our insightful career guidance sessions, designed to help you navigate your post-12th-grade opportunities."
+                heading: 'Interactive Doubt Sessions:',
+                details: "Engage in weekly interactive sessions where you can clarify doubts, ensuring no query goes unanswered."
             },
             {
-                heading: "Customized Study Plans:",
-                details: "Enjoy a study plan that’s customized to your strengths and weaknesses, ensuring efficient and effective learning."
+                heading: "Personalized Study Plans:",
+                details: "Receive a study plan tailored to your learning pace and style, maximizing your academic potential."
             },
             {
-                heading: "Interactive Doubt Sessions:",
-                details: "Take advantage of weekly sessions dedicated to solving your queries, fostering a clear understanding of complex topics."
+                heading: "Regular Assessments:",
+                details: "Benefit from continuous evaluation through regular tests that track your progress and identify areas for improvement."
             },
             {
-                heading: "Expert Faculty:",
-                details:"Learn from the best with our renowned faculty members who bring a wealth of knowledge and experience to your education."
+                heading: "Topic-wise DPPs:",
+                details:"Enhance your practice with Daily Practice Papers that reinforce learning and aid in retention."
             },
             
         ],

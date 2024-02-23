@@ -1,37 +1,37 @@
-import IMG from '../../../assets/images/ourBatch/Vector.png'
+import IMG from '../../../assets/images/ourBatch/target_FILL0_wght400_GRAD0_opsz24 1.png'
 
 export const targetBatchData = {
     targetBatch: {
         introduction: {
             heading: 'Target Batch',
-            subHeading: '11th Grade',
+            subHeading: 'Dropper',
             image: IMG,
-            pageText: 'Embark on your academic journey with a solid foundation. Our Foundation Batch is meticulously designed for 11th-grade students aiming to build a robust base in core subjects, ensuring a seamless transition into competitive exam preparation and board exams.'
+            pageText: 'The TARGET Batch is an intensive program designed for students who are taking a year off to focus solely on cracking JEE/NEET. With a crash course format, segmented learning paths, and enhanced support, this batch is your fast track to achieving your dreams.'
         },
         featureCard: [
             {
-                heading: 'Advanced Board Preparation:',
-                details: "Gain an edge in your board exams with our comprehensive syllabus coverage, ensuring you're well-prepared for every topic."
+                heading: 'Intensive Crash Course:',
+                details: "Immerse yourself in a focused and comprehensive crash course that covers the JEE/NEET syllabus in a condensed timeframe, maximizing your learning."
             },
             {
-                heading: 'Enhanced Test Series:',
-                details: "Challenge yourself with regular chapter-wise and topic-wise tests that simulate board exam conditions, helping you to assess and improve your performance."
+                heading: 'Segmented Learning Paths (T1, T2, T3):',
+                details: "Choose a learning path that matches your current level of preparation, allowing for a customized approach that targets your specific needs."
             },
             {
-                heading: 'Career Guidance Workshops:',
-                details: "Explore your future with our insightful career guidance sessions, designed to help you navigate your post-12th-grade opportunities."
+                heading: 'Rapid Revision Series:',
+                details: "Quickly revise key topics and concepts with our rapid revision series, designed to refresh your memory and sharpen your skills."
             },
             {
-                heading: "Customized Study Plans:",
-                details: "Enjoy a study plan that’s customized to your strengths and weaknesses, ensuring efficient and effective learning."
+                heading: "Enhanced Doubt Clearing:",
+                details: "Take advantage of increased doubt-clearing sessions, ensuring you overcome any obstacles in your understanding swiftly."
             },
             {
-                heading: "Interactive Doubt Sessions:",
-                details: "Take advantage of weekly sessions dedicated to solving your queries, fostering a clear understanding of complex topics."
+                heading: "Bi-Weekly Assessments:",
+                details: "Track your progress with regular assessments that provide insights into your strengths and areas for improvement."
             },
             {
-                heading: "Expert Faculty:",
-                details:"Learn from the best with our renowned faculty members who bring a wealth of knowledge and experience to your education."
+                heading: "Interactive Study Groups:",
+                details:"Join online study groups for collaborative learning, sharing insights, and solving problems together, fostering a supportive community of aspirants."
             },
             
         ],
