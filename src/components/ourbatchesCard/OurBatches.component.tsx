@@ -4,11 +4,11 @@ import { ISBatchesCardProps } from '../../types'
 import { Button } from '..'
 import { ArrowIcon, BatchStudentIcon, CheckMark } from '../../assets'
 
-interface OurBatcehscomponentProps extends ISBatchesCardProps {
+interface OurBatchesComponent extends ISBatchesCardProps {
   onClick: () => void;
 }
 
-export const OurBatcehscomponent: React.FC<OurBatcehscomponentProps> = (props: OurBatcehscomponentProps) => {
+export const OurBatchesComponent: React.FC<OurBatchesComponent> = (props: OurBatchesComponent) => {
   const { BatchName, grade, guide, image, isScholar, onClick } = props;
 
   return (

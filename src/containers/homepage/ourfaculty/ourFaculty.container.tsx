@@ -14,7 +14,7 @@ export const OurFacultySection: React.FC = () => {
     <div className={classes.container}>
       <img src={IMG2} alt='background' className={classes.backgroundSvg} />
       <SectionText
-        mainHeder='Meet Our Expert Faculty.'
+        mainHeader='Meet Our Expert Faculty.'
         subHeader='Passionate and Highly Qualified Teachers Dedicated to Your Success in Achieving Academic Excellence.'
         hasButton
         buttonText='Know More'

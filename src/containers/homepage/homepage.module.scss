@@ -1,15 +1,23 @@
-@use '../../styles/global.scss' as *;
+@use "../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, flex-start, center, 60px);
   background-color: $color--bg-main;
   padding: 5% 0% 5%;
+  & > :first-child {
+    & > :nth-child(3) {
+      & > :first-child {
+        & > :first-child {
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
-@include mq('phone-custom'){
-  .mainContainer{
+@include mq("phone-custom") {
+  .mainContainer {
     @include flex-container(column, flex-start, center, 40px);
     padding: 6%;
   }
-  
 }

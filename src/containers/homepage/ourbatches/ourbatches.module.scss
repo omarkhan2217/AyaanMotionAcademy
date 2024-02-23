@@ -1,4 +1,4 @@
-@use '../../../styles/global.scss' as *;
+@use "../../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, center, center, 0px);
@@ -7,14 +7,11 @@
     & > :nth-child(2) {
       & > :first-child {
         height: 530px;
-        border:2px solid $color--bg-primary;
-        
-
-      } 
+        border: 2px solid $color--bg-primary;
+      }
     }
   }
 }
-
 
 .ourBatchesCardContainer {
   @include flex-container(row, center, center, 0px);
@@ -24,11 +21,28 @@
 .textContainer {
   @include flex-container(column, center, center, 0px);
   width: 80%;
+  & > :first-child {
+    & > :nth-child(2) {
+      margin-bottom: 0px;
+    }
+    & > :nth-child(3) {
+      margin-bottom: 20px;
+      & > :first-child {
+        & > :first-child {
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 .batchesCardContainer {
   @include flex-container(row, center, center, 30px);
   padding: 20px;
   width: 60%;
+
+  & > :first-child {
+    height: 600px;
+  }
 }
 
 .carousel {
@@ -37,43 +51,62 @@
   padding: 5%;
 }
 
-@include mq('desktop') {
+@include mq("desktop") {
   .textContainer {
     width: 90%;
   }
 }
 
-@include mq('desktop-medium') {
+@include mq("desktop-medium") {
   .batchesCardContainer {
     width: 65%;
   }
 }
 
-@include mq('desktop-small') {
+@include mq("desktop-small") {
   .batchesCardContainer {
     width: 85%;
     transform: scale(0.9);
   }
+
+  .textContainer {
+    & > :first-child {
+      & > :nth-child(3) {
+        margin-bottom: 00px;
+        & > :first-child {
+          & > :first-child {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
 }
 
-@include mq('tablet-wide') {
+@include mq("tablet-wide") {
   .batchesCardContainer {
     width: 100%;
-  }
-  // .carousel{
-  //   // padding:  10%;
 
-  // }
+    & > :first-child {
+      height: 650px;
+    }
+  }
 }
-@include mq('tablet-small') {
+
+@include mq("tablet-small") {
   .batchesCardContainer {
-      height: fit-content;
-      transform: scale(1);
-      padding: 0px;
+    height: fit-content;
+    transform: scale(1);
+    padding: 0px;
+    & > :first-child {
+      height: 600px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
       & > :first-child {
-        & > :first-child {
         & > * {
-            height: fit-content;
+          height: fit-content;
           transform: scale(0.9) !important;
         }
       }
@@ -91,38 +124,41 @@
   }
 }
 
-@include mq('phone-custom') {
-    .batchesCardContainer {
+@include mq("phone-custom") {
+  .batchesCardContainer {
+    & > :first-child {
+      height: 550px;
       & > :first-child {
-          & > :first-child {
-            height: 460px;
-          & > * {
-            transform: scale(0.8) !important;
-          }
+        height: 460px;
+        & > * {
+          transform: scale(0.8) !important;
         }
       }
     }
+  }
 }
-@include mq('phone') {
-    .batchesCardContainer {
+@include mq("phone") {
+  .batchesCardContainer {
+    & > :first-child {
+      height: 510px;
       & > :first-child {
-        & > :first-child {
-            margin-top: -60px;
-          & > * {
-            transform: scale(0.75) !important;
-          }
+        margin-top: -60px;
+        & > * {
+          transform: scale(0.75) !important;
         }
       }
     }
+  }
 }
-@include mq('phone-small') {
-    .batchesCardContainer {
+@include mq("phone-small") {
+  .batchesCardContainer {
+    height: 450px;
+    & > :first-child {
       & > :first-child {
-        & > :first-child {
-          & > * {
-            transform: scale(0.66) !important;
-          }
+        & > * {
+          transform: scale(0.66) !important;
         }
       }
     }
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classes from './ourBatch.module.scss';
 import { PageEndingText, PageText } from '../../components';
-import { OurBatcehscomponent } from '../../components';
+import { OurBatchesComponent } from '../../components';
 import { batchesData } from '../../constants';
 import { useNavigate } from 'react-router-dom';
 
@@ -41,7 +41,7 @@ export const OurbatchContainer: React.FC = () => {
       </div>
       <div className={classes.batchesCardContainer}>
         {orderedData.map((batch, index) => (
-          <OurBatcehscomponent
+          <OurBatchesComponent
             BatchName={batch.BatchName}
             grade={batch.grade}
             guide={batch.guide}
