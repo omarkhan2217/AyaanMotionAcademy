@@ -18,7 +18,7 @@ export const OurBatchesComponent: React.FC<OurBatchesComponent> = (props: OurBat
         <div className={classes.BatchName}>{BatchName}</div>
         <div className={classes.grade}>{grade}</div>
         <div className={classes.imageContairner}>
-          <BatchStudentIcon /><img src={image} alt={BatchName} />
+          <BatchStudentIcon /><img src={image} />
           <div className={classes.guide}>{guide}</div>
         </div>
         <div className={classes.buttonContainer}>

@@ -3,6 +3,9 @@
 .mainContainer {
   @include flex-container(column, center, center, 0px);
   width: 60%;
+  & > :first-child {
+    margin-bottom: 60px;
+  }
 }
 
 @include mq('desktop-medium') {

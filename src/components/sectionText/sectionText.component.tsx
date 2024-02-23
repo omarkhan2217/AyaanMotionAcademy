@@ -14,7 +14,7 @@ export interface ISectionTextProps {
   buttonVariant?: "outline" | "primary";
   buttonText?: string;
   isButtonCentered?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const SectionText: React.FC<ISectionTextProps> = (props) => {
