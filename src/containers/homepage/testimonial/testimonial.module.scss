@@ -31,12 +31,24 @@
 @include mq('tablet') {
   .testimonialCardContainer{
     transform: scale(0.88);
-    margin-top: -12% 0% -12%;
+    margin-top: -18% 0% -12%;
+  }
+  .mainContainer {
+    margin-top: -150px;
+  }
+}
+@include mq('tablet-small') {
+
+  .mainContainer {
+    margin-top: -100px;
   }
 }
 @include mq('phone-wide') {
   .testimonialCardContainer{
     transform: scale(0.8);
+  }
+  .mainContainer {
+    margin-top: -100px;
   }
 }
 @include mq('phone-custom') {

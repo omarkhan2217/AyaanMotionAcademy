@@ -59,8 +59,8 @@ export const OurbatchContainer: React.FC = () => {
           <div className={classes.subDetails}><span className={classes.otherHeading}>Success-Oriented Curriculum:</span> Whether it's acing your board exams or securing a top rank in competitive exams like IIT/JEE and NEET, our curriculum is aligned with your goals.</div>
           <div className={classes.subDetails}><span className={classes.otherHeading}>Interactive and Supportive Environment:</span> With interactive doubt sessions, regular assessments, and a supportive community, we ensure your academic journey is engaging and collaborative.</div>
         </div>
-      </div>
       <PageEndingText mainHeader="Ready to start your journey? Explore our batches, register for the one that aligns with your aspirations, or inquire for more details to make an informed decision about your academic future. Your path to excellence begins here at Ayaan's Motion Academy." />
+      </div>
     </div>
   );
 };

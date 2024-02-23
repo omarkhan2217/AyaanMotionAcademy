@@ -1,9 +1,9 @@
-@use '../../styles/global.scss' as *;
+@use "../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, flex-start, center, 50px);
   background-color: $color--bg-main;
-  padding: 5% 0% 5%;
+  padding: 5% 8%;
 }
 .pageText {
   width: 120%;
@@ -21,29 +21,19 @@
 }
 
 .otherDetailContainer {
-  @include flex-container(
-    row,
-    space-between,
-    flex-start,
-    70px
-  );
+  @include flex-container(row, space-between, flex-start, 70px);
   width: 70%;
   padding: 1%;
 }
 
 .otherMainheading {
   width: 100%;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
-  font-family: 'space Grotesk', sans-serif;
+  font-family: "space Grotesk", sans-serif;
 }
 .otherDetails {
-  @include flex-container(
-    column,
-    space-between,
-    center,
-    10px
-  );
+  @include flex-container(column, space-between, center, 10px);
   width: 60%;
   padding: 1%;
   height: fit-content;
@@ -51,15 +41,14 @@
 .otherHeading {
   font-size: 24px;
   font-weight: 600;
-  font-family: 'Inter', sans-serif;
-
+  font-family: "Inter", sans-serif;
 }
 .subDetails {
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-@include mq('desktop') {
+@include mq("desktop") {
   .otherMainheading {
     font-size: 52px;
   }
@@ -71,7 +60,7 @@
   }
 }
 
-@include mq('desktop-medium') {
+@include mq("desktop-medium") {
   .otherMainheading {
     font-size: 46px;
   }
@@ -79,18 +68,13 @@
     width: 70%;
   }
   .otherDetails {
-    @include flex-container(
-      column,
-      space-between,
-      center,
-      20px
-    );
+    @include flex-container(column, space-between, center, 20px);
   }
 }
-@include mq('desktop-small') {
-  .otherDetailContainer{
+@include mq("desktop-small") {
+  .otherDetailContainer {
     width: 80%;
-    @include flex-container(row,flex-start,flex-start,10px)
+    @include flex-container(row, flex-start, flex-start, 10px);
   }
 
   .otherMainheading {
@@ -102,13 +86,13 @@
   .subDetails {
     font-size: 13px;
   }
-  .batchesCardContainer{
+  .batchesCardContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 }
-@include mq('tablet-wide') {
+@include mq("tablet-wide") {
   .otherDetailContainer {
     width: 80%;
   }
@@ -121,32 +105,30 @@
   .subDetails {
     font-size: 12px;
   }
-  .batchesCardContainer{
+  .batchesCardContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 }
-@include mq ('tablet'){
-  .batchesCardContainer{
-    @include flex-container(column ,center,center,40px);
+@include mq("tablet") {
+  .batchesCardContainer {
+    @include flex-container(column, center, center, 40px);
     width: 90%;
-  
   }
-  .otherDetailContainer{
-    @include flex-container(column,space-between,flex-start,20px);
-  }
-  .otherDetails{
+  .otherDetailContainer {
+    @include flex-container(column, space-between, flex-start, 20px);
     width: 100%;
   }
-
-  
+  .otherDetails {
+    width: 100%;
+  }
 }
-@include mq('phone-wide'){
-  .pageText{
+@include mq("phone-wide") {
+  .pageText {
     width: 106%;
   }
-   .otherMainheading {
+  .otherMainheading {
     font-size: 34px;
   }
   .otherHeading {
@@ -156,28 +138,49 @@
     font-size: 13px;
   }
 }
-@include mq ('phone-custom'){
-  .otherMainheading{
-    font-size: 34px;
+@include mq("phone-custom") {
+  .otherMainheading {
+    font-size: 26px;
+    width: 100%;
   }
-  .otherHeading{
-    font-size: 16px;
+  .otherHeading {
+    font-size: 14px;
+    font-weight: 700;
   }
-  .mainContainer{
-    padding:8% 0% 10%;
+  .mainContainer {
+    padding: 5% 8%;
   }
-
-
 }
-@include mq('phone') {
-  .pageText
- {
-    width: 90%;
+
+@include mq("phone") {
+  .pageText {
+    width: 100%;
+  }
+  .otherMainheading {
+    font-size: 24px;
+  }
+  .otherHeading {
+    font-size: 12px;
+  }
+  .subDetails {
+    font-size: 10px;
   }
   .batchesCardContainer {
     @include flex-container(column, center, center, 60px);
   }
- 
 }
 
-
+@include mq("phone-small") {
+  .pageText {
+    width: 100%;
+  }
+  .otherMainheading {
+    font-size: 20px;
+  }
+  .otherHeading {
+    font-size: 10px;
+  }
+  .subDetails {
+    font-size: 10px;
+  }
+}

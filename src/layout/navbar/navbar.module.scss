@@ -1,10 +1,7 @@
-@use '../../styles/global.scss' as *;
+@use "../../styles/global.scss" as *;
 
 .mainContainer {
-  @include flex-container(row,
-    space-between,
-    center,
-    0px);
+  @include flex-container(row, space-between, center, 0px);
   width: 100%;
   padding: 16px 8%;
 }
@@ -15,7 +12,6 @@
   height: inherit;
   box-shadow: $shadow--flat;
 }
-
 
 .mainLogo {
   width: 50%;
@@ -35,7 +31,7 @@
   box-shadow: $shadow--flat;
 }
 
-@include mq('desktop') {
+@include mq("desktop") {
   .mainLogo {
     width: 45%;
   }
@@ -43,12 +39,9 @@
     width: 43%;
   }
 }
-@include mq('desktop-medium') {
+@include mq("desktop-medium") {
   .mainContainer {
-    @include flex-container(row,
-      space-between,
-      center,
-      0px);
+    @include flex-container(row, space-between, center, 0px);
   }
 
   .link {
@@ -60,7 +53,7 @@
   }
 }
 
-@include mq('desktop-small') {
+@include mq("desktop-small") {
   .link {
     font-size: 12px;
     padding: 0px 12px;
@@ -75,7 +68,7 @@
   }
 }
 
-@include mq('tablet-wide') {
+@include mq("tablet-wide") {
   .mainContainer {
     width: 90%;
   }
@@ -84,22 +77,31 @@
   }
 }
 
-@include mq('tablet') {
+@include mq("tablet") {
   .mainContainer {
     width: 95%;
   }
 }
 
-@include mq('phone-wide') {
+@include mq("phone-wide") {
   .mainContainer {
-    display: block;
+    width: 80%;
+  }
+  .mainLogo {
+    transform: scale(1.4);
   }
 }
 
-@include mq('phone') {
-  .mainContainer {
+@include mq("phone") {
+  .mainLogo {
+    transform: scale(1.6);
+    margin-left: 10px;
   }
+}
 
-  .logo {
+@include mq("phone-small") {
+  .mainLogo {
+    transform: scale(2);
+    margin-left: 15px;
   }
 }

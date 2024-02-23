@@ -1,41 +1,45 @@
-@use '../../../styles/global.scss' as *;
+@use "../../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, center, center, 0px);
   width: 60%;
   & > :first-child {
     & > :first-child {
-
       margin-bottom: 60px;
     }
   }
 }
 
-@include mq('desktop-medium') {
+@include mq("desktop-medium") {
   .mainContainer {
     width: 60%;
   }
 }
 
-@include mq('tablet-custom') {
+@include mq("tablet-custom") {
   .mainContainer {
     width: 70%;
   }
 }
 
-@include mq('tablet') {
+@include mq("tablet") {
   .mainContainer {
     width: 75%;
+    & > :first-child {
+      & > :first-child {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 
-@include mq('phone-wide') {
+@include mq("phone-wide") {
   .mainContainer {
     width: 90%;
   }
 }
 
-@include mq('phone') {
+@include mq("phone") {
   .mainContainer {
     width: 90%;
   }

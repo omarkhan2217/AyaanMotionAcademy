@@ -97,15 +97,28 @@
   }
 }
 
+@include mq('phone-custom') {
+  .imageContainer {
+    width: 60%;
+  }
+
+  .backgroundSvg {
+    top: 45%;
+    left: -25%;
+    height: 55%;
+    width: 100%;
+  }
+}
+
 @include mq('phone-small') {
   .imageContainer {
     width: 60%;
   }
 
   .backgroundSvg {
-    top: 40%;
+    top: 50%;
     left: -25%;
-    height: 55%;
+    height: 50%;
     width: 100%;
   }
 }
