@@ -177,6 +177,9 @@
     );
     gap: 170px;
   }
+  .mainLogo{
+    width: 44% !important;
+  }
 }
 
 @include mq('desktop-medium') {
@@ -221,6 +224,9 @@
     );
     padding-right: 4%;
   }
+  .mainLogo{
+    width: 40% !important;
+  }
 }
 
 @include mq('desktop-small') {
@@ -235,10 +241,12 @@
 }
 
 @include mq('tablet-wide') {
-  .logoText,
-  .logo {
+  .logoText {
     width: 90%;
     font-size: 12px;
+  }
+  .mainLogo{
+width: 36% !important;
   }
 }
 
@@ -257,8 +265,7 @@
   .elements {
     gap: 25px;
   }
-  .logoText,
-  .logo {
+  .logoText {
     width: 70%;
     font-size: 12px;
   }
@@ -285,8 +292,8 @@
     width: 80%;
     font-size: 10px;
   }
-  .logo {
-    width: 100%;
+  .mainLogo {
+    width: 32% !important;
   }
   .link {
     font-size: 9.5px !important;

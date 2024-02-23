@@ -1,10 +1,10 @@
 import MAINIMG1 from '../../assets/images/ourAchievers/ratan kumar.jpg.png'
-import MAINIMG2 from '../../assets/images/ourAchievers/Tanishqua Jaiswal.jpg.png'
+import MAINIMG2 from '../../assets/images/ourAchievers/lolita kumari.jpg.png'
 import IMG1 from '../../assets/images/ourAchievers/Akash Pramanik.jpg.png'
 import IMG2 from '../../assets/images/ourAchievers/Harshit Norbert Joseph.jpg.png'
 import IMG3 from '../../assets/images/ourAchievers/Nishant kumar.jpg.png'
 import IMG4 from '../../assets/images/ourAchievers/Pranav Singh.jpg.png'
-import IMG5 from '../../assets/images/ourAchievers/lolita kumari.jpg.png'
+import IMG5 from '../../assets/images/ourAchievers/Tanishqua Jaiswal.jpg.png'
 import IMG6 from '../../assets/images/ourAchievers/Shubham Kumar.jpg.png'
 import IMG7 from '../../assets/images/ourAchievers/sumit kumar.jpg.png'
 import IMG8 from '../../assets/images/ourAchievers/kunal keshri.jpg.png'
@@ -26,9 +26,9 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         for every aspirant dreaming of conquering the competitive exam skies.`,
     },
     {
-        rank: 5,
+        rank: 15118,
         id: 2,
-        name: 'Tanishqua Jaiswal',
+        name: 'lolita kumari',
         image: MAINIMG2,
         altImage: MAINIMG2,
         description: `In the constellation of brilliant minds that Ayaan's Motion Academy takes pride in, Riya Gupta emerges as a stellar achiever, securing an impressive All India Rank of 05 in the IIT/JEE entrance exam. Riya's journey symbolizes resilience, brilliance, and the power of unwavering dedication. Her remarkable achievements inspire aspiring minds to reach for the stars.`,
@@ -59,10 +59,10 @@ export const OtherAchieversData: IOtherStudentCardProps[] = [
         stream: 'JEE',
     },
     {
-        rank: "15118",
-        name: 'lolita kumari',
+        rank: "2022 BATCH",
+        name: 'Tanishqua Jaiswal',
         image: IMG5,
-        college: 'NIT JAMSHEDPUR',
+        college: 'BIT MESRA RANCHI',
         stream: 'JEE',
     },
     {
@@ -88,7 +88,7 @@ export const OtherAchieversData: IOtherStudentCardProps[] = [
     },
     {
         rank: "2022 BATCH",
-        name: 'Harshit Norbert Joseph',
+        name: 'Harshit Norbert Joe',
         image: IMG2,
         college: 'BIT SINDRI DHANWAD',
         stream: 'JEE',

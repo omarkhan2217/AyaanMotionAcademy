@@ -7,7 +7,7 @@
 }
 
 .mainHeader {
-  width: 42%;
+  width: 44%;
   color: $color--text-primary;
   text-align: center;
   font-size: 50px;
@@ -33,13 +33,13 @@
 
 @include mq('desktop-medium') {
   .mainHeader {
-    width: 44%;
+    width: 46%;
     font-size: 44px;
   }
 }
 @include mq('desktop-small') {
   .mainHeader {
-    width: 48%;
+    width: 54%;
   }
   .subHeader {
     width: 35%;

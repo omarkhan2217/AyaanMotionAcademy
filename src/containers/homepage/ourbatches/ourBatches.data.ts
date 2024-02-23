@@ -12,7 +12,7 @@ export const OurBatchesData: ISBatchesCardProps[] = [
     grade: "12th Grade",
     guide: "Guided By Our Expert Faculty",
     isScholar: true,
-    path: "/our-achievers"
+    path: "/scholar-batch",
   },
   {
     BatchName: "Star Batch",

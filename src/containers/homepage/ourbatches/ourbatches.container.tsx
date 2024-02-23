@@ -55,7 +55,10 @@ export const Ourbatchescontainer: React.FC = () => {
       ? 2.3
       : 4; // Fallback or default
 
-  const batchesToDisplay = width <= 1024 ? OurBatchesData : OurBatchesData; // Adjust according to your logic
+      const scholarBatch = OurBatchesData.find(batch => batch.isScholar) || { BatchName: '', grade: '', guide: '', image: '', isScholar: false, path: ''};
+      const otherBatches = OurBatchesData.filter(batch => !batch.isScholar);
+    
+      const batchesToDisplay = width <= 1024 ? [scholarBatch, ...otherBatches] : OurBatchesData;
 
   return (
     <div className={classes.mainContainer}>
