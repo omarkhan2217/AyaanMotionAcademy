@@ -8,7 +8,6 @@ import { useWindowSize } from "usehooks-ts";
 export const OurAchieversContainer: React.FC = () => {
   const { width } = useWindowSize();
   const isTablet = width <= 768;
-  console.log(isTablet);
   return (
     <div className={classes.mainContainer}>
       <PageText

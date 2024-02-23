@@ -7,7 +7,19 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "react-snap"
+  },
+  "reactSnap": {
+    "inlineCss": true,
+    "minifyHtml": {
+      "collapseWhitespace": true,
+      "removeComments": true,
+      "removeRedundantAttributes": true,
+      "removeScriptTypeAttributes": true,
+      "removeStyleLinkTypeAttributes": true,
+      "useShortDoctype": true
+    }
   },
   "dependencies": {
     "@szhsin/react-accordion": "^1.2.3",
@@ -23,6 +35,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.21.2",
     "react-slick": "^0.29.0",
+    "react-snap": "^1.23.0",
     "react-spring": "^9.7.3",
     "react-spring-carousel": "^2.0.19",
     "slick-carousel": "^1.8.1",
