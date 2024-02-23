@@ -1,49 +1,42 @@
-import IMG1 from '../../../assets/images/homepage/ourAchievers/Rajbeer-Singh.png'
-import IMG2 from '../../../assets/images/homepage/ourAchievers/Priyanshu Kumar Mehta.png'
-import IMG3 from '../../../assets/images/homepage/ourAchievers/Ricky Mukherjee.png'
-import IMG4 from '../../../assets/images/homepage/ourAchievers/kumar-saurav.png'
+import IMG1 from '../../../assets/images/homepage/ourAchievers/WhatsApp Image 2024-02-13 at 18.53.25_c1f0b32a.remini-enhanced.jpg'
+import IMG2 from '../../../assets/images/homepage/ourAchievers/WhatsApp Image 2024-02-15 at 13.38.30_050879d3.jpg'
+import IMG from '../../../assets/images/homepage/image15.png'
 import { IStudentCardProps } from '../../../types';
 
 export const ourAchieversData: IStudentCardProps[] = [
     {
-        rank: '',
-        name: 'Rajbeer Singh',
-        college: '99.987%',
+        rank: 3,
+        name: 'Ankit Kumar',
+        college: 'IIT Delhi',
         image: IMG1,
         y: 150,
         stifness: 80,
-        color: '#C0B1FF',
-        pillColor: '#7465AF',
+        color: '#hsl(162, 30%, 41%)'
     },
     {
-        rank: '',
-        name: 'Priyanshu Kumar',
-        college: '98.344%',
+        rank: 67,
+        name: 'Ankit Kumar',
+        college: 'IIT Delhi',
         image: IMG2,
-        color:'#8366FF',
+        
         y: 250,
-        stifness: 70,
-        pillColor: '#4E466F',
+        stifness: 70
     },
     {
-        rank: '',
-        name: 'Ricky Mukherjee',
-        college: '98.291%',
-        image: IMG3,
-        color:'#C8A376',
+        rank: 124,
+        name: 'Ankit Kumar',
+        college: 'IIT Delhi',
+        image: IMG,
         y: 350,
-        stifness: 60,
-        pillColor: '#775C3B',
+        stifness: 60
     },
     {
-        rank: '',
-        name: 'kumar Saurav',
-        college: '93.303%',
-        image: IMG4,
-        color:'#488774',    
+        rank: 424,
+        name: 'Ankit Kumar Paratha',
+        college: 'IIT Delhi',
+        image: IMG,
         y: 400,
-        pillColor: '#2A5B4C',
-        stifness: 50,
+        stifness: 50
     },
 ];
 

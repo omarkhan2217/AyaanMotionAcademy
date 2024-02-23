@@ -34,7 +34,7 @@ export const OurAchieversSection: React.FC = () => {
                                 initial={{ opacity: 0, y: item.y }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ type: "spring", stiffness: item.stifness }}>
-                                <MainStudentCard college={item.college} name={item.name}  rank={item.rank} image={item.image} pillColor={item.pillColor} color={item.color ? item.color : ''} />
+                                <MainStudentCard college={item.college} name={item.name}  rank={item.rank} image={item.image} color={item.color ? item.color : ''} />
                             </motion.div>
                         </SwiperSlide>
                     ))}
@@ -47,7 +47,7 @@ export const OurAchieversSection: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: item.stifness }}
                     >
-                        <MainStudentCard college={item.college} name={item.name} rank={item.rank} image={item.image} pillColor={item.pillColor} color={item.color ? item.color : ''} />
+                        <MainStudentCard college={item.college} name={item.name} rank={item.rank} image={item.image} color={item.color ? item.color : ''} />
                     </motion.div>
                 ))
             }

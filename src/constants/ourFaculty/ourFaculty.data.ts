@@ -1,5 +1,5 @@
 import {  IourFacultyDataProps } from "../../types";
-import IMG2 from '../../assets/images/ourAchievers/Nishant kumar.jpg.png'
+import IMG2 from '../../assets/images/ourAchievers/boyImage.png'
 
 
 export const OurFacultyData: IourFacultyDataProps[]=[

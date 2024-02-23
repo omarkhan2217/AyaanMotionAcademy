@@ -3,9 +3,9 @@ import { IPillProps } from "../../types";
 import classes from './pill.module.scss';
 
 export const CustomPill: React.FC<IPillProps> = (props: IPillProps) => {
-    const { label,pillColor} = props
+    const { label } = props
     return (
-        <div className={classes.mainContainer} style={{backgroundColor:pillColor}}>
+        <div className={classes.mainContainer}>
             {label}
         </div>
     )
