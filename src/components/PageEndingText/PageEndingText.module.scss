@@ -1,4 +1,4 @@
-@use '../../styles/global.scss' as *;
+@use "../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, center, center, 0px);
@@ -12,5 +12,20 @@
   text-align: center;
   font-size: 16px;
   font-weight: 550;
-  font-family: 'inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+@include mq("phone-custom") {
+  .mainHeader {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+@include mq("phone-small") {
+  .mainHeader {
+    width: 100%;
+    font-size: 10px;
+  }
 }

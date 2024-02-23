@@ -9,8 +9,8 @@ const sidebar = {
     open: (width = 1024) => ({
         clipPath: `circle(${width * 2 + 200}px at calc(100% - 37%) 4.3%)`,
         boxShadow: "10px 10px 20px rgba(0, 0, 0, 1)",
+        backgroundColor: 'white',
         transition: {
-            delay: 0.1,
             type: "spring",
             stiffness: 20,
             restDelta: 2,
@@ -19,8 +19,8 @@ const sidebar = {
     closed: {
         clipPath: "circle(30px at calc(100% - 34%) 4.3%)",
         boxShadow: "10px 10px 20px rgba(0, 0, 0, 1)",
+        backgroundColor: 'transparent',
         transition: {
-            delay: 0.2,
             type: "spring",
             stiffness: 400,
             damping: 40,

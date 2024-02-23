@@ -1,4 +1,4 @@
-@use '../../styles/global.scss' as *;
+@use "../../styles/global.scss" as *;
 
 .mainContainer {
   @include flex-container(column, center, center, 50px);
@@ -6,34 +6,24 @@
   background-color: $color--bg-main;
 }
 .innerContainer {
-  @include flex-container(
-    row,
-    space-between,
-    flex-start,
-    30px
-  );
-  width:60%;
+  @include flex-container(row, space-between, flex-start, 30px);
+  width: 60%;
 }
 
 .detailsContainer {
-  @include flex-container(
-    column,
-    space-between,
-    flex-start,
-    30px
-  );
+  @include flex-container(column, space-between, flex-start, 30px);
   height: 100%;
   width: 100%;
 }
 .details {
   width: 70%;
-  @include flex-container(column,flex-start,flex-start,10px)
+  @include flex-container(column, flex-start, flex-start, 10px);
 }
 
 .heading {
   font-size: 24px;
   font-weight: 600;
-  font-family: 'space Grotesk', sans-serif;
+  font-family: "space Grotesk", sans-serif;
   color: $color--text-primary;
   text-emphasis: none;
 }
@@ -44,8 +34,21 @@
   font-size: 16px;
   color: $color--text-2-primary-light;
   font-family: system-ui, sans-serif;
-  &:nth-last-child(2){
+  &:nth-last-child(2) {
     color: $color--text-3-primary-light;
+  }
+}
+
+.mapLink {
+  @extend .link;
+  width: 100%;
+  & > :first-child {
+    justify-content: flex-start;
+    padding-left: 0;
+    & > :first-child {
+      justify-content: flex-start;
+      padding-left: 0;
+    }
   }
 }
 
@@ -54,72 +57,83 @@
   height: auto;
 }
 
-.socialMedia{
-  @include flex-container(row, flex-start,flex-start,20px)
+.socialMedia {
+  @include flex-container(row, flex-start, flex-start, 20px);
 }
 
-@include mq ('desktop'){
-    .innerContainer{
-        width: 70%;
-    }
-    .details{
-        width: 90%;
-    }
-}
-
-@include mq ('desktop-small'){
-    .innerContainer{
-        width: 80%;
-    }
-    .imageContainer{
-        width: 426px;
-    }
-}
-@include mq('tablet-wide'){
-    .innerContainer{
-        width: 76%;
-    }
-    .heading{
-        font-size: 24px;
-    }
-    .link{
-        font-size: 16px;
-    }
-    .details{
-        width: 94%;
-    }
-}
-@include mq ('tablet-custom'){
-    .innerContainer{
-        width: 88%;
-    }
-    .imageContainer{
-        width: 410px;
-    }
-}
-@include mq ('tablet'){
-  .innerContainer{
-    @include flex-container(column,center,center,0px);
-  }
-  .detailsContainer{
-    @include flex-container(column,center,center,10px);
-  }
-  .details{
-    @include flex-container(column,center,center,10px);
-    text-align:center;
+@include mq("desktop") {
+  .innerContainer {
     width: 70%;
   }
-
-}
-
-@include mq('phone-custom'){
-  .imageContainer{
+  .details {
     width: 90%;
   }
-  .heading{
+}
+
+@include mq("desktop-small") {
+  .innerContainer {
+    width: 80%;
+  }
+  .imageContainer {
+    width: 426px;
+  }
+}
+@include mq("tablet-wide") {
+  .innerContainer {
+    width: 76%;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .link {
+    font-size: 16px;
+  }
+  .details {
+    width: 94%;
+  }
+}
+@include mq("tablet-custom") {
+  .innerContainer {
+    width: 88%;
+  }
+  .imageContainer {
+    width: 410px;
+  }
+}
+@include mq("tablet") {
+  .innerContainer {
+    @include flex-container(column, center, center, 0px);
+  }
+  .detailsContainer {
+    @include flex-container(column, center, center, 10px);
+  }
+  .details {
+    @include flex-container(column, center, center, 10px);
+    text-align: center;
+    width: 70%;
+  }
+  .mapLink {
+    width: 100%;
+    & > :first-child {
+      justify-content: center;
+      padding-left: 0;
+      & > :first-child {
+        justify-content: center;
+        padding-left: 0;
+      }
+    }
+  }
+  
+}
+
+@include mq("phone-custom") {
+  .imageContainer {
+    width: 90%;
+  }
+  .heading {
     font-size: 22px;
   }
-  .link{
+  .link {
     font-size: 14px;
   }
 }

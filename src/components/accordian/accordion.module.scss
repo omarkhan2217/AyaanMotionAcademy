@@ -67,3 +67,15 @@
     font-size: 12px;
   }
 }
+
+@include mq('phone-custom') {
+  .question,
+  .answer {
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+    margin: 6px auto;
+  }
+  
+}
