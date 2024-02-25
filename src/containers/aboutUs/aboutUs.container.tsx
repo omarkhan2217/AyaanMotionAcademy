@@ -57,17 +57,42 @@ export const AboutUsContainer: React.FC = () => {
   }, [controls, inView]);
 
   const containerVariants = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
-    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.8 },
+    },
+    hidden: { opacity: 0 },
+  };
+
+  const textVariants = {
+    visible: {
+      x: 0,
+      transition: { duration: 0.8, type: "spring", stiffness: 70, damping: 8, mass: 0.8 },
+    },
+    hidden: { x: -60 },
+  };
+
+  const textVariants_2 = {
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.8, type: "spring", stiffness: 70, damping: 8, mass: 0.8 },
+    },
+    hidden: { x: -100, opacity: 0 },
   };
 
   const imageVariants = {
-    visible: { opacity: 1, x: 0, scale: 1.2, transition: { duration: 0.7 } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1.2,
+      transition: { duration: 0.8 },
+    },
     hidden: { opacity: 0, x: 50, scale: 1 },
   };
 
   const animateFromBottom = {
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
     hidden: { opacity: 0, y: 50 },
   };
 
@@ -98,10 +123,24 @@ export const AboutUsContainer: React.FC = () => {
           animate={controls}
           variants={containerVariants}
         >
-          <div className={classes.mainHeading}>Introducing Ayaan's Motion Academy</div>
-          <div className={classes.subHeading}>
-          Every Scroll Reveals New Paths to Success and Possibility
-          </div>
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={textVariants}
+            className={classes.mainHeading}
+          >
+            Introducing Ayaan's Motion Academy
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={textVariants_2}
+            className={classes.subHeading}
+          >
+            Every Scroll Reveals New Paths to Success and Possibility
+          </motion.div>
         </motion.div>
         <motion.img
           className={classes.introductionImage}
@@ -113,12 +152,7 @@ export const AboutUsContainer: React.FC = () => {
           variants={imageVariants}
         />
       </div>
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={controls}
-        variants={containerVariants}
-      >
+      <motion.div ref={ref} initial="hidden" animate={controls} variants={containerVariants}>
         <PageEndingText
           color="#201F23"
           mainHeader={
@@ -133,7 +167,13 @@ export const AboutUsContainer: React.FC = () => {
         animate={faculty.controls}
         variants={containerVariants}
       >
-        <div className={classes.facultyHeadingContainer}>
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={textVariants_2}
+          className={classes.facultyHeadingContainer}
+        >
           <div className={classes.facultyHeading}>Expert Faculty: The Pillars of Our Success</div>
           {isSmallScreen && (
             <motion.img
@@ -152,7 +192,7 @@ export const AboutUsContainer: React.FC = () => {
             interactive sessions, and a mentorship-driven approach, they are committed to guiding students towards
             academic excellence and personal growth.
           </div>
-        </div>
+        </motion.div>
         {!isSmallScreen && (
           <motion.img
             src={image2}

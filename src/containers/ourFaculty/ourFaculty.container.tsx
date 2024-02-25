@@ -1,10 +1,22 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import classes from "./ourFaculty.module.scss";
 import { PageText, PageEndingText, OtherStudentCard } from "../../components";
 import Img from "../../assets/images/homepage/Frame 45.png";
 import { OurFacultyData } from "../../constants";
 
 export const OurFacultyContainer: React.FC = () => {
+  const createCardVariants = (index: number) => ({
+    visible: {
+      opacity: 1,
+      translateY: 0,
+      transition: { duration: 0.8, delay: index * 0.1 },
+    },
+    hidden: { opacity: 0, translateY: 150 },
+  });
+
   return (
     <div className={classes.mainContainer}>
       <PageText
@@ -18,14 +30,28 @@ export const OurFacultyContainer: React.FC = () => {
       />
       <div className={classes.facultyContainer}>
         {OurFacultyData.map((item, index) => {
+          const controls = useAnimation();
+          const [ref, inView] = useInView({
+            triggerOnce: true,
+            threshold: 0.2, // This value can be adjusted based on your needs
+          });
+
+          React.useEffect(() => {
+            if (inView) {
+              controls.start("visible");
+            }
+          }, [controls, inView]);
+
           return (
-            <OtherStudentCard
-              name={item.name}
-              image={item.image}
-              college={item.details}
-              isFacultyCard={true}
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={createCardVariants(index)} // Use the function to generate variants with delay
               key={index}
-            />
+            >
+              <OtherStudentCard name={item.name} image={item.image} college={item.details} isFacultyCard={true} />
+            </motion.div>
           );
         })}
       </div>

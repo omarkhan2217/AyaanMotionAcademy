@@ -24,6 +24,7 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         Aushutosh has set a benchmark for excellence, dedication, and perseverance. 
         His journey from a curious learner to a national top ranker is a source of inspiration 
         for every aspirant dreaming of conquering the competitive exam skies.`,
+        isReversed: false,
     },
     {
         rank: 15118,

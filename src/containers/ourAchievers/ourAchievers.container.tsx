@@ -1,13 +1,34 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
-import { PageText, OtherStudentCard, PageEndingText } from "../../components";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { PageText, OtherStudentCard, PageEndingText, HighlightedStudentCard } from "../../components";
 import classes from "./ourAchievers.module.scss";
-import { HighlightedStudentCard } from "../../components/highlightedStudentCard";
 import { HighlightedAchieversData, OtherAchieversData } from "../../constants";
 import { useWindowSize } from "usehooks-ts";
 
 export const OurAchieversContainer: React.FC = () => {
   const { width } = useWindowSize();
   const isTablet = width <= 768;
+
+  const fromBottomVariant = (index: number) => ({
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, delay: index * 0.08 },
+    },
+  });
+
+  const fromSideVariant = (isReversed: boolean) => ({
+    hidden: { opacity: 0, x: !isReversed ? -150 : 150 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8 },
+    },
+  });
+
   return (
     <div className={classes.mainContainer}>
       <PageText
@@ -15,32 +36,62 @@ export const OurAchieversContainer: React.FC = () => {
         subHeader="Showcasing the Pioneers of Tomorrow, Today"
         hasButton={false}
       />
-      <div className={classes.highlightedStudentCardContainer}>
+
+      <div className={classes.highlightedStudentCardMainContainer}>
         {HighlightedAchieversData.map((student) => {
+          const controls = useAnimation();
+          const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+
+          React.useEffect(() => {
+            if (inView) {
+              controls.start("visible");
+            }
+          }, [controls, inView]);
+
           return (
-            <HighlightedStudentCard
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={fromSideVariant(student.isReversed)}
               key={student.id}
-              name={student.name}
-              description={student.description}
-              rank={student.rank}
-              image={isTablet ? student.altImage : student.image}
-              isReversed={student.isReversed}
-            />
+              className={classes.highlightedStudentCardContainer}
+            >
+              <HighlightedStudentCard
+                name={student.name}
+                description={student.description}
+                rank={student.rank}
+                image={isTablet ? student.altImage : student.image}
+                isReversed={student.isReversed}
+              />
+            </motion.div>
           );
         })}
       </div>
+
       <PageText mainHeader={"Our Achievers: Paving Paths, Setting Records"} />
+
       <div className={classes.otherStudentCard}>
         {OtherAchieversData.map((item, index) => {
+          const controls = useAnimation();
+          const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
+
+          React.useEffect(() => {
+            if (inView) {
+              controls.start("visible");
+            }
+          }, [controls, inView]);
+
           return (
-            <OtherStudentCard
-              rank={item.rank}
-              college={item.college}
-              image={item.image}
-              name={item.name}
-              stream={item.stream}
-              key={index}
-            />
+            <motion.div ref={ref} initial="hidden" animate={controls} variants={fromBottomVariant(index)} key={index}>
+              <OtherStudentCard
+                rank={item.rank}
+                college={item.college}
+                image={item.image}
+                name={item.name}
+                stream={item.stream}
+              />
+            </motion.div>
           );
         })}
       </div>

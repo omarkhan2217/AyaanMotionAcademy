@@ -11,3 +11,4 @@ export * from './PageEndingText';
 export * from './policyText';
 export * from './careerGuidanceText';
 export * from './ourBatchesPage';
+export * from './highlightedStudentCard';

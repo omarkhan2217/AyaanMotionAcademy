@@ -19,7 +19,7 @@ export const AnimationVariants = {
         animate: { opacity: 1 },
         transition: {
             stifness: 100,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -32,7 +32,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.03,
             stifness: 80,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -45,7 +45,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.05,
             stifness: 70,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -58,7 +58,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.07,
             stifness: 60,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -71,7 +71,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.09,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -84,7 +84,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.09,
             stifness: 100,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -94,7 +94,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         },
     },
@@ -104,7 +104,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.03,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -114,7 +114,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.05,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -124,7 +124,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.07,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -134,7 +134,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.09,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         }
     },
@@ -145,7 +145,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.09,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         },
     },
@@ -156,7 +156,7 @@ export const AnimationVariants = {
         transition: {
             delay: 0.09,
             stifness: 50,
-            opacity: { duration: 0.5 },
+            opacity: { duration: 0.8 },
             type: "spring",
         },
     }

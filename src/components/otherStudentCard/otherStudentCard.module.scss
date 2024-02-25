@@ -13,6 +13,7 @@
 }
 .mainContainerFaculty {
   @extend .mainContainer;
+  justify-content: center;
   height: 270px;
 }
 .rankContainer {

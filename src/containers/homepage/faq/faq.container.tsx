@@ -9,7 +9,7 @@ import { FaqData } from "./faq.data";
 export const FaqContainer: React.FC = () => {
   // Animation variants for the FAQ items
   const variants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
     hidden: { opacity: 0, y: 150 },
   };
 

@@ -6,9 +6,13 @@
     padding: 5% 0% 10%;
 }
 
-.highlightedStudentCardContainer {
+.highlightedStudentCardMainContainer {
     @include flex-container(column, center, center, 80px);
     margin-bottom: 80px;
+}
+
+.highlightedStudentCardContainer {
+    @include flex-container(row, center, center, 0px);
 }
 
 
@@ -28,7 +32,7 @@
 
 }
 @include mq('tablet-custom'){
-    .highlightedStudentCardContainer{
+    .highlightedStudentCardMainContainer{
         margin-bottom: 10px;
     }
     .otherStudentCard{
@@ -48,7 +52,7 @@
         gap: 20px;
     }
   
-    .highlightedStudentCardContainer{
+    .highlightedStudentCardMainContainer{
         @include flex-container(column, center, center, 50px);
         margin-bottom: 20px;
     }
@@ -62,7 +66,7 @@
         grid-template-columns: 1fr 1fr ;
         gap: 14px;
     }
-    .highlightedStudentCardContainer{
+    .highlightedStudentCardMainContainer{
         @include flex-container(column, center, center, 50px);
         margin-bottom: 20px;
     }
