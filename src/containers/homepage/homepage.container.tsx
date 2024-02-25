@@ -20,8 +20,7 @@ export const HomePageContainer: React.FC = () => {
         subHeader="Elevate Your Potential at Ayaan's Motion Academy – Explore Success Stories of JEE/IIT Qualifiers below."
         buttonText="View All Achievers"
         onClick={() => navigation("/our-achievers")}
-        hasButton
-      />
+        hasButton studentIcon={true}      />
       <OurAchieversSection />
       <AboutUsSection />
       <OurFacultySection />

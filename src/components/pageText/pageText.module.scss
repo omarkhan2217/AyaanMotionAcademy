@@ -16,7 +16,6 @@
 }
 
 .subHeader {
-
   color: $color--text-primary-light;
   text-align: center;
   font-weight: 500;
@@ -31,11 +30,23 @@
   text-decoration: none;
 }
 
+.studentIconContainer {
+  @include flex-container(row, flex-start, center, 4px);
+}
+.studentIconText {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color--text-primary-lighter;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
 @include mq('desktop-medium') {
   .mainHeader {
     width: 46%;
     font-size: 44px;
   }
+
 }
 @include mq('desktop-small') {
   .mainHeader {
@@ -43,12 +54,18 @@
   }
   .subHeader {
     width: 35%;
-}
-.buttonContainer{
-  width:20%;
-}
+  }
+  .buttonContainer {
+    width: 20%;
+  }
+  .studentIconText{
+    font-size: 14px ;
+  }
 }
 @include mq('tablet-wide') {
+  .studentIconText{
+    font-size: 10px;
+  }
   .mainHeader {
     width: 58%;
     font-size: 40px;
@@ -56,22 +73,28 @@
   .subHeader {
     width: 40%;
   }
-  .buttonContainer{
-    width:24%;
+  .buttonContainer {
+    width: 24%;
+  }
+  .studentIconText{
+    font-size: 13px;
   }
 }
 
 @include mq('tablet') {
   .mainHeader {
-      width: 64%;
-      font-size: 36px;
-    }
-    .subHeader {
-        width: 44%;
-        font-size: 13px;
+    width: 64%;
+    font-size: 36px;
   }
-  .buttonContainer{
-    width:30%;
+  .subHeader {
+    width: 44%;
+    font-size: 13px;
+  }
+  .buttonContainer {
+    width: 30%;
+  }
+  .studentIconText{
+    font-size: 12px;
   }
 }
 @include mq('phone-wide') {
@@ -79,11 +102,14 @@
     width: 78%;
     font-size: 30px;
   }
-  .subHeader{
+  .subHeader {
     width: 60%;
   }
-  .buttonContainer{
-    width:44%;
+  .buttonContainer {
+    width: 44%;
+  }
+  .studentIconText{
+    font-size: 10px;
   }
 }
 @include mq('phone-custom') {
@@ -91,12 +117,13 @@
     width: 82%;
     font-size: 30px;
   }
-  .subHeader{
+  .subHeader {
     width: 62%;
   }
-  .buttonContainer{
-    width:46%;
+  .buttonContainer {
+    width: 46%;
   }
+
 }
 
 @include mq('phone') {
@@ -105,14 +132,15 @@
     font-size: 26px;
     word-break: keep-all;
   }
-  .subHeader{
+  .subHeader {
     width: 70%;
-    font-size:12px;
+    font-size: 12px;
     margin-bottom: 14px;
-}
-.buttonContainer{
+  }
+  .buttonContainer {
     width: 60%;
-}
+  }
+
 }
 @include mq('phone-small') {
   .mainHeader {
@@ -120,12 +148,12 @@
     font-size: 24px;
     word-break: keep-all;
   }
-  .subHeader{
+  .subHeader {
     width: 70%;
-    font-size:10px;
+    font-size: 10px;
     margin-bottom: 14px;
-}
-.buttonContainer{
+  }
+  .buttonContainer {
     width: 60%;
-}
+  }
 }

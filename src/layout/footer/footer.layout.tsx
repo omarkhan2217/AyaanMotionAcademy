@@ -36,13 +36,13 @@ export const Footer: React.FC = () => {
               ))}
             </div>
           ))}
-          <div>© 2024 Ayaan's Motion Academy. All Rights Reserved.</div>
+          <div className={classes.termText}>© 2024 Ayaan's Motion Academy. All Rights Reserved.</div>
         </div>
         <div className={classes.policyContainer}>
           Design & Devloped by <span className={classes.companyName}>HUMO</span>
         </div>
         <div className={classes.socialContainer}>
-          <div>Follow Us</div>
+          <div className={classes.FollowText}>Follow Us</div>
           <div className={classes.socialMedia}>
             <a href="https://www.youtube.com/channel/UCml6M5g7DRPd6W1bcX7313g"><YoutubeIcon /></a>
             <a href="https://www.instagram.com/ayaansmotionacademy/"><InstagramIcon /></a>
