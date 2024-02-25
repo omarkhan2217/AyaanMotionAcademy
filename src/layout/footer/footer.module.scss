@@ -125,6 +125,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 
+}
   .socialMedia {
     @include flex-container(
       row,
@@ -134,19 +135,21 @@
     );
     width: fit-content;
   }
-}
-@include mq('desktop') {
-  .mainContiner {
-    @include flex-container(
-      column,
-      flex-start,
-      flex-start,
-      50px
-    );
-    width: 100%;
-    padding: 4% 16.89%;
-    gap: 40px;
+  .FollowText{
+    font-size: 20px
   }
+  @include mq('desktop') {
+    .mainContiner {
+      @include flex-container(
+        column,
+        flex-start,
+        flex-start,
+        50px
+        );
+        width: 100%;
+        padding: 4% 16.89%;
+        gap: 40px;
+      }
   .upperElementContainer {
     width: 100%;
     @include flex-container(
@@ -174,11 +177,14 @@
       flex-start,
       flex-start,
       0px
-    );
-    gap: 170px;
-  }
+      );
+      gap: 170px;
+    }
   .mainLogo{
     width: 44% !important;
+  }
+  .FollowText{
+    font-size: 16px;
   }
 }
 
@@ -225,7 +231,9 @@
     padding-right: 4%;
   }
   .mainLogo{
-    width: 40% !important;
+    width: 40% !important;}
+  .FollowText{
+    font-size: 14px;
   }
 }
 
@@ -248,6 +256,13 @@
   .mainLogo{
 width: 36% !important;
   }
+  .FollowText{
+    font-size: 12px;
+  }
+  .lowerElementContainer{
+    @include flex-container(row,space-between,flex-start,0px);
+    padding: 0%;
+  }
 }
 
 @include mq('tablet-custom') {
@@ -257,7 +272,10 @@ width: 36% !important;
     gap: 30px;
   }
   .upperElementContainer {
-    gap: 30px;
+    gap:30px;
+  }
+  .lowerElementContainer{
+    gap: 20px;
   }
   .footerHeading {
     width: 150%;
@@ -276,18 +294,14 @@ width: 36% !important;
     padding: 4% 8%;
     gap: 25px;
   }
-
   .elements {
     gap: 20px;
     text-wrap: nowrap;
   }
-  .policyContainer,
-  .socialContainer {
-    font-size: 12px;
+  .policyContainer {
+    font-size: 10px;
   }
-  .socialContainer {
-    text-wrap: nowrap;
-  }
+
   .logoText {
     width: 80%;
     font-size: 10px;
@@ -295,8 +309,22 @@ width: 36% !important;
   .mainLogo {
     width: 32% !important;
   }
+  .logoText{
+    width: 80% !important;
+    font-size: 10px !important;
+  }
+  .policyContainer{
+    font-size: 10px !important;
+  }
   .link {
-    font-size: 9.5px !important;
+    font-size: 10px !important;
+  }
+  .FollowText{
+    font-size: 10px;
+  }
+  .socialMedia{
+    height: fit-content;
+    width: 100px;
   }
 }
 
@@ -327,8 +355,7 @@ width: 36% !important;
     );
     gap: 20px;
   }
-  .policyContainer,
-  .socialContainer {
+  .policyContainer{
     font-size: 12px;
   }
   .logoText {
@@ -336,6 +363,12 @@ width: 36% !important;
   }
   .link {
     font-size: 12px !important;
+  }
+  .policyContainer{
+    font-size: 12px !important;
+  }
+  .FollowText{
+    font-size:12px ;
   }
 
 }
@@ -347,16 +380,21 @@ width: 36% !important;
     gap: 20px;
     text-wrap: nowrap;
   }
-  .policyContainer,
-  .socialContainer {
-    font-size: 12px;
+  .policyContainer {
+    font-size: 10px;
   }
   .logoText {
     width: 60%;
-    font-size: 12px;
+    font-size: 10px;
   }
   .link {
-    font-size: 12px !important;
+    font-size: 10px !important;
+  }
+  .FollowText{
+    font-size: 10px;
+  }
+  .termText{
+    font-size:10px ;
   }
  
 }

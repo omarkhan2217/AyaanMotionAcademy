@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"; // Import useInView
 import classes from "./pageText.module.scss";
 import { Button } from "../../components";
 import { useButtonResizeAlt } from "../../hooks";
-import { ArrowIcon } from "../../assets";
+import { ArrowIcon, BatchStudentIcon } from "../../assets";
 
 export interface IPageTextProps {
   mainHeader: string;
@@ -15,10 +15,13 @@ export interface IPageTextProps {
   buttonVariant?: "outline" | "primary";
   children?: React.ReactNode;
   onClick?: () => void;
+  image?: string;
+  studentIcon: boolean;
+
 }
 
 export const PageText: React.FC<IPageTextProps> = (props) => {
-  const { mainHeader, subHeader, hasButton, buttonText, buttonVariant = "outline", onClick } = props;
+  const { mainHeader, subHeader, hasButton, buttonText, studentIcon, image, buttonVariant = "outline", onClick } = props;
 
   // Use useInView hook to track visibility
   const { ref, inView } = useInView({
@@ -70,6 +73,13 @@ export const PageText: React.FC<IPageTextProps> = (props) => {
           />
         </motion.div>
       )}
-    </div>
+      {studentIcon ? (
+        <div className={classes.studentIconContainer}>
+          <BatchStudentIcon />
+          <img src={image} />
+          <div className={classes.studentIconText}>Join over 500+ Students</div>
+        </div>
+      ) : null}
+    </div >
   );
 };
