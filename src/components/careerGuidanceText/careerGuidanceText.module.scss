@@ -10,7 +10,7 @@
   width: 40%;
   color: $color--text-primary;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -27,61 +27,73 @@
 @include mq('desktop-medium') {
   .mainHeader {
     width: 44%;
-    font-size: 44px;
+    font-size: 34px;
+  }
+  .subHeader{
+    font-size: 18px;
   }
 }
 @include mq('desktop-small') {
   .mainHeader {
     width: 48%;
+    font-size: 32px;
   }
   .subHeader {
     width: 65%;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @include mq('tablet-wide') {
   .mainHeader {
     width: 58%;
-    font-size: 40px;
+    font-size: 30px;
   }
   .subHeader {
-    font-size: 18px;
+    font-size: 14px;
     width: 70%;
   }
   
   @include mq('tablet') {
     .mainHeader {
       width: 64%;
-      font-size: 36px;
-    }
-    .subHeader {
-      width: 70%;
-      font-size: 13px;
+      font-size: 28px;
     }
   }
   @include mq('phone-wide') {
     .mainHeader {
       width: 74%;
-      font-size: 30px;
+      font-size: 26px;
+    }
+    
+    .subHeader {
+      width: 70%;
+      font-size: 12px;
     }
 
+  }
+}
+@include mq ('phone-custom'){
+  .mainHeader{
+    font-size: 22px;
+  }
+  .subHeader{
+    font-size: 12px;
   }
 }
 @include mq('phone') {
   .mainHeader {
     width: 85%;
-    font-size: 26px;
+    font-size: 16px;
   }
   .subHeader {
     width: 76%;
     font-size: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 }
 @include mq('phone-small') {
   .mainHeader {
-    width: 85%;
-    font-size: 26px;
+    font-size: 14px;
     font-weight: 600;
   }
   .subHeader {

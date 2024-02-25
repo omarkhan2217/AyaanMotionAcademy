@@ -100,7 +100,7 @@ export const AboutUsContainer: React.FC = () => {
         >
           <div className={classes.mainHeading}>Introducing Ayaan's Motion Academy</div>
           <div className={classes.subHeading}>
-            Dive Deeper into Our World - Where Every Scroll Unveils a New Chapter of Possibility and Success
+          Every Scroll Reveals New Paths to Success and Possibility
           </div>
         </motion.div>
         <motion.img

@@ -111,6 +111,11 @@
     gap: 40px;
   }
 }
+@include mq ('tablet-custom'){
+  .otherDetailContainer{
+    width: 100%;
+  }
+}
 @include mq("tablet") {
   .batchesCardContainer {
     @include flex-container(column, center, center, 40px);

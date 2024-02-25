@@ -88,7 +88,7 @@ export const OtherAchieversData: IOtherStudentCardProps[] = [
     },
     {
         rank: "2022 BATCH",
-        name: 'Harshit Norbert Joe',
+        name: 'Harshit Norbert Joe  ',
         image: IMG2,
         college: 'BIT SINDRI DHANWAD',
         stream: 'JEE',

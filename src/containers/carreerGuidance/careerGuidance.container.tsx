@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './careerGuidance.module.scss';
 import Image from '../../assets/images/careerGuidace/Rectangle 56 (2).png';
-import bgImage from '../../assets/images/careerGuidace/Frame 60.png';
+import bgImage from '../../assets/images/careerGuidace/Frame 60 (1).png';
 import { Button, CareerGuidanceText } from '../../components';
 
 

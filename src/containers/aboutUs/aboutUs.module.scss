@@ -3,7 +3,7 @@
 .mainContainer {
   @include flex-container(column, center, center, 70px);
   background-color: $color--bg-main;
-  padding: 6% 0% 6%;
+  padding: 5% 0% 5%;
 }
 
 .introductionContainer {
@@ -76,7 +76,7 @@
 }
 .inspireInnerContainer {
   @include flex-container(column, flex-start, flex-start, 16px);
-  padding: 5%;
+  padding: 5% ;
   border-radius: 24px;
   height: fit-content;
   &:nth-child(1) {
@@ -141,7 +141,7 @@
 
 @include mq("desktop") {
   .introductionImage {
-    width: 310px;
+    width: 300px;
   }
   .headingContainer {
     width: 50%;
@@ -213,10 +213,10 @@
     font-size: 16px;
   }
   .inspireHeading {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .inspireDetails {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
@@ -256,15 +256,18 @@
     width: 250px;
   }
   .inspireHeading {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .inspireDetails {
-    font-size: 11px;
+    font-size: 16px !important;
   }
 }
 @include mq("tablet") {
   .introductionContainer {
     width: 85%;
+  }
+  .mainHeading{
+    font-size: 24px !important;
   }
   .facultyContainer {
     @include flex-container(column, center, center, 20px);
@@ -288,6 +291,9 @@
   .inspireContainer {
     width: 80%;
   }
+  .inspireDetails{
+    font-size: 14px !important;
+  }
 }
 @include mq("tablet-small") {
   .introductionContainer {
@@ -298,30 +304,43 @@
   }
 }
 @include mq("phone-wide") {
+  .mainContainer{
+    @include flex-container(column ,center,center,50px);
+    padding: 10% 0% 7.5%;
+  }
   .headingContainer {
     @include flex-container(column, center, flex-start, 10px);
   }
   .mainHeading {
-    font-size: 26px;
+    font-size: 22px !important;
   }
   .subHeading {
-    font-size: 10px;
+    font-size: 12px;
   }
   .facultyImage {
-    width: 240px;
+    width: 250px;
   }
   .inspireContainer {
     @include flex-container(column, center, center, 40px);
-    width: 60%;
+    width: 64%;
   }
   .inspireInnerContainer {
     padding: 8%;
   }
+  .inspireDetails{
+    font-size: 12px !important;
+  }
 }
 
 @include mq("phone-custom") {
+  .subHeading{
+    font-size: 10px;
+  }
+  .mainHeading{
+    font-size: 16px !important;
+  }
   .facultyHeading {
-    width: 26px;
+    width: 20px;
     width: 100%;
   }
   .introductionContainer {
@@ -330,10 +349,67 @@
   .introductionImage {
     width: 140px;
   }
+  .facultySubHeading{
+    font-size: 12px;
+  }
+  .facultyImage{
+    width: 200px;
+  }
   .mainHeading {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .subHeading {
     font-size: 8px;
+  }
+  .inspireDetails{
+    font-size: 12px !important;
+  }
+  .inspireContainer{
+    width: 70%;
+  }
+}
+@include mq("phone") {
+  .facultyHeading {
+    width: 16px;
+    width: 100%;
+  }
+  .introductionContainer {
+    width: 90%;
+  }
+  .introductionImage {
+    width: 120px;
+  }
+  .mainHeading {
+    font-size: 16px !important;
+  }
+  .facultySubHeading{
+    font-size: 10px;
+  }
+  .subHeading {
+    font-size: 8px !important;
+  }
+  .inspireDetails{
+    font-size: 10px;
+  }
+  .inspireHeading{
+    font-size: 16px !important;
+  }
+
+}
+
+@include mq ('phone-small'){
+  .introductionImage{
+    width: 100px;
+  }
+  .mainHeading{
+    font-size: 12px;
+  }
+  .subHeading{
+    width: 100%;
+    font-size: 6px;
+  }
+  .inspireContainer{
+    width: 80%;
+    gap: 30px;
   }
 }
