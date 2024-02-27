@@ -18,16 +18,16 @@
   }
 
 }
-.mainContainer:where(:nth-child(1)) {
-  background-color: $color--bg-1-active;
-  box-shadow:$shadow--soft;
-}
-.mainContainer:where(:nth-child(1)) {
-  &:nth-child(2){
-    box-shadow:$shadow--soft;
-    background-color:$color--bg-4-active;
-  }
-}
+// .mainContainer:where(:nth-child(1)) {
+//   background-color: $color--bg-1-active;
+//   box-shadow:$shadow--soft;
+// }
+// .mainContainer:where(:nth-child(1)) {
+//   &:nth-child(2){
+//     box-shadow:$shadow--soft;
+//     background-color:$color--bg-4-active;
+//   }
+// }
 
 .mainContainerAlt {
   @extend .mainContainer;

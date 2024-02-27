@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import classes from "./ourFaculty.module.scss";
 import { PageText, PageEndingText, OtherStudentCard } from "../../components";
-import Img from "../../assets/images/homepage/Frame 45.png";
+import Img from "../../assets/images/ourFaculty/Frame 45 (1).png";
 import { OurFacultyData } from "../../constants";
 
 export const OurFacultyContainer: React.FC = () => {
