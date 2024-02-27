@@ -15,7 +15,7 @@ export const NavigationData = [
     elements: [
       { text: "Blog", link: "/blog" },
       { text: "Career Guidance", link: "/career-guidance" },
-      { text: "FAQs", link: "/faqs" },
+      { text: "FAQs", link: "/#faqs" },
       { text: "Admissions", link: "/admissions" },
     ],
   },

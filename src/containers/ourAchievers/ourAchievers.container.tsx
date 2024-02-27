@@ -34,8 +34,7 @@ export const OurAchieversContainer: React.FC = () => {
       <PageText
         mainHeader="Beyond Boundaries Towards Brilliance"
         subHeader="Showcasing the Pioneers of Tomorrow, Today"
-        hasButton={false}
-      />
+        hasButton={false} studentIcon={false}      />
 
       <div className={classes.highlightedStudentCardMainContainer}>
         {HighlightedAchieversData.map((student) => {
@@ -69,7 +68,7 @@ export const OurAchieversContainer: React.FC = () => {
         })}
       </div>
 
-      <PageText mainHeader={"Our Achievers: Paving Paths, Setting Records"} />
+      <PageText mainHeader={"Our Achievers: Paving Paths, Setting Records"} studentIcon={false} />
 
       <div className={classes.otherStudentCard}>
         {OtherAchieversData.map((item, index) => {

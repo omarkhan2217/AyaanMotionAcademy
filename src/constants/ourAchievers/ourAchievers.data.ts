@@ -1,5 +1,5 @@
 import MAINIMG1 from '../../assets/images/ourAchievers/ratan kumar.jpg.png'
-import MAINIMG2 from '../../assets/images/ourAchievers/lolita kumari.jpg.png'
+import MAINIMG2 from '../../assets/images/ourAchievers/Rectangle 57 (2).png'
 import IMG1 from '../../assets/images/ourAchievers/Akash Pramanik.jpg.png'
 import IMG2 from '../../assets/images/ourAchievers/Harshit Norbert Joseph.jpg.png'
 import IMG3 from '../../assets/images/ourAchievers/Nishant kumar.jpg.png'
@@ -29,7 +29,7 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
     {
         rank: 15118,
         id: 2,
-        name: 'lolita kumari',
+        name: 'Shreya Rai',
         image: MAINIMG2,
         altImage: MAINIMG2,
         description: `In the constellation of brilliant minds that Ayaan's Motion Academy takes pride in, Riya Gupta emerges as a stellar achiever, securing an impressive All India Rank of 05 in the IIT/JEE entrance exam. Riya's journey symbolizes resilience, brilliance, and the power of unwavering dedication. Her remarkable achievements inspire aspiring minds to reach for the stars.`,
