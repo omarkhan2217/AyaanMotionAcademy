@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './careerGuidance.module.scss';
-import Image from '../../assets/images/careerGuidace/Rectangle 56 (2).png';
-import bgImage from '../../assets/images/careerGuidace/Frame 60 (1).png';
+import Image from '../../assets/images/careerGuidace/Rectangle 56 (7).png';
+import bgImage from '../../assets/images/careerGuidace/Vector 12.png';
 import { Button, CareerGuidanceText } from '../../components';
 
 
@@ -14,7 +14,7 @@ export const CareerGuidanceContainer: React.FC = () => {
           <div className={classes.introductionSubHeading}>Career Guidance at Ayaan's Motion Academy</div>
         </div>
         <img className={classes.introductionBgImage}  src={bgImage} alt="background" />
-        <img className={classes.introductionImage} src={Image} alt="girl-image" />
+        <img className={classes.introductionImage} src={Image} alt="boy-image" />
       </div>
       <CareerGuidanceText
         mainHeader={"Why Choose Us for Your Career Journey"}
