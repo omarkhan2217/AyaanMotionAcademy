@@ -21,13 +21,11 @@ export const OurFacultyContainer: React.FC = () => {
     <div className={classes.mainContainer}>
       <PageText
         mainHeader={"Guiding Stars, Building Futures"}
-        subHeader={"Meet the Exceptional Faculty Behind Ayaan's Motion Academy's Success Stories!"}
-      />
+        subHeader={"Meet the Exceptional Faculty Behind Ayaan's Motion Academy's Success Stories!"} studentIcon={false}      />
       <img className={classes.TeachersImage} src={Img} alt="teachers-Image" />
       <PageText
         mainHeader={"Meet Our Expert Faculty"}
-        subHeader={"Meet our esteemed faculty members who are the backbone of Ayaan's Motion Academy. "}
-      />
+        subHeader={"Meet our esteemed faculty members who are the backbone of Ayaan's Motion Academy. "} studentIcon={false}      />
       <div className={classes.facultyContainer}>
         {OurFacultyData.map((item, index) => {
           const controls = useAnimation();
