@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { PageWrapper } from ".";
+import { MainLogo } from "./assets";
 
 // Lazy loading pages
 const HomePage = React.lazy(() => import("./pages/homePage"));
@@ -36,7 +37,7 @@ export const App = () => {
 
   return (
     <div style={{ maxWidth: "100vw", overflowX: "hidden" }}>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<MainLogo />}>
         <ScrollToTop />
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
