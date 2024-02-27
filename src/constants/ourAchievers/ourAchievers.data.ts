@@ -1,5 +1,7 @@
-import MAINIMG1 from '../../assets/images/ourAchievers/ratan kumar.jpg.png'
+import MAINIMG1 from '../../assets/images/ourAchievers/Rectangle 56 (5).png'
 import MAINIMG2 from '../../assets/images/ourAchievers/Rectangle 57 (2).png'
+import MAINIMGPHONE1 from '../../assets/images/ourAchievers/for phone achiever1.png'
+import MAINIMGPHONE2 from '../../assets/images/ourAchievers/for phone achiever2.png'
 import IMG1 from '../../assets/images/ourAchievers/Akash Pramanik.jpg.png'
 import IMG2 from '../../assets/images/ourAchievers/Harshit Norbert Joseph.jpg.png'
 import IMG3 from '../../assets/images/ourAchievers/Nishant kumar.jpg.png'
@@ -18,7 +20,7 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         id: 1,
         name: 'Ratan kumar',
         image:  MAINIMG1,
-        altImage:  MAINIMG1,
+        altImage:  MAINIMGPHONE1,
         description: `In the constellation of brilliant minds that Ayaan's 
         Motion Academy takes pride in, Aushutosh Singh shines as one of the brightest stars. 
         With an astounding All India Rank of 03 in the IIT/JEE entrance exam, 
@@ -27,17 +29,19 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         for every aspirant dreaming of conquering the competitive exam skies.`,
         isReversed: false,
         bgColor: '#DEFFE0',
+        bgColorWhite:'#fff',
     },
     {
         rank: 'AIR-MAINS',
         id: 2,
         name: 'Shreya Rai',
         image: MAINIMG2,
-        altImage: MAINIMG2,
+        altImage: MAINIMGPHONE2,
         description: `In the constellation of brilliant minds that Ayaan's Motion Academy takes pride in, Riya Gupta emerges as a stellar achiever, securing an impressive All India Rank of 05 in the IIT/JEE entrance exam. Riya's journey symbolizes resilience, brilliance, and the power of unwavering dedication. Her remarkable achievements inspire aspiring minds to reach for the stars.`,
         isReversed: true,
         color: '#4B0202',
         bgColor: '#FFE8DE',
+        bgColorWhite:'#fff',
     },
 ];
 

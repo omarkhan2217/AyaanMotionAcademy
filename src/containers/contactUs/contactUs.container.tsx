@@ -64,19 +64,19 @@ export const ContactUscontainer: React.FC = () => {
           <motion.div variants={detailsVariants} className={classes.details}>
             <div className={classes.heading}>Follow Us:</div>
             <div className={classes.socialMedia}>
-              <motion.a href="https://www.youtube.com/channel/UCml6M5g7DRPd6W1bcX7313g" variants={socialIconsVariants}>
+              <motion.a href="https://www.youtube.com/channel/UCml6M5g7DRPd6W1bcX7313g" target="_blank" variants={socialIconsVariants}>
                 <YoutubeIcon />
               </motion.a>
-              <motion.a href="https://www.instagram.com/ayaansmotionacademy/" variants={socialIconsVariants}>
+              <motion.a href="https://www.instagram.com/ayaansmotionacademy/" target="_blank" variants={socialIconsVariants}>
                 <InstagramIcon />
               </motion.a>
-              <motion.a href="https://twitter.com/ayaansmotion" variants={socialIconsVariants}>
+              <motion.a href="https://twitter.com/ayaansmotion" target="_blank" variants={socialIconsVariants}>
                 <TwitterIcon />
               </motion.a>
-              <motion.a href="https://www.facebook.com/ayaansmotionacademy" variants={socialIconsVariants}>
+              <motion.a href="https://www.facebook.com/ayaansmotionacademy" target="_blank" variants={socialIconsVariants}>
                 <FacebokIcon />
               </motion.a>
-              <motion.a href="/" variants={socialIconsVariants}>
+              <motion.a href="/" target="_blank" variants={socialIconsVariants}>
                 <LinkedInIcon />
               </motion.a>
             </div>

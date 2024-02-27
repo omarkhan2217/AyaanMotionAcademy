@@ -13,6 +13,7 @@ export interface IIconProps {
 
 export interface IHighlightedAchieverProps {
     bgColor?:string,
+    bgColorWhite?:string;
     rank: number| string,
     id: number,
     name: string,

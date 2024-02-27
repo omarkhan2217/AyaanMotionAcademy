@@ -5,8 +5,8 @@ import { useWindowSize } from "usehooks-ts";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import classes from "./aboutUs.module.scss";
-import image from "../../assets/images/aboutUs/Rectangle 56 (1).png";
-import image2 from "../../assets/images/aboutUs/Group 50.png";
+import image from "../../assets/images/aboutUs/Rectangle 56 (6).png";
+import image2 from "../../assets/images/aboutUs/Group 50 (1).png";
 import { Button, PageEndingText, PolicyText } from "../../components";
 import { ArrowIcon } from "../../assets";
 

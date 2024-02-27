@@ -59,13 +59,12 @@ export const OurAchieversContainer: React.FC = () => {
               <HighlightedStudentCard
                 color={student.color}
                 pillColor={student.color}
-                bgColor={student.bgColor}
+                bgColor={isTablet? student.bgColorWhite : student.bgColor}
                 name={student.name}
                 description={student.description}
                 rank={student.rank}
                 image={isTablet ? student.altImage : student.image}
-                isReversed={student.isReversed}
-              />
+                isReversed={student.isReversed}             />
             </motion.div>
           );
         })}

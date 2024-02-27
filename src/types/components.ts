@@ -43,6 +43,7 @@ export interface IStudentCardProps
 export interface IHighlightedStudentCardProps
 extends React.HTMLAttributes<HTMLDivElement> {
   color?: string;
+  bgColorWhite?:string;
   bgColor?: string;
   rank: number | string;
   name: string;

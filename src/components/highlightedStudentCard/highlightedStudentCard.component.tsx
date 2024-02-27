@@ -6,11 +6,11 @@ import { TeacherLogo } from "../../assets";
 import { useWindowSize } from "usehooks-ts";
 
 export const HighlightedStudentCard: React.FC<IHighlightedStudentCardProps> = (props) => {
-  const { rank, name, description, image, color, pillColor, bgColor, isReversed = false } = props;
+  const { rank, name, description, image, color, pillColor, bgColor,bgColorWhite, isReversed = false } = props;
   const { width } = useWindowSize();
   const isTablet = width <= 768;
   return (
-    <div className={classes.mainContainer} style={{ backgroundColor: bgColor }}>
+    <div className={classes.mainContainer} style={isTablet ? { backgroundColor: bgColorWhite } : {backgroundColor:bgColor}}>
       {!isReversed ? (
         <img className={isReversed ? classes.imgAlt : classes.img} src={image} />
       ) : isReversed && isTablet ? (
