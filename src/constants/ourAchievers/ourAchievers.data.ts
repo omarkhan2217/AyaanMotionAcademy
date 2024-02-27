@@ -14,7 +14,7 @@ import { IOtherStudentCardProps } from '../../types';
 export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
     {
         rank: 'AIR-MAINS',
-        color: '1A4B02',
+        color: '#1A4B02',
         id: 1,
         name: 'Ratan kumar',
         image:  MAINIMG1,
@@ -26,7 +26,7 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         His journey from a curious learner to a national top ranker is a source of inspiration 
         for every aspirant dreaming of conquering the competitive exam skies.`,
         isReversed: false,
-        bgColor: '1A4B02',
+        bgColor: '#DEFFE0',
     },
     {
         rank: 'AIR-MAINS',
@@ -36,8 +36,8 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         altImage: MAINIMG2,
         description: `In the constellation of brilliant minds that Ayaan's Motion Academy takes pride in, Riya Gupta emerges as a stellar achiever, securing an impressive All India Rank of 05 in the IIT/JEE entrance exam. Riya's journey symbolizes resilience, brilliance, and the power of unwavering dedication. Her remarkable achievements inspire aspiring minds to reach for the stars.`,
         isReversed: true,
-        color: '4B0202',
-        bgColor: '4B0202',
+        color: '#4B0202',
+        bgColor: '#FFE8DE',
     },
 ];
 
