@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer"; // Import useInView
+import { useInView } from "react-intersection-observer";
 import classes from "./pageText.module.scss";
 import { Button } from "../../components";
 import { useButtonResizeAlt } from "../../hooks";
@@ -17,19 +17,25 @@ export interface IPageTextProps {
   onClick?: () => void;
   image?: string;
   studentIcon: boolean;
-
 }
 
 export const PageText: React.FC<IPageTextProps> = (props) => {
-  const { mainHeader, subHeader, hasButton, buttonText, studentIcon, image, buttonVariant = "outline", onClick } = props;
+  const {
+    mainHeader,
+    subHeader,
+    hasButton,
+    buttonText,
+    studentIcon,
+    image,
+    buttonVariant = "outline",
+    onClick,
+  } = props;
 
-  // Use useInView hook to track visibility
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.15, // Trigger when 10% of the element is in view
+    triggerOnce: true,
+    threshold: 0.15,
   });
 
-  // Animation variants for fade-in and scale effect
   const fadeInScaleVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: {
@@ -42,11 +48,10 @@ export const PageText: React.FC<IPageTextProps> = (props) => {
   return (
     <div className={classes.mainContainer} ref={ref}>
       {" "}
-      {/* Assign ref to the container */}
       <motion.div
         className={classes.mainHeader}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"} // Control animation based on inView
+        animate={inView ? "visible" : "hidden"}
         variants={fadeInScaleVariants}
       >
         {mainHeader}
@@ -55,7 +60,7 @@ export const PageText: React.FC<IPageTextProps> = (props) => {
         <motion.div
           className={classes.subHeader}
           initial="hidden"
-          animate={inView ? "visible" : "hidden"} // Control animation based on inView
+          animate={inView ? "visible" : "hidden"}
           variants={fadeInScaleVariants}
         >
           {subHeader}
@@ -64,7 +69,7 @@ export const PageText: React.FC<IPageTextProps> = (props) => {
       {hasButton && (
         <motion.div
           initial="hidden"
-          animate={inView ? "visible" : "hidden"} // Control animation based on inView
+          animate={inView ? "visible" : "hidden"}
           variants={fadeInScaleVariants}
           className={classes.buttonContainer}
         >
@@ -84,6 +89,6 @@ export const PageText: React.FC<IPageTextProps> = (props) => {
           <div className={classes.studentIconText}>Join over 500+ Students</div>
         </div>
       ) : null}
-    </div >
+    </div>
   );
 };

@@ -4,7 +4,7 @@ import classes from "./aboutUs.module.scss";
 
 export const AboutUsSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [color, setColor] = useState("rgb(255, 255, 255)"); // Start with light color
+  const [color, setColor] = useState("rgb(255, 255, 255)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,17 +13,14 @@ export const AboutUsSection: React.FC = () => {
         const elemCenter = rect.top + rect.height / 2;
         const windowCenter = window.innerHeight / 2;
 
-        // Calculate the factor based on the element's position relative to the center
         const distanceToCenter = elemCenter - windowCenter;
         let factor = 0;
 
-        // When the element is above the center, keep it at the darkest color
         if (distanceToCenter < 0) {
-          factor = 1; // Keep the color at its darkest
+          factor = 1;
         } else {
-          // As the element moves below the center, start fading to white
-          const fadeStart = windowCenter; // Start fading when the element's center is at the viewport's center
-          const fadeEnd = windowCenter + rect.height; // End fading when the element's center is below the viewport's center by its height
+          const fadeStart = windowCenter;
+          const fadeEnd = windowCenter + rect.height;
 
           factor = 1 - Math.min(Math.max(distanceToCenter / (fadeEnd - fadeStart), 0), 1);
         }
@@ -33,14 +30,14 @@ export const AboutUsSection: React.FC = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial call to set color based on initial position
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []); // Removed color dependency to prevent unnecessary re-registrations
+  }, []);
 
   const calculateColor = (factor: number) => {
-    const endColor = { r: 14, g: 44, b: 226 }; // Dark shade #0e2ce2
-    const startColor = { r: 109, g: 130, b: 255 }; // Light shade
+    const endColor = { r: 14, g: 44, b: 226 };
+    const startColor = { r: 109, g: 130, b: 255 };
 
     const r = Math.floor(startColor.r + (endColor.r - startColor.r) * factor);
     const g = Math.floor(startColor.g + (endColor.g - startColor.g) * factor);

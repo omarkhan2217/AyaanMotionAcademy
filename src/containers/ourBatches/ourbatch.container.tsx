@@ -11,7 +11,6 @@ export const OurBatchContainer: React.FC = () => {
   const navigate = useNavigate();
   const [orderedData, setOrderedData] = useState(batchesData);
 
-  // Animation variants
   const createFromBottomVariant = (index: number) => ({
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: index * 0.1 } },
     hidden: { opacity: 0, y: 50 },
@@ -57,6 +56,7 @@ export const OurBatchContainer: React.FC = () => {
         <PageText
           mainHeader="From Foundation to Lakshya - A Batch for Every Aspirant"
           subHeader="Each batch at Ayaan's Motion Academy is more than just a program; it's a gateway to realizing your dreams."
+          studentIcon={false}
         />
       </div>
       <div className={classes.batchesCardContainer}>

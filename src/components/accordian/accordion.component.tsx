@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import classes from './accordion.module.scss'; // Import your CSS file
+import classes from './accordion.module.scss';
 import { MorphIcon } from '../../assets';
 
 interface FAQProps {

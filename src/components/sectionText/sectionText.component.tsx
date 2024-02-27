@@ -29,8 +29,8 @@ export const SectionText: React.FC<ISectionTextProps> = (props) => {
   } = props;
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.15, // Trigger when 10% of the element is in view
+    triggerOnce: true,
+    threshold: 0.15,
   });
 
   const fadeInScaleVariants = {
@@ -43,13 +43,10 @@ export const SectionText: React.FC<ISectionTextProps> = (props) => {
   };
 
   return (
-    <div
-      ref={ref} // Assign ref to the container
-      className={isButtonCentered ? classes.innerContainerAlt : classes.innerContainer}
-    >
+    <div ref={ref} className={isButtonCentered ? classes.innerContainerAlt : classes.innerContainer}>
       <motion.div
         initial="hidden"
-        animate={inView ? "visible" : "hidden"} // Control animation based on inView
+        animate={inView ? "visible" : "hidden"}
         variants={fadeInScaleVariants}
         className={classes.mainHeading}
       >
@@ -58,7 +55,7 @@ export const SectionText: React.FC<ISectionTextProps> = (props) => {
       {subHeader && (
         <motion.div
           initial="hidden"
-          animate={inView ? "visible" : "hidden"} // Control animation based on inView
+          animate={inView ? "visible" : "hidden"}
           variants={fadeInScaleVariants}
           className={classes.subHeader}
         >
@@ -68,7 +65,7 @@ export const SectionText: React.FC<ISectionTextProps> = (props) => {
       {hasButton && (
         <motion.div
           initial="hidden"
-          animate={inView ? "visible" : "hidden"} // Control animation based on inView
+          animate={inView ? "visible" : "hidden"}
           variants={fadeInScaleVariants}
           className={isButtonCentered ? classes.buttonAlt : classes.button}
         >

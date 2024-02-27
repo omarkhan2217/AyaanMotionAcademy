@@ -4,7 +4,6 @@ import { AnimatePresence } from "framer-motion";
 import { PageWrapper } from ".";
 import { MainLogo } from "./assets";
 
-// Lazy loading pages
 const HomePage = React.lazy(() => import("./pages/homePage"));
 const OurAchievers = React.lazy(() => import("./pages/ourAchievers"));
 const OurFaculty = React.lazy(() => import("./pages/ourFaculty"));
@@ -21,7 +20,6 @@ const ScholarBatch = React.lazy(() => import("./pages/allBatchesPage/scholarBatc
 const TargetBatch = React.lazy(() => import("./pages/allBatchesPage/targetBatch"));
 const RankersBatch = React.lazy(() => import("./pages/allBatchesPage/rankersBatch"));
 
-// Component to scroll to top on route change
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
 
@@ -33,7 +31,7 @@ const ScrollToTop: React.FC = () => {
 };
 
 export const App = () => {
-  const location = useLocation(); // This is necessary to trigger animations on route changes
+  const location = useLocation();
 
   return (
     <div style={{ maxWidth: "100vw", overflowX: "hidden" }}>

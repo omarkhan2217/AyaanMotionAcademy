@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./ourbatches.module.scss";
-import { PageText, OurBatchesComponent } from "../../../components"; // Make sure this matches your component names
+import { PageText, OurBatchesComponent } from "../../../components";
 import { OurBatchesData } from "./ourBatches.data";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Ensure Swiper styles are imported if needed
+import "swiper/css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +15,7 @@ export const Ourbatchescontainer: React.FC = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5, // Adjust as needed to ensure animations trigger correctly
+    threshold: 0.5,
   });
 
   React.useEffect(() => {
@@ -53,12 +53,19 @@ export const Ourbatchescontainer: React.FC = () => {
       ? 2.1
       : width <= 1024
       ? 2.3
-      : 4; // Fallback or default
+      : 4;
 
-      const scholarBatch = OurBatchesData.find(batch => batch.isScholar) || { BatchName: '', grade: '', guide: '', image: '', isScholar: false, path: ''};
-      const otherBatches = OurBatchesData.filter(batch => !batch.isScholar);
-    
-      const batchesToDisplay = width <= 1024 ? [scholarBatch, ...otherBatches] : OurBatchesData;
+  const scholarBatch = OurBatchesData.find((batch) => batch.isScholar) || {
+    BatchName: "",
+    grade: "",
+    guide: "",
+    image: "",
+    isScholar: false,
+    path: "",
+  };
+  const otherBatches = OurBatchesData.filter((batch) => !batch.isScholar);
+
+  const batchesToDisplay = width <= 1024 ? [scholarBatch, ...otherBatches] : OurBatchesData;
 
   return (
     <div className={classes.mainContainer}>
@@ -69,13 +76,14 @@ export const Ourbatchescontainer: React.FC = () => {
           hasButton
           buttonText="View All"
           onClick={() => navigate("/our-batches")}
+          studentIcon={false}
         />
       </div>
       <div className={classes.batchesCardContainer} ref={ref}>
         {width <= 1024 ? (
           <Swiper
             autoHeight
-            spaceBetween={50} // Adjust space between slides
+            spaceBetween={50}
             slidesPerView={SlidePreView}
             freeMode={true}
             className={classes.carousel}

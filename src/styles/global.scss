@@ -19,13 +19,6 @@ $color--bg-5-box: rgb(232, 243, 255);
 $color--bg-6-box: rgb(232, 237, 255);
 $color--bg-1-main-box: rgb(237, 233, 255);
 
-// $color--bg-primary-light: rgba(255, 81, 81, 0.1);
-// $color--bg-lighter: hsl(225, 40%, 98%);
-// $color--bg-light: hsla(0, 0%, 96%, 1);
-// $color--bg-dark: hsla(0, 0%, 51%, 1);
-// $color--bg-darker: hsla(219, 30%, 11%, 1);
-// $color--bg-accent-primary: hsla(43, 72%, 24%, 1);
-
 $color--btn-primary: hsl(248, 100%, 58%);
 $color--btn-secondary: rgb(59, 59, 59);
 $color--btn-dark: hsla(236, 42%, 16%, 1);
@@ -39,11 +32,6 @@ $color--btn-error: hsla(358, 72%, 49%, 1);
 $color--btn-success-light: hsla(101, 61%, 90%, 1);
 
 $color--border-gold-dark: hsla(43, 72%, 24%, 0.31);
-// $color--border-primary: hsla(0, 0%, 92%, 1);
-// $color--border-primary-dark: hsla(0, 0%, 51%, 1);
-// $color--border-accent-light: rgba(255, 90, 96, 0.11);
-// $color--border-warning: hsla(43, 52%, 55%, 0.53);
-// $color--border-error-light: hsla(358, 100%, 68%, 0.11);
 
 $color--text-primary: #201f23;
 $color--text-2-primary: #0e2ce2;
@@ -59,36 +47,13 @@ $color--text-lighter: hsl(0, 0%, 100%);
 $color--text-gold-dark: hsla(43, 72%, 24%, 1);
 $color--text-black-light: #333333;
 
-// $color--text-secondary: hsl(214, 89%, 52%);
-// $color--text-accent-primary: hsla(23, 48%, 30%, 1);
-// $color--text-accent-secondary: hsla(203, 44%, 21%, 1);
-// $color--text-success: hsla(101, 50%, 32%, 1);
-// $color--text-warning: hsla(49, 100%, 50%, 1);
-// $color--text-error-dark: hsla(0, 53%, 29%, 1);
-
-// $color--success: hsla(101, 75%, 41%, 1);
-// $color--success-light: hsla(101, 61%, 90%, 1);
-// $color--success-dark: hsla(100, 35%, 34%, 1);
-// $color--warning: hsla(43, 79%, 61%, 1);
-// $color--warning-light: hsla(50, 100%, 86%, 1);
-// $color--warning-lighter: hsl(40, 100%, 96%);
-// $color--error: hsla(358, 72%, 49%, 1);
-// $color--error-light: hsl(0, 100%, 85%);
-// $color--error-dark: hsla(0, 41%, 37%, 1);
-// $color--error-lighter: hsla(0, 100%, 66%, 0.1);
-// $color--invalid-light: rgba(130, 130, 130, 0.1);
-
-// Elevation
-
 // NOTE: These are box-shadows
 
 $shadow--flat: 0px 0px 0px 0px transparent;
 $shadow--subtle: 0px 12px 18px rgba(64, 72, 82, 0.1);
 $shadow--hard: 0px 6px 14px rgba(64, 72, 82, 0.1);
-$shadow--soft: 0px 0px 26px 0px
-  var(--card-shadow, #8282ff61);
-$shadow--soft-M: 0px 0px 26px 0px
-  var(--card-shadow, #8282ff);
+$shadow--soft: 0px 0px 26px 0px var(--card-shadow, #8282ff61);
+$shadow--soft-M: 0px 0px 26px 0px var(--card-shadow, #8282ff);
 // Border Radii
 
 $border--sharp: 6px;
@@ -110,19 +75,19 @@ $linear--transition-XXL: all 0.3s linear;
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 $breakpoints: (
-  'phone-small': 360px,
-  'phone': 420px,
-  'phone-custom': 490px,
-  'phone-wide': 576px,
-  'tablet-small': 600px,
-  'tablet': 768px,
-  'tablet-custom-2': 800px,
-  'tablet-custom': 930px,
-  'tablet-wide': 1024px,
-  'desktop-small': 1280px,
-  'desktop-medium': 1400px,
-  'desktop': 1600px,
-  'desktop-wide': 1900px,
+  "phone-small": 360px,
+  "phone": 420px,
+  "phone-custom": 490px,
+  "phone-wide": 576px,
+  "tablet-small": 600px,
+  "tablet": 768px,
+  "tablet-custom-2": 800px,
+  "tablet-custom": 930px,
+  "tablet-wide": 1024px,
+  "desktop-small": 1280px,
+  "desktop-medium": 1400px,
+  "desktop": 1600px,
+  "desktop-wide": 1900px,
 );
 
 @mixin mq($width, $type: max) {
@@ -151,50 +116,20 @@ $breakpoints: (
 }
 //Box-gradient
 
-$box--gradient-B-W: linear-gradient(
-  to bottom,
-  #c8cdff,
-  #dfe3ff,
-  #f1f3ff6f
-);
+$box--gradient-B-W: linear-gradient(to bottom, #c8cdff, #dfe3ff, #f1f3ff6f);
 
 @mixin gradient($start-color, $end-color, $orientation) {
   background: $start-color;
 
-  @if $orientation == 'vertical' {
-    background: -webkit-linear-gradient(
-      top,
-      $start-color,
-      $end-color
-    );
-    background: linear-gradient(
-      to bottom,
-      $start-color,
-      $end-color
-    );
-  } @else if $orientation == 'horizontal' {
-    background: -webkit-linear-gradient(
-      left,
-      $start-color,
-      $end-color
-    );
-    background: linear-gradient(
-      to right,
-      $start-color,
-      $end-color
-    );
+  @if $orientation == "vertical" {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  } @else if $orientation == "horizontal" {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
   } @else {
-    background: -webkit-radial-gradient(
-      center,
-      ellipse cover,
-      $start-color,
-      $end-color
-    );
-    background: radial-gradient(
-      ellipse at center,
-      $start-color,
-      $end-color
-    );
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
   }
 }
 
@@ -202,11 +137,7 @@ $box--gradient-B-W: linear-gradient(
   position: absolute;
   top: 50%;
   left: 50%;
-  @include prefix(
-    transform,
-    translate(-50%, -50%),
-    'webkit' 'ms'
-  );
+  @include prefix(transform, translate(-50%, -50%), "webkit" "ms");
 }
 
 @mixin box($width, $height: $width) {
@@ -228,12 +159,7 @@ $box--gradient-B-W: linear-gradient(
   box-sizing: $box-model;
 }
 
-@mixin flex-container(
-  $direction: row,
-  $justify: center,
-  $align: center,
-  $gap: 0
-) {
+@mixin flex-container($direction: row, $justify: center, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -249,11 +175,11 @@ $box--gradient-B-W: linear-gradient(
 @mixin colorMode($colorMode) {
   // create a map for value white, black, green, gold, or red
   $colorMap: (
-    'White': $color--White,
-    'Black': $color--FobiInk,
-    'Green': $color--Green,
-    'Gold': $color--Gold,
-    'Red': $color--Red,
+    "White": $color--White,
+    "Black": $color--FobiInk,
+    "Green": $color--Green,
+    "Gold": $color--Gold,
+    "Red": $color--Red,
   );
   // use color from map
   $colorValue: map-get($colorMap, $colorMode);
@@ -266,12 +192,7 @@ $box--gradient-B-W: linear-gradient(
   }
 }
 
-@mixin flex-container(
-  $direction: row,
-  $justify: center,
-  $align: center,
-  $gap: 0
-) {
+@mixin flex-container($direction: row, $justify: center, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -286,11 +207,7 @@ $box--gradient-B-W: linear-gradient(
   }
 }
 
-@mixin scroller(
-  $width: 4px,
-  $height: 6px,
-  $color: var(--ui-border-color)
-) {
+@mixin scroller($width: 4px, $height: 6px, $color: var(--ui-border-color)) {
   &::-webkit-scrollbar {
     width: $width;
     height: $height;
@@ -313,12 +230,7 @@ $box--gradient-B-W: linear-gradient(
   box-sizing: $box-model;
 }
 
-@mixin flex-container(
-  $direction: row,
-  $justify: center,
-  $align: center,
-  $gap: 0
-) {
+@mixin flex-container($direction: row, $justify: center, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -334,11 +246,11 @@ $box--gradient-B-W: linear-gradient(
 @mixin colorMode($colorMode) {
   // create a map for value white, black, green, gold, or red
   $colorMap: (
-    'White': $color--White,
-    'Black': $color--FobiInk,
-    'Green': $color--Green,
-    'Gold': $color--Gold,
-    'Red': $color--Red,
+    "White": $color--White,
+    "Black": $color--FobiInk,
+    "Green": $color--Green,
+    "Gold": $color--Gold,
+    "Red": $color--Red,
   );
   // use color from map
   $colorValue: map-get($colorMap, $colorMode);
@@ -351,12 +263,7 @@ $box--gradient-B-W: linear-gradient(
   }
 }
 
-@mixin flex-container(
-  $direction: row,
-  $justify: center,
-  $align: center,
-  $gap: 0
-) {
+@mixin flex-container($direction: row, $justify: center, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -371,11 +278,7 @@ $box--gradient-B-W: linear-gradient(
   }
 }
 
-@mixin scroller(
-  $width: 4px,
-  $height: 6px,
-  $color: var(--ui-border-color)
-) {
+@mixin scroller($width: 4px, $height: 6px, $color: var(--ui-border-color)) {
   &::-webkit-scrollbar {
     width: $width;
     height: $height;

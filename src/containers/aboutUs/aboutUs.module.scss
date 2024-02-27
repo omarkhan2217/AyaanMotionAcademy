@@ -42,12 +42,10 @@
   @include flex-container(row, space-between, flex-start, 0px);
   width: 70%;
   padding-right: 5%;
-  // background-color: aquamarine;
 }
 .facultyHeadingContainer {
   @include flex-container(column, flex-start, flex-start, 10px);
   width: 50%;
-  // background-color: #ede9ff;
 }
 
 .facultyHeading {
@@ -76,7 +74,7 @@
 }
 .inspireInnerContainer {
   @include flex-container(column, flex-start, flex-start, 16px);
-  padding: 5% ;
+  padding: 5%;
   border-radius: 24px;
   height: fit-content;
   &:nth-child(1) {
@@ -266,7 +264,7 @@
   .introductionContainer {
     width: 85%;
   }
-  .mainHeading{
+  .mainHeading {
     font-size: 24px !important;
   }
   .facultyContainer {
@@ -291,7 +289,7 @@
   .inspireContainer {
     width: 80%;
   }
-  .inspireDetails{
+  .inspireDetails {
     font-size: 14px !important;
   }
 }
@@ -304,8 +302,8 @@
   }
 }
 @include mq("phone-wide") {
-  .mainContainer{
-    @include flex-container(column ,center,center,50px);
+  .mainContainer {
+    @include flex-container(column, center, center, 50px);
     padding: 10% 0% 7.5%;
   }
   .headingContainer {
@@ -327,16 +325,16 @@
   .inspireInnerContainer {
     padding: 8%;
   }
-  .inspireDetails{
+  .inspireDetails {
     font-size: 12px !important;
   }
 }
 
 @include mq("phone-custom") {
-  .subHeading{
+  .subHeading {
     font-size: 10px;
   }
-  .mainHeading{
+  .mainHeading {
     font-size: 16px !important;
   }
   .facultyHeading {
@@ -349,10 +347,10 @@
   .introductionImage {
     width: 140px;
   }
-  .facultySubHeading{
+  .facultySubHeading {
     font-size: 12px;
   }
-  .facultyImage{
+  .facultyImage {
     width: 200px;
   }
   .mainHeading {
@@ -361,10 +359,10 @@
   .subHeading {
     font-size: 8px;
   }
-  .inspireDetails{
+  .inspireDetails {
     font-size: 12px !important;
   }
-  .inspireContainer{
+  .inspireContainer {
     width: 70%;
   }
 }
@@ -382,33 +380,32 @@
   .mainHeading {
     font-size: 16px !important;
   }
-  .facultySubHeading{
+  .facultySubHeading {
     font-size: 10px;
   }
   .subHeading {
     font-size: 8px !important;
   }
-  .inspireDetails{
+  .inspireDetails {
     font-size: 10px;
   }
-  .inspireHeading{
+  .inspireHeading {
     font-size: 16px !important;
   }
-
 }
 
-@include mq ('phone-small'){
-  .introductionImage{
+@include mq("phone-small") {
+  .introductionImage {
     width: 100px;
   }
-  .mainHeading{
+  .mainHeading {
     font-size: 12px;
   }
-  .subHeading{
+  .subHeading {
     width: 100%;
     font-size: 6px;
   }
-  .inspireContainer{
+  .inspireContainer {
     width: 80%;
     gap: 30px;
   }

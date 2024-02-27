@@ -1,4 +1,4 @@
-@use './global.scss' as *;
+@use "./global.scss" as *;
 
 * {
   @include box-sizing(border-box);
@@ -14,35 +14,33 @@ body {
   margin: 0;
   padding: 0;
   color: $color--text-dark;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas,
-    'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 input::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
-  input[type='email'],
-  input[type='number'],
-  input[type='password'],
-  input[type='search'],
-  input[type='tel'],
-  input[type='text'],
-  input[type='url'],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"],
   select:focus,
   textarea {
     font-size: 16px !important;
   }
 }
 
-// react-date-picker styling
 .react-datepicker-wrapper {
   width: 100% !important;
 }
@@ -64,10 +62,7 @@ input::placeholder {
   font-weight: 700 !important;
 
   &:hover {
-    background-color: darken(
-      $color--bg-primary,
-      5%
-    ) !important;
+    background-color: darken($color--bg-primary, 5%) !important;
   }
 }
 
@@ -107,7 +102,7 @@ input::placeholder {
   padding-right: 30px !important;
   width: fit-content !important;
 
-  @include mq('phone-wide') {
+  @include mq("phone-wide") {
     padding-right: 0px !important;
     width: 100dvw !important;
   }

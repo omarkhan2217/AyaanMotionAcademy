@@ -21,17 +21,21 @@ export const OurFacultyContainer: React.FC = () => {
     <div className={classes.mainContainer}>
       <PageText
         mainHeader={"Guiding Stars, Building Futures"}
-        subHeader={"Meet the Exceptional Faculty Behind Ayaan's Motion Academy's Success Stories!"} studentIcon={false}      />
+        subHeader={"Meet the Exceptional Faculty Behind Ayaan's Motion Academy's Success Stories!"}
+        studentIcon={false}
+      />
       <img className={classes.TeachersImage} src={Img} alt="teachers-Image" />
       <PageText
         mainHeader={"Meet Our Expert Faculty"}
-        subHeader={"Meet our esteemed faculty members who are the backbone of Ayaan's Motion Academy. "} studentIcon={false}      />
+        subHeader={"Meet our esteemed faculty members who are the backbone of Ayaan's Motion Academy. "}
+        studentIcon={false}
+      />
       <div className={classes.facultyContainer}>
         {OurFacultyData.map((item, index) => {
           const controls = useAnimation();
           const [ref, inView] = useInView({
             triggerOnce: true,
-            threshold: 0.2, // This value can be adjusted based on your needs
+            threshold: 0.2,
           });
 
           React.useEffect(() => {
@@ -41,13 +45,7 @@ export const OurFacultyContainer: React.FC = () => {
           }, [controls, inView]);
 
           return (
-            <motion.div
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={createCardVariants(index)} // Use the function to generate variants with delay
-              key={index}
-            >
+            <motion.div ref={ref} initial="hidden" animate={controls} variants={createCardVariants(index)} key={index}>
               <OtherStudentCard name={item.name} image={item.image} college={item.details} isFacultyCard={true} />
             </motion.div>
           );

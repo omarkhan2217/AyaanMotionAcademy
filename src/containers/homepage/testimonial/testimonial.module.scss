@@ -2,7 +2,6 @@
 
 .mainContainer {
   @include flex-container(row, center, center, 0px);
-  // max-height: fit-content;
   max-width: 80vw;
   margin-left: 16% !important;
 }
