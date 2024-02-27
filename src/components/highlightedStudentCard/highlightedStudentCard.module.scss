@@ -2,7 +2,7 @@
 
 .mainContainer {
   @include flex-container(row, flex-start, flex-start, 0px);
-  border-radius: 32px;
+  border-radius: 36px;
   background-color: $color--bg-white;
   transition: $linear--transition;
   width: 50%;
@@ -22,9 +22,11 @@
   background-color: $color--bg-1-active;
   box-shadow:$shadow--soft;
 }
-.mainContainer:where(:nth-child(2)) {
-  box-shadow:$shadow--soft;
-  background-color:$color--bg-4-active;
+.mainContainer:where(:nth-child(1)) {
+  &:nth-child(2){
+    box-shadow:$shadow--soft;
+    background-color:$color--bg-4-active;
+  }
 }
 
 .mainContainerAlt {
@@ -65,7 +67,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  color: $color--text-primary;
+  color: #1A4B02;
 }
 .studentNameAlt,
 .collegeNameAlt {

@@ -12,13 +12,15 @@ export interface IIconProps {
 }
 
 export interface IHighlightedAchieverProps {
-    rank: number,
+    bgColor?:string,
+    rank: number| string,
     id: number,
     name: string,
     image: string,
     altImage: string,
     description: string,
-    isReversed: boolean
+    isReversed: boolean,
+    color:string,
 }
 
 export interface IourFacultyDataProps{

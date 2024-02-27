@@ -31,44 +31,47 @@ export interface IButtonProps
 
 export interface IStudentCardProps
   extends React.HTMLAttributes<HTMLDivElement> {
-  rank?: number| string;
+  rank?: number | string;
   name: string;
   college: string;
   image?: string;
   color?: string;
   y?: number;
   stifness?: number;
-  pillColor?:string;
+  pillColor?: string;
 }
 export interface IHighlightedStudentCardProps
-  extends React.HTMLAttributes<HTMLDivElement> {
-  rank: number;
+extends React.HTMLAttributes<HTMLDivElement> {
+  color?: string;
+  bgColor?: string;
+  rank: number | string;
   name: string;
   description: string;
   image?: string;
   isReversed?: boolean;
+  pillColor?: string;
 }
 export interface IOtherStudentCardProps
-  extends React.HTMLAttributes<HTMLDivElement> {
+extends React.HTMLAttributes<HTMLDivElement> {
   rank?: number | string;
   name: string;
   image: string;
   college?: string;
-  stream?: 'JEE' | 'NEET'| 'NIT'|'BIT';
+  stream?: 'JEE' | 'NEET' | 'NIT' | 'BIT';
   isFacultyCard?: boolean;
 }
 
 export interface IPillProps
   extends React.HTMLAttributes<HTMLDivElement> {
   label: string;
-  pillColor?:string;
+  pillColor?: string;
 }
 
 export interface IourFacultyData
   extends React.HTMLAttributes<HTMLDivElement> {
   image2?: string;
   image?: string;
-
+  
 }
 
 

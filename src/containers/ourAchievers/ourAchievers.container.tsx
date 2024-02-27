@@ -34,7 +34,7 @@ export const OurAchieversContainer: React.FC = () => {
       <PageText
         mainHeader="Beyond Boundaries Towards Brilliance"
         subHeader="Showcasing the Pioneers of Tomorrow, Today"
-        hasButton={false} studentIcon={false}      />
+        hasButton={false} studentIcon={false} />
 
       <div className={classes.highlightedStudentCardMainContainer}>
         {HighlightedAchieversData.map((student) => {
@@ -57,6 +57,9 @@ export const OurAchieversContainer: React.FC = () => {
               className={classes.highlightedStudentCardContainer}
             >
               <HighlightedStudentCard
+                color={student.color}
+                pillColor={student.color}
+                bgColor={student.color}
                 name={student.name}
                 description={student.description}
                 rank={student.rank}
