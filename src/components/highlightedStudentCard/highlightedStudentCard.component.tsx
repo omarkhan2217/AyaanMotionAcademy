@@ -17,8 +17,11 @@ export const HighlightedStudentCard: React.FC<IHighlightedStudentCardProps> = (p
         <img className={isReversed ? classes.imgAlt : classes.img} src={image} />
       ) : null}
       <div className={isReversed ? classes.textMainContaienrAlt : classes.textMainContainer}>
-        <CustomPill pillColor={pillColor} label={`${rank}`}  style={{ backgroundColor: pillColor }} />
-        <div className={isReversed ? classes.textContainerAlt : classes.textContainer} style={{ color: color }}>
+        <CustomPill pillColor={pillColor} label={`${rank}`} style={{ backgroundColor: pillColor }} />
+        <div
+          className={isReversed ? classes.textContainerAlt : classes.textContainer}
+          style={{ color: isReversed ? "#4B0202" : color }}
+        >
           <div className={isReversed ? classes.studentNameAlt : classes.studentName}>{name}</div>
           <div className={isReversed ? classes.collegeNameAlt : classes.collegeName}>{description}</div>
           <div className={isReversed ? classes.studentNameAlt : classes.studentName}>Guided by our expert faculty</div>
