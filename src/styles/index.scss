@@ -5,6 +5,14 @@
   //
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  user-select: none;
+}
+
 .noScroll {
   overflow: hidden;
   height: 100%;

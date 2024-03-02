@@ -1,4 +1,8 @@
 import IMG from '../../../assets/images/ourBatch/award_star_FILL0_wght400_GRAD0_opsz24 1.png'
+import TEACHERIMG from '../../../assets/images/ourFaculty/Ellipse 10.png'
+import TEACHERIMG2 from '../../../assets/images/ourFaculty/Ellipse 10 (1).png'
+import TEACHERIMG3 from '../../../assets/images/ourFaculty/Ellipse 10 (4).png'
+import TEACHERIMG4 from '../../../assets/images/ourFaculty/Ellipse 10 (3).png'
 
 export const starBatchData = {
     starBatch: {
@@ -50,19 +54,24 @@ export const starBatchData = {
         ],
         faculty: [
             {
-                image: 'facultyImage1.jpg',
-                facultyName: 'John Doe',
-                facultySubject: 'Faculty for Mathematics',
+                image: TEACHERIMG,
+                facultyName: 'Ayaan Sir',
+                facultySubject: 'Faculty for Maths',
             },
             {
-                image: 'facultyImage2.jpg',
-                facultyName: 'Ayan Sir',
-                facultySubject: 'Faculty for chemistry',
-            },
-            {
-                image: 'facultyImage2.jpg',
-                facultyName: 'Ayan Sir',
+                image: TEACHERIMG2,
+                facultyName: 'Ragav Sir',
                 facultySubject: 'Faculty for Physics',
+            },
+            {
+                image: TEACHERIMG3 ,
+                facultyName: 'Anmol Sir',
+                facultySubject: 'Faculty for Biology',
+            },
+            {
+                image: TEACHERIMG4 ,
+                facultyName: 'Ram Sir',
+                facultySubject: 'Faculty for Chemistry',
             },
         ]
     },

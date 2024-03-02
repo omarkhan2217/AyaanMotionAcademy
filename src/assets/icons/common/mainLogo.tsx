@@ -8,7 +8,7 @@ export const MainLogo: React.FC = () => {
       rotate: 0,
     },
     visible: {
-      scale: [1.5, 3, 1.5],
+      scale: [1.5, 1.5, 1.5],
       rotate: [0, 360],
       transition: {
         duration: 3,

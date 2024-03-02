@@ -9,19 +9,19 @@ export const TestimonialData: ISTestimonialCardProps[] = [
         comment: "Aayan's Motion Academy in Ranchi is a gem! Mr. Aayan Khan and his team have a unique way of teaching that really helped me improve. It's in Lalpur's Hari Om Tower and is perfect for anyone needing study help."
     },
     {
-        name: 'Prativa raj',
+        name: 'Danish Ahmad',
         image: IMG,
         color: '#hsl(162, 30%, 41%)',
         comment: "“Aayan's Motion Academy in Ranchi is a gem! Aayan sir and his team have a unique way of teaching that really helped me improve. It's in Lalpur's Hari Om Tower and is perfect for anyone needing study help.”"
     },
     {
-        name: 'Rahul kashyap',
+        name: 'Naseema Khatoon',
         image: IMG,
         color: '#hsl(162, 30%, 41%)',
         comment: "Aayan's Motion Academy in Ranchi is a game changer. Located in Lalpur, they've got excellent teachers who make learning a joy and effective too.”"
     },
     {
-        name: 'Manoj Kumar',
+        name: 'Ansh Raj',
         image: IMG,
         color: '#hsl(162, 30%, 41%)',
         comment: "“Aayan's Motion Academy at Hari Om Tower is hands down the best coaching center in Ranchi. They simplify learning, making it fun and really helped me get better.”"

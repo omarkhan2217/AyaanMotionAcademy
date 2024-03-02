@@ -15,7 +15,7 @@ import { IOtherStudentCardProps } from '../../types';
 
 export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
     {
-        rank: 'AIR-MAINS',
+        rank: 'AIR-498 JEE-ADVANCE-2022',
         color: '#1A4B02',
         id: 1,
         name: 'Ratan kumar',
@@ -32,7 +32,7 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         bgColorWhite:'#fff',
     },
     {
-        rank: 'AIR-MAINS',
+        rank: 'JEE-ADVANCE-2018',
         id: 2,
         name: 'Shreya Rai',
         image: MAINIMG2,

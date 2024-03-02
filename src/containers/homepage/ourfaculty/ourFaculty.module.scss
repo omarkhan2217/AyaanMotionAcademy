@@ -1,21 +1,25 @@
-@use '../../../styles/global.scss' as *;
+@use "../../../styles/global.scss" as *;
 
 .container {
-  @include flex-container(
-    row,
-    space-between,
-    flex-start,
-    0px
-  );
+  @include flex-container(row, space-between, flex-start, 0px);
   width: 100%;
   height: fit-content;
   padding: 0 8%;
   position: relative;
+  & > :first-child {
+    & > :nth-child(3) {
+      & > :first-child {
+        & > :first-child {
+          justify-content: flex-start;
+          padding-left: 0;
+        }
+      }
+    }
+  }
 }
 
 .sectionTextContainer {
   z-index: 4;
-  
 }
 
 .backgroundSvg {
@@ -30,7 +34,6 @@
 .imageContainer {
   width: 45%;
   height: fit-content;
-  margin-right: 12%;
   z-index: 2;
 }
 
@@ -40,7 +43,7 @@
   position: relative;
 }
 
-@include mq('desktop') {
+@include mq("desktop") {
   .imageContainer {
     width: 40%;
   }
@@ -50,20 +53,20 @@
   }
 }
 
-@include mq('desktop-medium') {
+@include mq("desktop-medium") {
   .imageContainer {
     width: 35%;
   }
 }
 
-@include mq('desktop-small') {
+@include mq("desktop-small") {
   .backgroundSvg {
     width: 80%;
     left: 8%;
   }
 }
 
-@include mq('tablet-custom') {
+@include mq("tablet-custom") {
   .container {
     @include flex-container(column, center, center, 0px);
   }
@@ -80,14 +83,14 @@
   }
 }
 
-@include mq('tablet') {
+@include mq("tablet") {
   .backgroundSvg {
     top: 35%;
     height: 60%;
   }
 }
 
-@include mq('tablet-small') {
+@include mq("tablet-small") {
   .imageContainer {
     width: 50%;
   }
@@ -97,7 +100,7 @@
   }
 }
 
-@include mq('phone-custom') {
+@include mq("phone-custom") {
   .imageContainer {
     width: 60%;
   }
@@ -110,7 +113,7 @@
   }
 }
 
-@include mq('phone-small') {
+@include mq("phone-small") {
   .imageContainer {
     width: 60%;
   }

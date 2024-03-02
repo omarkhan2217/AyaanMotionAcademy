@@ -1,1 +1,0 @@
-import{j as l}from"./index-Hy6KtD9u.js";import{o as t}from"./desktopNav.layout-V-wnUo52.js";const i=o=>{const{label:s,pillColor:r}=o;return l.jsx("div",{className:t.mainContainer,style:{backgroundColor:r},children:s})};export{i as C};

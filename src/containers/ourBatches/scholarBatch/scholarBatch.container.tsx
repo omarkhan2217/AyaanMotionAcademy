@@ -29,9 +29,13 @@ export const ScholarBatchContainer: React.FC = () => {
         ))}
       </div>
       <PageText mainHeader={"Master Competitive Exams with Our SCHOLAR Batch"} studentIcon={false} />
-      <div className={classes.button}>
-        <Button variant="primary" label="Inqure Now" />
-      </div>
+      <a
+        target=" _blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfX8qDYv_rTh0dq6U9x6Z-DTHNR9FZ2H8ptPObGTFPmKYvmrw/viewform"
+        className={classes.button}
+      >
+        <Button variant="primary" label="Inquire Now" />
+      </a>
     </div>
   );
 };

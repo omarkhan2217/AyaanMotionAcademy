@@ -37,7 +37,6 @@ export const Ourbatchescontainer: React.FC = () => {
       opacity: 0,
     }),
   };
-
   const SlidePreView =
     width <= 400
       ? 1.2
@@ -62,6 +61,11 @@ export const Ourbatchescontainer: React.FC = () => {
     image: "",
     isScholar: false,
     path: "",
+    details: [
+      {
+        detail: ''
+      }
+    ]
   };
   const otherBatches = OurBatchesData.filter((batch) => !batch.isScholar);
 
@@ -98,6 +102,7 @@ export const Ourbatchescontainer: React.FC = () => {
                     image={batch.image}
                     isScholar={batch.isScholar}
                     onClick={() => navigate(`/our-batches${batch.path}`)}
+                    details={batch.details}
                   />
                 </motion.div>
               </SwiperSlide>
@@ -120,6 +125,7 @@ export const Ourbatchescontainer: React.FC = () => {
                 isScholar={batch.isScholar}
                 image={batch.image}
                 onClick={() => navigate(`/our-batches${batch.path}`)}
+                details={batch.details}
               />
             </motion.div>
           ))

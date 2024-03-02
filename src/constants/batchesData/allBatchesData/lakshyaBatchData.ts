@@ -1,5 +1,8 @@
 import IMG from '../../../assets/images/ourBatch/whatshot_FILL0_wght400_GRAD0_opsz24 1.png'
-import TEACHERIMG from '../../../assets/images/homepage/image 21.png'
+import TEACHERIMG1 from '../../../assets/images/ourFaculty/Ellipse 10.png'
+import TEACHERIMG2 from '../../../assets/images/ourFaculty/Ellipse 10 (1).png'
+import TEACHERIMG3 from '../../../assets/images/ourFaculty/Ellipse 10 (4).png'
+import TEACHERIMG4 from '../../../assets/images/ourFaculty/Ellipse 10 (2).png'
 
 export const lakshyaBatchData = {
     lakshyaBatch: {
@@ -52,19 +55,24 @@ export const lakshyaBatchData = {
         ],
         faculty: [
             {
-                image: TEACHERIMG,
-                facultyName: 'John Doe',
-                facultySubject: 'Faculty for Mathematics',
+                image: TEACHERIMG1,
+                facultyName: 'Ayaan Sir',
+                facultySubject: 'Faculty for Maths',
             },
             {
-                image: 'facultyImage2.jpg',
-                facultyName: 'Ayan Sir',
-                facultySubject: 'Faculty for chemistry',
-            },
-            {
-                image: 'facultyImage2.jpg',
-                facultyName: 'Ayan Sir',
+                image: TEACHERIMG2,
+                facultyName: 'Raghav Sir',
                 facultySubject: 'Faculty for Physics',
+            },
+            {
+                image: TEACHERIMG3 ,
+                facultyName: 'Anmol Sir',
+                facultySubject: 'Faculty for Biology',
+            },
+            {
+                image: TEACHERIMG4 ,
+                facultyName: 'Amit Sir',
+                facultySubject: 'Faculty for Chemistry',
             },
         ]
     },

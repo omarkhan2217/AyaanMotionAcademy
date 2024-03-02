@@ -8,7 +8,7 @@ export const ourAchieversData: IStudentCardProps[] = [
     {
         rank: '',
         name: 'Rajbeer Singh',
-        college: '99.987%',
+        college: 'PERCENTILE-99.987%',
         image: IMG1,
         y: 150,
         stifness: 80,
@@ -18,7 +18,7 @@ export const ourAchieversData: IStudentCardProps[] = [
     {
         rank: '',
         name: 'Priyanshu Kumar',
-        college: '98.344%',
+        college: 'PERCENTILE-98.344%',
         image: IMG2,
         color:'#8366FF',
         y: 250,
@@ -28,7 +28,7 @@ export const ourAchieversData: IStudentCardProps[] = [
     {
         rank: '',
         name: 'Ricky Mukherjee',
-        college: '98.291%',
+        college: 'PERCENTILE-98.291%',
         image: IMG3,
         color:'#C8A376',
         y: 350,
@@ -37,8 +37,8 @@ export const ourAchieversData: IStudentCardProps[] = [
     },
     {
         rank: '',
-        name: 'kumar Saurav',
-        college: '93.303%',
+        name: 'Kumar Saurav',
+        college: 'PERCENTILE-93.303%',
         image: IMG4,
         color:'#488774',    
         y: 400,

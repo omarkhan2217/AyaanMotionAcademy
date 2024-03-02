@@ -27,9 +27,13 @@ export const TargetBatchContainer: React.FC = () => {
         ))}
       </div>
       <PageText mainHeader={"Accelerate Your JEE/NEET Preparation with the TARGET Batch"} studentIcon={false} />
-      <div className={classes.button}>
-        <Button variant="primary" label="Inqure Now" />
-      </div>
+      <a
+        target=" _blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfX8qDYv_rTh0dq6U9x6Z-DTHNR9FZ2H8ptPObGTFPmKYvmrw/viewform"
+        className={classes.button}
+      >
+        <Button variant="primary" label="Inquire Now" />
+      </a>
     </div>
   );
 };

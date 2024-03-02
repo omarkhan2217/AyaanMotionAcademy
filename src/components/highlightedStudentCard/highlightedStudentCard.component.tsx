@@ -2,8 +2,8 @@ import React from "react";
 import classes from "./highlightedStudentCard.module.scss";
 import { CustomPill } from "..";
 import { IHighlightedStudentCardProps } from "../../types";
-import { TeacherLogo } from "../../assets";
 import { useWindowSize } from "usehooks-ts";
+import IMG from './faculty icons (1).png';
 
 export const HighlightedStudentCard: React.FC<IHighlightedStudentCardProps> = (props) => {
   const { rank, name, description, image, color, pillColor, bgColor,bgColorWhite, isReversed = false } = props;
@@ -25,7 +25,7 @@ export const HighlightedStudentCard: React.FC<IHighlightedStudentCardProps> = (p
           <div className={isReversed ? classes.studentNameAlt : classes.studentName}>{name}</div>
           <div className={isReversed ? classes.collegeNameAlt : classes.collegeName}>{description}</div>
           <div className={isReversed ? classes.studentNameAlt : classes.studentName}>Guided by our expert faculty</div>
-          <TeacherLogo />
+          <img src={IMG} />
         </div>
       </div>
       {isReversed && !isTablet ? <img className={isReversed ? classes.imgAlt : classes.img} src={image} /> : null}

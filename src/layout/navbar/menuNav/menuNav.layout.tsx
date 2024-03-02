@@ -8,9 +8,13 @@ export const MenuNav: React.FC = () => {
   const { width } = useWindowSize();
   return (
     <div className={classes.menuContainer}>
-      <div className={classes.buttonContainer}>
+       <a
+        target=" _blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfX8qDYv_rTh0dq6U9x6Z-DTHNR9FZ2H8ptPObGTFPmKYvmrw/viewform"
+        className={classes.buttonContainer}
+      >
         <Button label="Book a Demo" size={width <= 576 ? "sm" : "md"} />
-      </div>
+      </a>
       <Menu />
     </div>
   );

@@ -1,15 +1,16 @@
-import React from 'react'
-import classes from './ourbatches.module.scss'
-import { ISBatchesCardProps } from '../../types'
-import { Button } from '..'
-import { ArrowIcon, BatchStudentIcon, CheckMark } from '../../assets'
+import React from "react";
+import classes from "./ourbatches.module.scss";
+import { ISBatchesCardProps } from "../../types";
+import { Button } from "..";
+import { ArrowIcon, CheckMark } from "../../assets";
+import image2 from "../../assets/images/homepage/ourAchievers/student icons.png";
 
-interface OurBatchesComponent extends ISBatchesCardProps {
+interface IOurBatchesComponent extends ISBatchesCardProps {
   onClick: () => void;
 }
 
-export const OurBatchesComponent: React.FC<OurBatchesComponent> = (props: OurBatchesComponent) => {
-  const { BatchName, grade, guide, image, isScholar, onClick } = props;
+export const OurBatchesComponent: React.FC<IOurBatchesComponent> = (props: IOurBatchesComponent) => {
+  const { BatchName, grade, guide, image, isScholar, onClick, details } = props;
 
   return (
     <div className={isScholar ? classes.mainBorderContainer : classes.mainContainer}>
@@ -18,23 +19,30 @@ export const OurBatchesComponent: React.FC<OurBatchesComponent> = (props: OurBat
         <div className={classes.BatchName}>{BatchName}</div>
         <div className={classes.grade}>{grade}</div>
         <div className={classes.imageContairner}>
-          <BatchStudentIcon /><img src={image} />
+          <img src={image2} />
+          <img src={image} />
           <div className={classes.guide}>{guide}</div>
         </div>
-        <div className={classes.buttonContainer}>
+        <a
+          target=" _blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfX8qDYv_rTh0dq6U9x6Z-DTHNR9FZ2H8ptPObGTFPmKYvmrw/viewform"
+          className={classes.buttonContainer}
+        >
           <Button label={isScholar ? "Register Now" : "Inquire Now"} size="md" />
-        </div>
+        </a>
       </div>
       <div className={classes.detailsContainer}>
-        <div className={classes.innerDetails}><CheckMark />Expert Faculty</div>
-        <div className={classes.innerDetails}><CheckMark />Specialized Competitive Modules</div>
-        <div className={classes.innerDetails}><CheckMark />High-Frequency Testing</div>
-        <div className={classes.innerDetails}><CheckMark />Expert Guest Lectures</div>
-        <div className={classes.innerDetails}><CheckMark />Personalized Academic Planning</div>
-        <div className={classes.innerDetails}><CheckMark />Exclusive Workshops</div>
+        {details.map((item) => {
+          return (
+            <div className={classes.innerDetails}>
+              <CheckMark />
+              {item.detail}
+            </div>
+          );
+        })}
       </div>
       <div className={classes.button2}>
-        <Button label='Know More' variant='outline' icon={<ArrowIcon />} onClick={onClick} />
+        <Button label="Know More" variant="outline" icon={<ArrowIcon />} onClick={onClick} />
       </div>
     </div>
   );

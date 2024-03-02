@@ -8,7 +8,7 @@ export const MainStudentCard: React.FC<IStudentCardProps> = (props: IStudentCard
     return (
         <div className={classes.mainContainer} style={{backgroundColor: color}}>
             <div className={classes.textMainContainer} >
-                <CustomPill label={`JEE-MAIN${rank}`} pillColor={pillColor}/>
+                <CustomPill label={`JEE-MAIN 2024${rank}`} pillColor={pillColor}/>
                 <div className={classes.textContainer}>
                     <div className={classes.studentName}>{name}</div>
                     <div className={classes.collegeName}>{college}</div>

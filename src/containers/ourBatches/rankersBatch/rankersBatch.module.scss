@@ -13,7 +13,7 @@
 
 .facultyContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
 }
 
@@ -57,7 +57,7 @@
 @include mq('tablet-custom') {
   .facultyContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .button{
     width: fit-content;

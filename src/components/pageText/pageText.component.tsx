@@ -5,7 +5,8 @@ import { useInView } from "react-intersection-observer";
 import classes from "./pageText.module.scss";
 import { Button } from "../../components";
 import { useButtonResizeAlt } from "../../hooks";
-import { ArrowIcon, BatchStudentIcon } from "../../assets";
+import { ArrowIcon } from "../../assets";
+import image2 from "../../assets/images/homepage/ourAchievers/student icons.png";
 
 export interface IPageTextProps {
   mainHeader: string;
@@ -84,7 +85,7 @@ export const PageText: React.FC<IPageTextProps> = (props) => {
       )}
       {studentIcon ? (
         <div className={classes.studentIconContainer}>
-          <BatchStudentIcon />
+          <img src={image2} />
           <img src={image} />
           <div className={classes.studentIconText}>Join over 500+ Students</div>
         </div>

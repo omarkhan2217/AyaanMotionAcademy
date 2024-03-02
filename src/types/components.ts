@@ -83,6 +83,9 @@ export interface ISTestimonialCardProps
   comment: string;
 }
 
+interface Details {
+  detail: string
+}
 export interface ISBatchesCardProps
   extends React.HtmlHTMLAttributes<HTMLDivElement> {
   BatchName: string;
@@ -91,4 +94,5 @@ export interface ISBatchesCardProps
   path?: string;
   image?: string;
   isScholar?: boolean;
+  details: Details[];
 }

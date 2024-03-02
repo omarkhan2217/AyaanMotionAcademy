@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
 interface PageWrapperProps {
@@ -16,14 +16,10 @@ const transition = {
 };
 
 export const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
+  const ref = useRef(null);
+
   return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      variants={variants}
-      transition={transition}
-    >
+    <motion.div ref={ref} initial="initial" animate="animate" exit="exit" variants={variants} transition={transition}>
       {children}
     </motion.div>
   );
