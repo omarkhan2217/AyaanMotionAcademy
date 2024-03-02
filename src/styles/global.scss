@@ -18,6 +18,7 @@ $color--bg-4-box: rgb(241, 232, 255);
 $color--bg-5-box: rgb(232, 243, 255);
 $color--bg-6-box: rgb(232, 237, 255);
 $color--bg-1-main-box: rgb(237, 233, 255);
+$color--bg-top-box:rgb(200, 205, 255);
 
 $color--btn-primary: hsl(248, 100%, 58%);
 $color--btn-secondary: rgb(59, 59, 59);
@@ -116,7 +117,6 @@ $breakpoints: (
 }
 //Box-gradient
 
-$box--gradient-B-W: linear-gradient(to bottom, #c8cdff, #dfe3ff, #f1f3ff6f);
 
 @mixin gradient($start-color, $end-color, $orientation) {
   background: $start-color;

@@ -3,7 +3,7 @@ import classes from "./ourbatches.module.scss";
 import { ISBatchesCardProps } from "../../types";
 import { Button } from "..";
 import { ArrowIcon, CheckMark } from "../../assets";
-import image2 from "../../assets/images/homepage/ourAchievers/student icons.png";
+import image2 from "../../assets/images/ourBatch/faculty icons.png";
 
 interface IOurBatchesComponent extends ISBatchesCardProps {
   onClick: () => void;

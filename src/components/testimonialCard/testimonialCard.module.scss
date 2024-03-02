@@ -48,7 +48,7 @@
 }
 
 .nameContainer {
-  @include flex-container(row, center, center);
+  @include flex-container(row, center, center,0px);
   color: $color--text-primary-light;
   font-family: 'Inter', sans-serif;
   font-size: 20px;

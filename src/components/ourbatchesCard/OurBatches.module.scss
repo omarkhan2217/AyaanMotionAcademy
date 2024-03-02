@@ -87,7 +87,7 @@
   font-family: "inter",sans-serif;
   font-weight: 600;
   color: $color--text-2-primary;
-  background: $box--gradient-B-W;
+  background-color:$color--bg-top-box;
 }
 
 @include mq('phone-wide'){

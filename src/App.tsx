@@ -3,6 +3,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { PageWrapper } from ".";
 import { MainLogo } from "./assets";
+import { Helmet } from "react-helmet";
+
 
 const HomePage = React.lazy(() => import("./pages/homePage"));
 const OurAchievers = React.lazy(() => import("./pages/ourAchievers"));
@@ -35,6 +37,18 @@ export const App = () => {
 
   return (
     <div style={{ maxWidth: "100vw", overflowX: "hidden" }}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Ayaan's Motion Academy</title>
+        <meta
+          name="description"
+          content="Best coaching institute for IIT/JEE, NEET, NDA, and other competitive exam preparation in Ranchi, Jharkhand, India. Unlock your academic potential with Ayaan's Motion Academy! Explore our expert-led courses for JEE, NEET, and board exams, success stories of top achievers, and personalized career guidance. Join us to transform your dreams into reality."
+        />
+        <meta
+          name="keywords"
+          content="Ayaan's Motion Academy, JEE preparation courses, NEET coaching classes, Board exam preparation, Competitive exam success stories, Personalized career guidance, Top IIT coaching institute, Best NEET coaching academy, Online education platform, Academic excellence programs"
+        />
+      </Helmet>
       <Suspense fallback={<MainLogo />}>
         <ScrollToTop />
         <AnimatePresence mode="wait">

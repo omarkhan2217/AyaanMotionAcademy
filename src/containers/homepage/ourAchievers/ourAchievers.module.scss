@@ -11,9 +11,9 @@
 }
 
 @include mq('desktop-medium') {
-  .carousel {
-    padding-top: 25px;
-  }
+  // .carousel {
+  //   padding-top: 25px;
+  // }
   .carouselContainer {
     min-width: 80%;
     max-width: 80%;
@@ -21,9 +21,6 @@
 }
 
 @include mq('desktop-small') {
-  .carousel {
-    padding-top: 25px;
-  }
   .carouselContainer {
     min-width: 70%;
     max-width: 70%;

@@ -56,7 +56,9 @@ export const ContactUscontainer: React.FC = () => {
           <motion.div variants={detailsVariants} className={classes.details}>
             <div className={classes.heading}>Our Address:</div>
             <div className={classes.link}>Hariom Tower, 5th Floor, Room No. 504, 507, and 509, Ranchi, Jharkhand</div>
+            <a href="https://www.google.com/maps/place/Ayaan+Motion+Academy/@23.3753303,85.3333714,15z/data=!4m6!3m5!1s0x39f4e14349a3aea3:0xdba7bfb1df9d1c72!8m2!3d23.3753303!4d85.3333714!16s%2Fg%2F11trtb12qz?entry=ttu" target="_blank">
             <Button label="Open In Google Maps" variant="outline" icon={<ArrowIcon />} />
+            </a>
           </motion.div>
           {isSmallScreen && (
             <motion.img variants={imageVariants} src={img} alt="Hari-Om Tower" className={classes.imageContainer} />
