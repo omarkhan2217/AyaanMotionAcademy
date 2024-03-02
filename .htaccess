@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, XML, and JSON files
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json application/xml text/xml
+
+  <IfModule mod_setenvif.c>
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+  </IfModule>
+</IfModule>
