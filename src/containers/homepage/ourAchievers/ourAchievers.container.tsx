@@ -13,20 +13,20 @@ export const OurAchieversSection: React.FC = () => {
     width <= 420
       ? 1.4
       : width <= 500
-      ? 1.7
-      : width <= 600
-      ? 1.6
-      : width <= 768
-      ? 2.2
-      : width <= 1024
-      ? 2.6
-      : width <= 1280
-      ? 3.2
-      : width <= 1440
-      ? 4
-      : width > 1440
-      ? 4
-      : ourAchieversData.length;
+        ? 1.7
+        : width <= 600
+          ? 1.6
+          : width <= 768
+            ? 2.2
+            : width <= 1024
+              ? 2.6
+              : width <= 1280
+                ? 3.2
+                : width <= 1440
+                  ? 4
+                  : width > 1440
+                    ? 4
+                    : ourAchieversData.length;
 
   const cardVariant = {
     hidden: { opacity: 0, y: 200 },
@@ -36,9 +36,9 @@ export const OurAchieversSection: React.FC = () => {
       transition: {
         duration: 0.8,
         delay: index * 0.2,
-        type: "spring", 
-        stiffness: 70, 
-        damping: 9, 
+        type: "spring",
+        stiffness: 70,
+        damping: 9,
         mass: 0.8,
       },
     }),
@@ -52,6 +52,7 @@ export const OurAchieversSection: React.FC = () => {
             <SwiperSlide key={index}>
               <motion.div custom={index} initial="hidden" animate="visible" variants={cardVariant}>
                 <MainStudentCard
+                  border={item.border}
                   college={item.college}
                   name={item.name}
                   rank={item.rank}
@@ -67,6 +68,7 @@ export const OurAchieversSection: React.FC = () => {
         ourAchieversData.map((item, index) => (
           <motion.div key={index} custom={index} initial="hidden" animate="visible" variants={cardVariant}>
             <MainStudentCard
+              border={item.border}
               college={item.college}
               name={item.name}
               rank={item.rank}

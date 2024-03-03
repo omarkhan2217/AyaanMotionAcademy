@@ -6,7 +6,8 @@ import { IStudentCardProps } from '../../../types';
 
 export const ourAchieversData: IStudentCardProps[] = [
     {
-        rank: '',
+        rank: 'JEE-MAIN 2024',
+        border: true,
         name: 'Rajbeer Singh',
         college: 'PERCENTILE-99.987%',
         image: IMG1,
@@ -16,7 +17,7 @@ export const ourAchieversData: IStudentCardProps[] = [
         pillColor: '#7465AF',
     },
     {
-        rank: '',
+        rank: 'JEE-MAIN 2024',
         name: 'Priyanshu Kumar',
         college: 'PERCENTILE-98.344%',
         image: IMG2,
@@ -26,7 +27,7 @@ export const ourAchieversData: IStudentCardProps[] = [
         pillColor: '#4E466F',
     },
     {
-        rank: '',
+        rank: 'JEE-MAIN 2024',
         name: 'Ricky Mukherjee',
         college: 'PERCENTILE-98.291%',
         image: IMG3,
@@ -36,7 +37,7 @@ export const ourAchieversData: IStudentCardProps[] = [
         pillColor: '#775C3B',
     },
     {
-        rank: '',
+        rank: 'JEE-MAIN 2024',
         name: 'Kumar Saurav',
         college: 'PERCENTILE-93.303%',
         image: IMG4,

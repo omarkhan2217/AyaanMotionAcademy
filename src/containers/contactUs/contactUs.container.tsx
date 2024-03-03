@@ -75,10 +75,10 @@ export const ContactUscontainer: React.FC = () => {
               <motion.a href="https://twitter.com/ayaansmotion" target="_blank" variants={socialIconsVariants}>
                 <TwitterIcon />
               </motion.a>
-              <motion.a href="https://www.facebook.com/ayaansmotionacademy" target="_blank" variants={socialIconsVariants}>
+              <motion.a href="https://www.facebook.com/ayaanmotionacademy" target="_blank" variants={socialIconsVariants}>
                 <FacebokIcon />
               </motion.a>
-              <motion.a href="/" target="_blank" variants={socialIconsVariants}>
+              <motion.a href="https://www.linkedin.com/company/ayaansmotionacademy" target="_blank" variants={socialIconsVariants}>
                 <LinkedInIcon />
               </motion.a>
             </div>

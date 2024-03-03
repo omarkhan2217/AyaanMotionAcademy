@@ -33,6 +33,7 @@ export interface IStudentCardProps
   extends React.HTMLAttributes<HTMLDivElement> {
   rank?: number | string;
   name: string;
+  border?:boolean;
   college: string;
   image?: string;
   color?: string;

@@ -47,8 +47,8 @@ export const Footer: React.FC = () => {
             <a href="https://www.youtube.com/channel/UCml6M5g7DRPd6W1bcX7313g" target="_blank"><YoutubeIcon /></a>
             <a href="https://www.instagram.com/ayaansmotionacademy/" target="_blank"><InstagramIcon /></a>
             <a href="https://twitter.com/ayaansmotion" target="_blank"><TwitterIcon /></a>
-            <a href="https://www.facebook.com/ayaansmotionacademy" target="_blank"><FacebokIcon /></a>
-            <a href="/" target="_blank"><LinkedInIcon /></a>
+            <a href="https://www.facebook.com/ayaanmotionacademy" target="_blank"><FacebokIcon /></a>
+            <a href="https://www.linkedin.com/company/ayaansmotionacademy" target="_blank"><LinkedInIcon /></a>
           </div>
         </div>
 
