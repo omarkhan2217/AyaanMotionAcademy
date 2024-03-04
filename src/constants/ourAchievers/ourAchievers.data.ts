@@ -21,12 +21,7 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         name: 'Ratan kumar',
         image:  MAINIMG1,
         altImage:  MAINIMGPHONE1,
-        description: `In the constellation of brilliant minds that Ayaan's 
-        Motion Academy takes pride in, Aushutosh Singh shines as one of the brightest stars. 
-        With an astounding All India Rank of 03 in the IIT/JEE entrance exam, 
-        Aushutosh has set a benchmark for excellence, dedication, and perseverance. 
-        His journey from a curious learner to a national top ranker is a source of inspiration 
-        for every aspirant dreaming of conquering the competitive exam skies.`,
+        description: `In the galaxy of exceptional talents nurtured at Ayaan's Motion Academy, Rataan Kumar emerges as a luminous beacon. Achieving an impressive All India Rank of 498 in both the JEE-Mains and Advance 2022, Rataan has established a new standard for academic excellence, unwavering commitment, and resilience.`,
         isReversed: false,
         bgColor: '#DEFFE0',
         bgColorWhite:'#fff',
@@ -37,7 +32,7 @@ export const HighlightedAchieversData: IHighlightedAchieverProps[] = [
         name: 'Shreya Rai',
         image: MAINIMG2,
         altImage: MAINIMGPHONE2,
-        description: `In the constellation of brilliant minds that Ayaan's Motion Academy takes pride in, Riya Gupta emerges as a stellar achiever, securing an impressive All India Rank of 05 in the IIT/JEE entrance exam. Riya's journey symbolizes resilience, brilliance, and the power of unwavering dedication. Her remarkable achievements inspire aspiring minds to reach for the stars.`,
+        description: `In the constellation of prodigies at Ayaan's Motion Academy, Shreya Rai sparkles with distinction. Securing an admirable Rank in the JEE-Mains 2016, Shreya has redefined benchmarks of academic dedication and excellence. Her evolution from a curious learner to a celebrated achiever stands as a beacon of inspiration for all students determined to navigate the challenges of competitive examinations successfully.`,
         isReversed: true,
         color: '#4B0202',
         bgColor: '#FFE8DE',
@@ -83,7 +78,7 @@ export const OtherAchieversData: IOtherStudentCardProps[] = [
     },
     {
         rank: "2022 BATCH",
-        name: 'sumit kumar',
+        name: 'Sumit kumar',
         image: IMG7,
         college: 'BIT SINDRI DHANWAD',
         stream: 'JEE',

@@ -25,7 +25,7 @@ export const TestimonialData: ISTestimonialCardProps[] = [
         name: 'Naseema Khatoon',
         image: IMG3,
         color: '#hsl(162, 30%, 41%)',
-        comment: "Seeing my son's transformation and growth at Ayaan's Motion Academy has been incredible. The faculty's support and the academy's nurturing environment have instilled confidence and discipline in him. We are grateful for the guidance he received"
+        comment: "Seeing my son's transformation and growth at Ayaan's Motion Academy has been incredible. The faculty's support and the academy's nurturing environment have instilled confidence and discipline in him. We are grateful for the guidance he received."
     },
     {
         name: 'Ansh Raj',
