@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./lakshyaBatch.module.scss";
+import classes from "./lakshyaBtach.module.scss";
 import {
   BatchesFacultyComponent,
   BatchesFeatureCardComponent,
