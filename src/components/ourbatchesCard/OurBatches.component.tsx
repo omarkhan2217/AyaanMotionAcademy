@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./ourBatches.module.scss";
+import classes from "./OurBatches.module.scss";
 import { ISBatchesCardProps } from "../../types";
 import { Button } from "..";
 import { ArrowIcon, CheckMark } from "../../assets";
