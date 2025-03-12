@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ] # Trigger on pushes to main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # GitHub-hosted runner
+
+    steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Install dependencies (e.g., Node.js, Ruby, Python)
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # Install packages (customize for your project)
+      - name: Install dependencies
+        run: npm install
+
+      # Build your site (e.g., React, Next.js, Hugo)
+      - name: Build
+        run: npm run build
+
+      # Deploy to GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ../../build # Path to your built files (e.g., build/, dist/)
