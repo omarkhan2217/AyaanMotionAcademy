@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap --puppeteerArgs='--no-sandbox'"
   },
   "reactSnap": {
     "inlineCss": true,
@@ -22,12 +22,14 @@
     }
   },
   "dependencies": {
+    "@sparticuz/chromium": "^133.0.0",
     "@szhsin/react-accordion": "^1.2.3",
     "@types/slick-carousel": "^1.6.40",
     "classnames": "^2.5.1",
     "framer-motion": "^10.18.0",
     "gatsby-plugin-sitemap": "^6.13.1",
     "nuka-carousel": "^7.0.0",
+    "puppeteer-core": "^24.4.0",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",
     "react-collapsible": "^2.10.0",

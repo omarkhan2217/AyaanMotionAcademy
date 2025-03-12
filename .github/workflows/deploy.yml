@@ -1,35 +1,32 @@
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ "main" ] # Trigger on pushes to main branch
-
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest # GitHub-hosted runner
-
+    runs-on: ubuntu-latest
     steps:
-      # Checkout code
+      # Add these system dependencies
+      - name: Install Chrome dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Install dependencies (e.g., Node.js, Ruby, Python)
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      # Install packages (customize for your project)
       - name: Install dependencies
         run: npm install
 
-      # Build your site (e.g., React, Next.js, Hugo)
       - name: Build
         run: npm run build
 
-      # Deploy to GitHub Pages
+      - name: Run react-snap
+        run: npm run postbuild
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../../build # Path to your built files (e.g., build/, dist/)
+          publish_dir: ./build
