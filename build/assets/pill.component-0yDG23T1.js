@@ -1,1 +1,0 @@
-import{j as l}from"./index-Q96IOqgv.js";import{o as t}from"./desktopNav.layout-OE_uLTyJ.js";const i=o=>{const{label:s,pillColor:r}=o;return l.jsx("div",{className:t.mainContainer,style:{backgroundColor:r},children:s})};export{i as C};

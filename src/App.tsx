@@ -5,7 +5,6 @@ import { PageWrapper } from ".";
 import { MainLogo } from "./assets";
 import { Helmet } from "react-helmet";
 
-
 const HomePage = React.lazy(() => import("./pages/homePage"));
 const OurAchievers = React.lazy(() => import("./pages/ourAchievers"));
 const OurFaculty = React.lazy(() => import("./pages/ourFaculty"));
@@ -46,7 +45,7 @@ export const App = () => {
         />
         <meta
           name="keywords"
-          content="Ayaan's Motion Academy, JEE preparation courses, NEET coaching classes, Board exam preparation, Competitive exam success stories, Personalized career guidance, Top IIT coaching institute, Best NEET coaching academy, Online education platform, Academic excellence programs"
+          content="Ayaan's Motion Academy, JEE preparation courses, NEET coaching classes, Board exam preparation, Competitive exam success stories, Personalized career guidance, Top IIT coaching institute, Best NEET coaching academy, Online education platform, Academic excellence programs IIT coaching center in Ranchi,NEET coaching institute Lalpur Ranchi,Best JEE classes near Lalpur,Ranchi top NEET preparation coaching,Lalpur IIT JEE study material,Competitive exam coaching Lalpur area,Science coaching classes in Ranchi,Engineering entrance coaching in Lalpur,Medical entrance exam coaching Ranchi,Ranchi JEE Advanced coaching institutes,NEET UG coaching centers in Lalpur,Board exam tuition Ranchi,Ranchi academic excellence programs,Lalpur competitive exam strategy sessions,Top achievers coaching Ranchi,Career guidance services in Lalpur Ranchi,Online education platform Ranchi,Foundation courses for students in Ranchi,Lalpur area scholarship tests for JEE/NEET,JEE Main crash course in Ranchi,NEET preparation classes Lalpur Ranchi, Chemistry tuition for IIT aspirants  Mathematics coaching for JEE,  Best Mathematics coaching for JEE,  Easy Mathematics coaching for JEE,   Biology NEET specialized coaching,  Online test series for JEE Main,  NEET mock tests and solutions,  IIT JEE problem-solving workshops,  NEET strategy and revision plans, JEE advanced online tutoring,  Pre-medical test preparation courses,Entrance exam counseling Ranchi,Interactive learning for competitive exams,Customized test preparation strategies,Expert-led motivational sessions for students,Student success workshops Ranchi,Academic mentoring and coaching services,Study skills development for exams,Exam stress management techniques,Time management for JEE/NEET preparation,Career planning for science students Ranchi,Ayaan Khan,Best Maths Teacher,Best Maths Teacher Coaching,Ayaan Sir Coaching"
         />
       </Helmet>
       <Suspense fallback={<MainLogo />}>
