@@ -1,8 +1,14 @@
+name: Deploy to GitHub Pages
+
+# Add this "on" section to define workflow triggers
+on:
+  push:
+    branches: [ "main" ] # Trigger on pushes to main branch
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # Add these system dependencies
       - name: Install Chrome dependencies
         run: |
           sudo apt-get update
