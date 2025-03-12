@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./starbatch.module.scss";
+import classes from "./starBatch.module.scss";
 import {
   BatchesFacultyComponent,
   BatchesFeatureCardComponent,
