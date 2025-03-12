@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./rankersbatch.module.scss";
+import classes from "./rankersBatch.module.scss";
 import {
   BatchesFacultyComponent,
   BatchesFeatureCardComponent,
