@@ -1,17 +1,18 @@
-// react-snap.config.js
-import { executablePath, args } from "@sparticuz/chromium";
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
+const chromium = require("@sparticuz/chromium");
 
-export const puppeteerExecutablePath = executablePath();
-export const puppeteerArgs = [
-    ...args,
+module.exports = {
+  puppeteerExecutablePath: chromium.executablePath(),
+  puppeteerArgs: [
+    ...chromium.args,
+    "--disable-dev-shm-usage",
+    "--no-zygote",
+    "--single-process",
     "--no-sandbox",
     "--disable-setuid-sandbox",
-    "--single-process",
-    "--no-zygote"
-];
-export const userAgent = "ReactSnap";
-export const waitForTimeout = 10000;
-export const viewport = {
-    width: 1200,
-    height: 800
+    "--disable-gpu"
+  ],
+  waitForTimeout: 15000,
+  headless: "new"  // Required for modern Chrome
 };
