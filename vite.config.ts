@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'build', // Specify the output directory
     sourcemap: true,
-    assetsDir:'/AyaanMotionAcademy/assets'
+    assetsDir:'AyaanMotionAcademy/assets'
   },
   base: "/AyaanMotionAcademy/",
 });
