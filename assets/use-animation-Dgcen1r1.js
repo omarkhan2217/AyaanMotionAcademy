@@ -1,2 +1,0 @@
-import{s as e,a as u,b as i,c}from"./index-CLG2aCKo.js";function m(t){t.values.forEach(s=>s.stop())}function f(){const t=new Set,s={subscribe(o){return t.add(o),()=>void t.delete(o)},start(o,n){const r=[];return t.forEach(a=>{r.push(u(a,o,{transitionOverride:n}))}),Promise.all(r)},set(o){return t.forEach(n=>{e(n,o)})},stop(){t.forEach(o=>{m(o)})},mount(){return()=>{s.stop()}}};return s}function l(){const t=i(f);return c(t.mount,[]),t}const h=l;export{h as u};
-//# sourceMappingURL=use-animation-Dgcen1r1.js.map
