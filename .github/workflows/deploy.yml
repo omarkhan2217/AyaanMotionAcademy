@@ -4,11 +4,14 @@ on:
   push:
     branches: ["main"]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true # Prevent default Chromium download
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
       PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
 
     steps:
